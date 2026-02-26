@@ -1,0 +1,67 @@
+line_name,from_station,to_station,distance_km,time_minutes,line_type,line_code
+# LGV Sud-Est : Paris - Lyon - Marseille
+LGV Sud-Est,Paris,Lyon,392,120,TGV,LGVSE
+LGV Sud-Est,Lyon,Marseille,315,90,TGV,LGVSE
+LGV Méditerranée,Lyon,Valence,100,35,TGV,LGVMED
+LGV Méditerranée,Valence,Avignon,95,30,TGV,LGVMED
+LGV Méditerranée,Avignon,Marseille,95,30,TGV,LGVMED
+# LGV Atlantique : Paris - Bordeaux - Toulouse
+LGV Atlantique,Paris,Bordeaux,498,150,TGV,LGVATL
+LGV Atlantique,Paris,Tours,200,55,TGV,LGVATL
+LGV Atlantique,Tours,Bordeaux,300,100,TGV,LGVATL
+Intercités,Bordeaux,Toulouse,245,140,IC,IC_BX_TLS
+# LGV Atlantique : Paris - Nantes - Rennes
+LGV Atlantique,Paris,Nantes,342,120,TGV,LGVATL
+LGV Atlantique,Paris,Le Mans,185,55,TGV,LGVATL
+LGV Atlantique,Le Mans,Nantes,180,70,TGV,LGVATL
+LGV Atlantique,Nantes,Rennes,108,90,TGV,LGVATL
+# LGV Nord : Paris - Lille
+LGV Nord,Paris,Lille,204,60,TGV,LGVN
+# LGV Est : Paris - Strasbourg
+LGV Est,Paris,Strasbourg,400,105,TGV,LGVE
+LGV Est,Paris,Reims,144,45,TGV,LGVE
+LGV Est,Reims,Strasbourg,256,80,TGV,LGVE
+# Lignes Transversales
+Transversale,Lyon,Strasbourg,425,240,IC,TRANS_LY_STR
+Transversale,Lyon,Grenoble,105,90,TER,TER_LY_GRE
+Transversale,Lyon,Dijon,192,110,TER,TER_LY_DIJ
+Transversale,Dijon,Strasbourg,315,180,IC,IC_DIJ_STR
+Transversale,Marseille,Nice,188,150,IC,IC_MAR_NICE
+Transversale,Marseille,Montpellier,170,100,IC,IC_MAR_MTP
+Transversale,Montpellier,Toulouse,242,140,IC,IC_MTP_TLS
+# Lignes Nord
+Nord,Lille,Calais,113,90,TER,TER_LILLE_CAL
+Nord,Paris,Amiens,120,70,IC,IC_PAR_AMI
+Nord,Amiens,Lille,120,80,TER,TER_AMI_LILLE
+# Lignes Est
+Est,Paris,Nancy,281,90,TGV,TGV_PAR_NAN
+Est,Nancy,Strasbourg,145,80,TER,TER_NAN_STR
+Est,Paris,Metz,330,82,TGV,TGV_PAR_METZ
+Est,Metz,Strasbourg,155,100,TER,TER_METZ_STR
+# Lignes Ouest
+Ouest,Paris,Caen,228,110,IC,IC_PAR_CAEN
+Ouest,Caen,Rennes,185,180,TER,TER_CAEN_REN
+Ouest,Paris,Brest,504,270,IC,IC_PAR_BREST
+Ouest,Rennes,Brest,246,130,TER,TER_REN_BREST
+Ouest,Nantes,Bordeaux,329,240,IC,IC_NAN_BX
+# Lignes Centre
+Centre,Paris,Orléans,116,60,IC,IC_PAR_ORL
+Centre,Orléans,Tours,113,70,TER,TER_ORL_TRS
+Centre,Paris,Clermont-Ferrand,421,210,IC,IC_PAR_CLF
+Centre,Clermont-Ferrand,Lyon,166,120,TER,TER_CLF_LY
+# Lignes Sud
+Sud,Toulouse,Montpellier,242,140,IC,IC_TLS_MTP
+Sud,Toulouse,Bordeaux,245,140,IC,IC_TLS_BX
+Sud,Nice,Marseille,188,150,IC,IC_NICE_MAR
+Sud,Marseille,Toulon,63,45,TER,TER_MAR_TLN
+Sud,Toulon,Nice,148,120,TER,TER_TLN_NICE
+Sud,Aix-en-Provence,Marseille,30,25,TER,TER_AIX_MAR
+# Lignes Rhône-Alpes
+RhoneAlpes,Lyon,Chambéry,97,90,TER,TER_LY_CHAMB
+RhoneAlpes,Lyon,Annecy,138,120,TER,TER_LY_ANN
+RhoneAlpes,Lyon,Saint-Étienne,61,50,TER,TER_LY_STE
+RhoneAlpes,Grenoble,Valence,93,75,TER,TER_GRE_VAL
+# Liaisons importantes manquantes
+Transversale,Bordeaux,Marseille,636,480,IC,IC_BX_MAR
+Transversale,Lille,Strasbourg,535,360,IC,IC_LILLE_STR
+Transversale,Nantes,Lyon,617,390,IC,IC_NAN_LY

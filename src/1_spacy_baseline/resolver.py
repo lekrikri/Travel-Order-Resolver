@@ -228,12 +228,12 @@ def main():
     ]
 
     print("\n" + "="*70)
-    print("🚂 TEST DU RÉSOLVEUR spaCy")
+    print("TEST DU RESOLVEUR spaCy")
     print("="*70)
 
     for sentence in test_sentences:
         result = resolver.resolve(sentence)
-        print(f"➜ {result}")
+        print(f"> {result}")
 
     print("="*70)
 

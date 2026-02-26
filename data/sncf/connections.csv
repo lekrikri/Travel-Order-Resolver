@@ -1,0 +1,107 @@
+from_uic,from_name,to_uic,to_name,distance_km,time_minutes,line_type,line_code
+87686006,Paris Gare de Lyon,87723197,Lyon Part Dieu,392,120,TGV,LGVSE
+87723197,Lyon Part Dieu,87686006,Paris Gare de Lyon,392,120,TGV,LGVSE
+87723197,Lyon Part Dieu,87751008,Marseille Saint-Charles,315,90,TGV,LGVSE
+87751008,Marseille Saint-Charles,87723197,Lyon Part Dieu,315,90,TGV,LGVSE
+87723197,Lyon Part Dieu,87763029,Valence TGV Rhône-Alpes Sud,100,35,TGV,LGVMED
+87763029,Valence TGV Rhône-Alpes Sud,87723197,Lyon Part Dieu,100,35,TGV,LGVMED
+87763029,Valence TGV Rhône-Alpes Sud,87765420,Morières-lès-Avignon,95,30,TGV,LGVMED
+87765420,Morières-lès-Avignon,87763029,Valence TGV Rhône-Alpes Sud,95,30,TGV,LGVMED
+87765420,Morières-lès-Avignon,87751008,Marseille Saint-Charles,95,30,TGV,LGVMED
+87751008,Marseille Saint-Charles,87765420,Morières-lès-Avignon,95,30,TGV,LGVMED
+87686006,Paris Gare de Lyon,87581009,Bordeaux Saint-Jean,498,150,TGV,LGVATL
+87581009,Bordeaux Saint-Jean,87686006,Paris Gare de Lyon,498,150,TGV,LGVATL
+87686006,Paris Gare de Lyon,87571885,Joué-lès-Tours,200,55,TGV,LGVATL
+87571885,Joué-lès-Tours,87686006,Paris Gare de Lyon,200,55,TGV,LGVATL
+87571885,Joué-lès-Tours,87581009,Bordeaux Saint-Jean,300,100,TGV,LGVATL
+87581009,Bordeaux Saint-Jean,87571885,Joué-lès-Tours,300,100,TGV,LGVATL
+87581009,Bordeaux Saint-Jean,87611004,Toulouse Matabiau,245,140,IC,IC_BX_TLS
+87611004,Toulouse Matabiau,87581009,Bordeaux Saint-Jean,245,140,IC,IC_BX_TLS
+87686006,Paris Gare de Lyon,87481002,Nantes,342,120,TGV,LGVATL
+87481002,Nantes,87686006,Paris Gare de Lyon,342,120,TGV,LGVATL
+87686006,Paris Gare de Lyon,87743872,Le Mans Hôpital-Université,185,55,TGV,LGVATL
+87743872,Le Mans Hôpital-Université,87686006,Paris Gare de Lyon,185,55,TGV,LGVATL
+87743872,Le Mans Hôpital-Université,87481002,Nantes,180,70,TGV,LGVATL
+87481002,Nantes,87743872,Le Mans Hôpital-Université,180,70,TGV,LGVATL
+87481002,Nantes,87471003,Rennes,108,90,TGV,LGVATL
+87471003,Rennes,87481002,Nantes,108,90,TGV,LGVATL
+87686006,Paris Gare de Lyon,87286005,Lille Flandres,204,60,TGV,LGVN
+87286005,Lille Flandres,87686006,Paris Gare de Lyon,204,60,TGV,LGVN
+87686006,Paris Gare de Lyon,87212191,Strasbourg Roethig,400,105,TGV,LGVE
+87212191,Strasbourg Roethig,87686006,Paris Gare de Lyon,400,105,TGV,LGVE
+87686006,Paris Gare de Lyon,87171272,Reims Maison Blanche,144,45,TGV,LGVE
+87171272,Reims Maison Blanche,87686006,Paris Gare de Lyon,144,45,TGV,LGVE
+87171272,Reims Maison Blanche,87212191,Strasbourg Roethig,256,80,TGV,LGVE
+87212191,Strasbourg Roethig,87171272,Reims Maison Blanche,256,80,TGV,LGVE
+87723197,Lyon Part Dieu,87212191,Strasbourg Roethig,425,240,IC,TRANS_LY_STR
+87212191,Strasbourg Roethig,87723197,Lyon Part Dieu,425,240,IC,TRANS_LY_STR
+87723197,Lyon Part Dieu,87747402,Grenoble Universités - Gières,105,90,TER,TER_LY_GRE
+87747402,Grenoble Universités - Gières,87723197,Lyon Part Dieu,105,90,TER,TER_LY_GRE
+87723197,Lyon Part Dieu,87713040,Dijon,192,110,TER,TER_LY_DIJ
+87713040,Dijon,87723197,Lyon Part Dieu,192,110,TER,TER_LY_DIJ
+87713040,Dijon,87212191,Strasbourg Roethig,315,180,IC,IC_DIJ_STR
+87212191,Strasbourg Roethig,87713040,Dijon,315,180,IC,IC_DIJ_STR
+87751008,Marseille Saint-Charles,87756254,Nice Saint-Augustin,188,150,IC,IC_MAR_NICE
+87756254,Nice Saint-Augustin,87751008,Marseille Saint-Charles,188,150,IC,IC_MAR_NICE
+87751008,Marseille Saint-Charles,87773002,Montpellier Saint-Roch,170,100,IC,IC_MAR_MTP
+87773002,Montpellier Saint-Roch,87751008,Marseille Saint-Charles,170,100,IC,IC_MAR_MTP
+87773002,Montpellier Saint-Roch,87611004,Toulouse Matabiau,242,140,IC,IC_MTP_TLS
+87611004,Toulouse Matabiau,87773002,Montpellier Saint-Roch,242,140,IC,IC_MTP_TLS
+87286005,Lille Flandres,87317263,Calais,113,90,TER,TER_LILLE_CAL
+87317263,Calais,87286005,Lille Flandres,113,90,TER,TER_LILLE_CAL
+87686006,Paris Gare de Lyon,87313874,Amiens,120,70,IC,IC_PAR_AMI
+87313874,Amiens,87686006,Paris Gare de Lyon,120,70,IC,IC_PAR_AMI
+87313874,Amiens,87286005,Lille Flandres,120,80,TER,TER_AMI_LILLE
+87286005,Lille Flandres,87313874,Amiens,120,80,TER,TER_AMI_LILLE
+87686006,Paris Gare de Lyon,87141002,Nancy,281,90,TGV,TGV_PAR_NAN
+87141002,Nancy,87686006,Paris Gare de Lyon,281,90,TGV,TGV_PAR_NAN
+87141002,Nancy,87212191,Strasbourg Roethig,145,80,TER,TER_NAN_STR
+87212191,Strasbourg Roethig,87141002,Nancy,145,80,TER,TER_NAN_STR
+87686006,Paris Gare de Lyon,87191106,Maizières-lès-Metz,330,82,TGV,TGV_PAR_METZ
+87191106,Maizières-lès-Metz,87686006,Paris Gare de Lyon,330,82,TGV,TGV_PAR_METZ
+87191106,Maizières-lès-Metz,87212191,Strasbourg Roethig,155,100,TER,TER_METZ_STR
+87212191,Strasbourg Roethig,87191106,Maizières-lès-Metz,155,100,TER,TER_METZ_STR
+87686006,Paris Gare de Lyon,87444000,Caen,228,110,IC,IC_PAR_CAEN
+87444000,Caen,87686006,Paris Gare de Lyon,228,110,IC,IC_PAR_CAEN
+87444000,Caen,87471003,Rennes,185,180,TER,TER_CAEN_REN
+87471003,Rennes,87444000,Caen,185,180,TER,TER_CAEN_REN
+87686006,Paris Gare de Lyon,87474007,Brest,504,270,IC,IC_PAR_BREST
+87474007,Brest,87686006,Paris Gare de Lyon,504,270,IC,IC_PAR_BREST
+87471003,Rennes,87474007,Brest,246,130,TER,TER_REN_BREST
+87474007,Brest,87471003,Rennes,246,130,TER,TER_REN_BREST
+87481002,Nantes,87581009,Bordeaux Saint-Jean,329,240,IC,IC_NAN_BX
+87581009,Bordeaux Saint-Jean,87481002,Nantes,329,240,IC,IC_NAN_BX
+87686006,Paris Gare de Lyon,87576173,Faubourg d'Orléans,116,60,IC,IC_PAR_ORL
+87576173,Faubourg d'Orléans,87686006,Paris Gare de Lyon,116,60,IC,IC_PAR_ORL
+87576173,Faubourg d'Orléans,87571885,Joué-lès-Tours,113,70,TER,TER_ORL_TRS
+87571885,Joué-lès-Tours,87576173,Faubourg d'Orléans,113,70,TER,TER_ORL_TRS
+87686006,Paris Gare de Lyon,87734004,Clermont-Ferrand,421,210,IC,IC_PAR_CLF
+87734004,Clermont-Ferrand,87686006,Paris Gare de Lyon,421,210,IC,IC_PAR_CLF
+87734004,Clermont-Ferrand,87723197,Lyon Part Dieu,166,120,TER,TER_CLF_LY
+87723197,Lyon Part Dieu,87734004,Clermont-Ferrand,166,120,TER,TER_CLF_LY
+87611004,Toulouse Matabiau,87773002,Montpellier Saint-Roch,242,140,IC,IC_TLS_MTP
+87773002,Montpellier Saint-Roch,87611004,Toulouse Matabiau,242,140,IC,IC_TLS_MTP
+87611004,Toulouse Matabiau,87581009,Bordeaux Saint-Jean,245,140,IC,IC_TLS_BX
+87581009,Bordeaux Saint-Jean,87611004,Toulouse Matabiau,245,140,IC,IC_TLS_BX
+87756254,Nice Saint-Augustin,87751008,Marseille Saint-Charles,188,150,IC,IC_NICE_MAR
+87751008,Marseille Saint-Charles,87756254,Nice Saint-Augustin,188,150,IC,IC_NICE_MAR
+87751008,Marseille Saint-Charles,87755009,Toulon,63,45,TER,TER_MAR_TLN
+87755009,Toulon,87751008,Marseille Saint-Charles,63,45,TER,TER_MAR_TLN
+87755009,Toulon,87756254,Nice Saint-Augustin,148,120,TER,TER_TLN_NICE
+87756254,Nice Saint-Augustin,87755009,Toulon,148,120,TER,TER_TLN_NICE
+87319012,Aix-en-Provence TGV,87751008,Marseille Saint-Charles,30,25,TER,TER_AIX_MAR
+87751008,Marseille Saint-Charles,87319012,Aix-en-Provence TGV,30,25,TER,TER_AIX_MAR
+87723197,Lyon Part Dieu,87741009,Chambéry - Challes-les-Eaux,97,90,TER,TER_LY_CHAMB
+87741009,Chambéry - Challes-les-Eaux,87723197,Lyon Part Dieu,97,90,TER,TER_LY_CHAMB
+87723197,Lyon Part Dieu,87746008,Annecy,138,120,TER,TER_LY_ANN
+87746008,Annecy,87723197,Lyon Part Dieu,138,120,TER,TER_LY_ANN
+87723197,Lyon Part Dieu,87411215,Saint-Étienne-du-Rouvray,61,50,TER,TER_LY_STE
+87411215,Saint-Étienne-du-Rouvray,87723197,Lyon Part Dieu,61,50,TER,TER_LY_STE
+87747402,Grenoble Universités - Gières,87763029,Valence TGV Rhône-Alpes Sud,93,75,TER,TER_GRE_VAL
+87763029,Valence TGV Rhône-Alpes Sud,87747402,Grenoble Universités - Gières,93,75,TER,TER_GRE_VAL
+87581009,Bordeaux Saint-Jean,87751008,Marseille Saint-Charles,636,480,IC,IC_BX_MAR
+87751008,Marseille Saint-Charles,87581009,Bordeaux Saint-Jean,636,480,IC,IC_BX_MAR
+87286005,Lille Flandres,87212191,Strasbourg Roethig,535,360,IC,IC_LILLE_STR
+87212191,Strasbourg Roethig,87286005,Lille Flandres,535,360,IC,IC_LILLE_STR
+87481002,Nantes,87723197,Lyon Part Dieu,617,390,IC,IC_NAN_LY
+87723197,Lyon Part Dieu,87481002,Nantes,617,390,IC,IC_NAN_LY

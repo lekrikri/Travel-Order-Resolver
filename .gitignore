@@ -27,6 +27,7 @@ wheels/
 venv/
 ENV/
 env/
+venv_gpu/
 
 # IDEs
 .vscode/
@@ -38,11 +39,15 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Models & Data
-models/*.bin
-models/*.pt
-models/*.h5
-models/*.gguf
+# Models & Data (exclure gros fichiers)
+models/**/*.bin
+models/**/*.pt
+models/**/*.h5
+models/**/*.gguf
+models/**/*.safetensors
+models/**/*.onnx
+models/**/pytorch_model.bin
+models/**/model.safetensors
 data/raw/*.csv
 data/raw/*.zip
 data/generated/*.json
@@ -56,6 +61,15 @@ chroma_db/
 results/*.png
 results/*.json
 !results/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/package-lock.json
+
+# Zone Identifier (Windows)
+*:Zone.Identifier
 
 # Environment variables
 .env

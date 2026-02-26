@@ -1,0 +1,269 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Qwen2.5 Travel Order Extractor
+Utilise Qwen2.5 pour extraire départ/arrivée avec few-shot learning
+"""
+
+import json
+import re
+from typing import Dict, Optional, List
+
+
+class Qwen25Extractor:
+    """Extracteur de villes avec Qwen2.5"""
+
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-3B-Instruct"):
+        """
+        Initialiser l'extracteur Qwen2.5
+
+        Args:
+            model_name: Nom du modèle HuggingFace (3B pour rapidité, 7B pour précision)
+        """
+        self.model_name = model_name
+        self.tokenizer = None
+        self.model = None
+        self.device = None
+
+    def load_model(self):
+        """Charger le modèle Qwen2.5"""
+        try:
+            from transformers import AutoModelForCausalLM, AutoTokenizer
+            import torch
+
+            print(f"Chargement de {self.model_name}...")
+
+            # Déterminer le device
+            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+            print(f"Device: {self.device}")
+
+            # Charger tokenizer
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.model_name,
+                trust_remote_code=True
+            )
+
+            # Charger modèle
+            if self.device == "cuda":
+                # Forcer le chargement complet sur GPU
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    self.model_name,
+                    torch_dtype=torch.float16,
+                    trust_remote_code=True
+                ).to(self.device)
+            else:
+                # Charger sur CPU  
+                self.model = AutoModelForCausalLM.from_pretrained(
+                    self.model_name,
+                    torch_dtype=torch.float32,
+                    trust_remote_code=True
+                ).to(self.device)
+
+            print("Modèle chargé avec succès!")
+            return True
+
+        except ImportError as e:
+            print(f"ERREUR: Dépendances manquantes: {e}")
+            print("Installation: pip install transformers torch")
+            return False
+        except Exception as e:
+            print(f"ERREUR lors du chargement: {e}")
+            return False
+
+    def create_prompt(self, sentence: str, examples: Optional[List[Dict]] = None) -> str:
+        """
+        Créer le prompt few-shot pour Qwen2.5
+
+        Args:
+            sentence: Phrase à analyser
+            examples: Exemples optionnels pour few-shot learning
+
+        Returns:
+            Prompt formaté
+        """
+        # Exemples par défaut (few-shot learning)
+        if examples is None:
+            examples = [
+                {
+                    "input": "Je veux aller de Paris à Lyon",
+                    "output": {"departure": "Paris", "arrival": "Lyon"}
+                },
+                {
+                    "input": "Un billet pour Marseille depuis Toulouse svp",
+                    "output": {"departure": "Toulouse", "arrival": "Marseille"}
+                },
+                {
+                    "input": "Je rentre à Bordeaux depuis Nice",
+                    "output": {"departure": "Nice", "arrival": "Bordeaux"}
+                },
+                {
+                    "input": "Direction Lille au départ de Strasbourg",
+                    "output": {"departure": "Strasbourg", "arrival": "Lille"}
+                }
+            ]
+
+        # Construire le prompt
+        prompt = """Tu es un assistant spécialisé dans l'extraction d'informations de voyage en train.
+
+Ta tâche : extraire la ville de DÉPART et la ville d'ARRIVÉE d'une phrase en français.
+
+Format de sortie (JSON strict) :
+{"departure": "ville_de_depart", "arrival": "ville_d_arrivee"}
+
+Si impossible à extraire, retourne :
+{"departure": null, "arrival": null}
+
+Exemples:
+
+"""
+
+        # Ajouter les exemples
+        for ex in examples:
+            prompt += f"Phrase: {ex['input']}\n"
+            prompt += f"Réponse: {json.dumps(ex['output'], ensure_ascii=False)}\n\n"
+
+        # Ajouter la phrase à analyser
+        prompt += f"Phrase: {sentence}\n"
+        prompt += "Réponse:"
+
+        return prompt
+
+    def extract_cities(self, sentence: str, examples: Optional[List[Dict]] = None) -> Dict:
+        """
+        Extraire départ et arrivée d'une phrase
+
+        Args:
+            sentence: Phrase en français
+            examples: Exemples optionnels pour few-shot
+
+        Returns:
+            Dict avec 'departure', 'arrival', 'confidence'
+        """
+        if self.model is None or self.tokenizer is None:
+            return {
+                "departure": None,
+                "arrival": None,
+                "confidence": 0.0,
+                "error": "Modèle non chargé"
+            }
+
+        try:
+            # Créer le prompt
+            prompt = self.create_prompt(sentence, examples)
+
+            # Générer la réponse
+            messages = [{"role": "user", "content": prompt}]
+            text = self.tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True
+            )
+
+            inputs = self.tokenizer([text], return_tensors="pt").to(self.device)
+
+            # Générer
+            outputs = self.model.generate(
+                **inputs,
+                max_new_tokens=100,
+                temperature=0.1,  # Bas pour plus de déterminisme
+                do_sample=True,
+                top_p=0.9
+            )
+
+            # Décoder
+            response = self.tokenizer.decode(
+                outputs[0][inputs['input_ids'].shape[1]:],
+                skip_special_tokens=True
+            )
+
+            # Parser le JSON
+            result = self._parse_response(response)
+            result['raw_response'] = response
+
+            return result
+
+        except Exception as e:
+            return {
+                "departure": None,
+                "arrival": None,
+                "confidence": 0.0,
+                "error": str(e)
+            }
+
+    def _parse_response(self, response: str) -> Dict:
+        """
+        Parser la réponse JSON de Qwen2.5
+
+        Args:
+            response: Réponse brute du modèle
+
+        Returns:
+            Dict avec departure, arrival, confidence
+        """
+        try:
+            # Nettoyer la réponse
+            response = response.strip()
+
+            # Essayer de trouver le JSON dans la réponse
+            json_match = re.search(r'\{[^}]+\}', response)
+            if json_match:
+                json_str = json_match.group()
+                data = json.loads(json_str)
+
+                return {
+                    "departure": data.get("departure"),
+                    "arrival": data.get("arrival"),
+                    "confidence": 0.9 if (data.get("departure") and data.get("arrival")) else 0.5
+                }
+            else:
+                # Pas de JSON trouvé
+                return {
+                    "departure": None,
+                    "arrival": None,
+                    "confidence": 0.0,
+                    "error": "Format JSON invalide"
+                }
+
+        except json.JSONDecodeError:
+            return {
+                "departure": None,
+                "arrival": None,
+                "confidence": 0.0,
+                "error": "Erreur de parsing JSON"
+            }
+
+
+# Fonction utilitaire pour test rapide
+def test_qwen_extractor():
+    """Tester l'extracteur Qwen2.5"""
+    print("="*70)
+    print("TEST QWEN2.5 EXTRACTOR")
+    print("="*70)
+
+    extractor = Qwen25Extractor()
+
+    # Charger le modèle
+    if not extractor.load_model():
+        print("Impossible de charger le modèle")
+        return
+
+    # Phrases de test
+    test_sentences = [
+        "Je veux aller de Paris à Lyon",
+        "Un billet pour Marseille depuis Toulouse svp",
+        "Train Bordeaux Nice demain",
+        "Direction Lille au départ de Strasbourg",
+        "Je rentre à Nantes depuis Rennes"
+    ]
+
+    print("\nTest d'extraction:\n")
+    for sentence in test_sentences:
+        result = extractor.extract_cities(sentence)
+        print(f"Phrase: {sentence}")
+        print(f"Départ: {result.get('departure')}, Arrivée: {result.get('arrival')}")
+        print(f"Confiance: {result.get('confidence'):.2f}")
+        print()
+
+
+if __name__ == "__main__":
+    test_qwen_extractor()

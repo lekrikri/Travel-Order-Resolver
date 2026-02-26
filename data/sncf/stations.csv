@@ -1,0 +1,2786 @@
+code_uic,code_ci,nom_gare,commune,departement,latitude,longitude,is_suggestable
+87478537,MSW,Montsûrs,Montsûrs,53,48.14149,-0.5506416,True
+87613075,AER,Assier,Assier,46,44.6746197,1.8697681,True
+87317362,ABB,Abbeville,Abbeville,80,50.10221,1.82449,True
+87184424,MOV,Morvillars,Morvillars,90,47.54952,6.93511,True
+87615286,CNE,Carcassonne,Carcassonne,11,43.218029,2.351824,True
+87672212,ATI,Artix,Artix,64,43.3931062,-0.5701881,True
+87582668,ARC,Arcachon,Arcachon,33,44.659009,-1.16523,True
+87713040,DJV,Dijon,Dijon,21,47.32337,5.027208,True
+87726786,PJL,Pont de Lignon,Pont de Lignon,43,45.2597792,4.1372431,True
+87481234,ILA,Saint-Hilaire-de-Chaléons,Saint-Hilaire-de-Chaléons,44,47.1057704,-1.8650604,True
+87726760,AEC,Aurec-sur-Loire,Aurec-sur-Loire,43,45.3711611,4.1983439,True
+87611749,AUH,Auch,Auch,32,43.647488,0.596661,True
+87295733,AVN,Avesnes-sur-Helpe,Avesnes-sur-Helpe,59,50.12674,3.93295,True
+87212357,DRS,Drusenheim,Drusenheim,67,48.7659128,7.9478463,True
+87582700,BIR,Beautiran,Beautiran,33,44.701041,-0.45017,True
+87784546,MYR,Millas,Millas,66,42.6888961,2.6937502,True
+87783647,BCT,Bagnols - Chadenet,Bagnols - Chadenet,48,44.5286125,3.628178,True
+87783514,SQL,Les Salelles,Les Salelles,48,44.4832687,3.2804008,True
+87775825,LCI,Le Cailar,Le Cailar,30,43.6834141,4.2354236,True
+87723528,MIB,Miribel,Miribel,01,45.822088,4.95394,True
+87723783,SVX,Saint-Paul-de-Varax,Saint-Paul-de-Varax,01,46.1000331,5.1282046,True
+87743005,BGB,Bourg-en-Bresse,Bourg-en-Bresse,01,46.200351,5.215063,True
+87713008,DJP,Dijon Porte Neuve,Dijon Porte Neuve,21,47.322806,5.054872,True
+87611533,AXN,Ax-les-Thermes,Ax-les-Thermes,09,42.7247967,1.8332516,True
+87694307,MCH,Montchanin,Montchanin,71,46.7592649,4.4814867,True
+87761726,VNA,Vinay,Vinay,38,45.20797,5.41005,True
+87718015,BNM,Besançon Mouillère,Besançon Mouillère,25,47.240372,6.03391,True
+87300863,BFC,Besançon Franche-Comté TGV,Besançon Franche-Comté TGV,25,47.307361058531725,5.953195095062256,True
+87756379,BUM,Beaulieu-sur-Mer,Beaulieu-sur-Mer,06,43.706651,7.331545,True
+87718544,LVN,Valdahon,Valdahon,25,47.14975,6.342275,True
+87753541,CRQ,La Couronne Carro,La Couronne Carro,13,43.3398078,5.0517077,True
+87761130,SUO,Saint-Vallier sur Rhône,Saint-Vallier sur Rhône,26,45.186395,4.81439,True
+87545137,ETP,Étampes,Étampes,91,48.436661,2.159468,True
+87753731,LMN,Lamanon,Lamanon,13,43.6999662,5.0913333,True
+87597708,BUC,Busseau sur Creuse,Busseau sur Creuse,23,46.1230257,2.0229244,True
+87764290,DOE,Donzère,Donzère,26,44.4433646,4.7046262,True
+87759316,XJC,Saint-Joseph le Castellas,Saint-Joseph le Castellas,13,43.3518976,5.3770681,True
+87214536,DUP,Duppigheim,Duppigheim,67,48.5439674,7.5868091,True
+87613000,CAH,Cahors,Cahors,46,44.449275,1.433325,True
+87747337,VPE,Voreppe,Voreppe,38,45.290417,5.632119,True
+87764001,MTR,Montélimar,Montélimar,26,44.559079,4.744792,True
+87753582,NLO,Niolon,Niolon,13,43.340223,5.2569415,True
+87751826,SNT,Saint-Antoine,Saint-Antoine,13,43.3695993,5.3578102,True
+87212209,SNG,Steinbourg,Steinbourg,67,48.7635292,7.416299,True
+87746719,SVZ,Servoz,Servoz,74,45.9244592,6.763444,True
+87747212,CKN,Châbons,Châbons,38,45.4383566,5.4281009,True
+87175257,CCY,Commercy,Commercy,55,48.765749,5.58861,True
+87571687,CHI,Chinon,Chinon,37,47.163047,0.251538,True
+87734368,LCZ,Luc,Luc,48,44.654092,3.8915631,True
+87713578,CHY,Chagny,Chagny,71,46.907269,4.749682,True
+87743526,BNI,Bellignat,Bellignat,01,46.2381265,5.6298849,True
+87276030,CEG,Champ de Courses d'Enghien,Champ de Courses d'Enghien,95,48.97975,2.29189,True
+87393173,CHV,Chaville - Vélizy,Chaville - Vélizy,78,48.7998005,2.1845267,True
+87745414,VEY,Valleiry,Valleiry,74,46.1092875,5.96735,True
+87734228,BCZ,Le Breuil-sur-Couze,Le Breuil-sur-Couze,63,45.4670838,3.2621478,True
+87725671,SOZ,Senozan,Senozan,71,46.3921451,4.8710626,True
+87741611,TGG,Grésy-sur-Isère,Grésy-sur-Isère,73,45.594432,6.2588584,True
+87353573,TOE,Le Toec,Le Toec,31,43.5956037,1.4014496,True
+87491449,COG,Cognac,Cognac,16,45.684682,-0.326112,True
+87726471,BOE,Boën-sur-Lignon,Boën-sur-Lignon,42,45.7413612,4.0051544,True
+87723726,MIO,Mionnay,Mionnay,01,45.8966784,4.919752,True
+87381863,CPA,Cormeilles-en-Parisis,Cormeilles-en-Parisis,95,48.96864,2.19358,True
+87191635,SIK,Sierck-les-Bains,Sierck-les-Bains,57,49.443655,6.350327,True
+87725614,SRD,Sennecey-le-Grand,Sennecey-le-Grand,71,46.6406445,4.874316,True
+87723452,CIU,Cessieu,Cessieu,38,45.5611596,5.3761179,True
+87473504,CRX,Carhaix-Plouguer,Carhaix-Plouguer,29,48.2780022,-3.5622173,True
+87615468,CTR,Castres,Castres,81,43.599131,2.231223,True
+87391565,CMA,Clamart,Clamart,92,48.813844,2.2733273,True
+87723544,BNO,Beynost,Beynost,01,45.833915,5.006969,True
+87671156,CPN,Capvern,Capvern,65,43.1033454,0.3296393,True
+87723387,SQF,Saint-Quentin-Fallavier,Saint-Quentin-Fallavier,38,45.638109,5.099896,True
+87382655,CJV,Cergy le Haut,Cergy le Haut,95,49.0484932,2.0118725,True
+87672139,CZN,Coarraze - Nay,Coarraze - Nay,64,43.1818351,-0.2416429,True
+87271445,BDE,Sevran Beaudottes,Sevran Beaudottes,93,48.94743,2.52474,True
+87722231,PRB,Pierre-Bénite,Pierre-Bénite,69,45.7066772,4.8245059,True
+87382374,SMV,Suresnes Mont Valérien,Suresnes Mont Valérien,92,48.87155,2.22131,True
+87144287,CXC,Contrexéville,Contrexéville,88,48.1796129,5.890633,True
+87722264,VNI,Vernaison,Vernaison,69,45.6456478,4.8132908,True
+87721035,AMP,Amplepuis,Amplepuis,69,45.970982,4.326844,True
+87718270,CSJ,Cousance,Cousance,39,46.5353569,5.3868216,True
+87394494,CWP,Courtalain - Saint-Pellerin,Courtalain - Saint-Pellerin,28,48.0735988,1.1270043,True
+87712331,VLA,Velars-sur-Ouche,Velars-sur-Ouche,21,47.3265197,4.9274603,True
+87677104,HPZ,Les Deux Jumeaux,Les Deux Jumeaux,64,43.3699568,-1.7643532,True
+87611707,EQA,Escalquens,Escalquens,31,43.5170958,1.5422774,True
+87673707,OSS,Ossès - Saint-Martin-d'Arrossa,Ossès - Saint-Martin-d'Arrossa,64,43.2352119,-1.3048922,True
+87743716,AMB,Ambérieu-en-Bugey,Ambérieu-en-Bugey,01,45.954008,5.342388,True
+87171512,DOR,Dormans,Dormans,51,49.0791611,3.641709,True
+87694612,BYK,Blanzy,Blanzy,71,46.694064,4.3913585,True
+87271031,PNO,Paris Gare du Nord,Paris Gare du Nord,75,48.880185,2.355151,False
+87682435,HER,Héricy,Héricy,77,48.4424848,2.7605339,True
+87673624,USZ,Ustaritz Jatxou,Ustaritz Jatxou,64,43.4048083,-1.4489654,True
+87276584,ERM,Ermont Halte,Ermont Halte,95,48.9898,2.26323,True
+87673640,HLS,Halsou - Larressore,Halsou - Larressore,64,43.3781301,-1.4279003,True
+87396564,ECO,Écommoy,Écommoy,72,47.8246286,0.2691867,True
+87691949,EON,Bidos,Bidos,64,43.17892,-0.6069,True
+87592428,PYJ,Peyrilhac - Saint-Jouvent,Peyrilhac - Saint-Jouvent,87,45.9596182,1.1699844,True
+87671495,XMN,Saint-Martin-d'Oney,Saint-Martin-d'Oney,40,43.9301115,-0.6516933,True
+87672113,MHZ,Montaut Bétharram,Montaut Bétharram,64,43.1269731,-0.1982813,True
+87672709,OLB,Ogeu-les-Bains,Ogeu-les-Bains,64,43.153939,-0.5076467,True
+87448001,FLS,Flers,Flers,61,48.744785,-0.573216,True
+87641373,TIS,Les Trillers,Les Trillers,03,46.4147461,2.6001018,True
+87743336,SUS,Simandre-sur-Suran,Simandre-sur-Suran,01,46.2202097,5.4210929,True
+87481457,KUG,Cugand,Cugand,85,47.0582602,-1.253301,True
+87576876,GSN,Gièvres,Gièvres,41,47.2787925,1.6678267,True
+87594747,BIK,Bétaille,Bétaille,46,44.9424281,1.7344108,True
+87611376,CBT,Cintegabelle,Cintegabelle,31,43.3054202,1.5204268,True
+87613471,LPB,Laguépie,Laguépie,82,44.1455256,1.9692195,True
+87613141,GOV,Gourdon,Gourdon,46,44.7419445,1.389237,True
+87592634,AGF,L'Aiguille,L'Aiguille,87,45.7783702,1.2049024,True
+87317222,HSD,Hesdin,Hesdin,62,50.378286,2.0351881,True
+87597039,REL,Reuilly,Reuilly,36,47.0853677,2.0474783,True
+87756254,NIA,Nice Saint-Augustin,Nice Saint-Augustin,06,43.670728,7.216199,True
+87594481,CIL,Cornil,Cornil,19,45.2151758,1.6978482,True
+87765735,IIM,Carpentras,Carpentras,84,44.0499488,5.044141,True
+87584755,GOP,La Gorp,La Gorp,33,44.9288345,-0.4963844,True
+87191106,MMZ,Maizières-lès-Metz,Maizières-lès-Metz,57,49.2155349,6.1588762,True
+87175091,JQI,Joinville,Joinville,52,48.4442977,5.143503,True
+87586479,XBZ,Sainte-Bazeille,Sainte-Bazeille,47,44.5326935,0.0931269,True
+87582726,ABH,Arbanats,Arbanats,33,44.6743555,-0.3954517,True
+87592097,XDN,Saint-Denis-des-Murs,Saint-Denis-des-Murs,87,45.7889106,1.5514368,True
+87718320,SVI,Saint-Vit,Saint-Vit,25,47.183507,5.809057,True
+87747667,LCX,Lus-la-Croix-Haute,Lus-la-Croix-Haute,26,44.6709898,5.6973678,True
+87583690,CIC,Chalais,Chalais,16,45.2708327,0.0435966,True
+87584235,GAO,Gardonne,Gardonne,24,44.8347538,0.3319427,True
+87487603,SUD,Saumur,Saumur,49,47.269,-0.07136,True
+87580340,AEM,Arenc Euroméditerranée,Arenc Euroméditerranée,13,43.3132339,5.3676221,True
+87673293,LBN,Labenne,Labenne,40,43.5870509,-1.4288712,True
+87396028,NER,Neuville-sur-Sarthe,Neuville-sur-Sarthe,72,48.0705577,0.1997294,True
+87543140,LBQ,Lamotte-Beuvron,Lamotte-Beuvron,41,47.593898,2.022499,True
+87582841,KDT,Caudrot,Caudrot,33,44.5801152,-0.1452784,True
+87582734,POD,Podensac,Podensac,33,44.6489664,-0.3589057,True
+87576173,FBL,Faubourg d'Orléans,Faubourg d'Orléans,41,47.3669948,1.7403794,True
+87574533,FRE,Fréteval - Morée,Fréteval - Morée,41,47.8919172,1.211813,True
+87575068,MAX,Maillé,Maillé,37,47.0533855,0.5830236,True
+87576108,FCY,Foëcy,Foëcy,18,47.1756905,2.1625062,True
+87575035,MSD,Monts,Monts,37,47.2818,0.65448,True
+87116673,LFM,La Ferté-Milon,La Ferté-Milon,02,49.1797269,3.1207223,True
+87615351,RQE,Roquesérière - Buzet,Roquesérière - Buzet,31,43.7512472,1.6198753,True
+87783431,SDO,Saint-Rome-de-Cernon,Saint-Rome-de-Cernon,12,44.013981,2.9673744,True
+87491217,CGC,Cavignac,Cavignac,33,45.105163,-0.382243,True
+87192286,MHG,Morhange,Morhange,57,48.9366239,6.6590266,True
+87491191,BMR,Bussac-Forêt,Bussac-Forêt,17,45.211928,-0.3682457,True
+87473223,LNI,Lannion,Lannion,22,48.727638,-3.460353,True
+87713735,LHN,Louhans,Louhans,71,46.6309,5.2174853,True
+87713115,LLA,Les Laumes Alésia,Les Laumes Alésia,21,47.543054,4.462602,True
+87595264,XLI,Saint-Léon-sur-l'Isle,Saint-Léon-sur-l'Isle,24,45.1233004,0.4923106,True
+87543033,CCT,Cercottes,Cercottes,45,47.9861553,1.8849813,True
+87485250,MAZ,Mauzé-sur-le-Mignon,Mauzé-sur-le-Mignon,79,46.1995881,-0.6737264,True
+87734699,LPU,Le Puy-en-Velay,Le Puy-en-Velay,43,45.042866,3.892421,True
+87485342,BVK,Beauvoir-sur-Niort,Beauvoir-sur-Niort,79,46.1768857,-0.4687544,True
+87491076,BIL,Beillant,Beillant,17,45.7007999,-0.5265079,True
+87543066,CGK,Château-Gaillard,Château-Gaillard,28,48.1416904,1.9128148,True
+87487843,WBH,La Bohalle,La Bohalle,49,47.4342356,-0.4000426,True
+87641217,HIL,Huriel,Huriel,03,46.3714332,2.4762569,True
+87615476,LVR,Lavaur,Lavaur,81,43.703479,1.813146,True
+87615310,LSU,Lisle-sur-Tarn,Lisle-sur-Tarn,81,43.85639,1.80823,True
+87485334,MRJ,Marigny,Marigny,79,46.1990832,-0.428404,True
+87276576,LUZ,Luzarches,Luzarches,95,49.11719,2.42074,True
+87481242,BGZ,Bourgneuf-en-Retz,Bourgneuf-en-Retz,44,47.0469634,-1.9551942,True
+87547307,MDS,Musée d'Orsay,Musée d'Orsay,75,48.86079,2.325671,True
+87545228,EYO,Épinay-sur-Orge,Épinay-sur-Orge,91,48.66952,2.33182,True
+87582445,MCP,Marcheprime,Marcheprime,33,44.690543,-0.85381,True
+87481622,ISE,Issé,Issé,44,47.6268289,-1.45068,True
+87342097,BIA,Biache-Saint-Vaast,Biache-Saint-Vaast,62,50.3162525,2.9414975,True
+87481218,PXS,Port-Saint-Père - Saint-Mars,Port-Saint-Père - Saint-Mars,44,47.1164915,-1.7393069,True
+87481713,MDB,Montoir-de-Bretagne,Montoir-de-Bretagne,44,47.3210164,-2.1616777,True
+87481770,BSK,Batz-sur-Mer,Batz-sur-Mer,44,47.2809541,-2.4789866,True
+87185249,LUR,Lure,Lure,70,47.683269,6.4925787,True
+87481168,LEI,Le Cellier,Le Cellier,44,47.3135164,-1.3506694,True
+87474411,PGU,Plouigneau,Plouigneau,29,48.5647064,-3.7100572,True
+87783605,MDE,Mende,Mende,48,44.522322,3.5019875,True
+87478123,PGE,Plerguer,Plerguer,35,48.5314637,-1.8505895,True
+87476226,LDJ,Landaul - Mendon,Landaul - Mendon,56,47.7359877,-3.0860172,True
+87473272,PLA,Plancoët,Plancoët,22,48.5216785,-2.2289207,True
+87478180,CFA,Corseul - Languenan,Corseul - Languenan,22,48.4960574,-2.1414331,True
+87574137,MGL,Meung-sur-Loire,Meung-sur-Loire,45,47.829926,1.691928,True
+87473058,QDC,Quédillac,Quédillac,35,48.2484804,-2.1452204,True
+87172189,LUQ,Lumes,Lumes,08,49.7327973,4.7833571,True
+87592501,LCQ,La Coquille,La Coquille,24,45.5408509,0.9744005,True
+87746313,SPE,Saint-Pierre-en-Faucigny,Saint-Pierre-en-Faucigny,74,46.0593442,6.3757533,True
+87746347,MRG,Marignier,Marignier,74,46.0887815,6.507826,True
+87611889,MOI,Moissac,Moissac,82,44.1024178,1.077345,True
+87462085,CHW,Chamonix Aiguille du Midi,Chamonix Aiguille du Midi,74,45.91993,6.8667152,True
+87276675,MVC,Mériel,Mériel,95,49.07777,2.20528,True
+87417444,FRP,Franchet d'Esperey,Franchet d'Esperey,51,49.2425356,4.013869,True
+87394130,MTN,Maintenon,Maintenon,28,48.5854793,1.5920651,True
+87444042,BVO,Bretteville - Norrey,Bretteville - Norrey,14,49.2034112,-0.5127396,True
+87471318,XAL,Saint-Armel,Saint-Armel,35,48.014405,-1.5948867,True
+87741181,MML,Montmélian,Montmélian,73,45.503059,6.043289,True
+87746511,REI,Reignier-Ésery,Reignier-Ésery,74,46.1256159,6.2675466,True
+87713701,MRV,Mervans,Mervans,71,46.7988928,5.1794099,True
+87192039,MZE,Metz,Metz,57,49.109545,6.176593,True
+87684274,NGI,Nogent-sur-Vernisson,Nogent-sur-Vernisson,45,47.8527938,2.7375773,True
+87276667,MWO,Méry-sur-Oise,Méry-sur-Oise,95,49.05766,2.19074,True
+87611152,MTJ,Montréjeau - Gourdan-Polignan,Montréjeau - Gourdan-Polignan,31,43.078109,0.5735,True
+87116400,MYD,Montry - Condé,Montry - Condé,77,48.8908268,2.8262345,True
+87751719,PPO,La Pomme,La Pomme,13,43.2905165,5.4413152,True
+87411256,MUA,Malaunay - Le Houlme,Malaunay - Le Houlme,76,49.5133331,1.0395776,True
+87171561,AYN,Ay,Ay,51,49.0487318,4.0015644,True
+87751701,SMA,Saint-Marcel,Saint-Marcel,13,43.28818,5.4671155,True
+87595512,NEC,Niversac,Niversac,24,45.1383083,0.8082195,True
+87271577,NHY,Nanteuil-le-Haudouin,Nanteuil-le-Haudouin,60,49.14275,2.79459,True
+87387142,BVU,La Bonneville-sur-Iton,La Bonneville-sur-Iton,27,48.9884615,1.035014,True
+87381715,MJM,Mareil-sur-Mauldre,Mareil-sur-Mauldre,78,48.8936804,1.8715159,True
+87713511,VOT,Vougeot - Gilly-lès-Cîteaux,Vougeot - Gilly-lès-Cîteaux,21,47.1755556,4.9715685,True
+87396598,VAH,Vaas,Vaas,72,47.6707702,0.3165096,True
+87411215,SDR,Saint-Étienne-du-Rouvray,Saint-Étienne-du-Rouvray,76,49.3771553,1.1095673,True
+87353599,SMT,Saint-Martin du Touch,Saint-Martin du Touch,31,43.5997881,1.3718548,True
+87486563,SHZ,Saint-Hilaire-de-Riez,Saint-Hilaire-de-Riez,85,46.7166736,-1.9496838,True
+87345033,LQG,Loos-en-Gohelle,Loos-en-Gohelle,62,50.4378798,2.7933955,True
+87713156,NUR,Nuits sous Ravières,Nuits sous Ravières,89,47.7291142,4.211186,True
+87172262,AMA,Amagne - Lucquy,Amagne - Lucquy,08,49.5238187,4.4738775,True
+87342469,MQS,Marquillies,Marquillies,59,50.5477246,2.8661707,True
+87345116,COR,Corbehem,Corbehem,62,50.3428545,3.0405375,True
+87342576,VMY,Vimy,Vimy,62,50.3732316,2.8229549,True
+87313247,BEB,Breteuil,Breteuil,60,49.626389,2.3845164,True
+87581751,PSC,Pessac,Pessac,33,44.80461,-0.63185,True
+87396580,MYT,Mayet,Mayet,72,47.7601465,0.2659384,True
+87342287,TEE,Thiennes,Thiennes,59,50.6523561,2.4729218,True
+87342295,SBQ,Steenbecque,Steenbecque,59,50.6806568,2.510089,True
+87345413,CNK,Cantin,Cantin,59,50.3124545,3.121943,True
+87471151,GBC,Guichen - Bourg-des-Comptes,Guichen - Bourg-des-Comptes,35,47.9350963,-1.7601845,True
+87722702,FRW,Francheville,Francheville,69,45.7336473,4.7693729,True
+87317115,PRS,Pont de Briques,Pont de Briques,62,50.6828164,1.6268038,True
+87191114,HGD,Hagondange,Hagondange,57,49.25356,6.16448,True
+87381293,GOF,Gournay - Ferrières,Gournay - Ferrières,76,49.4813674,1.7380891,True
+87343210,LEP,Le Poirier Université,Le Poirier Université,59,50.33006,3.50273,True
+87571794,PBT,Port Boulet,Port Boulet,37,47.248836,0.155648,True
+87313213,BOV,Boves,Boves,80,49.8462355,2.3981165,True
+87382382,PTX,Puteaux,Puteaux,92,48.88351,2.2335,True
+87287128,MXT,Mont de Terre,Mont de Terre,59,50.6176672,3.0966031,True
+87764308,PRL,Pierrelatte,Pierrelatte,26,44.374719,4.703783,True
+87474098,QPR,Quimper,Quimper,29,47.994455,-4.092103,True
+87295022,RCQ,Recquignies,Recquignies,59,50.2840466,4.0445029,True
+87313676,DEJ,Laboissière - Le Déluge,Laboissière - Le Déluge,60,49.2885368,2.1361486,True
+87297531,XHI,Saint-Hilaire-sur-Helpe,Saint-Hilaire-sur-Helpe,59,50.1319709,3.9140099,True
+87613042,RAP,Rocamadour - Padirac,Rocamadour - Padirac,46,44.8183562,1.6573487,True
+87313718,SHS,Saint-Omer-en-Chaussée,Saint-Omer-en-Chaussée,60,49.5306261,1.9970829,True
+87297515,BJP,Les Bons Pères,Les Bons Pères,59,50.2798638,4.010967,True
+87287292,NKQ,Nortkerque,Nortkerque,62,50.8829544,2.0231501,True
+87753442,FOS,Fos-sur-Mer,Fos-sur-Mer,13,43.428029,4.974579,True
+87286567,ROT,Rosult,Rosult,59,50.4563667,3.3490115,True
+87276162,CPW,Chaponval,Chaponval,95,49.0694825,2.1423781,True
+87753251,RGC,Rognac,Rognac,13,43.4866,5.230666,True
+87276451,BRK,Bruyères-sur-Oise,Bruyères-sur-Oise,95,49.1552098,2.3259636,True
+87281469,EBB,Ebblinghem,Ebblinghem,59,50.7306459,2.409148,True
+87296152,CYU,Crépy - Couvron,Crépy - Couvron,02,49.6233401,3.5167165,True
+87271494,RYT,Aéroport Charles de Gaulle 2 TGV,Aéroport Charles de Gaulle 2 TGV,93,49.003652,2.570892,False
+87756460,CQR,Roquebrune-Cap-Martin,Roquebrune-Cap-Martin,06,43.7606178,7.457343,True
+87611079,CZG,Cazères,Cazères,31,43.212834,1.083106,True
+87765107,OGE,Orange,Orange,84,44.137304,4.819594,True
+87615492,VUG,Vielmur-sur-Agout,Vielmur-sur-Agout,81,43.623928,2.0895781,True
+87382457,LFC,Louveciennes,Louveciennes,78,48.8610361,2.1230176,True
+87276287,BBN,La Borne Blanche,La Borne Blanche,60,49.126985,2.5058656,True
+87271775,LJP,Longpont,Longpont,02,49.2726851,3.2301676,True
+87276204,LAI,Laigneville,Laigneville,60,49.29276,2.44894,True
+87272096,ESC,Esches,Esches,60,49.2125205,2.1708125,True
+87271585,ORM,Ormoy-Villers,Ormoy-Villers,60,49.2003204,2.8379502,True
+87276154,PPT,Pont Petit,Pont Petit,95,49.06004,2.13046,True
+87271882,MIV,Margival,Margival,02,49.4393862,3.4027491,True
+87387001,EVX,Évreux Normandie,Évreux Normandie,27,49.018748,1.149629,True
+87545509,SCW,Saint-Chéron,Saint-Chéron,91,48.551188,2.125597,True
+87543165,SAP,Salbris,Salbris,41,47.42522,2.04778,True
+87118158,RMY,Romilly-sur-Seine,Romilly-sur-Seine,10,48.514433,3.728887,True
+87214221,EFG,Epfig,Epfig,67,48.3637643,7.4504053,True
+87773515,VLM,Villeneuve-lès-Maguelone,Villeneuve-lès-Maguelone,34,43.5438231,3.849917,True
+87214106,EBH,Ebersheim,Ebersheim,67,48.3099953,7.494471,True
+87576157,LXU,Loreux,Loreux,41,47.3902731,1.8345356,True
+87726000,SEN,Saint-Étienne Châteaucreux,Saint-Étienne Châteaucreux,42,45.443366,4.399722,True
+87213108,SWG,Schweighouse-sur-Moder,Schweighouse-sur-Moder,67,48.8286765,7.7425635,True
+87212464,LTG,Lauterbourg,Lauterbourg,67,48.9676973,8.1826817,True
+87481465,MTV,Montaigu,Montaigu,85,46.983705,-1.316236,True
+87743633,SCL,Saint-Claude,Saint-Claude,39,46.3899539,5.8603471,True
+87213785,IGW,Ingwiller,Ingwiller,67,48.8723277,7.477155,True
+87721282,SGO,Saint-Germain-au-Mont-d'Or,Saint-Germain-au-Mont-d'Or,69,45.888352,4.804265,True
+87313585,HRB,Hermes - Berthecourt,Hermes - Berthecourt,60,49.3544055,2.2416554,True
+87734251,ARV,Arvant,Arvant,43,45.3653797,3.3106747,True
+87696211,PSU,Pougues-les-Eaux,Pougues-les-Eaux,58,47.0767837,3.0940304,True
+87172254,SED,Sedan,Sedan,08,49.695024,4.930373,True
+87613257,SIH,Saint-Christophe-Vallon,Saint-Christophe-Vallon,12,44.464619,2.4077585,True
+87212415,RHI,Roppenheim,Roppenheim,67,48.8510962,8.0623108,True
+87741009,CRL,Chambéry - Challes-les-Eaux,Chambéry - Challes-les-Eaux,73,45.571302,5.919547,True
+87575225,CHN,Chasseneuil-du-Poitou,Chasseneuil-du-Poitou,86,46.6517702,0.3730275,True
+87192419,AYM,Ancy-sur-Moselle,Ancy-sur-Moselle,57,49.0575093,6.0627661,True
+87394148,SPI,Saint-Piat,Saint-Piat,28,48.5429526,1.5904889,True
+87576322,SAD,Saint-Amand-Montrond - Orval,Saint-Amand-Montrond - Orval,18,46.7265409,2.4859441,True
+87191684,ABE,Auboué,Auboué,54,49.216163,5.9714608,True
+87182386,GSB,Gunsbach - Griesbach,Gunsbach - Griesbach,68,48.0414908,7.1748407,True
+87474262,ROW,La Roche-Maurice,La Roche-Maurice,29,48.4740885,-4.2050964,True
+87576868,SUC,Selles-sur-Cher,Selles-sur-Cher,41,47.2816956,1.5461989,True
+87185314,RCP,Ronchamp,Ronchamp,70,47.6990308,6.6232791,True
+87182733,MHK,Muhlbach-sur-Munster,Muhlbach-sur-Munster,68,48.0246077,7.0875666,True
+87721514,TAS,Tassin,Tassin,69,45.76151,4.75857,True
+87586651,TON,Tonneins,Tonneins,47,44.392796,0.314093,True
+87671172,TRY,Tournay,Tournay,65,43.1836066,0.2389703,True
+87753418,ISR,Istres,Istres,13,43.5153953,4.9804272,True
+87171298,MIZ,Muizon,Muizon,51,49.2781012,3.8915287,True
+87575357,EPI,Épanvilliers,Épanvilliers,86,46.2254951,0.2357576,True
+87486423,LEH,La Mothe-Achard,La Mothe-Achard,85,46.6068648,-1.6596359,True
+87214528,ENZ,Entzheim Aéroport,Entzheim Aéroport,67,48.54699,7.62794,True
+87718429,DLZ,Deluz,Deluz,25,47.2925132,6.199733,True
+87611590,TRC,Tarascon-sur-Ariège,Tarascon-sur-Ariège,09,42.8495385,1.5999321,True
+87172221,VRM,Vrigne-Meuse,Vrigne-Meuse,08,49.7010822,4.8438063,True
+87172056,MME,Monthermé,Monthermé,08,49.865621,4.74053,True
+87343400,TSL,Trith-Saint-Léger,Trith-Saint-Léger,59,50.3318146,3.4893247,True
+87159947,KEL,Ker Lann,Ker Lann,35,48.0429857,-1.7398306,True
+87144345,PVF,Provenchères-sur-Fave,Provenchères-sur-Fave,88,48.3046291,7.0854904,True
+87171645,ZSX,Sept-Saulx,Sept-Saulx,51,49.1511332,4.2569742,True
+87784686,VVB,Villefranche - Vernet-les-Bains,Villefranche - Vernet-les-Bains,66,42.591998,2.370396,True
+87172049,BYU,Bogny-sur-Meuse,Bogny-sur-Meuse,08,49.8583117,4.7632317,True
+87213470,WBG,Wissembourg,Wissembourg,67,49.0318895,7.9501435,True
+87712026,RLY,Rully,Rully,71,46.8804303,4.761033,True
+87144089,IYA,Igney,Igney,88,48.2709639,6.3995463,True
+87725820,VNS,Vonnas,Vonnas,01,46.2272852,4.9916677,True
+87141382,CKY,Chenevières,Chenevières,54,48.5195062,6.6325613,True
+87545707,VOV,Voves,Voves,28,48.2750095,1.6222874,True
+87723395,VEI,La Verpillière,La Verpillière,38,45.6276,5.150866,True
+87715136,FRA,Frasne,Frasne,25,46.857596,6.157767,True
+87141051,FBE,Fontenoy-sur-Moselle,Fontenoy-sur-Moselle,54,48.711721,5.9803654,True
+87444000,CAE,Caen,Caen,14,49.176354,-0.347613,True
+87334482,NUE,Neuville Université,Neuville Université,95,49.01426,2.07886,True
+87393595,VEA,Verneuil-sur-Avre,Verneuil-sur-Avre,27,48.7424857,0.9291925,True
+87611806,LIJ,L'Isle-Jourdain,L'Isle-Jourdain,32,43.617185,1.089829,True
+87184440,DEL,Delle,Delle,90,47.50593,7.00962,True
+87381814,VXS,Vaux-sur-Seine,Vaux-sur-Seine,78,49.00699,1.96342,True
+87741793,BSM,Bourg-Saint-Maurice,Bourg-Saint-Maurice,73,45.619036,6.771273,True
+87393256,VYL,La Verrière,La Verrière,78,48.7556954,1.943674,True
+87710780,BLY,Bailly,Bailly,78,48.837331,2.073981,True
+87775379,FMS,Fons - Saint-Mamert,Fons - Saint-Mamert,30,43.9073195,4.2066687,True
+87747352,SEG,Saint-Égrève Saint-Robert,Saint-Égrève Saint-Robert,38,45.2357234,5.6712687,True
+87710913,AYL,Allée Royale,Allée Royale,78,48.81431,2.07827,True
+87481069,LBI,La Basse Indre - Saint-Herblain,La Basse Indre - Saint-Herblain,44,47.2040872,-1.6603088,True
+87671487,YGV,Ygos-Saint-Saturnin,Ygos-Saint-Saturnin,40,43.9781851,-0.7361528,True
+87491506,CSC,Châteauneuf-sur-Charente,Châteauneuf-sur-Charente,16,45.599836,-0.0502,True
+87576223,CGY,Chabris,Chabris,36,47.2549836,1.6459424,True
+87718460,BDA,Baume-les-Dames,Baume-les-Dames,25,47.353937,6.359603,True
+87393363,BYS,Beynes,Beynes,78,48.8593599,1.8755696,True
+87393009,VCR,Versailles Chantiers,Versailles Chantiers,78,48.7958264,2.1358827,True
+87286401,STS,Santes,Santes,59,50.5920123,2.961977,True
+87745828,SSS,Seyssel - Corbonod,Seyssel - Corbonod,01,45.9630307,5.8315162,True
+87755009,TLN,Toulon,Toulon,83,43.12837,5.929293,True
+87171769,CCP,Coucy-lès-Eppes,Coucy-lès-Eppes,02,49.556282,3.7748209,True
+87473561,CCN,Carnoët - Locarn,Carnoët - Locarn,22,48.3405242,-3.4908822,True
+87473868,PIP,Paimpol,Paimpol,22,48.77694,-3.0460958,True
+87576082,FTV,La Ferté-Imbault,La Ferté-Imbault,41,47.3835442,1.9580537,True
+87615161,LMX,Limoux,Limoux,11,43.0563831,2.2228288,True
+87444372,TDE,Trouville - Deauville,Trouville - Deauville,14,49.360005,0.084167,True
+87682138,BXI,Boussy-Saint-Antoine,Boussy-Saint-Antoine,91,48.680893,2.532726,True
+87696427,DOP,Dompierre Sept Fons,Dompierre Sept Fons,03,46.5263166,3.6749309,True
+87113860,GAF,Gargan,Gargan,93,48.908159,2.517109,True
+87613174,DEG,Dégagnac,Dégagnac,46,44.6534974,1.3400861,True
+87286575,LDD,Landas,Landas,59,50.4687775,3.290568,True
+87113522,CGG,Le Chénay Gagny,Le Chénay Gagny,93,48.877129,2.552692,True
+87182717,RHM,Raedersheim,Raedersheim,68,47.8869059,7.2840467,True
+87413013,LHA,Le Havre,Le Havre,76,49.492996,0.125677,True
+87487314,PZK,Pouzauges,Pouzauges,85,46.7523536,-0.8146784,True
+87182378,WIH,Wihr-au-Val - Soultzbach,Wihr-au-Val - Soultzbach,68,48.0460522,7.2095351,True
+87784793,MTC,Mont-Louis - La Cabanasse,Mont-Louis - La Cabanasse,66,42.5020902,2.1131379,True
+87683268,LAR,Laroche - Migennes,Laroche - Migennes,89,47.960998,3.513191,True
+87313460,ROS,Rosières-en-Santerre,Rosières-en-Santerre,80,49.82253,2.71141,True
+87611681,DIP,Dieupentale,Dieupentale,82,43.8654687,1.2760011,True
+87757591,MPV,Mandelieu-la-Napoule,Mandelieu-la-Napoule,06,43.523903,6.941313,True
+87751800,SEP,Septèmes-les-Vallons,Septèmes-les-Vallons,13,43.4031137,5.3701756,True
+87763508,MOG,Mont-Dauphin - Guillestre,Mont-Dauphin - Guillestre,05,44.6746283,6.6156027,True
+87751784,LTV,La Ciotat - Ceyreste,La Ciotat - Ceyreste,13,43.199593,5.632647,True
+87286195,STA,Saint-André-lez-Lille,Saint-André-lez-Lille,59,50.6544842,3.0475916,True
+87545475,ELY,Égly,Égly,91,48.582364,2.222138,True
+87345280,BVP,Bauvin - Provin,Bauvin - Provin,59,50.51168,2.9054,True
+87393447,OGB,Orgerus - Béhoust,Orgerus - Béhoust,78,48.8267809,1.7028344,True
+87286112,LLZ,Loos lez Lille,Loos lez Lille,59,50.6128165,3.0170581,True
+87411447,LWM,Longuerue - Vieux-Manoir,Longuerue - Vieux-Manoir,76,49.5566781,1.2762275,True
+87765503,CVN,Cavaillon,Cavaillon,84,43.834554,5.043613,True
+87613422,RDZ,Rodez,Rodez,12,44.362633,2.58056,True
+87756478,KRL,Carnoles,Carnoles,06,43.76203,7.48139,True
+87342543,CPC,Calonne-Ricouart,Calonne-Ricouart,62,50.4827036,2.4812098,True
+87271247,SOS,Saint-Ouen,Saint-Ouen,93,48.90531,2.32257,True
+87295808,BER,Berlaimont,Berlaimont,59,50.1980095,3.8105316,True
+87214742,SZR,Saint-Blaise-la-Roche Poutay,Saint-Blaise-la-Roche Poutay,67,48.4076094,7.165329,True
+87471227,MWK,Massérac,Massérac,44,47.6745316,-1.9144441,True
+87141416,BAC,Baccarat,Baccarat,54,48.452405,6.74383,True
+87783266,AAU,Aumont-Aubrac,Aumont-Aubrac,48,44.7181699,3.2835489,True
+87751271,LBO,La Brillanne - Oraison,La Brillanne - Oraison,04,43.9247771,5.8923199,True
+87338525,KRI,Krimmeri Meinau,Krimmeri Meinau,67,48.56358,7.75259,True
+87402297,CXM,Colmar Mésanges,Colmar Mésanges,68,48.0860048,7.3336703,True
+87303875,ISC,Ingersheim - Cité Scolaire,Ingersheim - Cité Scolaire,68,48.08883,7.29823,True
+87775114,VZC,Vergèze - Codognan,Vergèze - Codognan,30,43.739877,4.218842,True
+87141036,FUG,Foug,Foug,54,48.6792561,5.7912761,True
+87313320,MRE,Moreuil,Moreuil,80,49.77699,2.47582,True
+87381889,HRY,Herblay,Herblay,95,48.99042,2.16208,True
+87775148,CJD,Chasseradès,Chasseradès,48,44.5539847,3.8399319,True
+87381491,ACY,Andrésy,Andrésy,78,48.9747,2.04928,True
+87673400,BIZ,Biarritz,Biarritz,64,43.459397,-1.545915,True
+87592279,MGQ,Magnac - Vicq,Magnac - Vicq,87,45.6288007,1.4438445,True
+87485193,AGR,Aigrefeuille le Thou,Aigrefeuille le Thou,17,46.09402,-0.95168,True
+87581397,PDG,Pointe de Grave,Pointe de Grave,33,45.567067,-1.0658575,True
+87595298,MUS,Mussidan,Mussidan,24,45.034329,0.354071,True
+87584607,SMZ,Saint-Médard-de-Guizières,Saint-Médard-de-Guizières,33,45.0155723,-0.0488253,True
+87575480,MMN,Montmorillon,Montmorillon,86,46.4174979,0.8737467,True
+87682112,YES,Yerres,Yerres,91,48.706759,2.48337,True
+87734350,LGG,Langogne,Langogne,48,44.732776,3.8573047,True
+87592253,PIB,Pierre-Buffière,Pierre-Buffière,87,45.6995226,1.3472667,True
+87742262,TSM,Toulon Sainte-Musse,Toulon Sainte-Musse,83,43.125113642636705,5.972755104236321,True
+87485490,SMX,Saint-Maixent-L'École,Saint-Maixent-L'École,79,46.406607,-0.201073,True
+87574459,XMK,Saint-Martin-le-Beau,Saint-Martin-le-Beau,37,47.3552058,0.9058418,True
+87481721,DNG,Donges,Donges,44,47.3151,-2.07236,True
+87713644,BEP,Brazey-en-Plaine,Brazey-en-Plaine,21,47.1314549,5.2121276,True
+87486571,SGV,Saint-Gilles-Croix-de-Vie,Saint-Gilles-Croix-de-Vie,85,46.696466,-1.941296,True
+87486142,BVD,Bellevigny,Bellevigny,85,46.788316,-1.4346673,True
+87214684,RHH,Russ Hersbach,Russ Hersbach,67,48.4982211,7.2519246,True
+87481614,AAR,Abbaretz,Abbaretz,44,47.5546432,-1.5244159,True
+87321745,SZP,Penhoët,Penhoët,44,47.2907444,-2.2008664,True
+87481390,CLS,Challans,Challans,85,46.843962,-1.871879,True
+87784835,SGW,Saillagouse,Saillagouse,66,42.4568855,2.0321126,True
+87276444,BRN,Boran-sur-Oise,Boran-sur-Oise,60,49.1671348,2.362537,True
+87215103,IAZ,Igney - Avricourt,Igney - Avricourt,54,48.6467012,6.8053062,True
+87276634,TVY,Taverny,Taverny,95,49.02536,2.22187,True
+87171322,BPR,Breuil - Romain,Breuil - Romain,51,49.3084141,3.7665322,True
+87342550,PEC,Pernes - Camblain,Pernes - Camblain,62,50.4802048,2.4310823,True
+87109306,ECR,Lille CHR,Lille CHR,59,50.61432,3.03432,True
+87437798,LRA,La Rochelle Porte Dauphine,La Rochelle Porte Dauphine,17,46.16755,-1.1518412,True
+87757617,CAB,Cannes La Bocca,Cannes La Bocca,06,43.548787,6.986601,True
+87354597,XTD,Saint-Sébastien Frêne Rond,Saint-Sébastien Frêne Rond,44,47.1903914,-1.4957437,True
+87147322,TGM,Meuse TGV,Meuse TGV,55,48.978549,5.270954,True
+87696807,CLA,Clamecy,Clamecy,58,47.4666984,3.5207672,True
+87696302,CXI,Chantenay-Saint-Imbert,Chantenay-Saint-Imbert,58,46.7283203,3.1720842,True
+87755215,SAQ,Saint-Cyr Les Lecques - La Cadière,Saint-Cyr Les Lecques - La Cadière,83,43.185509,5.703858,True
+87386011,NFE,Nanterre La Folie,Nanterre La Folie,92,48.897377,2.224397,True
+87734459,PDO,Pont de Dore,Pont de Dore,63,45.8427833,3.4903254,True
+87491183,MMM,Montendre,Montendre,17,45.2805457,-0.3961726,True
+87342303,TIN,Tincques,Tincques,62,50.35699,2.4980285,True
+87345231,LOO,Loison-sous-Lens,Loison-sous-Lens,62,50.4401891,2.8592403,True
+87393058,CPM,Champ de Mars Tour Eiffel,Champ de Mars Tour Eiffel,75,48.8551134,2.2892141,True
+87286831,PPB,Pont de Bois,Pont de Bois,59,50.62403,3.13026,True
+87317099,NHA,Neufchâtel-Hardelot,Neufchâtel-Hardelot,62,50.62364,1.643115,True
+87448514,AVR,Avranches,Avranches,50,48.6902445,-1.3700755,True
+87486308,CZC,La Chaize-le-Vicomte,La Chaize-le-Vicomte,85,46.676779,-1.2820678,True
+87296442,TGR,Tergnier,Tergnier,02,49.6591862,3.2972491,True
+87343103,SAM,Saint-Amand-les-Eaux,Saint-Amand-les-Eaux,59,50.44331,3.41952,True
+87594416,LDZ,La Rivière de Mansac,La Rivière de Mansac,19,45.139681,1.3655086,True
+87286625,TEM,Templeuve,Templeuve,59,50.52863,3.17559,True
+87742320,SJM,Saint-Jean-de-Maurienne Arvan,Saint-Jean-de-Maurienne Arvan,73,45.277542,6.354716,True
+87755447,LAC,Les Arcs - Draguignan,Les Arcs - Draguignan,83,43.455524,6.482498,True
+87491274,GVA,La Grave d'Ambarès,La Grave d'Ambarès,33,44.9356421,-0.477021,True
+87276766,RIB,Ribécourt-Dreslincourt,Ribécourt-Dreslincourt,60,49.50633,2.92714,True
+87673723,SJP,Saint-Jean-Pied-de-Port,Saint-Jean-Pied-de-Port,64,43.1679394,-1.2380129,True
+87481036,RPT,Rezé Pont Rousseau,Rezé Pont Rousseau,44,47.1932425,-1.5495445,True
+87393512,JAS,Jouy-en-Josas,Jouy-en-Josas,78,48.7650042,2.1635294,True
+87755330,SIP,Solliès-Pont,Solliès-Pont,83,43.1907805,6.0464158,True
+87590331,HAD,Haluchère Batignolles,Haluchère Batignolles,44,47.249142,-1.5224436,True
+87694869,GSL,Gilly-sur-Loire,Gilly-sur-Loire,71,46.5370137,3.7821607,True
+87723577,VAO,La Valbonne,La Valbonne,01,45.849225,5.124911,True
+87474056,PBU,Pont-de-Buis,Pont-de-Buis,29,48.2544024,-4.0861227,True
+87571539,XAO,Saint-Antoine-du-Rocher,Saint-Antoine-du-Rocher,37,47.503839,0.6164676,True
+87471300,RDN,Redon,Redon,35,47.652004,-2.08777,True
+87761874,LDE,Luc-en-Diois,Luc-en-Diois,26,44.6136615,5.4546227,True
+87439554,AYD,Vitrolles Aéroport Marseille Provence,Vitrolles Aéroport Marseille Provence,13,43.441734,5.237122,True
+87437806,ATL,Aytré Plage,Aytré Plage,17,46.1273815,-1.1280462,True
+87281402,CDK,Coudekerque-Branche,Coudekerque-Branche,59,51.0177069,2.3751425,True
+87287151,NPE,Nieppe,Nieppe,59,50.6966975,2.8289655,True
+87574335,LIZ,Limeray,Limeray,37,47.4502088,1.0499661,True
+87181552,GLL,Saint-Gilles Lycée Haut-Rhin,Saint-Gilles Lycée Haut-Rhin,68,48.0758611,7.2609746,True
+87751602,LES,L'Estaque,L'Estaque,13,43.363628,5.3213598,True
+87761247,LIV,Livron-sur-Drôme,Livron-sur-Drôme,26,44.7796035,4.8305412,True
+87783290,CAC,Chirac,Chirac,48,44.5246607,3.2638181,True
+87765479,LFV,L'Isle-sur-la-Sorgue - Fontaine-de-Vaucluse,L'Isle-sur-la-Sorgue - Fontaine-de-Vaucluse,84,43.917393,5.047615,True
+87696005,NVS,Nevers,Nevers,58,46.987282,3.150743,True
+87756767,TVR,La Trinité Victor,La Trinité Victor,06,43.7427854,7.3114604,True
+87753558,SPJ,Sausset-les-Pins,Sausset-les-Pins,13,43.332864,5.110001,True
+87734269,BRD,Brioude,Brioude,43,45.3006493,3.3786344,True
+87763722,SRE,Serres,Serres,05,44.4246573,5.7184201,True
+87393835,TVO,Trappes,Trappes,78,48.7751158,2.0066335,True
+87746149,RUM,Rumilly,Rumilly,74,45.862989,5.947938,True
+87721456,SNP,Saint-Romain-de-Popey,Saint-Romain-de-Popey,69,45.8616053,4.5423351,True
+87474015,DIR,Dirinon,Dirinon,29,48.3926343,-4.2855034,True
+87775171,LBS,La Bastide - Saint-Laurent-les-Bains,La Bastide - Saint-Laurent-les-Bains,48,44.5934829,3.9042849,True
+87386730,AEH,Aubergenville Élisabethville,Aubergenville Élisabethville,78,48.971825,1.8484987,True
+87313767,AUM,Aumale,Aumale,76,49.7650371,1.7560425,True
+87582551,LBH,Labouheyre,Labouheyre,40,44.2106292,-0.9209296,True
+87611699,MNG,Montbartier,Montbartier,82,43.9241555,1.264501,True
+87317164,MOM,Montreuil sur Mer,Montreuil sur Mer,62,50.4661948,1.7691662,True
+87582643,TTE,La Teste-de-Buch,La Teste-de-Buch,33,44.636924,-1.14295,True
+87723429,BRG,Bourgoin-Jallieu,Bourgoin-Jallieu,38,45.583954,5.273401,True
+87775858,AIM,Aigues-Mortes,Aigues-Mortes,30,43.5709008,4.1912102,True
+87471169,XSX,Saint-Senoux - Pléchâtel,Saint-Senoux - Pléchâtel,35,47.8977519,-1.7661904,True
+87747691,MFE,Moirans La Galifette,Moirans La Galifette,38,45.324154,5.56517,True
+87447698,VDS,Villedieu-les-Poêles,Villedieu-les-Poêles,50,48.8340495,-1.225559,True
+87733071,SNF,Saint-Nom-la-Bretèche Forêt de Marly T13,Saint-Nom-la-Bretèche Forêt de Marly T13,78,,,True
+87761841,DIE,Die,Die,26,44.7582549,5.3632053,True
+87741694,NAB,Notre-Dame de Briançon,Notre-Dame de Briançon,73,45.5393185,6.4687785,True
+87213249,RHV,Reichshoffen,Reichshoffen,67,48.9310582,7.658132,True
+87757526,SRV,Saint-Raphaël Valescure,Saint-Raphaël Valescure,83,43.42356,6.769083,True
+87295006,MBG,Maubeuge,Maubeuge,59,50.27298,3.96677,True
+87396895,RTD,Clermont La Rotonde,Clermont La Rotonde,63,45.7680954,3.0909704,True
+87396556,LSG,Laigné - Saint-Gervais,Laigné - Saint-Gervais,72,47.8740074,0.2172097,True
+87184556,CFT,Colombier-Fontaine,Colombier-Fontaine,25,47.4554849,6.6890071,True
+87313106,PIQ,Picquigny,Picquigny,80,49.9461557,2.1432765,True
+87491209,SMS,Saint-Mariens - Saint-Yzan,Saint-Mariens - Saint-Yzan,33,45.139072,-0.3917824,True
+87276345,DEU,Deuil - Montmagny,Deuil - Montmagny,95,48.97589,2.33785,True
+87751081,MBC,Marseille Blancarde,Marseille Blancarde,13,43.29614391,5.406559,True
+87342188,MUI,Maroeuil,Maroeuil,62,50.322603,2.6983279,True
+87721415,CZM,Chazay - Marcilly,Chazay - Marcilly,69,45.8729618,4.7252221,True
+87545483,BIH,Breuillet - Bruyères-le-Châtel,Breuillet - Bruyères-le-Châtel,91,48.577228,2.191721,True
+87718122,BYB,Byans-sur-Doubs,Byans-sur-Doubs,25,47.1185334,5.8520589,True
+87481432,GOE,Gorges,Gorges,44,47.1001487,-1.3058778,True
+87141010,JAR,Jarville-la-Malgrange,Jarville-la-Malgrange,54,48.6698381,6.2024643,True
+87783001,MAU,Millau,Millau,12,44.102344,3.07457,True
+87491225,GGT,Gauriaguet,Gauriaguet,33,45.0542936,-0.3992689,True
+87345124,PSJ,Pont de Sallaumines,Pont de Sallaumines,62,50.4157922,2.8632044,True
+87595892,VPD,Villefranche-du-Périgord,Villefranche-du-Périgord,24,44.6270124,1.0490908,True
+87745000,BGD,Bellegarde-sur-Valserine,Bellegarde-sur-Valserine,01,46.109425,5.823483,True
+87590372,CTB,Châteaubriant,Châteaubriant,44,47.7175212,-1.3715152,False
+87184242,TCS,Trois Chênes,Trois Chênes,90,47.6480822,6.8462281,True
+87681635,CEX,Le Coudray-Montceaux,Le Coudray-Montceaux,91,48.5661679,2.4924649,True
+87741231,CSK,Chamousset,Chamousset,73,45.5575744,6.2067432,True
+87393439,GAQ,Garancières - La Queue,Garancières - La Queue,78,48.8106338,1.7647546,True
+87345025,LNS,Lens,Lens,62,50.426818,2.828254,True
+87722579,ESN,Estressin,Estressin,38,45.540285,4.868273,True
+87571547,NPP,Neuillé-Pont-Pierre,Neuillé-Pont-Pierre,37,47.5580135,0.5649155,True
+87172023,NOU,Nouzonville,Nouzonville,08,49.8120125,4.7428155,True
+87543041,CVY,Chevilly,Chevilly,45,48.0266215,1.8793013,True
+87413344,BTB,Bréauté - Beuzeville,Bréauté - Beuzeville,76,49.603396,0.417489,True
+87144410,ARH,Arches,Arches,88,48.1198133,6.5283085,True
+87411801,MVE,Montville,Montville,76,49.551284,1.070046,True
+87571240,SPC,Saint-Pierre-des-Corps,Saint-Pierre-des-Corps,37,47.386099,0.72355,True
+87545111,MWW,Monnerville,Monnerville,91,48.3484915,2.0320595,True
+87342048,ACT,Achiet-le-Grand,Achiet-le-Grand,62,50.1317525,2.780168,True
+87212126,SFX,Stephansfeld,Stephansfeld,67,48.7175872,7.7045946,True
+87677120,SJZ,Saint-Jean-de-Luz - Ciboure,Saint-Jean-de-Luz - Ciboure,64,43.385838,-1.66122,True
+87478057,CUG,Combourg,Combourg,35,48.41609,-1.72792,True
+87381848,ARW,Argenteuil,Argenteuil,95,48.94686,2.25727,True
+87271411,ABM,Aulnay-sous-Bois,Aulnay-sous-Bois,93,48.93179,2.49431,True
+87116293,VAI,Vaires - Torcy,Vaires - Torcy,77,48.874953,2.639986,True
+87271460,RSY,Aéroport Charles de Gaulle 1,Aéroport Charles de Gaulle 1,93,49.00956,2.56135,True
+87393041,PDM,Pont de l'Alma,Pont de l'Alma,75,48.8625705,2.3010287,True
+87281899,HSL,Haussmann Saint-Lazare,Haussmann Saint-Lazare,75,48.87478,2.32862,True
+87276113,CLY,Chantilly - Gouvieux,Chantilly - Gouvieux,60,49.18724,2.45979,True
+87116012,GZT,Gretz-Armainvilliers,Gretz-Armainvilliers,77,48.74544,2.728824,True
+87116137,LON,Longueville,Longueville,77,48.513703,3.249822,True
+87172007,CMZ,Charleville-Mézières,Charleville-Mézières,08,49.767915,4.724952,True
+87116616,IAC,Isles - Armentières - Congis,Isles - Armentières - Congis,77,48.9980994,3.0072998,True
+87682005,MEL,Melun,Melun,77,48.527662,2.655404,True
+87393413,VEP,Villepreux - Les Clayes,Villepreux - Les Clayes,78,48.8239168,1.9930652,True
+87113217,NSY,Noisy-le-Sec,Noisy-le-Sec,93,48.896288,2.459306,True
+87116269,GCM,Guérard - La Celle-sur-Morin,Guérard - La Celle-sur-Morin,77,48.810588,2.954783,True
+87386425,MLF,Maisons-Laffitte,Maisons-Laffitte,78,48.9456394,2.1443153,True
+87141291,NCH,Neufchâteau,Neufchâteau,88,48.3583428,5.6904018,True
+87116228,MLB,Marles-en-Brie,Marles-en-Brie,77,48.733976,2.868099,True
+87337980,SOL,Saint-Ouen-l'Aumône Liesse,Saint-Ouen-l'Aumône Liesse,95,49.0338707,2.1279345,True
+87286542,TRG,Tourcoing,Tourcoing,59,50.71683,3.16804,True
+87215012,SBG,Sarrebourg,Sarrebourg,57,48.73808,7.05285,True
+87343004,VSN,Valenciennes,Valenciennes,59,50.363259,3.517115,True
+87296012,LAO,Laon,Laon,02,49.57061,3.62443,True
+87192401,ASM,Ars-sur-Moselle,Ars-sur-Moselle,57,49.0744745,6.0776461,True
+87313304,CDO,Clermont de l'Oise,Clermont de l'Oise,60,49.38531,2.41767,True
+87276485,BOF,Bouffémont - Moisselles,Bouffémont - Moisselles,95,49.04514,2.32272,True
+87276006,CLH,Creil,Creil,60,49.263757,2.4692439,True
+87113712,VDF,Val de Fontenay,Val de Fontenay,94,48.854238,2.489097,True
+87682146,CBV,Combs-la-Ville - Quincy,Combs-la-Ville - Quincy,77,48.667179,2.547798,True
+87276261,SUR,Survilliers - Fosses,Survilliers - Fosses,95,49.09961,2.52527,True
+87576025,RMA,Romorantin-Lanthenay,Romorantin-Lanthenay,41,47.3554468,1.7390137,True
+87271122,EPV,Épinay - Villetaneuse,Épinay - Villetaneuse,93,48.95838,2.32865,True
+87271148,EYS,Épinay-sur-Seine,Épinay-sur-Seine,93,48.9542084,2.3026142,True
+87164798,LPN,La Plaine Stade de France - Saint-Denis - Aubervilliers,La Plaine Stade de France - Saint-Denis - Aubervilliers,93,48.91839,2.36257,True
+87574558,VDM,Vendôme,Vendôme,41,47.8021498,1.0678728,True
+87681007,COE,Corbeil-Essonnes,Corbeil-Essonnes,91,48.61403,2.47401,True
+87382499,CYC,Cergy Saint-Christophe,Cergy Saint-Christophe,95,49.0496151,2.0343975,True
+87381590,MTQ,Mantes Station,Mantes Station,78,48.98366,1.71581,True
+87741645,ALV,Albertville,Albertville,73,45.672977,6.383167,True
+87732008,VHY,Vichy,Vichy,03,46.126979,3.430448,True
+87765826,ENR,Entraigues-sur-la-Sorgue,Entraigues-sur-la-Sorgue,84,44.0054278,4.9226971,True
+87191700,JOF,Jœuf,Jœuf,54,49.2250083,6.0177021,True
+87699223,BAE,Base Aérienne,Base Aérienne,41,47.320184,1.681869,True
+87345447,AAB,Aubigny-au-Bac,Aubigny-au-Bac,59,50.2685315,3.158706,True
+87615005,ALB,Albi,Albi,81,43.92238,2.137958,True
+87486324,BNZ,Bournezeau,Bournezeau,85,46.6518258,-1.1806169,True
+87476002,LRT,Lorient Bretagne Sud,Lorient Bretagne Sud,56,47.755597,-3.366221,True
+87775361,XGE,Saint-Geniès-de-Malgoirès,Saint-Geniès-de-Malgoirès,30,43.9501684,4.2149416,True
+87592667,ASV,Aixe-sur-Vienne,Aixe-sur-Vienne,87,45.7965002,1.1456892,True
+87734335,MNR,Monistrol-d'Allier,Monistrol-d'Allier,43,44.9696648,3.6500424,True
+87721332,VIS,Villefranche-sur-Saône,Villefranche-sur-Saône,69,45.9845,4.72077,True
+87595124,TIV,Thiviers,Thiviers,24,45.418965,0.921348,True
+87545657,AUN,Auneau,Auneau,28,48.4458242,1.77998,True
+87681395,BFX,Le Bras de Fer,Le Bras de Fer,91,48.623287,2.450625,True
+87545178,BSO,Bouray,Bouray,91,48.533149,2.290596,True
+87784728,OLE,Olette - Canaveilles,Olette - Canaveilles,66,42.55472,2.2719309,True
+87342436,BII,La Bassée - Violaines,La Bassée - Violaines,59,50.52799,2.80482,True
+87682203,BJR,Bois-le-Roi,Bois-le-Roi,77,48.475567,2.691606,True
+87545731,BOJ,Bonneval,Bonneval,28,48.1862958,1.3861845,True
+87775098,MHU,Milhaud,Milhaud,30,43.7884886,4.3033268,True
+87781534,MNP,Montpaon,Montpaon,12,43.8685236,3.1097221,True
+87783308,LMR,Le Monastier-Pin-Moriès,Le Monastier-Pin-Moriès,48,44.5089682,3.252057,True
+87783654,AEN,Allenc,Allenc,48,44.541296,3.6638926,True
+87764357,BLN,Bollène La Croisière,Bollène La Croisière,84,44.271525,4.707908,True
+87765420,MVG,Morières-lès-Avignon,Morières-lès-Avignon,84,43.9414696,4.9082052,True
+87775833,AIA,Aimargues,Aimargues,30,43.6786107,4.2082933,True
+87471516,LCK,Les Lacs,Les Lacs,35,48.1094359,-1.3208165,True
+87286005,LLF,Lille Flandres,Lille Flandres,59,50.636577,3.06987,True
+87696088,BEW,Briare,Briare,45,47.6464312,2.7337154,True
+87696633,FEZ,Flez-Cuzy - Tannay,Flez-Cuzy - Tannay,58,47.3630583,3.6149926,True
+87574111,CFX,Chaingy Fourneaux Plage,Chaingy Fourneaux Plage,45,47.8770705,1.782422,True
+87747451,BNU,Brignoud,Brignoud,38,45.26245,5.901472,True
+87393546,BSI,Bièvres,Bièvres,91,48.7513289,2.2157279,True
+87471003,RES,Rennes,Rennes,35,48.103517,-1.672744,True
+87581009,BXJ,Bordeaux Saint-Jean,Bordeaux Saint-Jean,33,44.825873,-0.556697,True
+87387092,BUE,Bueil,Bueil,27,48.9253816,1.4435896,True
+87696310,VVR,Villeneuve-sur-Allier,Villeneuve-sur-Allier,03,46.6592073,3.2469557,True
+87184572,ISD,L'Isle-sur-le-Doubs,L'Isle-sur-le-Doubs,25,47.4473777,6.5812614,True
+87645192,LRG,Le Rouget,Le Rouget,15,44.8565391,2.2355043,True
+87722587,VIE,Vienne,Vienne,38,45.521207,4.874211,True
+87747220,LGL,Le Grand-Lemps,Le Grand-Lemps,38,45.3966261,5.4231117,True
+87574640,SDV,Saint-Amand-Longpré,Saint-Amand-Longpré,41,47.693141,1.0119896,True
+87345561,CAU,Caudry,Caudry,59,50.11146,3.40983,True
+87746701,CED,Chedde,Chedde,74,45.9263464,6.7197662,True
+87753715,SUT,Sénas,Sénas,13,43.7409571,5.0733645,True
+87193664,KHS,Kalhausen,Kalhausen,57,49.0350585,7.125352,True
+87734194,PCC,Parent - Coudes - Champeix,Parent - Coudes - Champeix,63,45.6139737,3.2178245,True
+87734723,VOE,Vorey,Vorey,43,45.1829093,3.911422,True
+87171595,RAG,Rilly-la-Montagne,Rilly-la-Montagne,51,49.1664524,4.0408608,True
+87696617,CBY,Corbigny,Corbigny,58,47.254807,3.6773226,True
+87747568,SGC,Saint-Georges-de-Commiers,Saint-Georges-de-Commiers,38,45.0437667,5.7017874,True
+87746768,BHS,Les Bossons,Les Bossons,74,45.9067455,6.8391969,True
+87753202,SHY,Saint-Chamas,Saint-Chamas,13,43.5511577,5.0402963,True
+87576348,UCY,Urçay - La Perche,Urçay - La Perche,18,46.6295123,2.5865708,True
+87313726,MAI,Marseille-en-Beauvaisis,Marseille-en-Beauvaisis,60,49.5709066,1.9546349,True
+87381194,CHR,Chars,Chars,95,49.16268,1.93671,True
+87386763,EPO,Épône - Mézières,Épône - Mézières,78,48.9631225,1.8085932,True
+87391011,PMP,Paris Montparnasse,Paris Montparnasse,75,48.841172,2.320514,False
+87484204,CCE,Chalonnes-sur-Loire,Chalonnes-sur-Loire,49,47.34306,-0.74306,True
+87746206,PGY,Pringy,Pringy,74,45.9395239,6.1232736,True
+87393702,MPW,Massy TGV,Massy TGV,91,48.725758,2.261254,True
+87745380,PJY,Pougny - Chancy,Pougny - Chancy,01,46.1446674,5.9613614,True
+87313478,CHL,Chaulnes,Chaulnes,80,49.8076201,2.8011421,True
+87576405,SGP,Saint-Germain-du-Puy,Saint-Germain-du-Puy,18,47.0965233,2.4846102,True
+87743146,AAI,Ambronay - Priay,Ambronay - Priay,01,46.0115941,5.3382579,True
+87484246,CHE,Chemillé-en-Anjou,Chemillé-en-Anjou,49,47.217748,-0.731989,True
+87721225,COF,Collonges - Fontaines,Collonges - Fontaines,69,45.8291102,4.8466136,True
+87755371,CNS,Carnoules,Carnoules,83,43.2974104,6.1862531,True
+87276691,CPE,Compiègne,Compiègne,60,49.422005,2.823679,True
+87484139,VXB,Le Vieux Briollay,Le Vieux Briollay,49,47.5739696,-0.4829396,True
+87174003,CMP,Châlons-en-Champagne,Châlons-en-Champagne,51,48.955252,4.348656,True
+87734715,SWC,Saint-Vincent le Château,Saint-Vincent le Château,43,45.1488794,3.9186273,True
+87723767,MXC,Marlieux - Châtillon,Marlieux - Châtillon,01,46.0638765,5.0731097,True
+87611897,CTN,Castelsarrasin,Castelsarrasin,82,44.0403503,1.1143954,True
+87723502,CLP,Crépieux la Pape,Crépieux la Pape,69,45.8038348,4.8922918,True
+87722439,GIC,Givors Canal,Givors Canal,69,45.5957662,4.7725754,True
+87721001,LVI,Lyon Vaise,Lyon Vaise,69,45.779938,4.80396,True
+87271536,DAM,Dammartin - Juilly - Saint-Mard,Dammartin - Juilly - Saint-Mard,77,49.03219,2.69887,True
+87721555,LTY,Lentilly,Lentilly,69,45.82163,4.667103,True
+87213256,NLB,Niederbronn-les-Bains,Niederbronn-les-Bains,67,48.9523989,7.6341348,True
+87722298,LSB,Grigny le Sablon,Grigny le Sablon,69,45.6072601,4.796144,True
+87761262,LOL,Loriol-sur-Drôme,Loriol-sur-Drôme,26,44.7544973,4.8171679,True
+87721290,QUX,Quincieux,Quincieux,69,45.9068815,4.7785643,True
+87721563,FSL,Fleurieux-sur-l'Arbresle,Fleurieux-sur-l'Arbresle,69,45.8449944,4.6603815,True
+87746370,CLU,Cluses,Cluses,74,46.061447,6.582663,True
+87721506,ECY,Ecully - Tassin,Ecully - Tassin,69,45.7657162,4.7795238,True
+87721738,DLU,Dommartin - Lissieu,Dommartin - Lissieu,69,45.8397811,4.7344831,True
+87718338,RNH,Ranchot,Ranchot,39,47.1525633,5.7246607,True
+87721753,CDZ,Châtillon d'Azergues,Châtillon d'Azergues,03,45.8751815,4.6451164,True
+87281006,DKQ,Dunkerque,Dunkerque,59,51.03047,2.368961,True
+87718411,NOV,Novillars,Novillars,25,47.2839618,6.1327011,True
+87718155,AOI,Arbois,Arbois,39,46.912509,5.7648273,True
+87713065,MLI,Mâlain,Mâlain,21,47.3270025,4.8105362,True
+87694851,XAN,Saint-Agnan,Saint-Agnan,71,46.5020038,3.8788002,True
+87715417,SLJ,Saint-Laurent-en-Grandvaux,Saint-Laurent-en-Grandvaux,39,46.5747975,5.9512119,True
+87713073,BSB,Blaisy-Bas,Blaisy-Bas,21,47.3734427,4.7410755,True
+87413542,FEC,Fécamp,Fécamp,76,49.759277,0.375287,True
+87171710,CIM,Courcy - Brimont,Courcy - Brimont,51,49.3296003,4.0134623,True
+87683615,CAI,Champs - Saint-Bris,Champs - Saint-Bris,89,47.7388182,3.6034756,True
+87713834,SJQ,Saint-Julien - Clénay,Saint-Julien - Clénay,21,47.4060132,5.1281864,True
+87713537,CGO,Corgoloin,Corgoloin,21,47.0841982,4.9171231,True
+87271015,SDE,Saint-Denis,Saint-Denis,93,48.9354933,2.3459524,True
+87696336,BSS,Bessay-sur-Allier,Bessay-sur-Allier,03,46.4435849,3.3606477,True
+87713412,DLE,Dole,Dole,39,47.096084,5.488105,True
+87682443,VUN,Vulaines-sur-Seine - Samoreau,Vulaines-sur-Seine - Samoreau,77,48.4305468,2.7531008,True
+87684241,FFY,Ferrières - Fontenay,Ferrières - Fontenay,45,48.0964767,2.7726332,True
+87281105,BEG,Bergues,Bergues,59,50.96901,2.42574,True
+87696161,TAY,Tracy - Sancerre,Tracy - Sancerre,58,47.3376398,2.8804164,True
+87694158,MWB,Mesvres,Mesvres,71,46.862799,4.2449659,True
+87485003,LRE,La Rochelle,La Rochelle,17,46.15269,-1.145305,True
+87296632,FER,La Fère,La Fère,02,49.65802,3.36981,True
+87684100,MKN,Montigny-sur-Loing,Montigny-sur-Loing,77,48.33661,2.738561,True
+87681361,EVR,Évry Val de Seine,Évry Val de Seine,91,48.63442,2.45209,True
+87276501,PRQ,Presles Courcelles,Presles Courcelles,95,49.11346,2.28759,True
+87757500,FRJ,Fréjus,Fréjus,83,43.432032,6.732941,True
+87684118,BOM,Bourron-Marlotte - Grez,Bourron-Marlotte - Grez,77,48.3326884,2.6924552,True
+87645176,PEK,Pers,Pers,15,44.887025,2.2403887,True
+87683631,VCL,Vincelles,Vincelles,89,47.7042304,3.6284728,True
+87381871,FMY,La Frette - Montigny,La Frette - Montigny,95,48.98035,2.18019,True
+87645150,WCV,Lacapelle-Viescamp,Lacapelle-Viescamp,15,44.9202424,2.2654689,True
+87342006,BET,Béthune,Béthune,62,50.52144,2.64055,True
+87447110,CCS,Coutances,Coutances,50,49.042928,-1.441726,True
+87447680,GRV,Granville,Granville,50,48.838456,-1.587757,True
+87641357,VLL,Vallon-en-Sully,Vallon-en-Sully,03,46.5363284,2.6107538,True
+87775213,GNC,Génolhac,Génolhac,30,44.3471626,3.9516407,True
+87611673,GRI,Grisolles,Grisolles,82,43.8269619,1.3023292,True
+87611939,KPL,Lardenne,Lardenne,31,43.5966262,1.3839252,True
+87611087,MXA,Martres-Tolosane,Martres-Tolosane,31,43.1962069,1.0167558,True
+87613232,CRZ,Cransac,Cransac,12,44.522951,2.2718666,True
+87743328,VEU,Villereversure,Villereversure,01,46.1944145,5.3977089,True
+87725846,PLF,Polliat,Polliat,01,46.24464,5.1238268,True
+87611459,LIX,La Ville-Dieu-du-Temple,La Ville-Dieu-du-Temple,82,44.0355186,1.2149646,True
+87582619,GUJ,Gujan-Mestras,Gujan-Mestras,33,44.640454,-1.06906,True
+87597740,LVF,Lavaufranche,Lavaufranche,23,46.3212869,2.2700972,True
+87576728,MNN,Mennetou-sur-Cher,Mennetou-sur-Cher,41,47.2688835,1.8765238,True
+87295063,HIQ,Hirson,Hirson,02,49.91455,4.08432,True
+87751206,SIO,Sisteron,Sisteron,04,44.1902025,5.9465888,True
+87193540,HDC,Hundling,Hundling,57,49.1066949,6.9775394,True
+87594614,WBW,Le Burg,Le Burg,19,45.2157957,1.4298135,True
+87597625,MRR,Marsac,Marsac,23,46.0941348,1.585556,True
+87594564,LQR,Les Quatre-Routes-du-Lot,Les Quatre-Routes-du-Lot,46,44.9974864,1.6439067,True
+87732404,GAN,Gannat,Gannat,03,46.0975964,3.2047514,True
+87595223,RZA,Razac-sur-l'Isle,Razac-sur-l'Isle,24,45.1659287,0.5992849,True
+87611517,LHT,Andorre – l’Hospitalet,Andorre – l’Hospitalet,09,42.5894535,1.8002635,True
+87597104,LOT,Lothiers,Lothiers,36,46.6946801,1.5629763,True
+87763557,LEE,L'Argentière Les Écrins,L'Argentière Les Écrins,05,44.7909802,6.5564162,True
+87611525,MLX,Mérens-les-Vals,Mérens-les-Vals,09,42.6594883,1.8371278,True
+87592063,BKX,Brignac,Brignac,87,45.8635812,1.4406315,True
+87746248,GTC,Groisy - Thorens-Glières,Groisy - Thorens-Glières,74,46.0111205,6.17568,True
+87584151,LMH,Lamothe-Montravel,Lamothe-Montravel,24,44.8537384,0.0215683,True
+87581835,VIO,Villenave-d'Ornon,Villenave-d'Ornon,33,44.7683428,-0.5472574,True
+87396366,LSZ,La Suze-sur-Sarthe,La Suze-sur-Sarthe,72,47.8919891,0.0266367,True
+87694778,CHF,Chauffailles,Chauffailles,71,46.2074552,4.3454278,True
+87683243,JOI,Joigny,Joigny,89,47.973843,3.393082,True
+87584532,EGE,Les Églisottes-et-Chalaures,Les Églisottes-et-Chalaures,33,45.0942299,-0.0437576,True
+87576454,NDS,Nérondes,Nérondes,18,46.9996897,2.8221695,True
+87576199,PUZ,Pruniers-en-Sologne,Pruniers-en-Sologne,41,47.313174,1.6722045,True
+87396333,LFQ,Le Theil - La Rouge,Le Theil - La Rouge,61,48.2672964,0.6944581,True
+87581710,PPY,Parempuyre,Parempuyre,33,44.9447032,-0.6193396,True
+87581181,LXN,Ludon-Médoc,Ludon-Médoc,33,44.9744015,-0.6118009,True
+87581231,MUL,Moulis - Listrac,Moulis - Listrac,33,45.0840273,-0.7447365,True
+87116210,TOU,Tournan-en-Brie,Tournan-en-Brie,77,48.7393088,2.75957134,True
+87212365,ZHM,Sessenheim,Sessenheim,67,48.7964628,7.9893194,True
+87574152,BLJ,Baule,Baule,45,47.8117535,1.668127,True
+87574699,NDA,Notre-Dame-d'Oé,Notre-Dame-d'Oé,37,47.4595668,0.7070252,True
+87571653,RVQ,Rivarennes,Rivarennes,37,47.2677425,0.3618999,True
+87756056,NIC,Nice,Nice,06,43.704556,7.261904,True
+87575118,ORE,Les Ormes,Les Ormes,86,46.9718269,0.6079476,True
+87571554,SPN,Saint-Paterne-Racan,Saint-Paterne-Racan,37,47.6042003,0.4783289,True
+87571448,KYY,Courcay - Tauxigny,Courcay - Tauxigny,37,47.2377076,0.867867,True
+87741223,SPA,Saint-Pierre-d'Albigny,Saint-Pierre-d'Albigny,73,45.557397,6.156151,True
+87575845,LLX,Lussac-les-Châteaux,Lussac-les-Châteaux,86,46.4051106,0.7186918,True
+87396325,LFB,La Ferté-Bernard,La Ferté-Bernard,72,48.1864887,0.639711,True
+87775254,LGC,Grand-Combe la Pise,Grand-Combe la Pise,30,44.2098159,4.0329591,True
+87571612,DRY,Druye,Druye,37,47.3070191,0.5354805,True
+87342238,LLL,Lillers,Lillers,62,50.56163,2.47903,True
+87571851,SCO,Saint-Genouph,Saint-Genouph,37,47.3710109,0.5969502,True
+87574327,VVU,Veuves - Monteaux,Veuves - Monteaux,41,47.4756722,1.1238749,True
+87491290,LLY,Loulay,Loulay,17,46.0435165,-0.5017525,True
+87444380,BWB,Blonville-sur-Mer - Benerville,Blonville-sur-Mer - Benerville,14,49.3313919,0.0356856,True
+87485474,CCK,La Crèche,La Crèche,79,46.3604181,-0.2962081,True
+87753566,CRR,Carry-le-Rouet,Carry-le-Rouet,13,43.336592,5.153594,True
+87393298,LPE,Le Perray-en-Yvelines,Le Perray-en-Yvelines,78,48.6933406,1.856057,True
+87485508,LHY,La Mothe-Saint-Héray,La Mothe-Saint-Héray,79,46.3807592,-0.1298415,True
+87396291,MLG,Montfort-le-Gesnois,Montfort-le-Gesnois,72,48.0405657,0.4064237,True
+87194001,LWY,Longwy,Longwy,54,49.5129923,5.7696358,True
+87611483,LTL,Latour-de-Carol - Enveitg,Latour-de-Carol - Enveitg,66,42.4590464,1.9045027,True
+87576884,VSC,Villefranche-sur-Cher,Villefranche-sur-Cher,41,47.2948034,1.768094,True
+87484386,VDE,Varades - Saint-Florent le Vieil,Varades - Saint-Florent le Vieil,44,47.3744471,-1.019712,True
+87562421,AUL,Aulnat Aéroport,Aulnat Aéroport,63,45.7920571,3.1614332,True
+87393108,MDN,Meudon,Meudon,92,48.8147527,2.2410999,True
+87481804,CNQ,Couëron,Couëron,44,47.2220412,-1.7235014,True
+87574194,MER,Mer,Mer,41,47.70586,1.506373,True
+87478065,BMV,Bonnemain,Bonnemain,35,48.4764049,-1.7654125,True
+87476416,PLC,Plouharnel - Carnac,Plouharnel - Carnac,56,47.6042943,-3.1184482,True
+87718833,MCD,Mouchard,Mouchard,39,46.976911,5.799644,True
+87474296,GMU,Guimiliau,Guimiliau,29,48.4852675,-3.9996163,True
+87382879,MFL,Montreuil,Montreuil,78,48.8067323,2.1511693,True
+87476689,MLO,Malansac,Malansac,56,47.6756185,-2.2961796,True
+87747592,MDC,Monestier-de-Clermont,Monestier-de-Clermont,38,44.911996,5.6339702,True
+87381830,MHD,Meulan - Hardricourt,Meulan - Hardricourt,78,49.00564,1.90213,True
+87172155,MNH,Mohon,Mohon,08,49.752584,4.73313,True
+87481366,MCC,Machecoul,Machecoul,44,46.9905038,-1.8227524,True
+87473199,PNR,Plounérin,Plounérin,22,48.5816298,-3.5682311,True
+87734871,MIA,Massiac - Blesle,Massiac - Blesle,15,45.2537695,3.1965518,True
+87473835,PXH,Pontrieux Halte,Pontrieux Halte,22,48.6980361,-3.1644959,True
+87471201,FGL,Fougeray - Langon,Fougeray - Langon,35,47.7297956,-1.8510921,True
+87471102,BTU,Breteil,Breteil,35,48.1405713,-1.8972095,True
+87471029,VRN,Vern-sur-Seiche,Vern-sur-Seiche,35,48.0469707,-1.5966524,True
+87473165,BIB,Belle-Isle - Bégard,Belle-Isle - Bégard,22,48.5935901,-3.3228532,True
+87415141,LEV,Longueville-sur-Scie,Longueville-sur-Scie,76,49.7917558,1.1103434,True
+87645481,MUR,Murat,Murat,15,45.1091483,2.8696045,True
+87444216,SPD,Saint-Pierre-sur-Dives,Saint-Pierre-sur-Dives,14,49.0231057,-0.0405855,True
+87681486,MSN,Maisse,Maisse,91,48.39304,2.39312,True
+87444059,ADR,Audrieu,Audrieu,14,49.2161315,-0.5960138,True
+87142109,TGL,Lorraine TGV,Lorraine TGV,57,48.947773,6.169838,True
+87745620,PEG,Perrignier,Perrignier,74,46.303259,6.4249208,True
+87387183,BLR,Beaumont-le-Roger,Beaumont-le-Roger,27,49.0741722,0.7727865,True
+87393645,GBI,Gravigny Balizy,Gravigny Balizy,91,48.6851718,2.317846,True
+87594275,MYC,Meymac,Meymac,19,45.5302313,2.1640905,True
+87313486,NES,Nesle,Nesle,80,49.7639147,2.9089882,True
+87645184,BCL,Boisset,Boisset,15,44.786038,2.2497669,True
+87783340,CNT,Campagnac - Saint-Geniez,Campagnac - Saint-Geniez,12,44.4219559,3.0664008,True
+87396044,MBZ,Montbizot,Montbizot,72,48.151513,0.1908607,True
+87352047,PVT,Champagnole Paul-Émile Victor,Champagnole Paul-Émile Victor,39,46.742483,5.9198128,True
+87396051,TEI,Teillé,Teillé,72,48.1812341,0.1913397,True
+87343475,LOU,Lourches,Lourches,59,50.3102834,3.3434016,True
+87313098,AYS,Ailly-sur-Somme,Ailly-sur-Somme,80,49.92838,2.20059,True
+87741421,AGQ,Aiguebelette-le-Lac,Aiguebelette-le-Lac,73,45.5363048,5.8131468,True
+87342089,RUX,Rœux,Rœux,62,50.3034404,2.8950172,True
+87734244,BLM,Brassac-les-Mines - Sainte-Florine,Brassac-les-Mines - Sainte-Florine,63,45.414246,3.330167,True
+87343418,PRT,Prouvy - Thiant,Prouvy - Thiant,59,50.3167933,3.4610838,True
+87345389,BAK,Bouchain,Bouchain,59,50.2780892,3.3319096,True
+87476770,DRF,Drefféac,Drefféac,44,47.4817568,-2.0503661,True
+87295709,SAW,Sains-du-Nord,Sains-du-Nord,59,50.0889485,4.0016955,True
+87345272,MHN,Meurchin,Meurchin,62,50.4970516,2.8930903,True
+87543009,ORL,Orléans,Orléans,45,47.90796,1.904666,True
+87683128,CSY,Champigny sur Yonne,Champigny sur Yonne,89,48.3237418,3.1305718,True
+87751743,PHE,La Penne-sur-Huveaune,La Penne-sur-Huveaune,13,43.2846765,5.5155698,True
+87393421,PGS,Plaisir - Grignon,Plaisir - Grignon,78,48.8316509,1.9432973,True
+87715102,AND,Andelot-en-Montagne,Andelot-en-Montagne,39,46.8594671,5.923584,True
+87722678,PGR,Le Péage-de-Roussillon,Le Péage-de-Roussillon,38,45.371797,4.795402,True
+87713859,IST,Is-sur-Tille,Is-sur-Tille,21,47.520454,5.129481,True
+87328195,TYQ,Thésée,Thésée,41,47.322271,1.3120568,True
+87286500,PHA,Phalempin,Phalempin,59,50.5154,3.0199,True
+87342261,HMA,Ham-en-Artois,Ham-en-Artois,62,50.5900401,2.4657764,True
+87721357,BVL,Belleville sur Sâone,Belleville sur Sâone,69,46.111917,4.729028,True
+87396358,VOI,Voivres-lès-le-Mans,Voivres-lès-le-Mans,72,47.9304199,0.0853466,True
+87317230,AHH,Auchy-lès-Hesdin,Auchy-lès-Hesdin,62,50.3963631,2.1022448,True
+87324335,HSO,Hirson Écoles,Hirson Écoles,02,49.9288321,4.0861491,True
+87342451,SWM,Salomé,Salomé,59,50.5414529,2.8366078,True
+87718619,MTO,Morteau,Morteau,25,47.053727,6.604653,True
+87595165,CEQ,Château-l'Évêque,Château-l'Évêque,24,45.2445887,0.6882106,True
+87583849,RUG,Ruffec,Ruffec,16,46.0305185,0.1902055,True
+87381244,GIS,Gisors,Gisors,27,49.28512,1.78455,True
+87694141,ETG,Étang-sur-Arroux,Étang-sur-Arroux,71,46.8679082,4.1838415,True
+87611343,PMS,Pamiers,Pamiers,09,43.116207,1.619451,True
+87682526,POP,Ponthierry - Pringy,Ponthierry - Pringy,77,48.534933,2.54459,True
+87297523,HAC,Hachette,Hachette,59,50.1582852,3.7434526,True
+87317180,BWM,Brimeux,Brimeux,62,50.4470409,1.8313826,True
+87316687,HTB,Le Haut Banc,Le Haut Banc,62,50.8163364,1.7722209,True
+87313544,CYO,Cramoisy,Cramoisy,60,49.256625,2.40489,True
+87281139,CRD,Cassel,Cassel,59,50.7875916,2.4599722,True
+87781005,BZS,Béziers,Béziers,34,43.33633,3.218873,True
+87213744,WMG,Wingen-sur-Moder,Wingen-sur-Moder,67,48.9200646,7.3811114,True
+87214288,OBE,Obernai,Obernai,67,48.46219,7.48881,True
+87287102,LZS,Lezennes,Lezennes,59,50.6205699,3.0986481,True
+87295774,DMR,Dompierre-sur-Helpe,Dompierre-sur-Helpe,59,50.146144,3.871144,True
+87672279,PUO,Puyoô,Puyoô,64,43.5245425,-0.9108149,True
+87295667,ORZ,Ors,Ors,59,50.1031718,3.626754,True
+87286641,FRI,Fretin,Fretin,59,50.5599254,3.1495133,True
+87342071,BLX,Boisleux-au-Mont,Boisleux-au-Mont,62,50.2104665,2.771855,True
+87281311,GSV,Grande-Synthe,Grande-Synthe,59,51.0026884,2.3133547,True
+87281113,ESQ,Esquelbecq,Esquelbecq,59,50.8894369,2.4121536,True
+87781609,BED,Bédarieux,Bédarieux,34,43.6086972,3.1495688,True
+87654798,ROK,Rosa Parks,Rosa Parks,75,48.89602,2.37397,True
+87172080,RVI,Revin,Revin,08,49.938756,4.642536,True
+87741496,FII,Les Abrets - Fitilieu,Les Abrets - Fitilieu,38,45.5421091,5.5754876,True
+87381129,CLL,Clichy - Levallois,Clichy - Levallois,75,48.89678,2.2982,True
+87386300,LWA,Les Vallées,Les Vallées,92,48.913408,2.257909,True
+87213660,KUR,Kurtzenhouse,Kurtzenhouse,67,48.741862,7.8130449,True
+87214114,KEN,Kogenheim,Kogenheim,67,48.3389532,7.5353085,True
+87214502,LGH,Lingolsheim,Lingolsheim,67,48.5594092,7.6781143,True
+87784009,PPN,Perpignan,Perpignan,66,42.696292,2.879779,True
+87734202,ISS,Issoire,Issoire,63,45.543884,3.25398,True
+87751230,SAU,Château-Arnoux-Saint-Auban,Château-Arnoux-Saint-Auban,04,44.0615651,5.9973734,True
+87286518,SCN,Seclin,Seclin,59,50.5486319,3.0350084,True
+87214734,FDY,Fouday,Fouday,67,48.4248874,7.1874246,True
+87213462,RTZ,Riedseltz,Riedseltz,67,48.991063,7.962988,True
+87214205,HWL,Scherwiller,Scherwiller,67,48.2869344,7.4301867,True
+87481598,NSE,Nort-sur-Erdre,Nort-sur-Erdre,44,47.4419243,-1.5033645,True
+87212431,SSZ,Seltz,Seltz,67,48.8965635,8.0986724,True
+87487884,MEQ,La Ménitré,La Ménitré,49,47.397422,-0.275818,True
+87212142,MOH,Mommenheim,Mommenheim,67,48.7561587,7.6422273,True
+87212449,MHQ,Munchhausen,Munchhausen,67,48.9237982,8.1409912,True
+87487249,BRS,Bressuire,Bressuire,79,46.8384462,-0.4963269,True
+87734152,SLC,Sarliève - Cournon,Sarliève - Cournon,63,45.7387697,3.1681196,True
+87781088,LEU,Leucate La Franqui,Leucate La Franqui,11,42.9327725,3.0128555,True
+87683227,SJX,Saint-Julien-du-Sault,Saint-Julien-du-Sault,89,48.0269195,3.302688,True
+87212316,LWL,La Wantzenau,La Wantzenau,67,48.6651895,7.8247832,True
+87491357,SJA,Saint-Jean-d'Angély,Saint-Jean-d'Angély,17,45.9407739,-0.5097829,True
+87193342,TET,Teting-sur-Nied,Teting-sur-Nied,57,49.051605,6.6646267,True
+87590356,ERD,Erdre Active,Erdre Active,44,47.282902,-1.544552,True
+87208553,CCL,Casino Lacroix Laval,Casino Lacroix Laval,69,45.7878115,4.7309383,True
+87595769,SOC,Siorac-en-Périgord,Siorac-en-Périgord,24,44.8197409,0.9844566,True
+87481788,LCC,Le Croisic,Le Croisic,44,47.289836,-2.507442,True
+87191692,HOM,Homécourt,Homécourt,54,49.2182988,5.9991714,True
+87683318,SIF,Saint-Florentin - Vergigny,Saint-Florentin - Vergigny,89,47.981058,3.731036,True
+87192229,SWN,Sanry-sur-Nied,Sanry-sur-Nied,57,49.0445991,6.3399775,True
+87192435,ONV,Onville,Onville,54,49.01367,5.97909,True
+87741777,LAY,Landry,Landry,73,45.5741713,6.7338182,True
+87191239,HAY,Hayange,Hayange,57,49.33053,6.07245,True
+87191130,UCK,Uckange,Uckange,57,49.3032605,6.1567735,True
+87192211,CCD,Courcelles-sur-Nied,Courcelles-sur-Nied,57,49.0634035,6.3109926,True
+87415885,RSS,Rosny-sur-Seine,Rosny-sur-Seine,78,48.997287,1.63009,True
+87721530,CRB,Charbonnières-les-Bains,Charbonnières-les-Bains,69,45.782142,4.735912,True
+87592824,SYX,Saint-Yrieix-la-Perche,Saint-Yrieix-la-Perche,87,45.5192516,1.2053608,True
+87761494,STP,Saint-Péray,Saint-Péray,07,44.94771,4.85035,True
+87281444,STO,Saint-Omer,Saint-Omer,62,50.7536204,2.2667624,True
+87182881,THD,Thann Saint-Jacques,Thann Saint-Jacques,68,47.8133155,7.0938473,True
+87546226,LSW,Les Saules,Les Saules,94,48.7454924,2.417366,True
+87182618,WES,Wesserling,Wesserling,68,47.8899651,6.997519,True
+87545517,SXE,Sermaise,Sermaise,91,48.53536,2.06865,True
+87182337,RAH,Rouffach,Rouffach,68,47.9602481,7.312455,True
+87182360,WAH,Walbach,Walbach,68,48.0580062,7.2334758,True
+87182709,BOW,Bollwiller,Bollwiller,68,47.8569694,7.2672555,True
+87734004,CLF,Clermont-Ferrand,Clermont-Ferrand,63,45.778945,3.100543,True
+87116749,VBB,Villiers Montbarbin,Villiers Montbarbin,77,48.8632544,2.8830418,True
+87594499,TUL,Tulle,Tulle,19,45.258725,1.756467,True
+87615773,LPA,Luc-la-Primaube,Luc-la-Primaube,12,44.2913982,2.5544751,True
+87484154,EEF,Étriché - Châteauneuf,Étriché - Châteauneuf,49,47.6567082,-0.4608993,True
+87473116,YFV,Yffiniac,Yffiniac,22,48.4702462,-2.6524629,True
+87144147,BNS,Bains-les-Bains,Bains-les-Bains,88,47.9811282,6.2952683,True
+87476606,VAN,Vannes,Vannes,56,47.665169,-2.75245,True
+87172064,DVI,Deville,Deville,08,49.8796028,4.7072062,True
+87172213,NSM,Nouvion-sur-Meuse,Nouvion-sur-Meuse,08,49.6973135,4.794973,True
+87576447,BNH,Bengy-sur-Craon,Bengy-sur-Craon,18,47.0004698,2.7492361,True
+87171462,BZT,Bazancourt,Bazancourt,51,49.361202,4.173887,True
+87271437,VGL,Vert Galant,Vert Galant,93,48.94467,2.5667,True
+87694000,LCR,Le Creusot,Le Creusot,71,46.807815,4.4304403,True
+87317065,ETA,Étaples - Le Touquet,Étaples - Le Touquet,62,50.51686,1.64231,True
+87382473,ELW,L'Étang-la-Ville,L'Étang-la-Ville,78,48.86822,2.0766932,True
+87611327,VIH,Varilhes,Varilhes,09,43.0415593,1.6284818,True
+87141143,MMT,Mont-sur-Meurthe,Mont-sur-Meurthe,54,48.5599456,6.4496444,True
+87141481,LUD,Ludres,Ludres,54,48.6219545,6.1709118,True
+87723320,VSX,Vénissieux,Vénissieux,69,45.705551,4.888109,True
+87721159,LSP,Lyon Saint-Paul,Lyon Saint-Paul,69,45.76601,4.827057,True
+87672774,GGM,Bedous,Bedous,64,42.99589,-0.60348,True
+87673657,CPQ,Cambo-les-Bains,Cambo-les-Bains,64,43.3656242,-1.3966849,True
+87485185,JAJ,La Jarrie,La Jarrie,17,46.12045,-1.02347,True
+87118257,VUV,Vendeuvre-sur-Barse,Vendeuvre-sur-Barse,10,48.2400686,4.4672135,True
+87701532,TLZ,Trélazé,Trélazé,49,47.45272,-0.4696,True
+87276527,IAP,L'Isle-Adam - Parmain,L'Isle-Adam - Parmain,95,49.11482,2.20976,True
+87184408,MOX,Méroux,Méroux,90,47.58659,6.89903,True
+87313882,HPI,Haute Picardie TGV,Haute Picardie TGV,80,49.859182,2.8319,True
+87784157,SAL,Salses-le-Château,Salses-le-Château,66,42.8356091,2.9174466,True
+87741116,CWX,Chindrieux,Chindrieux,73,45.8034376,5.8468876,True
+87715391,WFP,La Chaumusse - Fort-du-Plasne,La Chaumusse - Fort-du-Plasne,39,46.6048753,5.9613342,True
+87276717,BBI,Bornel - Belle-Église,Bornel - Belle-Église,60,49.19471,2.20717,True
+87215632,OER,Oermingen,Oermingen,67,49.0003724,7.1317322,True
+87742007,MOD,Modane,Modane,73,45.193365,6.658161,True
+87411280,MOT,Motteville,Motteville,76,49.6365717,0.8497988,True
+87382333,CWJ,Chaville Rive Droite,Chaville Rive Droite,92,48.81213,2.18785,True
+87743534,OYO,Oyonnax,Oyonnax,01,46.259742,5.653338,True
+87182352,TKM,Turckheim,Turckheim,68,48.0856288,7.279466,True
+87571828,LGS,Langeais,Langeais,37,47.324114,0.410557,True
+87775353,NOZ,Nozières - Brignon,Nozières - Brignon,30,43.9760134,4.2072916,True
+87715219,GYR,Labergement-Sainte-Marie,Labergement-Sainte-Marie,25,46.77632,6.28011,True
+87746479,SGB,Saint-Gervais-les-Bains Le Fayet,Saint-Gervais-les-Bains Le Fayet,74,45.906423,6.701331,True
+87396218,CIE,Conlie,Conlie,72,48.1272909,-0.0113736,True
+87286427,FOK,La Fontaine,La Fontaine,59,50.5661459,2.9261079,True
+87741280,MEE,Épierre - Saint-Léger,Épierre - Saint-Léger,73,45.457027,6.292521,True
+87144451,RMT,Remiremont,Remiremont,88,48.016363,6.598855,True
+87611855,LWG,Lamagistère,Lamagistère,82,44.1267231,0.8255002,True
+87182410,CEF,Cernay (Haut-Rhin),Cernay (Haut-Rhin),68,47.802,7.1737,True
+87313130,PRM,Pont-Remy,Pont-Remy,80,50.0472341,1.8988404,True
+87182238,ALK,Altkirch,Altkirch,68,47.6270174,7.2392493,True
+87444711,ALN,Alençon,Alençon,61,48.433884,0.098531,True
+87192203,PTE,Peltre,Peltre,57,49.073877,6.2220476,True
+87297051,VWN,Viry-Noureuil,Viry-Noureuil,02,49.6274493,3.2503611,True
+87381905,CYP,Cergy Préfecture,Cergy Préfecture,95,49.03639,2.07982,True
+87745497,ANE,Annemasse,Annemasse,74,46.199222,6.23652,True
+87276188,SNN,Sannois,Sannois,95,48.97016,2.26377,True
+87682252,TMR,Thomery,Thomery,77,48.394462,2.763995,True
+87613893,VRW,Villefranche-de-Rouergue,Villefranche-de-Rouergue,12,44.347498,2.0364594,True
+87576116,MHY,Mehun-sur-Yèvre,Mehun-sur-Yèvre,18,47.1394406,2.2071342,True
+87276618,MOO,Montataire,Montataire,60,49.2510365,2.4362155,True
+87276725,CVK,Chambly,Chambly,60,49.16362,2.24048,True
+87212100,MUM,Mundolsheim,Mundolsheim,67,48.6447732,7.721389,True
+87192468,PMO,Pagny-sur-Moselle,Pagny-sur-Moselle,54,48.9852003,6.0250346,True
+87393884,VEH,Villiers - Neauphle - Pontchartrain,Villiers - Neauphle - Pontchartrain,78,48.81550666129636,1.876934489891097,True
+87618215,VNW,Villenouvelle,Villenouvelle,31,43.4330358,1.661081,True
+87594325,GCC,Gignac - Cressensac,Gignac - Cressensac,46,45.0146074,1.4831648,True
+87296269,BHI,Bohain-en-Vermandois,Bohain-en-Vermandois,02,49.9884143,3.4431289,True
+87756486,MEN,Menton,Menton,06,43.774444,7.4933,True
+87753285,PDL,Pas des Lanciers,Pas des Lanciers,13,43.409655,5.253822,True
+87613398,ALE,Albias,Albias,82,44.0919078,1.4448012,True
+87726331,RGR,Rive-de-Gier,Rive-de-Gier,42,45.524324,4.606648,True
+87141002,NCY,Nancy,Nancy,54,48.689861,6.174583,True
+87345108,BSU,Brebières,Brebières,62,50.33624,3.0142,True
+87393215,VFG,Viroflay Rive Gauche,Viroflay Rive Gauche,78,48.800517,2.1711466,True
+87142273,DNJ,Donjeux,Donjeux,52,48.3658544,5.1482245,True
+87172874,FEP,Fépin,Fépin,08,50.0234644,4.7266156,True
+87784264,POV,Port-Vendres,Port-Vendres,66,42.5136077,3.1025762,True
+87784231,AMR,Argelès-sur-Mer,Argelès-sur-Mer,66,42.54397,3.022349,True
+87286534,ROC,Ronchin,Ronchin,59,50.6045664,3.0783734,True
+87741470,POB,Le Pont-de-Beauvoisin,Le Pont-de-Beauvoisin,38,45.524636,5.680772,True
+87471185,MES,Messac - Guipry,Messac - Guipry,35,47.82225,-1.81822,True
+87342063,COK,Courcelles-le-Comte,Courcelles-le-Comte,62,50.1694124,2.7880351,True
+87316059,HLY,Heilly,Heilly,80,49.9435191,2.5396593,True
+87141812,DID,Dieulouard,Dieulouard,54,48.843367,6.071489,True
+87775197,VLF,Villefort,Villefort,48,44.4395099,3.9240146,True
+87171330,FIO,Fismes,Fismes,51,49.310665,3.68213,True
+87172031,JGY,Joigny-sur-Meuse,Joigny-sur-Meuse,08,49.8336807,4.7672389,True
+87611574,CNB,Les Cabannes,Les Cabannes,09,42.7862854,1.6862985,True
+87393504,PJZ,Petit Jouy - Les Loges,Petit Jouy - Les Loges,78,48.770943,2.1470148,True
+87773465,XAU,Saint-Aunès,Saint-Aunès,34,43.6354383,3.9628994,True
+87775239,SCZ,Sainte-Cécile-d'Andorge,Sainte-Cécile-d'Andorge,30,44.2554362,3.9758497,True
+87296178,ONS,Clacy - Mons,Clacy - Mons,02,49.5439229,3.5766816,True
+87775023,BCK,Beaucaire,Beaucaire,30,43.80209,4.6470865,True
+87618207,MKJ,Montlaur,Montlaur,31,43.4752405,1.5776454,True
+87575191,DIF,Dissay,Dissay,86,46.703544,0.4210161,True
+87595777,SCQ,Saint-Cyprien,Saint-Cyprien,24,44.8632733,1.0434666,True
+87615484,DSP,Damiatte - Saint-Paul,Damiatte - Saint-Paul,81,43.6566194,1.9733585,True
+87581199,MCA,Macau,Macau,33,45.0040981,-0.6200068,True
+87547315,SHL,Saint-Michel Notre-Dame,Saint-Michel Notre-Dame,75,48.85348,2.34545,True
+87381111,PTC,Pont Cardinet,Pont Cardinet,75,48.88755,2.31425,True
+87386318,NUN,Nanterre Université,Nanterre Université,92,48.90122,2.2158277,True
+87582478,FAT,Biganos Facture,Biganos Facture,33,44.637384,-0.96621,True
+87594382,CDT,Condat - Le Lardin,Condat - Le Lardin,24,45.1267128,1.2267493,True
+87584268,BGC,Bergerac,Bergerac,24,44.857061,0.489174,True
+87751750,AUB,Aubagne,Aubagne,13,43.296045,5.56658,True
+87491811,SJW,Saujon,Saujon,17,45.6665019,-0.9300187,True
+87595579,THN,Thenon,Thenon,24,45.1601857,1.0686905,True
+87586545,MMD,Marmande,Marmande,47,44.503019,0.168044,True
+87594218,VGE,Vigeois,Vigeois,19,45.3829467,1.5149455,True
+87584441,LLK,Lalinde,Lalinde,24,44.8396152,0.7427811,True
+87382812,MPJ,Mareil-Marly,Mareil-Marly,78,48.8807466,2.0790676,False
+87575175,NIB,Naintré,Naintré,86,46.7595303,0.4963446,True
+87272054,TNT,Thieux - Nantouillet,Thieux - Nantouillet,77,49.0084346,2.6805271,True
+87713842,GMX,Gemeaux,Gemeaux,21,47.478542,5.1293074,True
+87478545,NEA,Neau,Neau,53,48.1574807,-0.4766725,True
+87484303,CHT,Cholet,Cholet,49,47.065698,-0.869583,True
+87486126,LHB,L'Herbergement - Les Brouzils,L'Herbergement - Les Brouzils,85,46.9069172,-1.3712431,True
+87487892,SNZ,Saint-Mathurin-sur-Loire,Saint-Mathurin-sur-Loire,49,47.4122473,-0.3182267,True
+87171629,PWH,Prunay,Prunay,51,49.1988,4.18364,True
+87478552,EVN,Évron,Évron,53,48.155501,-0.397338,True
+87317305,LTS,Les Fontinettes,Les Fontinettes,62,50.940831,1.8496343,True
+87592105,CBF,Châteauneuf - Bujaleuf,Châteauneuf - Bujaleuf,87,45.759316,1.6453027,True
+87747287,VOR,Voiron,Voiron,38,45.364037,5.595054,True
+87396309,COB,Connerré - Beillé,Connerré - Beillé,72,48.0735,0.48687,True
+87481259,MVB,Les Moutiers-en-Retz,Les Moutiers-en-Retz,44,47.0618983,-2.0009628,True
+87546200,OYI,Orly Ville,Orly Ville,94,48.741815,2.40265,True
+87741439,LPL,Lépin-le-Lac - La Bauche,Lépin-le-Lac - La Bauche,73,45.541519,5.7649834,True
+87743757,TEN,Tenay - Hauteville,Tenay - Hauteville,01,45.9222096,5.5016101,True
+87381822,TPA,Thun le Paradis,Thun le Paradis,78,49.00687,1.91922,True
+87212191,SQG,Strasbourg Roethig,Strasbourg Roethig,67,48.5632897,7.6950455,True
+87491282,SEK,Sainte-Eulalie - Carbon-Blanc,Sainte-Eulalie - Carbon-Blanc,33,44.8978327,-0.4939737,True
+87611301,XAE,Saint-Agne,Saint-Agne,31,43.579674,1.450209,True
+87576231,VZO,Varennes-sur-Fouzon,Varennes-sur-Fouzon,36,47.2144095,1.6145221,True
+87144097,TAO,Thaon,Thaon,88,48.24465,6.416384,True
+87681387,EVC,Évry-Courcouronnes,Évry-Courcouronnes,91,48.625507,2.428581,True
+87584516,COU,Coutras,Coutras,33,45.03661,-0.13169,True
+87756361,VFH,Villefranche-sur-Mer,Villefranche-sur-Mer,06,43.707061,7.314129,True
+87721761,CZI,Chessy,Chessy,69,45.885545,4.6222625,True
+87611616,FXE,Foix,Foix,09,42.969746,1.607147,True
+87696203,TSG,Tronsanges,Tronsanges,58,47.113029,3.0541532,True
+87682450,CME,Champagne-sur-Seine,Champagne-sur-Seine,77,48.406531,2.799184,True
+87116079,VNL,Verneuil-l'Étang,Verneuil-l'Étang,77,48.644689,2.825006,True
+87345132,CQW,Coron de Méricourt,Coron de Méricourt,62,50.4150048,2.8854084,True
+87111864,BKB,Balsièges,Balsièges,48,44.4820108,3.4560976,True
+87171926,CGV,Champagne-Ardenne TGV,Champagne-Ardenne TGV,51,49.214806,3.994632,True
+87726711,LCF,Le Chambon-Feugerolles,Le Chambon-Feugerolles,42,45.3947427,4.3223823,True
+87471359,RTI,Retiers,Retiers,35,47.9132599,-1.3898439,True
+87276311,CGB,Chevrières,Chevrières,60,49.3373064,2.6828025,True
+87681809,VSG,Villeneuve Triage,Villeneuve Triage,94,48.745198,2.438192,True
+87721340,SDI,Saint-Georges-de-Reneins,Saint-Georges-de-Reneins,69,46.0621952,4.7188908,True
+87753764,SON,Salon-de-Provence,Salon-de-Provence,13,43.639061,5.088569,True
+87746305,LRF,La Roche-sur-Foron,La Roche-sur-Foron,74,46.06756,6.303885,True
+87718114,GZO,Torpes - Boussières,Torpes - Boussières,25,47.1637546,5.8887804,True
+87313551,CIW,Cires-lès-Mello,Cires-lès-Mello,60,49.2717956,2.3601903,True
+87645440,VCM,Vic-sur-Cère,Vic-sur-Cère,15,44.975877,2.6316644,True
+87696351,VAA,Varennes-sur-Allier,Varennes-sur-Allier,03,46.3154922,3.3941783,True
+87611848,MTB,Montrabé,Montrabé,31,43.6450204,1.5240482,True
+87317396,NOE,Noyelles-sur-Mer,Noyelles-sur-Mer,80,50.1875408,1.7045772,True
+87382440,BGV,Bougival,Bougival,78,48.8542135,2.1323749,True
+87345157,HBE,Hénin-Beaumont,Hénin-Beaumont,62,50.41706,2.95211,True
+87337378,DSU,Dives-sur-Mer Port Guillaume,Dives-sur-Mer Port Guillaume,14,49.2910882,-0.1008455,True
+87171702,AGK,Aguilcourt - Variscourt,Aguilcourt - Variscourt,02,49.408017,3.973137,True
+87723494,SAG,Saint-André-le-Gaz,Saint-André-le-Gaz,38,45.544518,5.524187,True
+87300822,BFB,Belfort - Montbéliard TGV,Belfort - Montbéliard TGV,90,47.585937,6.897687,True
+87574665,CTI,Château-Renault,Château-Renault,37,47.5877961,0.9015238,True
+87784520,FDL,Saint-Féliu-d'Avall,Saint-Féliu-d'Avall,66,42.6772874,2.7378217,True
+87594002,BLG,Brive-la-Gaillarde,Brive-la-Gaillarde,19,45.152618,1.528655,True
+87592543,LDT,Le Dorat,Le Dorat,87,46.2110908,1.0793364,True
+87476259,HEN,Hennebont,Hennebont,56,47.7990019,-3.2857467,True
+87345207,PDD,Pont de la Deûle,Pont de la Deûle,59,50.39813,3.08503,True
+87615732,NCE,Naucelle,Naucelle,12,44.1854793,2.363504,True
+87765818,MTX,Monteux,Monteux,84,44.0374619,4.9947813,True
+87697292,EPS,Épinay-sur-Seine T11,Épinay-sur-Seine T11,93,,,True
+87761684,SHN,Saint-Hilaire - Saint-Nazaire,Saint-Hilaire - Saint-Nazaire,38,45.0713405,5.243851,True
+87696468,BVE,Béard,Béard,58,46.8652207,3.3179944,True
+87718601,VMI,Valdahon Camp Militaire,Valdahon Camp Militaire,25,47.1510452,6.3148621,True
+87393314,RBT,Rambouillet,Rambouillet,78,48.64377,1.83154,True
+87757674,ATB,Antibes,Antibes,06,43.585784,7.119498,True
+87481150,MUE,Mauves-sur-Loire,Mauves-sur-Loire,44,47.2930211,-1.3893042,True
+87592378,LST,La Souterraine,La Souterraine,23,46.239792,1.492151,True
+87726406,ANZ,Andrézieux-Bouthéon,Andrézieux-Bouthéon,42,45.5217037,4.254834,True
+87281873,MAG,Magenta,Magenta,75,48.87986,2.35835,True
+87613802,VDC,Cordes - Vindrac,Cordes - Vindrac,81,44.067189,1.900229,True
+87718528,LHO,L'Hôpital-du-Grosbois,L'Hôpital-du-Grosbois,25,47.1691016,6.2130861,True
+87382887,VFD,Viroflay Rive Droite,Viroflay Rive Droite,78,48.8056695,2.1683208,True
+87415604,VNO,Vernon - Giverny,Vernon - Giverny,27,49.091336,1.47857,True
+87715383,LXR,Chaux-des-Crotenay,Chaux-des-Crotenay,39,46.6545926,5.9438595,True
+87191718,MGK,Moyeuvre-Grande,Moyeuvre-Grande,57,49.246713,6.043226,True
+87381574,IPO,Issou - Porcheville,Issou - Porcheville,78,48.97931,1.78532,True
+87545202,SHO,Saint-Michel-sur-Orge,Saint-Michel-sur-Orge,91,48.635479,2.306632,True
+87476754,SVG,Sévérac,Sévérac,44,47.5498647,-2.072707,True
+87545459,NGE,La Norville - Saint-Germain-lès-Arpajon,La Norville - Saint-Germain-lès-Arpajon,91,48.591617,2.267586,True
+87713636,ASI,Aiserey,Aiserey,21,47.170501,5.1582447,True
+87672725,OLN,Oloron-Sainte-Marie,Oloron-Sainte-Marie,64,43.1947669,-0.6122826,True
+87574475,BCX,Bléré - La Croix,Bléré - La Croix,37,47.3377228,0.9877583,True
+87725689,MAC,Mâcon,Mâcon,71,46.302572,4.824887,True
+87757567,AHC,Anthéor Cap Roux,Anthéor Cap Roux,83,43.4349641,6.8921036,True
+87723759,VLD,Villars-les-Dombes,Villars-les-Dombes,01,46.004206,5.028404,True
+87491035,SNH,Saint-Savinien,Saint-Savinien,17,45.8759277,-0.6778775,True
+87741132,AIX,Aix-les-Bains le Revard,Aix-les-Bains le Revard,73,45.688161,5.909371,True
+87723791,SVN,Servas - Lent,Servas - Lent,01,46.1306663,5.1681312,True
+87723585,MEX,Meximieux - Pérouges,Meximieux - Pérouges,01,45.901615,5.193534,True
+87481226,SPZ,Sainte-Pazanne,Sainte-Pazanne,44,47.1055419,-1.8138744,True
+87764571,BSC,Bagnols-sur-Cèze,Bagnols-sur-Cèze,30,44.161626,4.627032,True
+87574160,BGY,Beaugency,Beaugency,45,47.778365,1.625938,True
+87481838,SNY,Savenay,Savenay,44,47.35859,-1.950957,True
+87726869,BBY,Balbigny,Balbigny,42,45.817858,4.187443,True
+87141796,MAH,Marbache,Marbache,54,48.8010405,6.1091755,True
+87212118,VHM,Vendenheim,Vendenheim,67,48.6659659,7.7177824,True
+87141101,VRA,Varangéville - Saint-Nicolas,Varangéville - Saint-Nicolas,54,48.63533929,6.31286037,True
+87212134,BAH,Brumath,Brumath,67,48.7331082,7.7004016,True
+87775221,CBO,Chamborigaud,Chamborigaud,30,44.3002429,3.9793332,True
+87394437,ILC,Illiers-Combray,Illiers-Combray,28,48.303937,1.2448745,True
+87192237,RMI,Rémilly,Rémilly,57,49.0140249,6.3950968,True
+87271528,MYV,Mitry - Claye,Mitry - Claye,77,48.97569,2.64247,True
+87473181,PLT,Plouaret Trégor,Plouaret Trégor,22,48.6062816,-3.4668231,True
+87694398,CJL,Cheilly-lès-Maranges,Cheilly-lès-Maranges,71,46.8924768,4.6758424,True
+87545277,VRI,Villeneuve-le-Roi,Villeneuve-le-Roi,94,48.739908,2.426084,True
+87773002,MPL,Montpellier Saint-Roch,Montpellier Saint-Roch,34,43.604738,3.880674,True
+87478081,FSN,La Fresnais,La Fresnais,35,48.593655,-1.8432199,True
+87382465,MLR,Marly-le-Roi,Marly-le-Roi,78,48.8713084,2.0965436,True
+87444299,BEY,Bernay,Bernay,27,49.087102,0.595634,True
+87534339,MMU,Mulhouse Musées,Mulhouse Musées,68,47.75136,7.29478,True
+87111278,PCL,Porte de Clichy,Porte de Clichy,75,48.89399,2.31462,True
+87731448,NEP,Neuilly Porte Maillot RER E,Neuilly Porte Maillot RER E,75,,,True
+87746784,CHX,Chamonix-Mont-Blanc,Chamonix-Mont-Blanc,74,45.92277,6.87363,True
+87384008,PSL,Paris Saint-Lazare,Paris Saint-Lazare,75,48.876242,2.325331,True
+87116517,LFJ,La Ferté-sous-Jouarre,La Ferté-sous-Jouarre,77,48.950741,3.125577,True
+87474239,LDO,Landerneau,Landerneau,29,48.453572,-4.256528,True
+87118190,NOG,Nogent-sur-Seine,Nogent-sur-Seine,10,48.49783878,3.49372888,True
+87171736,GUI,Guignicourt,Guignicourt,02,49.434862,3.961334,True
+87342014,ARR,Arras,Arras,62,50.286673,2.781942,True
+87113795,VSM,Villiers-sur-Marne - Le Plessis-Trévise,Villiers-sur-Marne - Le Plessis-Trévise,94,48.823039,2.541761,True
+87116111,CSG,Chelles - Gournay,Chelles - Gournay,77,48.874128,2.582484,True
+87113407,BDY,Bondy,Bondy,93,48.894208,2.4786,True
+87113696,RBI,Rosny Bois Perrier,Rosny Bois Perrier,93,48.882568,2.480987,True
+87113209,PAN,Pantin,Pantin,93,48.898096,2.400685,True
+87215665,DRI,Diemeringen,Diemeringen,67,48.9405,7.18529,True
+87182394,MUT,Munster,Munster,68,48.0383438,7.1341728,True
+87534131,ERT,Ermont - Eaubonne,Ermont - Eaubonne,95,48.98032,2.27176,False
+87386417,SVL,Sartrouville,Sartrouville,78,48.9379523,2.1575173,True
+87271429,SEV,Sevran - Livry,Sevran - Livry,93,48.93601,2.53484,True
+87474270,LDI,Landivisiau,Landivisiau,29,48.496002,-4.082181,True
+87313056,CBI,Corbie,Corbie,80,49.9116183,2.4996846,True
+87611137,SGD,Saint-Gaudens,Saint-Gaudens,31,43.105034,0.729104,True
+87276105,SOA,Saint-Ouen-l'Aumône,Saint-Ouen-l'Aumône,95,49.04527,2.10651,True
+87615344,SST,Saint-Sulpice (Tarn),Saint-Sulpice (Tarn),81,43.775073,1.680702,True
+87381897,CSH,Conflans-Sainte-Honorine,Conflans-Sainte-Honorine,78,48.99646,2.09783,True
+87486449,LSO,Les Sables-d'Olonne,Les Sables-d'Olonne,85,46.499917,-1.78105,True
+87592121,EYM,Eymoutiers Vassivière,Eymoutiers Vassivière,87,45.7397876,1.7412237,True
+87781278,AGD,Agde,Agde,34,43.31728,3.466203,True
+87576439,ADG,Avord,Avord,18,47.0349061,2.6523757,True
+87783563,BJC,Barjac,Barjac,48,44.4992638,3.4109786,True
+87313072,ALJ,Albert,Albert,80,50.00546,2.64453,True
+87611384,AIE,Auterive,Auterive,31,43.348993,1.468831,True
+87214643,MFX,Mullerhof,Mullerhof,67,48.52451,7.3119577,True
+87313874,AMS,Amiens,Amiens,80,49.890746,2.312592,True
+87342584,AON,Avion,Avion,62,50.40723,2.83365,True
+87746412,MGD,Magland,Magland,74,46.016945,6.6215075,True
+87763607,BRI,Briançon,Briançon,05,44.889853,6.633007,True
+87734111,AUK,Aubiat,Aubiat,63,45.983812,3.1605115,True
+87486332,CTO,Chantonnay,Chantonnay,85,46.6898472,-1.0544144,True
+87215160,LZF,Lutzelbourg,Lutzelbourg,57,48.7299065,7.2516808,True
+87182329,HRH,Herrlisheim-près-Colmar,Herrlisheim-près-Colmar,68,48.0166417,7.3206381,True
+87784298,BAN,Banyuls-sur-Mer,Banyuls-sur-Mer,66,42.4829582,3.1250496,True
+87683789,AVA,Avallon,Avallon,89,47.4957553,3.9124463,True
+87595744,BDG,Le Bugue,Le Bugue,24,44.9056892,0.942795,True
+87592741,BGA,Bussière-Galant,Bussière-Galant,87,45.6076224,1.0261372,True
+87784710,JCT,Joncet,Joncet,66,42.5615245,2.3111464,True
+87783670,BVZ,Belvezet,Belvezet,48,44.5617971,3.7518919,True
+87757690,BJO,Biot,Biot,06,43.610951,7.12609,True
+87783530,CNA,Chanac,Chanac,48,44.4739786,3.3454117,True
+87317016,BKI,Boulogne Tintelleries,Boulogne Tintelleries,62,50.72729,1.60904,True
+87713545,BEA,Beaune,Beaune,21,47.023053,4.848379,True
+87581728,BQF,Blanquefort,Blanquefort,33,44.917556,-0.62392,True
+87773432,VGU,Valergues - Lansargues,Valergues - Lansargues,34,43.672678,4.0601085,True
+87713081,VRR,Verrey-sous-Salmaise,Verrey-sous-Salmaise,21,47.4385905,4.6700223,True
+87773457,BGU,Baillargues,Baillargues,34,43.6533234,4.0071585,True
+87684191,BXN,Bagneaux-sur-Loing,Bagneaux-sur-Loing,77,48.2304802,2.7033327,True
+87615054,BRA,Bram,Bram,11,43.2441014,2.1191467,True
+87444695,SKS,Sées,Sées,61,48.5998998,0.1661851,True
+87545491,BRW,Breuillet Village,Breuillet Village,91,48.564776,2.171207,True
+87725895,EHR,Échirolles,Échirolles,38,45.153022,5.718943,True
+87775130,GGE,Gallargues-le-Montueux,Gallargues-le-Montueux,30,43.716229,4.1715027,True
+87393033,INV,Invalides,Invalides,75,48.8619133,2.3150151,True
+87757757,BQJ,Le Bosquet,Le Bosquet,06,43.5515285,6.9816599,True
+87746826,PZI,Les Praz de Chamonix,Les Praz de Chamonix,74,45.9394594,6.888753,True
+87755389,PIG,Pignans,Pignans,83,43.298475,6.2248459,True
+87757732,RGN,Ranguin,Ranguin,06,43.5691636,6.9693134,True
+87746883,BVQ,Le Buet,Le Buet,74,46.018805,6.9204119,True
+87492108,LAD,Les Ardoines,Les Ardoines,94,48.782945,2.409046,True
+87594762,BXB,Bretenoux - Biars,Bretenoux - Biars,46,44.9273692,1.8436871,True
+87755363,PVI,Puget-Ville,Puget-Ville,83,43.283085,6.1384483,True
+87613109,CDC,Capdenac,Capdenac,12,44.5782458,2.0779632,True
+87584052,LIB,Libourne,Libourne,33,44.915888,-0.236344,True
+87447243,CAR,Carentan,Carentan,50,49.302482,-1.244938,True
+87755314,LPH,La Pauline Hyères,La Pauline Hyères,83,43.1364769,6.0351027,True
+87473546,CCF,Callac,Callac,22,48.4062201,-3.419782,True
+87725838,MZF,Mézériat,Mézériat,01,46.2350502,5.046622,True
+87753491,XST,Croix Sainte,Croix Sainte,13,43.4088317,5.0196445,True
+87734178,MVY,Les Martres-de-Veyre,Les Martres-de-Veyre,63,45.688155,3.193228,True
+87743302,CZR,Ceyzériat,Ceyzériat,01,46.1834877,5.3258417,True
+87683649,CBZ,Cravant - Bazarnes,Cravant - Bazarnes,89,47.6785079,3.6811741,True
+87734673,DAR,Darsac,Darsac,43,45.14211,3.7365537,True
+87576298,CHC,Châteauneuf-sur-Cher,Châteauneuf-sur-Cher,18,46.8568144,2.3103826,True
+87713099,TEY,Thenissey,Thenissey,21,47.4947945,4.6221929,True
+87682161,CES,Cesson,Cesson,77,48.56563,2.5938,True
+87597070,NPO,Neuvy-Pailloux,Neuvy-Pailloux,36,46.883564,1.8642473,True
+87726901,SEO,Saint-Étienne Carnot,Saint-Étienne Carnot,42,45.446976,4.385317,True
+87382861,VRD,Versailles Rive Droite,Versailles Rive Droite,78,48.8096525,2.1347523,True
+87546192,PRU,Pont de Rungis Aéroport d'Orly,Pont de Rungis Aéroport d'Orly,94,48.748163,2.372792,True
+87193276,HOH,Hombourg-Haut,Hombourg-Haut,57,49.1261085,6.7742703,True
+87726158,SET,Saint-Étienne La Terrasse,Saint-Étienne La Terrasse,42,45.464843,4.379601,True
+87747204,VRB,Virieu sur Bourbre,Virieu sur Bourbre,38,45.491703,5.4721424,True
+87725739,RHR,Romanèche-Thorins,Romanèche-Thorins,71,46.1763913,4.7421014,True
+87611061,COA,Carbonne,Carbonne,31,43.298206,1.212531,True
+87116095,NAN,Nangis,Nangis,77,48.561336,3.012619,True
+87734046,GEZ,Gerzat,Gerzat,63,45.8335879,3.1431045,True
+87393207,CVI,Chaville Rive Gauche,Chaville Rive Gauche,92,48.8047497,2.1882472,True
+87721175,LYL,Lyon Gorge de Loup,Lyon Gorge de Loup,69,45.766078,4.804631,True
+87317263,CSV,Calais,Calais,62,50.953481,1.850819,True
+87271593,CYV,Crépy-en-Valois,Crépy-en-Valois,60,49.231235,2.8864694,True
+87673202,DAX,Dax,Dax,40,43.720472,-1.050301,True
+87721746,CZK,Civrieux-d'Azergues,Civrieux-d'Azergues,69,45.8591831,4.7182413,True
+87478164,DIN,Dinan,Dinan,22,48.456764,-2.053542,True
+87718403,RBE,Roche-lez-Beaupré,Roche-lez-Beaupré,25,47.2762881,6.1109651,True
+87718197,XLN,Saint-Lothain,Saint-Lothain,39,46.8231806,5.6439849,True
+87613356,CSD,Caussade,Caussade,82,44.1622668,1.5336541,True
+87718189,PGN,Poligny,Poligny,39,46.8443393,5.7001051,True
+87721787,BDO,Bois-d'Oingt - Légny,Bois-d'Oingt - Légny,69,45.9065839,4.575043,True
+87696187,MVU,Mesves - Bulcy,Mesves - Bulcy,58,47.2420755,3.0065175,True
+87713594,SLB,Santenay les Bains,Santenay les Bains,21,46.9106752,4.7017523,True
+87713628,SLN,Saulon,Saulon,21,47.224035,5.1045991,True
+87696450,IPY,Imphy,Imphy,58,46.9333537,3.2597113,True
+87712679,CFJ,Chaugey,Chaugey,21,47.0872036,5.2551914,True
+87592147,WCL,Lacelle,Lacelle,19,45.6412701,1.8264798,True
+87696229,FLT,Fourchambault,Fourchambault,58,47.0189684,3.0873673,True
+87142000,CHM,Chaumont,Chaumont,52,48.10976,5.1346,True
+87491001,SKW,Saintes,Saintes,17,45.74874,-0.6179,True
+87171553,EPR,Épernay,Épernay,51,49.046289,3.959798,True
+87682419,CJR,Chartrettes,Chartrettes,77,48.4870771,2.6950059,True
+87712323,LWP,Lantenay,Lantenay,21,47.3351085,4.860963,True
+87682476,GPA,La Grande-Paroisse,La Grande-Paroisse,77,48.3787751,2.8971614,True
+87694638,GLZ,Galuzot,Galuzot,71,46.6421069,4.3300578,True
+87712265,BTQ,Bretigny - Norges,Bretigny - Norges,21,47.390044,5.1105838,True
+87683847,MIY,Mailly-la-Ville,Mailly-la-Ville,89,47.6041692,3.6751472,True
+87691600,PEF,Les Perrières,Les Perrières,58,47.0055213,3.1467144,True
+87691469,VZE,Vauzelles,Vauzelles,58,47.0013565,3.1342094,True
+87545145,ETY,Étréchy,Étréchy,91,48.493727,2.194323,True
+87182071,RHE,Rixheim,Rixheim,68,47.74896,7.406404,True
+87345009,DOI,Douai,Douai,59,50.371677,3.089986,True
+87682500,VOM,Vosves,Vosves,77,48.5151115,2.5991469,True
+87184432,GND,Grandvillars,Grandvillars,90,47.53763,6.9785,True
+87682468,VSS,Vernou-la-Celle-sur-Seine,Vernou-la-Celle-sur-Seine,77,48.3864547,2.8424649,True
+87673665,ITX,Itxassou,Itxassou,64,43.324043,-1.3956111,True
+87313510,BVS,Beauvais,Beauvais,60,49.42648,2.08869,True
+87673095,BUU,Boucau,Boucau,64,43.5234217,-1.4905872,True
+87447649,FOL,Folligny,Folligny,50,48.8299461,-1.4072231,True
+87681510,BQV,Buno - Gironville,Buno - Gironville,91,48.370847,2.3871153,True
+87641449,DUR,Durtol - Nohanent,Durtol - Nohanent,63,45.7947707,3.048557,True
+87672162,ATK,Assat,Assat,64,43.2543993,-0.2950176,True
+87615674,FWD,Tanus,Tanus,81,44.1003384,2.3151214,True
+87672600,XDP,Croix du Prince,Croix du Prince,64,43.2857104,-0.3791261,True
+87672386,URT,Urt,Urt,64,43.4993785,-1.3005564,True
+87683722,SZZ,Sermizelles - Vézelay,Sermizelles - Vézelay,89,47.5289068,3.7928695,True
+87281071,FHS,Calais - Fréthun,Calais - Fréthun,62,50.901221,1.810891,True
+87673251,SQB,Saubusse,Saubusse,40,43.6603331,-1.1901703,True
+87756338,CKG,Cros de Cagnes,Cros de Cagnes,06,43.660465,7.167111,True
+87473207,GGP,Guingamp,Guingamp,22,48.555659,-3.143343,True
+87747477,GOC,Goncelin,Goncelin,38,45.341941,5.974136,True
+87611830,PBR,Pibrac,Pibrac,31,43.621364,1.289237,True
+87613604,BAG,Bagnac-sur-Célé,Bagnac-sur-Célé,46,44.6652105,2.1602503,True
+87611350,VVT,Le Vernet d'Ariège,Le Vernet d'Ariège,09,43.1894138,1.6116214,True
+87611046,FGA,Le Fauga,Le Fauga,31,43.4043288,1.2827183,True
+87756775,DRA,Drap - Cantaron,Drap - Cantaron,06,43.7599599,7.3168739,True
+87594119,CZE,Corrèze,Corrèze,19,45.3294801,1.8810793,True
+87597781,LXM,Lavaveix-les-Mines,Lavaveix-les-Mines,23,46.0795307,2.0890801,True
+87592444,NNA,Nantiat,Nantiat,87,46.0056192,1.1563734,True
+87595207,MRA,Marsac-sur-L'isle,Marsac-sur-L'isle,24,45.1860541,0.6626174,True
+87594820,MST,Masseret,Masseret,19,45.536175,1.5415396,True
+87597849,FEL,Felletin,Felletin,23,45.8864021,2.169543,True
+87755231,OLL,Ollioules - Sanary-sur-Mer,Ollioules - Sanary-sur-Mer,83,43.122586,5.824979,True
+87592162,BUG,Bugeat,Bugeat,19,45.6005968,1.9248147,True
+87592246,SKN,Solignac - Le Vigen,Solignac - Le Vigen,87,45.7561586,1.2856817,True
+87491142,JOH,Jonzac,Jonzac,17,45.4387456,-0.44164,True
+87677005,HED,Hendaye,Hendaye,64,43.353132,-1.781724,True
+87116277,FMP,Faremoutiers - Pommeuse,Faremoutiers - Pommeuse,77,48.808494,2.993109,True
+87592360,FRO,Fromental,Fromental,87,46.1715646,1.4324317,True
+87382358,SCD,Saint-Cloud,Saint-Cloud,92,48.84541,2.21687,True
+87592808,MYZ,La Meyze,La Meyze,87,45.6212964,1.2123135,True
+87753657,ARS,Arles,Arles,13,43.684853,4.63203,True
+87473090,PLE,Plestan,Plestan,22,48.4256462,-2.4424607,True
+87286849,LEQ,Lesquin,Lesquin,59,50.59068,3.11771,True
+87582882,LOH,Lamothe-Landerron,Lamothe-Landerron,33,44.5628433,0.0451406,True
+87743740,SBB,Saint-Rambert-en-Bugey,Saint-Rambert-en-Bugey,01,45.9473397,5.438622,True
+87581793,ATF,Pessac Alouette,Pessac Alouette,33,44.793355,-0.65965,True
+87576280,LNY,Lunery,Lunery,18,46.9351795,2.275014,True
+87116285,MXK,Mouroux,Mouroux,77,48.8139949,3.0423421,True
+87597633,VVL,Vieilleville,Vieilleville,23,46.0910959,1.6736439,True
+87543124,LFS,La Ferté-Saint-Aubin,La Ferté-Saint-Aubin,45,47.720975,1.93236,True
+87214585,MTZ,Mutzig,Mutzig,67,48.5337753,7.4621581,True
+87575217,JAU,Jaunay-Clan,Jaunay-Clan,86,46.682044,0.3816535,True
+87485540,LUI,Lusignan,Lusignan,86,46.4354949,0.116555,True
+87394254,LLP,La Loupe,La Loupe,28,48.4737398,1.0109416,True
+87595157,AGA,Agonac,Agonac,24,45.2865966,0.7486706,True
+87444265,LIS,Lisieux,Lisieux,14,49.138299,0.231143,True
+87543082,BAX,Boisseaux,Boisseaux,45,48.2566238,1.9727681,True
+87543371,LCS,La Chapelle-Saint-Mesmin,La Chapelle-Saint-Mesmin,45,47.8929293,1.8268193,True
+87683219,VYE,Villeneuve-sur-Yonne,Villeneuve-sur-Yonne,89,48.0850129,3.2869251,True
+87763755,LRN,Laragne-Montéglin,Laragne-Montéglin,05,44.3164984,5.8189832,True
+87295642,LNR,Landrecies,Landrecies,59,50.1283138,3.681997,True
+87592295,PHR,La Porcherie,La Porcherie,87,45.5740586,1.5383469,True
+87486316,FUE,Fougeré,Fougeré,49,46.6653044,-1.2319718,True
+87571430,CEY,Cormery,Cormery,37,47.26254,0.833953,True
+87581314,LSE,Lesparre-Médoc,Lesparre-Médoc,33,45.3035166,-0.9454015,True
+87773408,LUN,Lunel,Lunel,34,43.679392,4.131086,True
+87543090,AGV,Angerville,Angerville,91,48.3112062,2.0034931,True
+87765453,LTH,Le Thor,Le Thor,84,43.9265047,4.9962663,True
+87574301,CZV,Chouzy-sur-Cisse,Chouzy-sur-Cisse,41,47.5203249,1.247846,True
+87481184,ODK,Oudon,Oudon,44,47.3433655,-1.291992,True
+87696534,LUY,Luzy,Luzy,58,46.7940793,3.9693245,True
+87182014,CMR,Colmar,Colmar,68,48.073201,7.346967,True
+87641050,LXB,Louroux-de-Bouble,Louroux-de-Bouble,03,46.2241289,2.9849368,True
+87471078,MFS,Montfort-sur-Meu,Montfort-sur-Meu,35,48.138878,-1.949141,True
+87611558,LUG,Luzenac - Garanou,Luzenac - Garanou,09,42.7642849,1.7531248,True
+87478040,DNE,Dingé,Dingé,35,48.3507382,-1.6859729,True
+87673459,GTH,Guéthary,Guéthary,64,43.4253491,-1.6098615,True
+87611244,MBN,Montauban Ville Bourbon,Montauban Ville Bourbon,82,44.014387,1.341496,True
+87476762,SOK,Saint-Gildas-des-Bois,Saint-Gildas-des-Bois,44,47.516614,-2.0438923,True
+87478156,HIZ,La Hisse,La Hisse,22,48.4961248,-2.0036608,True
+87473132,PPF,Plouvara - Plerneuf,Plouvara - Plerneuf,22,48.508585,-2.8925136,True
+87172171,PIX,Poix-Terron,Poix-Terron,08,49.6500011,4.6365346,True
+87473850,LNF,Lancerf,Lancerf,22,48.761873,-3.1181396,True
+87473819,TGS,Trégonneau - Squiffiec,Trégonneau - Squiffiec,22,48.6243578,-3.1742524,True
+87471391,PCI,Pontchaillou,Pontchaillou,35,48.11918,-1.69107,True
+87415364,BEU,Brionne,Brionne,27,49.1964187,0.7115304,True
+87473553,PYV,Le Pénity,Le Pénity,22,48.3646275,-3.4763815,True
+87471342,TIB,Le Theil-de-Bretagne,Le Theil-de-Bretagne,35,47.918742,-1.4319925,True
+87471060,LHL,L'Hermitage - Mordelles,L'Hermitage - Mordelles,35,48.123142,-1.8192987,True
+87473579,CQG,Coat Guégan,Coat Guégan,22,48.4803156,-3.2738023,True
+87725705,MLH,Mâcon Loché TGV,Mâcon Loché TGV,71,46.282884,4.778876,True
+87444406,HOE,Houlgate,Houlgate,14,49.3000711,-0.0772276,True
+87586453,MLS,Monsempron-Libos,Monsempron-Libos,47,44.486631,0.9412277,True
+87681411,MNY,Mennecy,Mennecy,91,48.5709075,2.433165,True
+87753509,MTG,Martigues,Martigues,13,43.3929209,5.0257804,True
+87615419,MSS,Marssac-sur-Tarn,Marssac-sur-Tarn,81,43.9151803,2.026913,True
+87481440,CLI,Clisson,Clisson,44,47.086142,-1.286172,True
+87581538,CUD,Caudéran Mérignac,Caudéran Mérignac,33,44.84288,-0.6274337,True
+87394213,SBP,Saint-Aubin - Saint-Luperce,Saint-Aubin - Saint-Luperce,28,48.4476422,1.3318387,True
+87471326,CPS,Corps-Nuds,Corps-Nuds,35,47.9851669,-1.5754724,True
+87411223,SOV,Sotteville-lès-Rouen,Sotteville-lès-Rouen,76,49.4129479,1.102362,True
+87394270,BTO,Bretoncelles,Bretoncelles,61,48.4326737,0.8923825,True
+87381202,VWT,Lavilletertre,Lavilletertre,60,49.2024666,1.9206361,True
+87381210,LQK,Liancourt-Saint-Pierre,Liancourt-Saint-Pierre,60,49.2204964,1.905543,True
+87615542,MZT,Mazamet,Mazamet,81,43.4977847,2.3747346,True
+87761783,CRE,Crest,Crest,26,44.7301546,5.0160968,True
+87712604,OUS,Ouges,Ouges,21,47.2559157,5.0727895,True
+87481176,BBF,Boussay - La Bruffière,Boussay - La Bruffière,44,47.0505741,-1.1828046,True
+87734475,THI,Thiers,Thiers,63,45.8610502,3.5431798,True
+87381145,OSN,Osny,Osny,95,49.06283,2.05771,True
+87753459,PDB,Port-de-Bouc,Port-de-Bouc,13,43.4071317,4.9846006,True
+87484006,ASL,Angers Saint-Laud,Angers Saint-Laud,49,47.464647,-0.55682,True
+87775346,BKW,Boucoiran-et-Nozières,Boucoiran-et-Nozières,30,43.9926943,4.187634,True
+87345439,BPN,Brunémont,Brunémont,59,50.2783197,3.1453509,True
+87763466,EMB,Embrun,Embrun,05,44.567008,6.496773,True
+87342204,FQE,Fouquereuil,Fouquereuil,62,50.5255091,2.6074449,True
+87725804,PEL,Pont-de-Veyle,Pont-de-Veyle,01,46.2679114,4.8930347,True
+87328021,CQO,Les Cauquillous,Les Cauquillous,81,43.7340198,1.7546798,True
+87731828,LDQ,Lachaud Curmilhac,Lachaud Curmilhac,43,45.1228045,3.6104913,True
+87334490,CGT,Cesson-Sévigné,Cesson-Sévigné,35,48.11281,-1.60211,True
+87722405,GIV,Givors,Givors,69,45.584948,4.766086,True
+87615120,CFW,Couffoulens - Leuc,Couffoulens - Leuc,11,43.1555365,2.3161754,True
+87491100,PNP,Pons,Pons,17,45.5780767,-0.5389124,True
+87313809,BBM,Blangy-sur-Bresle,Blangy-sur-Bresle,76,49.9326071,1.6259074,True
+87342113,VYN,Vitry-en-Artois,Vitry-en-Artois,62,50.3276092,2.9820833,True
+87316208,WAC,Wacquemoulin,Wacquemoulin,60,49.5032575,2.6116581,True
+87317248,BIP,Blangy-sur-Ternoise,Blangy-sur-Ternoise,62,50.424669,2.1721585,True
+87316109,DMM,Dommartin - Remiencourt,Dommartin - Remiencourt,80,49.7996523,2.3926625,True
+87611400,PSS,Portet Saint-Simon,Portet Saint-Simon,31,43.527904,1.389243,True
+87586107,PSM,Port-Sainte-Marie,Port-Sainte-Marie,47,44.2504383,0.3905059,True
+87313403,REY,Remy,Remy,60,49.4331452,2.7059434,True
+87313395,PDP,Poix-de-Picardie,Poix-de-Picardie,80,49.7778561,1.9897767,True
+87286856,ANP,Annappes,Annappes,59,50.6227708,3.1475351,True
+87281246,GVL,Gravelines,Gravelines,59,50.978736,2.1232852,True
+87734749,RET,Retournac,Retournac,43,45.2013468,4.0361169,True
+87276733,LXS,Le Meux - La Croix-Saint-Ouen,Le Meux - La Croix-Saint-Ouen,60,49.3594029,2.7532645,True
+87286609,NOM,Nomain,Nomain,59,50.5023744,3.2063499,True
+87763003,GAP,Gap,Gap,05,44.563693,6.085638,True
+87281121,ARN,Arnèke,Arnèke,59,50.831522,2.4083063,True
+87296434,MKI,Mennessis,Mennessis,02,49.6915989,3.2711145,True
+87281279,BBU,Bourbourg,Bourbourg,59,50.952267,2.1942305,True
+87755306,LGD,La Garde,La Garde,83,43.1187044,6.0100767,True
+87276378,VPL,Villers-Saint-Paul,Villers-Saint-Paul,60,49.2825762,2.4899067,True
+87281451,RSC,Renescure,Renescure,59,50.732006,2.3713644,True
+87271783,VYA,Vierzy,Vierzy,02,49.2910309,3.2773026,True
+87545525,DHY,Dourdan,Dourdan,91,48.533466,2.009643,True
+87741108,VOZ,Vions - Chanaz,Vions - Chanaz,73,45.8243131,5.8072311,True
+87215459,SRU,Sarre-Union,Sarre-Union,67,48.9360172,7.0850443,True
+87172270,RTL,Rethel,Rethel,08,49.504393,4.369566,True
+87682518,BKR,Boissise-le-Roi,Boissise-le-Roi,77,48.529319,2.572953,True
+87761718,SCI,Saint-Marcellin,Saint-Marcellin,38,45.150898,5.323649,True
+87214627,HEG,Heiligenberg - Mollkirch,Heiligenberg - Mollkirch,67,48.5273135,7.381426,True
+87411470,SEQ,Serqueux,Serqueux,76,49.6315093,1.5395267,True
+87444562,SDN,Surdon,Surdon,61,48.6647685,0.1344097,True
+87214247,BAR,Barr,Barr,67,48.4032933,7.4565189,True
+87215335,BHN,Berthelming,Berthelming,57,48.8096475,7.0087859,True
+87476317,QPL,Quimperlé,Quimperlé,29,47.869375,-3.552693,True
+87212027,STG,Strasbourg,Strasbourg,67,48.584967,7.734584,True
+87212258,GPM,Geispolsheim,Geispolsheim,67,48.5190515,7.6843578,True
+87214270,GXW,Goxwiller,Goxwiller,67,48.4327551,7.4787296,True
+87713347,AXO,Auxonne,Auxonne,21,47.192663,5.37737,True
+87212274,LHJ,Limersheim,Limersheim,67,48.4617328,7.6603581,True
+87213223,GUF,Gundershoffen,Gundershoffen,67,48.905261,7.6535345,True
+87194357,ALR,Audun-le-Roman,Audun-le-Roman,54,49.36682,5.89139,True
+87212241,GRF,Graffenstaden,Graffenstaden,67,48.5324375,7.6897861,True
+87212324,KIL,Kilstett,Kilstett,67,48.6793065,7.8549031,True
+87212183,DEE,Dettwiller,Dettwiller,67,48.7518969,7.4652459,True
+87694182,MMS,Marmagne sous Creusot,Marmagne sous Creusot,71,46.8334607,4.3601911,True
+87413302,HAF,Harfleur,Harfleur,76,49.5136336,0.1989828,True
+87193524,FWR,Farschviller,Farschviller,57,49.0878773,6.9080815,True
+87415166,SIC,Saint-Victor-l'Abbaye,Saint-Victor-l'Abbaye,76,49.6770346,1.1097122,True
+87192732,VOY,Valleroy - Moineville,Valleroy - Moineville,54,49.2056957,5.9360165,True
+87182345,LOJ,Logelbach,Logelbach,68,48.087299,7.3206082,True
+87382432,LCB,La Celle-Saint-Cloud,La Celle-Saint-Cloud,78,48.84259,2.13797,True
+87212308,BHM,Bischheim,Bischheim,67,48.6118352,7.7422165,True
+87594630,OBT,Objat,Objat,19,45.2647335,1.4068293,True
+87576470,GUA,La Guerche-sur-l'Aubois,La Guerche-sur-l'Aubois,18,46.9477388,2.9485731,True
+87741454,SBR,Saint-Béron - La Bridoire,Saint-Béron - La Bridoire,73,45.5038935,5.7319345,True
+87722249,IRY,Irigny Yvours,Irigny Yvours,69,45.69002,4.83229,True
+87581371,SUU,Soulac-sur-Mer,Soulac-sur-Mer,33,45.5081769,-1.1175894,True
+87481705,SNA,Saint-Nazaire,Saint-Nazaire,44,47.286412,-2.211096,True
+87486894,TFU,Torfou-Sèvremoine,Torfou-Sèvremoine,49,47.0331153,-1.1173797,True
+87594333,SOU,Souillac,Souillac,46,44.902127,1.466605,True
+87444083,MLW,Le Molay-Littry,Le Molay-Littry,14,49.2493263,-0.8809741,True
+87191163,HET,Hettange-Grande,Hettange-Grande,57,49.4076754,6.1566738,True
+87296004,SQT,Saint-Quentin,Saint-Quentin,02,49.8400482,3.2970089,True
+87471524,CTG,Châteaubourg,Châteaubourg,35,48.106361,-1.405159,True
+87773200,STE,Sète,Sète,34,43.412485,3.69656,True
+87182550,VXT,Vieux-Thann,Vieux-Thann,68,47.8058505,7.1194904,True
+87381723,MAE,Maule,Maule,78,48.90917,1.85708,True
+87175794,ETM,Étain,Étain,55,49.2074907,5.6398079,True
+87181222,CXJ,Colmar Saint-Joseph,Colmar Saint-Joseph,68,48.0816399,7.3453397,True
+87182113,BTK,Bartenheim,Bartenheim,68,47.6349313,7.4872561,True
+87172122,ARI,Aubrives,Aubrives,08,50.1044507,4.7616512,True
+87182626,FRG,Fellering,Fellering,68,47.8975893,6.9871347,True
+87775866,LGR,Le Grau-du-Roi,Le Grau-du-Roi,30,43.5371273,4.140338,True
+87775817,VAT,Vauvert,Vauvert,30,43.6950375,4.270165,True
+87172114,VRX,Vireux-Molhain,Vireux-Molhain,08,50.0827968,4.7233909,True
+87181131,GFW,Graffenwald,Graffenwald,68,47.7808232,7.2247908,True
+87545285,CLR,Choisy-le-Roi,Choisy-le-Roi,94,48.763974,2.411102,True
+87393538,VBO,Vauboyen,Vauboyen,78,48.7590575,2.192119,True
+87172239,DEY,Donchery,Donchery,08,49.6981267,4.8747529,True
+87214635,URM,Urmatt,Urmatt,67,48.5257763,7.3385385,True
+87741769,ANJ,Aime - La Plagne,Aime - La Plagne,73,45.5544,6.648646,True
+87171728,LXV,Loivre,Loivre,51,49.3466786,3.9906699,True
+87144428,PXX,Pouxeux,Pouxeux,88,48.1039421,6.5810266,True
+87144279,VIT,Vittel,Vittel,88,48.2024882,5.9418718,True
+87763300,VDY,Veynes Dévoluy,Veynes Dévoluy,05,44.5320046,5.815764,True
+87683664,VEE,Vermenton,Vermenton,89,47.6605943,3.7320212,True
+87713826,RFY,Ruffey-lès-Echirey,Ruffey-lès-Echirey,21,47.370587,5.079358,True
+87141432,TIA,Thiaville-sur-Meurthe,Thiaville-sur-Meurthe,54,48.4139874,6.8102635,True
+87141390,MFN,Ménil Flin,Ménil Flin,54,48.5050204,6.6592265,True
+87141077,FRD,Frouard,Frouard,54,48.75545,6.14411,True
+87141424,BHZ,Bertrichamps,Bertrichamps,54,48.4283359,6.7912343,True
+87271452,VPN,Villepinte,Villepinte,93,48.96292,2.51205,True
+87595702,VSJ,Les Versannes,Les Versannes,24,45.088775,0.8574682,True
+87721472,TAR,Tarare,Tarare,69,45.889921,4.439208,True
+87141408,AZE,Azerailles,Azerailles,54,48.4913355,6.695778,True
+87763029,VAL,Valence TGV Rhône-Alpes Sud,Valence TGV Rhône-Alpes Sud,26,44.991545,4.978703,True
+87009696,DZD,La Douzillère,La Douzillère,37,47.3388167,0.6528244,True
+87276279,ORY,Orry-la-Ville - Coye,Orry-la-Ville - Coye,60,49.13895,2.49,True
+87381483,MRK,Maurecourt,Maurecourt,78,48.98712,2.05963,True
+87590299,NPM,Nice Pont Michel,Nice Pont Michel,06,43.72175,7.29144,True
+87725473,BZC,Boulazac,Boulazac,24,45.172291,0.772645,True
+87571406,MNZ,Montbazon,Montbazon,37,47.2917191,0.7214769,True
+87381046,AHM,Avenue Henri Martin,Avenue Henri Martin,75,48.8644077,2.272238,True
+87590828,SUF,Sucé-sur-Erdre,Sucé-sur-Erdre,44,47.3431347,-1.5299873,True
+87271486,PEX,Parc des Expositions,Parc des Expositions,93,48.97334,2.51382,True
+87276394,ECZ,Écouen - Ézanville,Écouen - Ézanville,95,49.02273,2.36325,True
+87343160,BUS,Beuvrages,Beuvrages,59,50.3894892,3.5061396,True
+87411819,CRS,Clères,Clères,76,49.598964,1.106184,True
+87734426,VTZ,Vertaizon,Vertaizon,63,45.784543,3.288269,True
+87726448,MOB,Montbrison,Montbrison,42,45.604454,4.078282,True
+87755405,LEC,Le Luc - Le Cannet,Le Luc - Le Cannet,83,43.3902379,6.3430972,True
+87342105,BGF,Bully - Grenay,Bully - Grenay,62,50.44843,2.73317,True
+87597120,AGC,Argenton-sur-Creuse,Argenton-sur-Creuse,36,46.592248,1.518305,True
+87212340,HRL,Herrlisheim,Herrlisheim,67,48.7279056,7.9102594,True
+87393082,MFY,Meudon Val Fleury,Meudon Val Fleury,92,48.8079884,2.2409045,True
+87295535,LWF,Louvroil,Louvroil,59,50.2683469,3.9535768,True
+87116301,CQU,Coulommiers,Coulommiers,77,48.808006,3.08225,True
+87781666,MGA,Magalas,Magalas,34,43.4675998,3.2295415,True
+87473587,LQW,Les Mais,Les Mais,22,48.4262577,-3.3828609,True
+87281436,WAP,Watten - Éperlecques,Watten - Éperlecques,62,50.8254043,2.2079599,True
+87313064,MTL,Méricourt - Ribemont,Méricourt - Ribemont,80,49.9556384,2.5726254,True
+87391532,VMK,Vanves - Malakoff,Vanves - Malakoff,92,48.8181959,2.2920988,True
+87345264,PAV,Pont-à-Vendin,Pont-à-Vendin,62,50.4713812,2.8751938,True
+87116327,EYA,Esbly,Esbly,77,48.90314191,2.81059946,True
+87182105,SEZ,Sierentz,Sierentz,68,47.656047,7.459142,True
+87474320,PBC,Pleyber-Christ,Pleyber-Christ,29,48.5078255,-3.8825543,True
+87381228,CEV,Chaumont-en-Vexin,Chaumont-en-Vexin,60,49.26139,1.87274,True
+87611038,MET,Muret,Muret,31,43.464824,1.324449,True
+87386003,LGK,La Garenne-Colombes,La Garenne-Colombes,92,48.9093952,2.2396414,True
+87682302,MTU,Montereau,Montereau,77,48.379934,2.942972,True
+87286864,ASC,Ascq,Ascq,59,50.6218591,3.1598992,True
+87295048,FMI,Fourmies,Fourmies,59,50.01541,4.05357,True
+87182139,STL,Saint-Louis,Saint-Louis,68,47.5906094,7.5559882,True
+87316679,PHV,Pihen-lès-Guînes,Pihen-lès-Guînes,62,50.8727855,1.7845632,True
+87345256,LIK,Libercourt,Libercourt,62,50.48025,3.00867,True
+87287300,RGM,Ruminghem,Ruminghem,62,50.8620636,2.1576706,True
+87411181,TVI,Tourville-la-Rivière,Tourville-la-Rivière,76,49.3248177,1.098964,True
+87313239,FLO,La Faloise,La Faloise,80,49.696527,2.3485813,True
+87615328,RAB,Rabastens - Coufouleux,Rabastens - Coufouleux,81,43.819751,1.730567,True
+87476671,QUE,Questembert,Questembert,56,47.6831803,-2.4496002,True
+87313684,SUP,Saint-Sulpice - Auteuil,Saint-Sulpice - Auteuil,60,49.3473824,2.1164133,True
+87317206,MQU,Maresquel-Ecquemicourt,Maresquel-Ecquemicourt,62,50.4078186,1.9313418,True
+87345041,LVW,Liévin,Liévin,62,50.434139,2.7716316,True
+87342246,ABI,Aubigny-en-Artois,Aubigny-en-Artois,62,50.35297,2.5928045,True
+87286278,PHI,Pérenchies,Pérenchies,59,50.66697,2.97729,True
+87784769,FTB,Fontpédrouse,Fontpédrouse,66,42.5138062,2.1886585,True
+87411249,MRM,Maromme,Maromme,76,49.479935,1.050485,True
+87775841,XLZ,Saint-Laurent-d'Aigouze,Saint-Laurent-d'Aigouze,30,43.6392883,4.1930703,True
+87172072,LFU,Laifour,Laifour,08,49.911256,4.6923484,True
+87682120,BNY,Brunoy,Brunoy,91,48.699112,2.506422,True
+87784629,MQG,Marquixanes,Marquixanes,66,42.6428224,2.4858388,True
+87394114,EPN,Épernon,Épernon,28,48.6052471,1.6812578,True
+87615757,BAQ,Baraqueville Carcenac Peyralès,Baraqueville Carcenac Peyralès,12,44.2704368,2.4275453,True
+87342139,NOX,Nœux-les-Mines,Nœux-les-Mines,62,50.48297,2.67393,True
+87171587,GEA,Germaine,Germaine,51,49.1277634,4.0228976,True
+87594606,VEZ,Varetz,Varetz,19,45.1911631,1.4472859,True
+87575142,CRT,Châtellerault,Châtellerault,86,46.818594,0.549279,True
+87673319,OND,Ondres,Ondres,40,43.5685809,-1.4571793,True
+87681452,LFA,La Ferté-Alais,La Ferté-Alais,91,48.484876,2.35161,True
+87353581,RAM,Les Ramassiers,Les Ramassiers,31,43.6024594,1.3528032,True
+87324095,FTU,Futuroscope,Futuroscope,86,46.669918,0.377209,True
+87584136,CIO,Castillon-la-Bataille,Castillon-la-Bataille,33,44.856999,-0.04066,True
+87586438,PNE,Penne-d'Agenais,Penne-d'Agenais,47,44.3799858,0.8029779,True
+87116244,MOF,Mortcerf,Mortcerf,77,48.7892191,2.9075554,True
+87595132,NEG,Négrondes,Négrondes,24,45.3460288,0.8611999,True
+87381087,CBK,Colombes,Colombes,92,48.92383,2.25939,True
+87491803,ROY,Royan,Royan,17,45.625886,-1.016703,True
+87485227,SGE,Surgères,Surgères,17,46.113238,-0.762284,True
+87672766,SRR,Sarrance,Sarrance,64,43.0496,-0.599962,True
+87276022,ENK,Enghien-les-Bains,Enghien-les-Bains,95,48.97309,2.30699,True
+87672253,ORT,Orthez,Orthez,64,43.484242,-0.76776,True
+87725465,MEU,Massy Europe,Massy Europe,91,48.72342,2.27194,True
+87382267,VCN,Vaucresson,Vaucresson,92,48.83688,2.15255,True
+87581736,BGH,Bruges,Bruges,33,44.8870124,-0.609445,True
+87592055,TIO,Saint-Priest-Taurion,Saint-Priest-Taurion,87,45.8872383,1.4002297,True
+87396200,DFO,Domfront-en-Champagne,Domfront-en-Champagne,72,48.1076766,0.0262592,True
+87444877,CBU,Cherbourg-en-Cotentin,Cherbourg-en-Cotentin,50,49.633505,-1.621515,True
+87396408,SAB,Sablé-sur-Sarthe,Sablé-sur-Sarthe,72,47.8415934,-0.3419359,True
+87396234,SLG,Sillé-le-Guillaume,Sillé-le-Guillaume,72,48.1818735,-0.1289696,True
+87756494,MNJ,Menton Garavan,Menton Garavan,06,43.785202,7.517297,True
+87481820,CDQ,Cordemais,Cordemais,44,47.3021502,-1.8466771,True
+87743872,LMV,Le Mans Hôpital-Université,Le Mans Hôpital-Université,72,48.014871,0.17445113,True
+87491266,KBZ,Cubzac-les-Ponts,Cubzac-les-Ponts,33,44.9729407,-0.4590937,True
+87316075,DAS,Dreuil-lès-Amiens,Dreuil-lès-Amiens,80,49.91444,2.23091,True
+87382002,BEC,Bécon les Bruyères,Bécon les Bruyères,92,48.90592,2.26838,True
+87382341,VDV,Sèvres - Ville-d'Avray,Sèvres - Ville-d'Avray,92,48.82746,2.20051,True
+87276592,GNE,Gros Noyer Saint-Prix,Gros Noyer Saint-Prix,95,48.99682,2.2588,True
+87313379,NAQ,Namps - Quevauvillers,Namps - Quevauvillers,80,49.8082274,2.1053184,True
+87175018,REV,Revigny-sur-Ornain,Revigny-sur-Ornain,55,48.8240449,4.9855736,True
+87726190,SEB,Saint-Étienne Bellevue,Saint-Étienne Bellevue,42,45.417128,4.392734,True
+87191098,WAB,Waligator Parc,Waligator Parc,57,49.22492,6.15946,True
+87732206,SGF,Saint-Germain-des-Fossés,Saint-Germain-des-Fossés,03,46.209185,3.430614,True
+87313577,MUY,Mouy - Bury,Mouy - Bury,60,49.32045,2.32635,True
+87718106,MFH,Montferrand - Thoraise,Montferrand - Thoraise,25,47.1847414,5.9074815,True
+87734186,VLC,Vic-le-Comte,Vic-le-Comte,63,45.664911,3.207079,True
+87686667,PBY,Paris Bercy Bourgogne - Pays d'Auvergne,Paris Bercy Bourgogne - Pays d'Auvergne,75,48.83917,2.38278,True
+87393322,BVI,Pont du Garigliano - Hôpital Européen Georges Pompidou,Pont du Garigliano - Hôpital Européen Georges Pompidou,75,48.839464,2.2712276,True
+87756304,VVP,Villeneuve-Loubet,Villeneuve-Loubet,06,43.629928,7.134066,True
+87182592,MWH,Moosch,Moosch,68,47.8607454,7.0507631,True
+87318964,AVV,Avignon TGV,Avignon TGV,84,43.921586,4.786079,False
+87681627,IBM,Le Plessis Chenet,Le Plessis Chenet,91,48.5735652,2.479586,True
+87745646,THO,Thonon-les-Bains,Thonon-les-Bains,74,46.369004,6.481669,True
+87746438,SLS,Sallanches - Combloux - Megève,Sallanches - Combloux - Megève,74,45.935702,6.636431,True
+87486258,LRK,Luçon,Luçon,85,46.4638232,-1.1674217,True
+87988709,RJL,Remise à Jorelle,Remise à Jorelle,93,48.89317,2.487751,True
+87762906,SXA,Lyon Saint-Exupéry TGV,Lyon Saint-Exupéry TGV,69,45.721109,5.074969,True
+87571844,ZVO,Savonnières,Savonnières,37,47.3605797,0.5441817,True
+87394288,CDH,Condé-sur-Huisne,Condé-sur-Huisne,61,48.3834826,0.8487023,True
+87684415,MAL,Malesherbes,Malesherbes,45,48.2934325,2.4012177,True
+87592337,JOC,La Jonchère-Saint-Maurice,La Jonchère-Saint-Maurice,87,45.9944577,1.4803853,True
+87478750,PTT,Port-Brillet,Port-Brillet,53,48.1106724,-0.9740682,True
+87584540,SAI,Saint-Aigulin - La Roche-Chalais,Saint-Aigulin - La Roche-Chalais,17,45.1573163,-0.0189768,True
+87487876,ROR,Les Rosiers-sur-Loire,Les Rosiers-sur-Loire,49,47.3625386,-0.2205371,True
+87697334,STC,Stains La Cerisaie T11,Stains La Cerisaie T11,93,48.9548,2.39209,True
+87757534,BOU,Boulouris sur Mer,Boulouris sur Mer,83,43.4163471,6.8082519,True
+87448084,BZN,Briouze,Briouze,61,48.7018622,-0.3682036,True
+87487637,MBL,Montreuil-Bellay,Montreuil-Bellay,49,47.1254181,-0.1482834,True
+87276329,PXE,Pont-Sainte-Maxence,Pont-Sainte-Maxence,60,49.30974,2.60289,True
+87116574,CYZ,Chézy-sur-Marne,Chézy-sur-Marne,02,48.9919109,3.3644624,True
+87726703,LRM,La Ricamarie,La Ricamarie,42,45.4041516,4.360686,True
+87597054,XZG,Sainte-Lizaigne,Sainte-Lizaigne,36,47.002251,2.0298004,True
+87731430,DGA,La Défense Grande Arche RER E,La Défense Grande Arche RER E,92,,,True
+87478016,SMW,Saint-Germain-sur-Ille,Saint-Germain-sur-Ille,35,48.2394802,-1.6541804,True
+87734053,RIO,Riom - Châtel-Guyon,Riom - Châtel-Guyon,63,45.889965,3.120498,True
+87645135,LQB,Laroquebrou,Laroquebrou,15,44.9641658,2.1929167,True
+87641191,GOZ,La Ville Gozet,La Ville Gozet,03,46.3497686,2.5918028,True
+87594465,ABA,Aubazines - Saint-Hilaire,Aubazines - Saint-Hilaire,19,45.1816781,1.6412346,True
+87191619,KER,Koenigsmacker,Koenigsmacker,57,49.3965538,6.2735503,True
+87781294,MPP,Marseillan Plage,Marseillan Plage,34,43.3181964,3.5355281,True
+87393892,MLM,Montfort-l'Amaury - Méré,Montfort-l'Amaury - Méré,78,48.80224,1.8153507,True
+87741728,MOS,Moûtiers - Salins - Brides-les-Bains,Moûtiers - Salins - Brides-les-Bains,73,45.486344,6.531425,True
+87545152,CHK,Chamarande,Chamarande,91,48.514244,2.215854,True
+87276238,LNX,Les Noues,Les Noues,95,49.03234,2.47633,True
+87381152,BLA,Boissy-l'Aillerie,Boissy-l'Aillerie,95,49.07598,2.02513,True
+87473827,BYP,Brélidy - Plouëc,Brélidy - Plouëc,22,48.669204,-3.196269,True
+87753681,SMD,Saint-Martin-de-Crau,Saint-Martin-de-Crau,13,43.6223344,4.8003403,True
+87393074,ISY,Issy-les-Moulineaux,Issy-les-Moulineaux,92,48.8201001,2.2593469,True
+87295220,LCA,Le Cateau-Cambrésis,Le Cateau-Cambrésis,59,50.0914606,3.5400454,True
+87481812,SDQ,Saint-Étienne-de-Montluc,Saint-Étienne-de-Montluc,44,47.2747167,-1.7857107,True
+87342220,CRG,Chocques,Chocques,62,50.5382038,2.564749,True
+87491233,ATX,Aubie - Saint-Antoine,Aubie - Saint-Antoine,33,45.0151419,-0.4198843,True
+87672006,PAU,Pau,Pau,64,43.291762,-0.369626,True
+87313270,SJS,Saint-Just-en-Chaussée,Saint-Just-en-Chaussée,60,49.50364,2.42949,True
+87721464,PNF,Pontcharra - Saint-Forgeux,Pontcharra - Saint-Forgeux,69,45.8714911,4.4927781,True
+87317107,HES,Hesdigneul-lès-Boulogne,Hesdigneul-lès-Boulogne,62,50.6609475,1.6669967,True
+87718296,SAR,Saint-Amour,Saint-Amour,39,46.4338244,5.3341853,True
+87214775,BFZ,Bourg-Bruche,Bourg-Bruche,67,48.3598566,7.1371919,True
+87722652,SKR,Saint-Clair - Les Roches,Saint-Clair - Les Roches,38,45.450392,4.769707,True
+87734038,RYA,Royat - Chamalières,Royat - Chamalières,63,45.7676495,3.0615022,True
+87611434,LNT,Lacourtensourt,Lacourtensourt,31,43.6638838,1.4138687,True
+87696260,SZE,Saincaize-Meauce,Saincaize-Meauce,58,46.9314165,3.0718704,True
+87182691,TFE,Staffelfelden,Staffelfelden,68,47.8279612,7.2651657,True
+87313114,HAS,Hangest-sur-Somme,Hangest-sur-Somme,80,49.9822011,2.0661412,True
+87545186,MSX,Marolles-en-Hurepoix,Marolles-en-Hurepoix,91,48.565345,2.290327,True
+87313817,LOG,Longroy - Gamaches,Longroy - Gamaches,76,49.9818917,1.5526598,True
+87641001,MLN,Montluçon,Montluçon,03,46.338101,2.596159,True
+87747402,GRS,Grenoble Universités - Gières,Grenoble Universités - Gières,38,45.184877,5.78474,True
+87545467,ARP,Arpajon,Arpajon,91,48.58617,2.24112,True
+87691436,GZY,Garchizy,Garchizy,58,47.0429987,3.0858769,True
+87745430,SJG,Saint-Julien-en-Genevois,Saint-Julien-en-Genevois,74,46.142044,6.0855358,True
+87411439,MGN,Morgny-la-Pommeraye,Morgny-la-Pommeraye,76,49.5232183,1.2478526,True
+87611509,PPM,Porté-Puymorens,Porté-Puymorens,66,42.539136,1.8248462,True
+87543074,TYK,Toury,Toury,28,48.193606,1.939565,True
+87481747,PNI,Pornichet,Pornichet,44,47.2705354,-2.3445765,True
+87381020,NPT,Neuilly - Porte Maillot,Neuilly - Porte Maillot,75,48.877983,2.284516,True
+87710921,LPC,Les Portes de Saint-Cyr,Les Portes de Saint-Cyr,78,48.8062,2.07716,True
+87733683,SGM,Lisière Pereire,Lisière Pereire,78,48.9032098,2.0733132,True
+87611665,CDF,Castelnau-d'Estrétefonds,Castelnau-d'Estrétefonds,31,43.786196,1.341761,True
+87313759,ABT,Abancourt,Abancourt,60,49.6852237,1.7743058,True
+87338590,CCC,Monte-Carlo Country Club,Monte-Carlo Country Club,06,43.75438,7.44821,True
+87681304,VGS,Vigneux-sur-Seine,Vigneux-sur-Seine,91,48.70816,2.41446,True
+87473801,GUL,Gourland,Gourland,22,48.5609981,-3.1668191,True
+87276550,BSW,Belloy - Saint-Martin,Belloy - Saint-Martin,95,49.09807,2.36135,True
+87747493,PCA,Pontcharra sur Bréda,Pontcharra sur Bréda,38,45.434151,6.007917,True
+87383281,MVW,Massy - Verrières,Massy - Verrières,91,48.7343097,2.2736721,True
+87141523,PSV,Pont-Saint-Vincent,Pont-Saint-Vincent,54,48.6023732,6.1031502,True
+87184002,BFT,Belfort,Belfort,90,47.633284,6.853956,True
+87141069,LDN,Liverdun,Liverdun,54,48.7493158,6.0617374,True
+87116103,MEA,Meaux,Meaux,77,48.957759,2.874041,True
+87785006,CER,Cerbère,Cerbère,66,42.4417732,3.1634033,True
+87113852,PVB,Les Pavillons-sous-Bois,Les Pavillons-sous-Bois,93,48.902418,2.511781,True
+87144006,ELP,Épinal,Épinal,88,48.178005,6.441787,True
+87345314,SOM,Somain,Somain,59,50.3557,3.27738,True
+87317057,RDF,Rang-du-Fliers - Verton - Berck,Rang-du-Fliers - Verton - Berck,62,50.41579,1.64805,True
+87296244,BSY,Busigny,Busigny,59,50.0397236,3.4461174,True
+87276253,LOV,Louvres,Louvres,95,49.0496573,2.5018967,True
+87164780,SFD,Stade de France Saint-Denis,Stade de France Saint-Denis,93,48.91779,2.35134,True
+87276535,VMD,Valmondois,Valmondois,95,49.09182,2.20238,True
+87276246,GOU,Goussainville,Goussainville,95,49.0240732,2.4632464,True
+87545244,JYS,Juvisy-sur-Orge,Juvisy-sur-Orge,91,48.68917,2.38267,True
+87681312,VWC,Viry-Châtillon,Viry-Châtillon,91,48.676182,2.386391,True
+87276568,VCX,Viarmes,Viarmes,95,49.11692,2.36838,True
+87645002,AUC,Aurillac,Aurillac,15,44.921092,2.435655,True
+87276493,MSO,Montsoult - Maffliers,Montsoult - Maffliers,95,49.06611,2.32229,True
+87583005,ANG,Angoulême,Angoulême,16,45.653572,0.164608,True
+87271205,GEN,Gennevilliers,Gennevilliers,92,48.93368,2.30699,True
+87597609,GTJ,Guéret,Guéret,23,46.1741863,1.8793855,True
+87381095,LSD,Le Stade,Le Stade,92,48.93093,2.26056,True
+87116038,ROB,Roissy-en-Brie,Roissy-en-Brie,77,48.795481,2.650165,True
+87641423,VOL,Volvic,Volvic,63,45.864715,3.0031455,True
+87592345,SSL,Saint-Sulpice-Laurière,Saint-Sulpice-Laurière,87,46.0469183,1.4762218,True
+87396549,AAG,Arnage,Arnage,72,47.9285663,0.1898826,True
+87281428,ADQ,Audruicq,Audruicq,62,50.87567,2.07636,True
+87764555,PET,Pont-Saint-Esprit,Pont-Saint-Esprit,30,44.25352683371548,4.643263286805847,True
+87775288,ALS,Alès,Alès,30,44.127825,4.084948,True
+87481192,ANC,Ancenis,Ancenis,44,47.369334,-1.177763,True
+87476275,LIH,L'Isthme,L'Isthme,56,47.54653639699773,-3.1335359717958777,True
+87476267,LSA,Les Sables Blancs,Les Sables Blancs,56,47.57518,-3.13201,True
+87295055,ANO,Anor,Anor,59,49.984892,4.0929803,True
+87185629,AIP,Aillevillers,Aillevillers,70,47.9138876,6.3372988,True
+87476200,ARY,Auray,Auray,56,47.68022,-2.999995,True
+87286146,ARM,Armentières,Armentières,59,50.68084,2.87763,True
+87481267,BNX,La Bernerie-en-Retz,La Bernerie-en-Retz,44,47.0832616,-2.0341408,True
+87988717,LHS,Lycée Henri Sellier,Lycée Henri Sellier,93,48.91646,2.51504,True
+87765008,AVI,Avignon Centre,Avignon Centre,84,43.9419,4.805281,True
+87472639,MZR,Mulhouse Zu Rhein Tram-Train,Mulhouse Zu Rhein Tram-Train,68,47.743561,7.317015,True
+87444067,BAY,Bayeux,Bayeux,14,49.269836,-0.698056,True
+87319012,AXV,Aix-en-Provence TGV,Aix-en-Provence TGV,13,43.455237,5.317534,True
+87317586,BEM,Boulogne-sur-Mer,Boulogne-sur-Mer,62,50.7157,1.60964,True
+87214296,BFH,Bischoffsheim,Bischoffsheim,67,48.48701,7.49772,True
+87775809,BVW,Beauvoisin,Beauvoisin,30,43.7245026,4.3212178,True
+87773424,LWQ,Lunel-Viel,Lunel-Viel,34,43.6811729,4.0937398,True
+87784611,VCA,Vinça,Vinça,66,42.6481368,2.5276163,True
+87681478,BJN,Boutigny-sur-Essonne,Boutigny-sur-Essonne,91,48.43495,2.37636,True
+87784876,BMD,Bourg-Madame,Bourg-Madame,66,42.4324069,1.9486704,True
+87276097,PRY,Pierrelaye,Pierrelaye,95,49.01955,2.15371,True
+87781542,COQ,Ceilhes - Roqueredonde,Ceilhes - Roqueredonde,34,43.8122656,3.1551583,True
+87765180,CTZ,Courthézon,Courthézon,84,44.0899478,4.8881802,True
+87765198,BDR,Bédarrides,Bédarrides,84,44.0407636,4.8931321,True
+87783324,BAA,Banassac - La Canourgue,Banassac - La Canourgue,48,44.4477632,3.1958518,True
+87386656,VET,Vernouillet - Verneuil,Vernouillet - Verneuil,78,48.9811884,1.9828731,True
+87755223,BND,Bandol,Bandol,83,43.140344,5.750118,True
+87722710,CPT,Chaponost,Chaponost,69,45.6984889,4.7643014,True
+87718866,MXB,Montbarrey,Montbarrey,39,47.0359922,5.6366081,True
+87761106,SRA,Saint-Rambert-d'Albon,Saint-Rambert-d'Albon,26,45.297797,4.810849,True
+87761239,ISA,L'Isle-d'Abeau,L'Isle-d'Abeau,38,45.607645,5.21969,True
+87673004,BYE,Bayonne,Bayonne,64,43.496801,-1.470306,True
+87313841,FIY,Fouilloy,Fouilloy,60,49.7366368,1.8260404,True
+87757542,DRW,Le Dramont,Le Dramont,83,43.4178193,6.8442467,True
+87755421,VUB,Vidauban,Vidauban,83,43.4309416,6.4338501,True
+87447003,SLO,Saint-Lô,Saint-Lô,50,49.116975,-1.099525,True
+87755397,GFR,Gonfaron,Gonfaron,83,43.3171516,6.2817644,True
+87673277,SVT,Saint-Vincent-de-Tyrosse,Saint-Vincent-de-Tyrosse,40,43.657736,-1.306493,True
+87756387,EZZ,Èze,Èze,06,43.7221842,7.3568031,True
+87726414,BSN,Bonson,Bonson,42,45.5221941,4.2163084,True
+87592022,LMJ,Limoges Montjovis,Limoges Montjovis,87,45.8384117,1.2514147,True
+87746834,TNJ,Les Tines,Les Tines,74,45.9505693,6.8991603,True
+87746727,VUD,Vaudagne,Vaudagne,74,45.9088517,6.7726673,True
+87474338,MXR,Morlaix,Morlaix,29,48.57797,-3.832514,True
+87696856,CAL,Châtel-Censoir,Châtel-Censoir,89,47.5377695,3.6350455,True
+87746750,TAC,Taconnaz,Taconnaz,74,45.8992065,6.8258755,True
+87757625,CAN,Cannes,Cannes,06,43.553839,7.019682,True
+87734293,PLH,Paulhaguet,Paulhaguet,43,45.2101978,3.5004445,True
+87281410,PRD,Pont d'Ardres,Pont d'Ardres,62,50.8920781,1.9712144,True
+87381509,MTE,Mantes-la-Jolie,Mantes-la-Jolie,78,48.98984,1.70337,True
+87745588,MCI,Machilly,Machilly,74,46.2512825,6.3282335,True
+87113001,PES,Paris Est,Paris Est,75,48.876742,2.358424,True
+87746743,HOU,Les Houches,Les Houches,74,45.8935639,6.796924,True
+87474064,CEM,Châteaulin,Châteaulin,29,48.2016033,-4.094308,True
+87743112,XMM,Saint-Martin-du-Mont,Saint-Martin-du-Mont,01,46.095871,5.303003,True
+87214650,LZH,Lutzelhouse,Lutzelhouse,67,48.51812,7.29391,True
+87725721,PNX,Pontanevaux,Pontanevaux,71,46.2130321,4.7728891,True
+87582742,CGD,Cérons,Cérons,33,44.632346,-0.340526,True
+87726828,LCU,Le Coteau,Le Coteau,42,46.023984,4.086248,True
+87576165,VHV,Villeherviers,Villeherviers,41,47.3694005,1.7972555,True
+87741140,VDX,Viviers-du-Lac,Viviers-du-Lac,73,45.648502,5.9033389,True
+87615039,CTY,Castelnaudary,Castelnaudary,11,43.312292,1.95039,True
+87182055,MDQ,Mulhouse Dornach,Mulhouse Dornach,68,47.74713,7.308477,True
+87731885,AES,Alleyras,Alleyras,43,44.919217,3.673517,True
+87116640,CQQ,Crouy-sur-Ourcq,Crouy-sur-Ourcq,77,49.091821,3.063081,True
+87728501,SFS,Saint-Fons,Saint-Fons,69,45.7058114,4.8525663,True
+87214148,EEN,Erstein,Erstein,67,48.4229857,7.6387869,True
+87726737,FRU,Fraisses - Unieux,Fraisses - Unieux,42,45.3948228,4.2610375,True
+87742361,SMI,Saint-Michel - Valloire,Saint-Michel - Valloire,73,45.216916,6.4719135,True
+87723742,STM,Saint-Marcel en Dombes,Saint-Marcel en Dombes,01,45.9503701,4.9775148,True
+87734103,PMT,Pontmort,Pontmort,63,45.939486,3.1601248,True
+87741074,CUZ,Culoz,Culoz,01,45.843264,5.778784,True
+87142125,CYN,Culmont - Chalindrey,Culmont - Chalindrey,52,47.8100902,5.4432217,True
+87343319,RAS,Raismes,Raismes,59,50.3902495,3.4788322,True
+87722538,FEY,Feyzin,Feyzin,69,45.6658584,4.8531349,True
+87734343,CPX,Chapeauroux,Chapeauroux,48,44.8380008,3.741923,True
+87723536,SMY,Saint-Maurice-de-Beynost,Saint-Maurice-de-Beynost,01,45.827421,4.976986,True
+87761817,SIA,Saillans,Saillans,26,44.6944365,5.1940397,True
+87747626,CMS,Clelles - Mens,Clelles - Mens,38,44.8272443,5.6050622,True
+87721605,SBL,Sain-Bel,Sain-Bel,69,45.811097,4.6012445,True
+87721480,DDY,Dardilly Les Mouilles,Dardilly Les Mouilles,69,45.7967409,4.7600288,True
+87718551,AVO,Avoudrey,Avoudrey,25,47.1298359,6.434573,True
+87722207,OUL,Oullins,Oullins,69,45.7166261,4.8135793,True
+87343459,DEN,Denain,Denain,59,50.3345415,3.388699,True
+87694695,DIG,Digoin,Digoin,71,46.4851604,3.9876537,True
+87286435,DON,Don - Sainghin,Don - Sainghin,59,50.55176,2.91458,True
+87721043,SVH,Saint-Victor - Thizy,Saint-Victor - Thizy,42,46.0024781,4.2810245,True
+87715151,XCB,Sainte-Colombe,Sainte-Colombe,25,46.879207,6.2659748,True
+87545269,ABL,Ablon-sur-Seine,Ablon-sur-Seine,94,48.725468,2.419151,True
+87734160,CZJ,Le Cendre - Orcet,Le Cendre - Orcet,63,45.723796,3.188666,True
+87694646,CYL,Ciry-le-Noble,Ciry-le-Noble,71,46.6040913,4.2997146,True
+87712620,LJK,Longecourt-en-Plaine,Longecourt-en-Plaine,21,47.1937936,5.1346952,True
+87345165,DOU,Dourges,Dourges,62,50.43192,2.98697,True
+87478073,DOL,Dol-de-Bretagne,Dol-de-Bretagne,35,48.54425,-1.750536,True
+87751321,MNQ,Manosque - Gréoux-les-Bains,Manosque - Gréoux-les-Bains,04,43.8231945,5.7933241,True
+87696831,CAO,Coulanges-sur-Yonne,Coulanges-sur-Yonne,89,47.5270546,3.5472388,True
+87721449,DDJ,Dardilly Le Jubin,Dardilly Le Jubin,69,45.815143,4.7613451,True
+87726877,FEU,Feurs,Feurs,42,45.744156,4.230573,True
+87571513,LRL,La Membrolle-sur-Choisille,La Membrolle-sur-Choisille,37,47.4313179,0.6407872,True
+87713560,MAT,Meursault,Meursault,21,46.9690497,4.7954444,True
+87431791,ROU,Rougemont Chanteloup,Rougemont Chanteloup,93,48.930895,2.51502,True
+87214130,MHW,Matzenheim,Matzenheim,67,48.3987556,7.6196003,True
+87683680,ACU,Arcy-sur-Cure,Arcy-sur-Cure,89,47.6008461,3.7668885,True
+87691394,MKF,La Marche,La Marche,58,47.1396975,3.0395468,True
+87313387,ESD,Estrées-Saint-Denis,Estrées-Saint-Denis,60,49.4382161,2.642402,True
+87694166,BQK,Broye,Broye,71,46.8619444,4.2960996,True
+87611103,SYM,Saint-Martory,Saint-Martory,31,43.1385721,0.934859,True
+87671362,XPE,Saint-Pé-de-Bigorre,Saint-Pé-de-Bigorre,65,43.1015768,-0.1619763,True
+87286302,HZK,Hazebrouck,Hazebrouck,59,50.72501,2.54129,True
+87611772,GAH,Gimont Cahuzac,Gimont Cahuzac,32,43.6330525,0.8676246,True
+87615526,LBG,Labruguière,Labruguière,81,43.5425692,2.2594728,True
+87672618,GNJ,Gan,Gan,64,43.2335932,-0.391462,True
+87700153,JYE,Joncherey,Joncherey,90,47.5262,6.9988,True
+87214056,STT,Sélestat,Sélestat,67,48.2601166,7.443278,True
+87713313,GLS,Genlis,Genlis,21,47.244579,5.223406,True
+87613489,LEX,Lexos,Lexos,82,44.1423958,1.8851014,True
+87592071,SLE,Saint-Léonard-de-Noblat,Saint-Léonard-de-Noblat,87,45.8320199,1.481686,True
+87718536,EAS,Étalans,Étalans,25,47.155884,6.2706173,True
+87684290,GIE,Gien,Gien,45,47.699088,2.636205,True
+87611053,LNN,Longages - Noé,Longages - Noé,31,43.3563239,1.2519529,True
+87582403,GAZ,Gazinet Cestas,Gazinet Cestas,33,44.772218,-0.69949,True
+87613323,LNQ,Lalbenque - Fontanes,Lalbenque - Fontanes,46,44.3332389,1.5116628,True
+87683136,PUY,Pont-sur-Yonne,Pont-sur-Yonne,89,48.286287,3.201463,True
+87615377,GAG,Gragnague,Gragnague,31,43.696179,1.567731,True
+87613463,NAJ,Najac,Najac,12,44.221802,1.9761625,True
+87611814,MWE,Mérenvielle,Mérenvielle,31,43.6365051,1.1503303,True
+87594754,PBN,Puybrun,Puybrun,46,44.9216335,1.7841548,True
+87611723,BAZ,Baziège,Baziège,31,43.4535696,1.6205019,True
+87595272,NVC,Neuvic,Neuvic,24,45.0999632,0.4450162,True
+87313494,HAM,Ham,Ham,80,49.73985,3.07052,True
+87597153,EGU,Éguzon-Chantôme,Éguzon-Chantôme,36,46.4397694,1.5521707,True
+87272146,LEG,Les Grésillons,Les Grésillons,92,48.92007,2.31441,True
+87592733,LAF,Lafarge,Lafarge,87,45.6338338,1.130859,True
+87756320,CGM,Cagnes-sur-Mer,Cagnes-sur-Mer,06,43.65813,7.14864,True
+87571885,JLT,Joué-lès-Tours,Joué-lès-Tours,37,47.3541741,0.6675586,True
+87394155,JOY,Jouy,Jouy,28,48.5102582,1.5573972,True
+87597096,LUK,Luant,Luant,36,46.7357683,1.5901964,True
+87592048,LBY,Les Bardys,Les Bardys,87,45.9046873,1.377389,True
+87723353,SPR,Saint-Priest,Saint-Priest,69,45.686659,4.934242,True
+87747535,JAV,Jarrie - Vizille,Jarrie - Vizille,38,45.0854543,5.7424487,True
+87765438,SSA,Saint-Saturnin-lès-Avignon,Saint-Saturnin-lès-Avignon,84,43.9531783,4.9352794,True
+87584102,SEI,Saint-Émilion,Saint-Émilion,33,44.8811665,-0.1592003,True
+87582718,PRV,Portets,Portets,33,44.6929765,-0.4253931,True
+87478404,LAL,Laval,Laval,53,48.076206,-0.760907,True
+87584466,MZJ,Mauzac-et-Grand-Castang,Mauzac-et-Grand-Castang,24,44.8558291,0.7899658,True
+87381558,JUZ,Juziers,Juziers,78,48.99244,1.84579,True
+87485151,TNC,Tonnay-Charente,Tonnay-Charente,17,45.9433989,-0.8978981,True
+87574442,EUR,Azay-sur-Cher,Azay-sur-Cher,37,47.3652695,0.8599885,True
+87574434,VZM,Véretz - Montlouis,Véretz - Montlouis,37,47.3715058,0.8199079,True
+87574244,EIR,Menars,Menars,41,47.6450036,1.405617,True
+87575365,SSV,Saint-Saviol,Saint-Saviol,86,46.1470046,0.2179,True
+87571422,ESV,Esvres sur Indre,Esvres sur Indre,37,47.2841016,0.7816519,True
+87734442,LEZ,Lezoux,Lezoux,63,45.8212175,3.385986,True
+87595751,LBU,Le Buisson-de-Cadouin,Le Buisson-de-Cadouin,24,44.84723,0.9081756,True
+87645473,LLN,Le Lioran,Le Lioran,15,45.0905458,2.7533365,True
+87571414,VGZ,Veigné,Veigné,37,47.2915255,0.7348815,True
+87575043,VIP,Villeperdue,Villeperdue,37,47.2020438,0.6336449,True
+87571455,RGA,Reignac-sur-Indre,Reignac-sur-Indre,37,47.2178494,0.9013322,True
+87543157,NOF,Nouan-le-Fuzelier,Nouan-le-Fuzelier,41,47.5337788,2.0330957,True
+87592683,SIV,Saint-Victurnien,Saint-Victurnien,87,45.8765887,1.0095737,True
+87485532,RIL,Rouillé,Rouillé,86,46.4190206,0.042169,True
+87781104,NBN,Narbonne,Narbonne,11,43.190387,3.00591,True
+87571802,WSL,La Chapelle-sur-Loire,La Chapelle-sur-Loire,37,47.251227,0.2184812,True
+87485524,PAP,Pamproux,Pamproux,79,46.3996295,-0.051931,True
+87571463,CMG,Chambourg-sur-Indre,Chambourg-sur-Indre,37,47.1821629,0.9648363,True
+87396002,LEN,Le Mans,Le Mans,72,47.995689,0.192578,True
+87671123,LNZ,Lannemezan,Lannemezan,65,43.114273,0.387367,True
+87484360,IGA,Ingrandes-Le Fresne-sur-Loire,Ingrandes-Le Fresne-sur-Loire,49,47.4056382,-0.9210198,True
+87571471,LOY,Loches,Loches,37,47.130464,1.000467,True
+87317529,LTM,Le Tréport - Mers-les-Bains,Le Tréport - Mers-les-Bains,76,50.0628592,1.3763738,True
+87313049,LUA,Longueau,Longueau,80,49.86344,2.35215,True
+87763250,ASH,Aspres-sur-Buëch,Aspres-sur-Buëch,05,44.519428,5.7545655,True
+87747279,RCS,Réaumont - Saint-Cassien,Réaumont - Saint-Cassien,38,45.3688217,5.5346895,True
+87396275,CGZ,Champagné,Champagné,72,48.0197118,0.3352253,True
+87761007,VCE,Valence,Valence,26,44.928049,4.893273,True
+87485102,AOM,Angoulins sur Mer,Angoulins sur Mer,17,46.108057,-1.1154503,True
+87673616,VQE,Villefranque,Villefranque,64,43.4313998,-1.4564514,True
+87682401,LYQ,Livry-sur-Seine,Livry-sur-Seine,77,48.5104579,2.6788796,True
+87481408,VTU,Vertou,Vertou,44,47.1861428,-1.4780052,True
+87746008,ANY,Annecy,Annecy,74,45.901965,6.121835,True
+87478024,XED,Saint-Médard-sur-Ille,Saint-Médard-sur-Ille,35,48.2742219,-1.6674886,True
+87746867,MKZ,Montroc le Planet,Montroc le Planet,74,45.996415,6.9345425,True
+87683557,MEG,Monéteau - Gurgy,Monéteau - Gurgy,89,47.8507856,3.5798071,True
+87696146,COS,Cosne-Cours-sur-Loire,Cosne-Cours-sur-Loire,58,47.413996,2.931981,True
+87476242,BPZ,Brandérion,Brandérion,56,47.7823179,-3.1940402,True
+87484352,CWL,Champtocé-sur-Loire,Champtocé-sur-Loire,49,47.4102457,-0.8685747,True
+87478131,MIN,Miniac-Morvan,Miniac-Morvan,35,48.5315134,-1.914787,True
+87473512,MUW,Moustéru,Moustéru,22,48.5074512,-3.2435052,True
+87473264,LDB,Landébia,Landébia,22,48.5074212,-2.3313716,True
+87472605,THJ,Thann Centre,Thann Centre,68,47.8099229,7.101046,True
+87317339,MRX,Marquise - Rinxent,Marquise - Rinxent,62,50.8056635,1.72988,True
+87415661,PAR,Pont-de-l'Arche,Pont-de-l'Arche,27,49.3170928,1.1596559,True
+87473124,MHT,La Méaugon,La Méaugon,22,48.4996127,-2.8439358,True
+87474221,FOO,La Forest-Landerneau,La Forest-Landerneau,29,48.4263093,-4.3074515,True
+87444323,GDJ,Le Grand Jardin,Le Grand Jardin,14,49.1505827,0.2271143,True
+87471367,MAF,Martigné-Ferchaud,Martigné-Ferchaud,35,47.8321302,-1.3137943,True
+87444398,VIU,Villers-sur-Mer,Villers-sur-Mer,14,49.3159865,0.0099283,True
+87213165,OBM,Obermodern-Zutzendorf,Obermodern-Zutzendorf,67,48.8426083,7.547015,True
+87671016,MMR,Mont-de-Marsan,Mont-de-Marsan,40,43.884898,-0.50466,True
+87471037,BRZ,Bruz,Bruz,35,48.0286,-1.7518088,True
+87415125,SBE,Saint-Aubin-sur-Scie,Saint-Aubin-sur-Scie,76,49.8717479,1.0666642,True
+87214577,MOL,Molsheim,Molsheim,67,48.53705,7.50044,True
+87345520,CAM,Cambrai,Cambrai,59,50.17662,3.24118,True
+87718239,LLS,Lons-le-Saunier,Lons-le-Saunier,39,46.66858,5.551108,True
+87184523,MBD,Montbéliard,Montbéliard,25,47.5105086,6.8013763,True
+87394403,LTA,La Taye,La Taye,28,48.4077566,1.3734019,True
+87387175,RYP,Romilly-la-Puthenaye,Romilly-la-Puthenaye,27,49.0039213,0.8548621,True
+87721324,AHA,Anse Halte,Anse Halte,69,45.93929,4.71987,True
+87396036,GUH,La Guierche,La Guierche,72,48.1138773,0.1931016,True
+87393553,NCO,Nonancourt,Nonancourt,27,48.7757257,1.1929162,True
+87381269,DCR,Sérifontaine,Sérifontaine,60,49.3572878,1.7639818,True
+87116566,NAA,Nogent-l'Artaud - Charly,Nogent-l'Artaud - Charly,02,48.968872,3.3220981,True
+87313346,MTD,Montdidier,Montdidier,80,49.64147,2.563,True
+87212266,FHM,Fegersheim - Lipsheim,Fegersheim - Lipsheim,67,48.4905892,7.6724806,True
+87276782,NOY,Noyon,Noyon,60,49.57736,3.00641,True
+87396317,SBO,Sceaux - Boëssé,Sceaux - Boëssé,72,48.1221004,0.5724063,True
+87345587,CTT,Cattenières,Cattenières,59,50.1280738,3.3337877,True
+87381236,TRH,Trie-Château,Trie-Château,60,49.2827168,1.8180386,True
+87715326,CPG,Champagnole,Champagnole,39,46.7492981,5.9100314,True
+87683102,VVG,Villeneuve-la-Guyard,Villeneuve-la-Guyard,89,48.342425,3.071655,True
+87381186,XPY,Santeuil - Le Perchay,Santeuil - Le Perchay,95,49.12416,1.94893,True
+87381178,USQ,Us,Us,95,49.09969,1.97076,True
+87342410,CUH,Cuinchy,Cuinchy,62,50.5219693,2.7473533,True
+87345546,MAK,Maurois,Maurois,59,50.0674506,3.4562554,True
+87182816,MZL,Metzeral,Metzeral,68,48.0133301,7.0733383,True
+87684126,NSP,Nemours - Saint-Pierre,Nemours - Saint-Pierre,77,48.267884,2.685754,True
+87342527,FAU,Farbus,Farbus,62,50.357641,2.8310408,True
+87747519,PDC,Le Pont-de-Claix,Le Pont-de-Claix,38,45.1251549,5.6998669,True
+87342402,BVR,Beuvry lès Béthune,Beuvry lès Béthune,62,50.5356021,2.6924093,True
+87393629,PIE,Plaisir - Les Clayes,Plaisir - Les Clayes,78,48.8304565,1.9600537,True
+87316125,TZY,Thézy-Glimont,Thézy-Glimont,80,49.8118528,2.435931,True
+87323675,NTL,Montluçon Rimard,Montluçon Rimard,03,46.3355913,2.6115119,True
+87478263,PON,Pontorson - Mont-Saint-Michel,Pontorson - Mont-Saint-Michel,50,48.5527286,-1.5049307,True
+87316398,HEC,Heilles - Mouchy,Heilles - Mouchy,60,49.340531,2.2725858,True
+87672337,PRH,Peyrehorade,Peyrehorade,40,43.5468102,-1.1157577,True
+87316604,AUV,Aubin-Saint-Vaast,Aubin-Saint-Vaast,62,50.3946137,1.9705382,True
+87575001,PST,Poitiers,Poitiers,86,46.582275,0.333241,True
+87287250,PED,Lille Porte de Douai,Lille Porte de Douai,59,50.6119054,3.075837,True
+87313445,MCV,Marcelcave,Marcelcave,80,49.8532165,2.5819031,True
+87276519,CPI,Champagne-sur-Oise,Champagne-sur-Oise,95,49.13573,2.24156,True
+87287276,ENN,Ennevelin,Ennevelin,59,50.5492981,3.1586612,True
+87295600,AYE,Aulnoye-Aymeries,Aulnoye-Aymeries,59,50.19749,3.84337,True
+87281055,CIX,Croix L'Allumette,Croix L'Allumette,59,50.6872009,3.1516591,True
+87213058,HAG,Haguenau,Haguenau,67,48.8134498,7.7827255,True
+87747246,RIV,Rives,Rives,38,45.357535,5.491893,True
+87276659,FPN,Frépillon,Frépillon,95,49.0462,2.19717,True
+87214551,DCN,Dachstein,Dachstein,67,48.5428546,7.5330038,True
+87582866,REO,La Réole,La Réole,33,44.579742,-0.03057,True
+87272021,VWG,Villaines-sous-Bois,Villaines-sous-Bois,95,49.0798273,2.3513736,True
+87182725,MXH,Merxheim,Merxheim,68,47.9126413,7.3022795,True
+87761650,ROM,Romans - Bourg-de-Péage,Romans - Bourg-de-Péage,26,45.048857,5.0498,True
+87726802,ROA,Roanne,Roanne,42,46.039383,4.063207,True
+87141044,TOL,Toul,Toul,54,48.679018,5.880615,True
+87718502,SAZ,Saône,Saône,25,47.2097669,6.1013089,True
+87214338,DHM,Dorlisheim,Dorlisheim,67,48.5249915,7.4930546,True
+87215079,RDG,Réding,Réding,57,48.7429595,7.095885,True
+87271601,VAU,Vaumoise,Vaumoise,02,49.2339406,2.9885685,True
+87171751,SER,Saint-Erme-Outre-et-Ramecourt,Saint-Erme-Outre-et-Ramecourt,02,49.5269865,3.8576502,True
+87213678,WEY,Weyersheim,Weyersheim,67,48.7177903,7.7971027,True
+87317404,RUE,Rue,Rue,80,50.27308,1.6757,True
+87734319,LNG,Langeac,Langeac,43,45.10125,3.490672,True
+87574368,NIY,Noizay,Noizay,37,47.4096869,0.8959456,True
+87594572,SDM,Saint-Denis-lès-Martel,Saint-Denis-lès-Martel,46,44.9459316,1.6663378,True
+87214122,BFD,Benfeld,Benfeld,67,48.3735367,7.584125,True
+87214213,DMB,Dambach-la-Ville,Dambach-la-Ville,67,48.3216345,7.4355565,True
+87214676,WHS,Wisches,Wisches,67,48.5076495,7.2700936,True
+87214239,ECF,Eichhoffen,Eichhoffen,67,48.3824829,7.4495524,True
+87213405,WAL,Walbourg,Walbourg,67,48.8862164,7.8092705,True
+87317198,BIV,Beaurainville,Beaurainville,62,50.422891,1.895345,True
+87476457,QBP,Quiberon,Quiberon,56,47.4852978,-3.1181869,True
+87172098,FUY,Fumay,Fumay,08,49.986048,4.6926,True
+87576272,SFT,Saint-Florent-sur-Cher,Saint-Florent-sur-Cher,18,46.9921865,2.2525668,True
+87726208,SGL,Veauche - Saint-Galmier,Veauche - Saint-Galmier,42,45.565928,4.293438,True
+87584508,XDS,Saint-Denis-de-Pile,Saint-Denis-de-Pile,33,44.9786053,-0.1980825,True
+87213207,MZW,Mertzwiller,Mertzwiller,67,48.872013,7.6781895,True
+87611657,SJY,Saint-Jory,Saint-Jory,31,43.738375,1.371619,True
+87471094,LBR,La Brohinière,La Brohinière,35,48.2134717,-2.110452,True
+87478768,SPW,Saint-Pierre-la-Cour,Saint-Pierre-la-Cour,53,48.1135968,-1.0252972,True
+87212407,RWG,Roeschwoog,Roeschwoog,67,48.8334661,8.0298738,True
+87473843,PUX,Pontrieux,Pontrieux,22,48.7056437,-3.1574281,True
+87193516,FBR,Farébersviller,Farébersviller,57,49.1181603,6.8618926,True
+87641068,BLE,Bellenaves,Bellenaves,03,46.199256,3.0665239,True
+87212159,HWM,Schwindratzheim,Schwindratzheim,67,48.7536468,7.6005468,True
+87595827,SLQ,Sarlat-la-Canéda,Sarlat-la-Canéda,24,44.8770213,1.220328,True
+87478099,LGO,La Gouesnière - Cancale - Saint-Méloir-des-Ondes,La Gouesnière - Cancale - Saint-Méloir-des-Ondes,35,48.6144207,-1.9058105,True
+87783241,SYH,Saint-Chély-d'Apcher,Saint-Chély-d'Apcher,48,44.8017375,3.2706895,True
+87481051,CHA,Chantenay,Chantenay,44,47.1971227,-1.5943634,True
+87193383,HYI,Herny,Herny,57,49.0036084,6.4769285,True
+87184531,VJT,Voujeaucourt,Voujeaucourt,25,47.4789729,6.7699667,True
+87192070,MZD,Metz Nord,Metz Nord,57,49.13673,6.16791,True
+87191734,RBS,Rombas - Clouange,Rombas - Clouange,57,49.2560553,6.0990538,True
+87192476,VNU,Vandières,Vandières,54,48.9521683,6.0392275,True
+87191627,MKG,Malling,Malling,57,49.42152,6.302207,True
+87182568,THA,Thann,Thann,68,47.8088208,7.1069795,True
+87185595,LXL,Luxeuil-les-Bains,Luxeuil-les-Bains,70,47.8148606,6.3726593,True
+87182196,ZIL,Zillisheim,Zillisheim,68,47.6943143,7.2945376,True
+87393124,SVR,Sèvres Rive Gauche,Sèvres Rive Gauche,92,48.8214311,2.2147536,True
+87765354,TCN,Tarascon,Tarascon,13,43.801331,4.657206,True
+87694687,PLM,Paray-le-Monial,Paray-le-Monial,71,46.447312,4.113744,True
+87345140,BYM,Billy-Montigny,Billy-Montigny,62,50.41556,2.91206,True
+87487009,THQ,Thouars,Thouars,79,46.9852442,-0.2097941,True
+87182253,DAN,Dannemarie,Dannemarie,68,47.6275771,7.124907,True
+87181040,FXL,Flaxlanden,Flaxlanden,68,47.6986924,7.3044703,True
+87447219,LSN,Lison,Lison,14,49.226834,-1.050339,True
+87172353,CAG,Carignan,Carignan,08,49.6285736,5.1684754,True
+87144683,SSM,Saint-Michel-sur-Meurthe,Saint-Michel-sur-Meurthe,88,48.3269843,6.8882777,True
+87746875,VLO,Vallorcine,Vallorcine,74,46.0324983,6.9326694,True
+87271395,LBT,Le Bourget,Le Bourget,93,48.93096,2.42571,True
+87725663,FLV,Fleurville - Pont-de-Vaux,Fleurville - Pont-de-Vaux,71,46.4509279,4.8840722,True
+87172858,ACP,Anchamps,Anchamps,08,49.9307448,4.6702434,True
+87175117,CIN,Chevillon,Chevillon,52,48.5245505,5.1117843,True
+87751008,MSC,Marseille Saint-Charles,Marseille Saint-Charles,13,43.302666,5.380407,True
+87700146,DGI,Danjoutin,Danjoutin,90,47.6175,6.86919,True
+87185009,VES,Vesoul,Vesoul,70,47.6177734,6.151926,True
+87175240,LEL,Lérouville,Lérouville,55,48.7972181,5.5387053,True
+87144071,CEO,Châtel - Nomexy,Châtel - Nomexy,88,48.307156,6.387807,True
+87313437,VLT,Villers-Bretonneux,Villers-Bretonneux,80,49.86295,2.52141,True
+87141499,MSJ,Messein,Messein,54,48.6128788,6.1378364,True
+87141085,CHG,Champigneulles,Champigneulles,54,48.73499,6.16913,True
+87396374,NON,Noyen-sur-Sarthe,Noyen-sur-Sarthe,72,47.8744544,-0.0981755,True
+87394171,VTP,La Villette Saint-Prest,La Villette Saint-Prest,28,48.4827197,1.5228734,True
+87141507,NAS,Neuves-Maisons,Neuves-Maisons,54,48.6147666,6.1078904,True
+87141473,HDT,Houdemont,Houdemont,54,48.645478,6.1797255,True
+87141119,DBS,Dombasle-sur-Meurthe,Dombasle-sur-Meurthe,54,48.623275,6.343478,True
+87113894,FSV,Freinville Sevran,Freinville Sevran,93,48.926637,2.519019,True
+87113886,ABJ,L'Abbaye,L'Abbaye,93,48.922211,2.516874,True
+87616011,AWG,Avignonet-Lauragais,Avignonet-Lauragais,31,43.3638769,1.7872687,True
+87581595,CBX,Cenon,Cenon,33,44.8563465,-0.5336487,True
+87571273,NTU,Montlouis-sur-Loire,Montlouis-sur-Loire,37,47.3915307,0.8173987,True
+87194209,MDY,Montmédy,Montmédy,55,49.5228775,5.3716718,True
+87393561,IGY,Igny,Igny,91,48.7399008,2.2313626,True
+87594168,EGL,Égletons,Égletons,19,45.4023816,2.0651243,True
+87681619,VBV,Villabé,Villabé,91,48.592637,2.461572,True
+87381160,MKU,Montgeroult - Courcelles,Montgeroult - Courcelles,95,49.0805828,2.0034959,True
+87444539,ARG,Argentan,Argentan,61,48.738545,-0.025291,True
+87746859,AGI,Argentière,Argentière,74,45.9819438,6.9264844,True
+87683201,EYV,Étigny - Véron,Étigny - Véron,89,48.1386835,3.2904186,True
+87478149,PUH,Pleudihen-sur-Rance,Pleudihen-sur-Rance,22,48.4993822,-1.9617515,True
+87473538,PGO,Plougonver,Plougonver,22,48.4584133,-3.3704584,True
+87611004,TSE,Toulouse Matabiau,Toulouse Matabiau,31,43.611206,1.453616,True
+87575076,PPJ,Port-de-Piles,Port-de-Piles,37,47.0102599,0.5989179,True
+87694109,LCM,Le Creusot - Montceau-les-Mines - Montchanin TGV,Le Creusot - Montceau-les-Mines - Montchanin TGV,71,46.765343,4.499513,True
+87491241,SAC,Saint-André-de-Cubzac,Saint-André-de-Cubzac,33,44.991255,-0.440479,True
+87718130,LJL,Liesle,Liesle,25,47.0587683,5.8208121,True
+87584474,TMA,Trémolat,Trémolat,24,44.8625105,0.8303278,True
+87141127,ROI,Rosières-aux-Salines,Rosières-aux-Salines,54,48.60563,6.350457,True
+87775072,SCS,Saint-Césaire,Saint-Césaire,30,43.8133863,4.3276399,True
+87718304,FOI,Franois,Franois,25,47.2273609,5.937498,True
+87296418,MCU,Montescourt-Lizerolles,Montescourt-Lizerolles,02,49.7380842,3.2519756,True
+87276071,FPB,Franconville - Le Plessis-Bouchard,Franconville - Le Plessis-Bouchard,95,48.99358,2.23514,True
+87313262,GNS,Gannes,Gannes,60,49.5723315,2.4370074,True
+87113845,LQT,Les Coquetiers,Les Coquetiers,93,48.89244,2.499415,True
+87575498,LHX,Lathus-Saint-Rémy,Lathus-Saint-Rémy,86,46.3380917,0.965009,True
+87757666,JAE,Juan les Pins,Juan les Pins,06,43.570896,7.11144,True
+87611764,AIT,Aubiet,Aubiet,32,43.6502068,0.7891179,True
+87592691,XBV,Saint-Brice-sur-Vienne,Saint-Brice-sur-Vienne,87,45.8781476,0.9523481,True
+87116509,CJN,Changis - Saint-Jean,Changis - Saint-Jean,77,48.95936,3.025394,True
+87497461,OGI,Gallieni Cancéropôle,Gallieni Cancéropôle,31,43.5730877,1.4195801,True
+87682187,ZTN,Savigny-le-Temple - Nandy,Savigny-le-Temple - Nandy,77,48.595519,2.583678,True
+87751776,CSI,Cassis,Cassis,13,43.23406,5.553055,True
+87594796,LLC,Laval-de-Cère,Laval-de-Cère,46,44.9512118,1.9317113,True
+87571216,VDT,Vendôme - Villiers-sur-Loir TGV,Vendôme - Villiers-sur-Loir TGV,41,47.821937,1.021143,True
+87765206,SCP,Sorgues - Châteauneuf-du-Pape,Sorgues - Châteauneuf-du-Pape,84,44.0053909,4.8756182,True
+87313353,TTR,Tricot,Tricot,60,49.5619878,2.5815586,True
+87413385,YVT,Yvetot,Yvetot,76,49.622035,0.750115,True
+87755629,HYE,Hyères,Hyères,83,43.108867,6.124223,True
+87313700,MYH,Milly-sur-Thérain,Milly-sur-Thérain,60,49.5035256,1.988233,True
+87444604,SGG,Sainte-Gauburge,Sainte-Gauburge,61,48.7172632,0.4281082,True
+87286583,ORC,Orchies,Orchies,59,50.47705,3.24888,True
+87763425,CHO,Chorges,Chorges,05,44.5458415,6.2718887,True
+87474189,BNC,Bannalec,Bannalec,29,47.9267473,-3.7065268,True
+87393454,TAE,Tacoignières - Richebourg,Tacoignières - Richebourg,78,48.8295827,1.6689566,True
+87683532,CAP,Chemilly - Appoigny,Chemilly - Appoigny,89,47.8972366,3.5543936,True
+87345405,SIN,Sin-le-Noble,Sin-le-Noble,59,50.356612,3.112777,True
+87317610,BMQ,Beau Marais,Beau Marais,62,50.945371,1.8983301,True
+87144626,RAO,Raon-l'Étape,Raon-l'Étape,88,48.404002,6.837302,True
+87775007,NMS,Nîmes,Nîmes,30,43.832291,4.365845,True
+87784819,FRM,Font-Romeu-Odeillo-Via,Font-Romeu-Odeillo-Via,66,42.4912317,2.0383917,True
+87171611,VVM,Val-de-Vesle,Val-de-Vesle,51,49.17792,4.22221,True
+87411272,PSB,Pavilly,Pavilly,76,49.563897,0.950644,True
+87214320,ROH,Rosheim,Rosheim,67,48.50525,7.49093,True
+87681437,BUR,Ballancourt-sur-Essonne,Ballancourt-sur-Essonne,91,48.532114,2.371274,True
+87394411,BAP,Bailleau-le-Pin,Bailleau-le-Pin,28,48.3668028,1.3248851,True
+87172106,HYM,Haybes,Haybes,08,50.0116888,4.7045378,True
+87471177,PCT,Pléchâtel,Pléchâtel,35,47.8719509,-1.7763615,True
+87272039,SWY,Seugy,Seugy,95,49.1189923,2.3989116,True
+87594093,USL,Ussel,Ussel,19,45.5574383,2.3143439,True
+87181289,VXZ,Vieux-Thann Zone Industrielle,Vieux-Thann Zone Industrielle,68,47.8020615,7.1326428,True
+87781575,LKH,Lunas,Lunas,34,43.7095814,3.1948986,True
+87584177,VLN,Vélines,Vélines,24,44.8520145,0.1036584,True
+87594622,XUL,Saint-Aulaire,Saint-Aulaire,19,45.2488414,1.3986965,True
+87278259,MRF,Mérignac Arlac,Mérignac Arlac,33,44.8265601,-0.6261402,True
+87584722,IZR,Saint-Sulpice - Izon,Saint-Sulpice - Izon,33,44.9142742,-0.392135,True
+87751370,MEY,Meyrargues,Meyrargues,13,43.6440076,5.5395738,True
+87582635,HUE,La Hume,La Hume,33,44.639879,-1.116,True
+87485326,FOW,Fors,Fors,79,46.2345203,-0.4069449,True
+87485268,PND,Prin-Deyrançon,Prin-Deyrançon,79,46.2190177,-0.6365007,True
+87546291,RFL,Rungis La Fraternelle,Rungis La Fraternelle,94,48.74032,2.35298,True
+87582833,SPX,Saint-Pierre-d'Aurillac,Saint-Pierre-d'Aurillac,33,44.5752452,-0.1876216,True
+87382218,LDU,La Défense,La Défense,92,48.89308,2.23763,True
+87583823,LXC,Luxé,Luxé,16,45.8873947,0.1094107,True
+87345397,IWY,Iwuy,Iwuy,59,50.2255015,3.3298634,True
+87481416,LHE,La Haie-Fouassière,La Haie-Fouassière,44,47.1615899,-1.392195,True
+87396572,ABG,Aubigné-Racan,Aubigné-Racan,72,47.686945,0.2657714,True
+87481143,THE,Thouaré-sur-Loire,Thouaré-sur-Loire,44,47.2651143,-1.4409626,True
+87481689,XDM,La Croix de Méan,La Croix de Méan,44,47.300426,-2.1932575,True
+87113704,RSB,Rosny-sous-Bois,Rosny-sous-Bois,93,48.87099,2.48559,True
+87757740,FYS,La Frayère,La Frayère,06,43.5581088,6.9720902,True
+87393157,VRG,Versailles Château Rive Gauche,Versailles Château Rive Gauche,78,48.8003635,2.1288274,True
+87574129,LBZ,Saint-Ay,Saint-Ay,45,47.863133,1.7499597,True
+87681247,VDP,Le Vert de Maisons,Le Vert de Maisons,94,48.78934,2.43148,True
+87386052,GCR,Achères Grand Cormier,Achères Grand Cormier,78,48.9551835,2.0919031,True
+87411173,ESA,Elbeuf - Saint-Aubin,Elbeuf - Saint-Aubin,76,49.302766,1.00993,True
+87733659,NIO,Noisy-le-Roi,Noisy-le-Roi,78,48.8415189,2.0618388,True
+87342337,SPT,Saint-Pol-sur-Ternoise,Saint-Pol-sur-Ternoise,62,50.37913,2.33939,True
+87784512,LSL,Le Soler,Le Soler,66,42.6787626,2.7930798,True
+87338517,HMT,Hoenheim Tram,Hoenheim Tram,67,48.6285976,7.7581387,True
+87726430,SRP,Saint-Romain-le-Puy,Saint-Romain-le-Puy,42,45.5545543,4.1208275,True
+87484170,MNS,Morannes,Morannes,49,47.7390902,-0.4179693,True
+87387159,CCH,Conches-en-Ouche,Conches-en-Ouche,27,48.9623603,0.9378895,True
+87182576,BWP,Bitschwiller-lès-Thann,Bitschwiller-lès-Thann,68,47.8273719,7.078514,True
+87400986,MXN,Magneux - Courlandon,Magneux - Courlandon,51,49.3100006,3.7331444,True
+87271478,BAM,Le Blanc-Mesnil,Le Blanc-Mesnil,93,48.93248,2.47747,True
+87696492,CLT,Cercy-la-Tour,Cercy-la-Tour,58,46.8578816,3.6452029,True
+87393470,MBR,Marchezais - Broué,Marchezais - Broué,28,48.7684736,1.513444,True
+87213413,HHH,Hoelschloch,Hoelschloch,67,48.9163252,7.8314949,True
+87694174,XSY,Saint-Symphorien-de-Marmagne,Saint-Symphorien-de-Marmagne,71,46.8442215,4.3377542,True
+87782607,COP,Clermont La Pardieu,Clermont La Pardieu,63,45.766947,3.134163,True
+87694620,MMI,Montceau-les-Mines,Montceau-les-Mines,71,46.6706636,4.3610264,True
+87286526,WAT,Wattignies - Templemars,Wattignies - Templemars,59,50.5793139,3.051975,True
+87582825,SNW,Saint-Macaire,Saint-Macaire,33,44.5686216,-0.2270601,True
+87696195,LAT,La Charité-sur-Loire,La Charité-sur-Loire,58,47.179914,3.023883,True
+87697318,VTN,Villetaneuse Université,Villetaneuse Université,93,48.96,2.34251,True
+87142240,FCB,Froncles Buxières,Froncles Buxières,52,48.29674,5.14156,True
+87726885,MRB,Montrond-les-Bains,Montrond-les-Bains,42,45.644429,4.248814,True
+87595249,STK,Saint-Astier,Saint-Astier,24,45.139027,0.522808,True
+87381806,TSS,Triel-sur-Seine,Triel-sur-Seine,78,48.98099,2.00577,True
+87276626,CHD,Vaucelles,Vaucelles,95,49.02193,2.22885,True
+87214783,SAA,Saales,Saales,67,48.3471556,7.1103726,True
+87715433,MKE,Morbier,Morbier,39,46.5392164,6.0176446,True
+87734707,LVL,Lavoûte-sur-Loire,Lavoûte-sur-Loire,43,45.1214503,3.9054101,True
+87722744,ALA,Alaï,Alaï,69,45.7521198,4.7717824,True
+87783175,SFC,Saint-Flour - Chaudes-Aigues,Saint-Flour - Chaudes-Aigues,15,45.0350122,3.1062862,True
+87316067,BXA,Buire-sur-l'Ancre,Buire-sur-l'Ancre,80,49.9647735,2.5981885,True
+87473066,CUL,Caulnes,Caulnes,22,48.2844264,-2.155593,True
+87574509,CLO,Cloyes-sur-le-Loir,Cloyes-sur-le-Loir,28,47.9921032,1.2433542,True
+87184275,MVX,Montreux-Vieux,Montreux-Vieux,68,47.6178576,7.0253947,True
+87175778,VDN,Verdun,Verdun,55,49.165406,5.379701,True
+87317123,WWX,Wimille - Wimereux,Wimille - Wimereux,62,50.7638456,1.6137455,True
+87491258,VVK,Villeneuve-la-Comtesse,Villeneuve-la-Comtesse,17,46.0986599,-0.5130717,True
+87713651,SJL,Saint-Jean-de-Losne,Saint-Jean-de-Losne,21,47.0997302,5.2441226,True
+87671339,LDS,Lourdes,Lourdes,65,43.10037,-0.042174,True
+87726778,BMO,Bas - Monistrol-sur-Loire,Bas - Monistrol-sur-Loire,43,45.297596,4.139602,True
+87723478,LTP,La Tour-du-Pin,La Tour-du-Pin,38,45.560277,5.450092,True
+87313569,BXE,Balagny Saint-Épin,Balagny Saint-Épin,60,49.2942448,2.3441977,True
+87746107,GAX,Grésy-sur-Aix,Grésy-sur-Aix,73,45.7245161,5.9221751,True
+87694364,SLH,Saint-Léger-sur-Dheune,Saint-Léger-sur-Dheune,71,46.8484526,4.6286039,True
+87586495,SVE,Sauveterre-la-Lémance,Sauveterre-la-Lémance,47,44.5893893,1.0115419,True
+87575704,MGX,Mignaloux - Nouaillé,Mignaloux - Nouaillé,86,46.5261427,0.4117391,True
+87694737,CYB,La Clayette - Baudemont,La Clayette - Baudemont,71,46.2881469,4.2984195,True
+87342212,FVK,Frévin-Capelle,Frévin-Capelle,62,50.3473177,2.6338262,True
+87681403,MJW,Moulin Galant,Moulin Galant,91,48.58626,2.47332,True
+87381137,AEE,Asnières-sur-Seine,Asnières-sur-Seine,92,48.9058,2.28324,True
+87328328,BFM,Bibliothèque François Mitterrand,Bibliothèque François Mitterrand,75,48.82984,2.37684,True
+87697326,PFE,Pierrefitte - Stains T11,Pierrefitte - Stains T11,93,,,True
+87381657,ACW,Achères Ville,Achères Ville,78,48.97011,2.07739,True
+87721522,WER,Le Méridien La Ferrière,Le Méridien La Ferrière,69,45.7684995,4.7484432,True
+87571810,XPR,Saint-Patrice,Saint-Patrice,37,47.2855394,0.3096916,True
+87317321,CAF,Caffiers,Caffiers,62,50.8500679,1.8120345,True
+87342030,MIK,Miraumont,Miraumont,80,50.0958521,2.7344755,True
+87713503,GCT,Gevrey-Chambertin,Gevrey-Chambertin,21,47.2274694,4.999058,True
+87295857,LQY,Le Quesnoy,Le Quesnoy,59,50.25021,3.64552,True
+87641076,SBD,Saint-Bonnet-de-Rochefort,Saint-Bonnet-de-Rochefort,03,46.1483796,3.1393877,True
+87118299,BRB,Bar-sur-Aube,Bar-sur-Aube,10,48.2385399,4.7066708,True
+87366922,EBL,Fourqueux - Bel-Air,Fourqueux - Bel-Air,78,48.89494,2.0705,True
+87582601,TEH,Le Teich,Le Teich,33,44.632507,-1.025556,True
+87481762,LIG,Le Pouliguen,Le Pouliguen,44,47.2825404,-2.4331446,True
+87478032,MSI,Montreuil-sur-Ille,Montreuil-sur-Ille,35,48.307292,-1.674155,True
+87574855,MRD,Montrichard,Montrichard,41,47.3437658,1.1717596,True
+87444315,SYD,Serquigny,Serquigny,27,49.1074117,0.7189895,True
+87354589,XTX,Saint-Sébastien Pas Enchantés,Saint-Sébastien Pas Enchantés,44,47.2069513,-1.5109069,True
+87411454,MBY,Montérolier - Buchy,Montérolier - Buchy,76,49.6031854,1.3347457,True
+87393223,SCR,Saint-Cyr-l'École,Saint-Cyr-l'École,78,48.7990666,2.0733739,True
+87393306,ISP,Issy Val de Seine,Issy Val de Seine,92,48.8295555,2.2635936,True
+87471052,SJJ,Saint-Jacques-de-la-Lande,Saint-Jacques-de-la-Lande,35,48.0670983,-1.7142367,True
+87726109,LEB,L'Etang les Sablons,L'Etang les Sablons,78,48.872302065217156,2.0688744062680113,True
+87681379,GGG,Grigny Centre,Grigny Centre,91,48.65343,2.395797,True
+87615013,VDL,Villefranche-de-Lauragais,Villefranche-de-Lauragais,31,43.398537,1.714725,True
+87576181,QRS,Les Quatre Roues,Les Quatre Roues,41,47.3325521,1.7025282,True
+87683003,SES,Sens,Sens,89,48.197856,3.267833,True
+87741504,VRU,Virieu-le-Grand - Belley,Virieu-le-Grand - Belley,01,45.8482817,5.6536162,True
+87393462,HOA,Houdan,Houdan,78,48.7958005,1.6027371,True
+87116582,CTH,Château-Thierry,Château-Thierry,02,49.038224,3.409514,True
+87142091,LAG,Langres,Langres,52,47.8769474,5.3444064,True
+87174409,MLP,Mourmelon-le-Petit,Mourmelon-le-Petit,51,49.1313076,4.3180982,True
+87113746,NLP,Nogent - Le Perreux,Nogent - Le Perreux,94,48.838846,2.494331,True
+87271163,PRF,Pierrefitte - Stains,Pierrefitte - Stains,93,48.96409,2.37213,True
+87116046,EMR,Émerainville - Pontault-Combault,Émerainville - Pontault-Combault,77,48.806034,2.618004,True
+87276469,PEB,Persan - Beaumont,Persan - Beaumont,95,49.14795,2.27914,True
+87175042,BLD,Bar-le-Duc,Bar-le-Duc,55,48.773308,5.166822,True
+87184622,CVL,Clerval,Clerval,25,47.3966577,6.4920574,True
+87276303,LUE,Longueil-Sainte-Marie,Longueil-Sainte-Marie,60,49.3425377,2.7175537,True
+87276220,VIB,Villiers-le-Bel - Gonesse - Arnouville,Villiers-le-Bel - Gonesse - Arnouville,95,48.994175,2.4162288,True
+87276352,RIA,Rieux - Angicourt,Rieux - Angicourt,60,49.29866,2.5214,True
+87191007,THL,Thionville,Thionville,57,49.353931,6.169543,True
+87345223,LEF,Leforest,Leforest,62,50.4278,3.05977,True
+87213421,SSF,Soultz-sous-Forêts,Soultz-sous-Forêts,67,48.9347687,7.8827184,True
+87276089,MBP,Montigny - Beauchamp,Montigny - Beauchamp,95,49.00758,2.19767,True
+87386409,HAR,Houilles - Carrières-sur-Seine,Houilles - Carrières-sur-Seine,78,48.9199636,2.1850828,True
+87271304,ALC,La Courneuve - Aubervilliers,La Courneuve - Aubervilliers,93,48.9242,2.38443,True
+87386573,PSY,Poissy,Poissy,78,48.9329014,2.0413676,True
+87386680,LMU,Les Mureaux,Les Mureaux,78,48.9927897,1.9129871,True
+87271171,LBJ,La Barre Ormesson,La Barre Ormesson,95,48.96633,2.31688,True
+87113803,LYV,Les Yvris Noisy-le-Grand,Les Yvris Noisy-le-Grand,93,48.823182,2.579828,True
+87682278,MOR,Moret - Veneux-les-Sablons,Moret - Veneux-les-Sablons,77,48.37838,2.79941,True
+87394007,CHH,Chartres,Chartres,28,48.4482023,1.4813128,True
+87271403,DRN,Drancy,Drancy,93,48.93298,2.45497,True
+87611095,BQY,Boussens,Boussens,31,43.179617,0.972543,True
+87276139,PSE,Pontoise,Pontoise,95,49.04709,2.09545,True
+87276196,GAJ,Garges - Sarcelles,Garges - Sarcelles,95,48.97663,2.39078,True
+87116020,OZF,Ozoir-la-Ferrière,Ozoir-la-Ferrière,77,48.77072,2.689841,True
+87615245,TES,Tessonnières,Tessonnières,81,43.9284209,1.9369531,True
+87592006,LIM,Limoges Bénédictins,Limoges Bénédictins,87,45.836089,1.267356,True
+87574343,AMQ,Amboise,Amboise,37,47.42148,0.981299,True
+87272013,JAX,Jaux,Jaux,60,49.3868029,2.777316,True
+87296566,API,Anizy - Pinon,Anizy - Pinon,02,49.4960073,3.4487637,True
+87576090,VFO,Vierzon Forges,Vierzon Forges,18,47.2099931,2.0994545,True
+87415158,AUF,Auffay,Auffay,76,49.716044,1.098441,True
+87571836,CQM,Cinq-Mars-la-Pile,Cinq-Mars-la-Pile,37,47.3452264,0.4604878,True
+87696294,SPM,Saint-Pierre-le-Moûtier,Saint-Pierre-le-Moûtier,58,46.7932373,3.1117427,True
+87481200,BLQ,Bouaye,Bouaye,44,47.1380806,-1.6810992,True
+87751404,AXP,Aix-en-Provence,Aix-en-Provence,13,43.522912,5.445345,True
+87393272,CGW,Coignières,Coignières,78,48.7437672,1.920809,True
+87182402,RCH,Ranspach,Ranspach,68,47.88157,7.01266,True
+87313221,ASN,Ailly-sur-Noye,Ailly-sur-Noye,80,49.75448,2.36419,True
+87322347,TNZ,Traou Nez,Traou Nez,22,48.74858987607243,-3.1349542664976724,True
+87576207,BGS,Bourges,Bourges,18,47.094145,2.394255,True
+87592485,BLL,Bellac,Bellac,87,46.1252044,1.0461168,True
+87581801,BGL,Bègles,Bègles,33,44.7995389,-0.5552495,True
+87286179,BIU,Bailleul,Bailleul,59,50.72916,2.73445,True
+87184200,BEV,Bas Évette,Bas Évette,90,47.6810089,6.8068494,True
+87783423,SDU,Saint-Georges-de-Luzençon,Saint-Georges-de-Luzençon,12,44.066553,2.983784,True
+87726216,BOH,Bouthéon,Bouthéon,42,45.5246289,4.2777187,True
+87781559,KBI,Les Cabrils,Les Cabrils,34,43.779707,3.1860831,True
+87783456,TEO,Tournemire - Roquefort,Tournemire - Roquefort,12,43.9698002,3.0166261,True
+87171579,AAY,Avenay,Avenay,51,49.0647826,4.043689,True
+87734301,SGA,Saint-Georges-d'Aurac,Saint-Georges-d'Aurac,43,45.1605341,3.4947035,True
+87781161,KOS,Coursan,Coursan,11,43.23369,3.0510465,True
+87713669,PYK,Pagny-le-Château,Pagny-le-Château,21,47.0462492,5.2010538,True
+87775106,UCD,Uchaud,Uchaud,30,43.7583991,4.2683101,True
+87759290,XPC,Picon Busserine,Picon Busserine,13,43.3309989,5.3927456,True
+87773531,VIC,Vic - Mireval,Vic - Mireval,34,43.5007687,3.7994505,True
+87765446,GDA,Gadagne,Gadagne,84,43.9296817,4.9568087,True
+87745596,BAB,Bons-en-Chablais,Bons-en-Chablais,74,46.270046,6.366246,True
+87746339,BON,Bonneville,Bonneville,74,46.077772,6.416524,True
+87757575,TYA,Le Trayas,Le Trayas,83,43.4746639,6.9243444,True
+87592287,SGN,Saint-Germain-les-Belles,Saint-Germain-les-Belles,87,45.6098703,1.4800397,True
+87597823,AOO,Aubusson,Aubusson,23,45.9596691,2.1617231,True
+87193250,BNG,Béning-lès-Saint-Avold,Béning-lès-Saint-Avold,57,49.1379541,6.8282982,True
+87756395,KAI,Cap-d'Ail,Cap-d'Ail,06,43.7205382,7.3943362,True
+87757559,AGH,Agay,Agay,83,43.4313701,6.8564997,True
+87757583,THM,Théoule-sur-Mer,Théoule-sur-Mer,06,43.5134929,6.9367978,True
+87726729,FNY,Firminy,Firminy,42,45.391625,4.28643,True
+87753707,ORG,Orgon,Orgon,13,43.7859131,5.0456738,True
+87755611,LUV,La Crau,La Crau,83,43.1449352,6.0687663,True
+87746818,MQK,Les Moussoux,Les Moussoux,74,45.9166347,6.8589899,True
+87746776,PKN,Les Pélerins,Les Pélerins,74,45.9125671,6.8472858,True
+87696328,MSA,Moulins sur Allier,Moulins sur Allier,03,46.561346,3.338842,True
+87476234,LDM,Landévant,Landévant,56,47.759578,-3.1251313,True
+87171272,RSN,Reims Maison Blanche,Reims Maison Blanche,51,49.2336853,4.0224927,True
+87725622,TOS,Tournus,Tournus,71,46.56668,4.906647,True
+87276642,BSR,Bessancourt,Bessancourt,95,49.03576,2.21004,True
+87751529,ATJ,L'Ariane La Trinité,L'Ariane La Trinité,06,43.7343716,7.3025298,True
+87741629,TFF,Frontenex,Frontenex,73,45.6305461,6.3140556,True
+87734129,AGE,Aigueperse,Aigueperse,63,46.0147884,3.1982621,True
+87746842,JOO,La Joux,La Joux,74,45.9657075,6.910179,True
+87286872,BAI,Baisieux,Baisieux,59,50.61845,3.2347796,True
+87545236,SAO,Savigny-sur-Orge,Savigny-sur-Orge,91,48.67614,2.35173,True
+87743344,CZQ,Cize - Bolozon,Cize - Bolozon,01,46.2134803,5.4540677,True
+87741256,AEB,Aiguebelle,Aiguebelle,73,45.5437225,6.3067175,True
+87581215,MGU,Margaux,Margaux,33,45.0358307,-0.6854145,True
+87681346,OBP,Orangis Bois de l'Épine,Orangis Bois de l'Épine,91,48.63626,2.407736,True
+87276758,NOJ,Nointel - Mours,Nointel - Mours,95,49.1327,2.28066,True
+87615625,CMX,Carmaux,Carmaux,81,44.048782,2.152401,True
+87726851,SNJ,Saint-Jodard,Saint-Jodard,42,45.8857125,4.125231,True
+87734087,PCV,Pont-du-Château,Pont-du-Château,63,45.7885543,3.2377829,True
+87682542,XFA,Saint-Fargeau-Ponthierry,Saint-Fargeau-Ponthierry,77,48.564549,2.542493,True
+87641415,CMY,Commentry,Commentry,03,46.295102,2.739949,True
+87393116,BLU,Bellevue,Bellevue,92,48.8190033,2.2296743,True
+87725713,KSA,Crêches-sur-Saône,Crêches-sur-Saône,71,46.2461762,4.7840233,True
+87381475,CVF,Chanteloup-les-Vignes,Chanteloup-les-Vignes,78,48.97095,2.02771,True
+87761163,TAI,Tain-l'Hermitage - Tournon,Tain-l'Hermitage - Tournon,26,45.072183,4.839967,True
+87286716,CRW,Croix - Wasquehal,Croix - Wasquehal,59,50.6785574,3.1380315,True
+87751362,MEK,Pertuis,Pertuis,84,43.6845547,5.5037023,True
+87721241,KMD,Couzon-au-Mont-d'Or,Couzon-au-Mont-d'Or,69,45.8486737,4.8294786,True
+87761742,POS,Poliénas,Poliénas,38,45.256006,5.4735849,True
+87723569,MLU,Montluel,Montluel,01,45.84777,5.057503,True
+87721704,FLD,Les Flachères,Les Flachères,69,45.7774345,4.7541523,True
+87721548,TSW,La Tour-de-Salvagny,La Tour-de-Salvagny,69,45.7998818,4.7164921,True
+87722546,SZN,Sérézin-du-Rhône,Sérézin-du-Rhône,69,45.62716,4.81806,True
+87721860,LAZ,Lamure-sur-Azergues,Lamure-sur-Azergues,69,46.0610834,4.4921137,True
+87415018,DEV,Dieppe,Dieppe,76,49.921788,1.081133,True
+87721050,RGY,Régny,Régny,42,45.987705,4.2150753,True
+87611921,LYF,Colomiers Lycée International,Colomiers Lycée International,31,43.6163055,1.3141157,True
+87718437,LJY,Laissey,Laissey,25,47.298723,6.23304,True
+87718841,ACA,Arc-et-Senans,Arc-et-Senans,25,47.0303516,5.7767843,True
+87721829,CWE,Chamelet,Chamelet,69,45.9816414,4.5069346,True
+87393488,DRX,Dreux,Dreux,28,48.7314561,1.3701604,True
+87721266,VVN,Albigny - Neuville,Albigny - Neuville,69,45.874921,4.832874,True
+87444414,DVQ,Dives-sur-Mer - Cabourg,Dives-sur-Mer - Cabourg,14,49.2864776,-0.1074996,True
+87715144,RIW,La Rivière-Drugeon,La Rivière-Drugeon,25,46.8701507,6.2133331,True
+87381418,ERA,Éragny - Neuville,Éragny - Neuville,95,49.01824,2.09104,True
+87673699,PBJ,Bidarray Pont Noblia,Bidarray Pont Noblia,64,43.2682991,-1.3453233,True
+87682427,FPO,Fontaine-le-Port,Fontaine-le-Port,77,48.4871358,2.7514043,True
+87547026,PAZ,Paris Austerlitz,Paris Austerlitz,75,48.842285,2.364891,False
+87595736,EYZ,Les Eyzies-de-Tayac-Sireuil,Les Eyzies-de-Tayac-Sireuil,24,44.9411916,1.0081942,True
+87182634,ODE,Oderen,Oderen,68,47.9118756,6.9734829,True
+87615138,VRZ,Verzeille,Verzeille,11,43.1304633,2.3212626,True
+87671479,ARO,Arengosse,Arengosse,40,44.0069764,-0.8093835,True
+87673269,SGQ,Saint-Geours-de-Maremne,Saint-Geours-de-Maremne,40,43.6713719,-1.2412599,True
+87645101,YTC,Ytrac,Ytrac,15,44.9106891,2.3644474,True
+87615146,PMA,Pomas,Pomas,11,43.1123875,2.2892273,True
+87393405,FAF,Fontenay-le-Fleury,Fontenay-le-Fleury,78,48.8074032,2.0404603,True
+87757641,GLF,Golfe Juan Vallauris,Golfe Juan Vallauris,06,43.566501,7.073578,True
+87618116,PJT,Pins-Justaret,Pins-Justaret,31,43.479213,1.399645,True
+87682294,SFI,Saint-Mammès,Saint-Mammès,77,48.382171,2.81593,True
+87286732,RXB,Roubaix,Roubaix,59,50.69561,3.16348,True
+87612010,MQN,Montaudran,Montaudran,31,43.5734591,1.4804356,True
+87641365,MGR,Magnette,Magnette,03,46.4641418,2.6028771,True
+87276600,SLF,Saint-Leu-la-Forêt,Saint-Leu-la-Forêt,95,49.01571,2.24264,True
+87613877,SIR,Salles-Courbatiès,Salles-Courbatiès,12,44.4751593,2.0787662,True
+87381566,GGV,Gargenville,Gargenville,78,48.98318,1.8089,True
+87681353,GBG,Grand Bourg,Grand Bourg,91,48.648004,2.435939,True
+87613091,FIG,Figeac,Figeac,46,44.603515,2.037355,True
+87415620,GAA,Gaillon - Aubevoye,Gaillon - Aubevoye,27,49.174626,1.352461,True
+87594739,VAY,Vayrac,Vayrac,46,44.9501471,1.7062871,True
+87473074,BOS,Broons,Broons,22,48.3332957,-2.2356578,True
+87286096,HAU,Haubourdin,Haubourdin,59,50.6070495,2.990153,True
+87611624,JNV,Saint-Jean-de-Verges,Saint-Jean-de-Verges,09,43.0128587,1.608059,True
+87613224,AVB,Aubin,Aubin,12,44.5272762,2.2393128,True
+87485110,CTL,Châtelaillon-Plage,Châtelaillon-Plage,17,46.0783303,-1.0908909,True
+87597112,CBQ,Chabenet,Chabenet,36,46.6265259,1.5076773,True
+87172130,GVT,Givet,Givet,08,50.14025067,4.81798595,True
+87598755,LMF,Limoux Flassian,Limoux Flassian,11,43.0684511,2.2182832,True
+87193359,FAQ,Faulquemont,Faulquemont,57,49.0453391,6.6039774,True
+87214692,SCK,Schirmeck - La Broque,Schirmeck - La Broque,67,48.47973,7.21594,True
+87592352,BHA,Bersac-sur-Rivalier,Bersac-sur-Rivalier,87,46.0837459,1.4321682,True
+87586412,LRQ,Laroque-Timbaut,Laroque-Timbaut,47,44.2875163,0.7497189,True
+87756353,NIR,Nice Riquier,Nice Riquier,06,43.705554,7.290175,True
+87734731,CML,Chamalières-sur-Loire,Chamalières-sur-Loire,43,45.2047385,3.9909202,True
+87471334,JZE,Janzé,Janzé,35,47.955364,-1.497538,True
+87582759,BSQ,Barsac,Barsac,33,44.6054306,-0.3215775,True
+87584730,SIT,Saint-Loubès,Saint-Loubès,33,44.9224009,-0.4333056,True
+87193318,SVD,Saint-Avold,Saint-Avold,57,49.085873,6.7206141,True
+87491472,JCB,Jarnac,Jarnac,16,45.6711292,-0.1777613,True
+87386664,KVE,Les Clairières de Verneuil,Les Clairières de Verneuil,78,48.9922407,1.955265,True
+87444638,LAE,L'Aigle,L'Aigle,61,48.766229,0.620014,True
+87313692,HEE,Herchies,Herchies,60,49.4879546,2.0109273,True
+87584714,VYR,Vayres,Vayres,33,44.89717,-0.31686,True
+87574541,PEZ,Pezou,Pezou,41,47.8673364,1.1408714,True
+87481846,PCU,Pontchâteau,Pontchâteau,44,47.435399,-2.088201,True
+87484147,TCE,Tiercé,Tiercé,49,47.617532,-0.469347,True
+87540179,DAQ,Dourdan La Forêt,Dourdan La Forêt,91,48.535314,1.994908,True
+87382200,KOU,Courbevoie,Courbevoie,92,48.89831,2.24804,True
+87575126,DGE,Dangé-Saint-Romain,Dangé-Saint-Romain,86,46.9378397,0.6087754,True
+87746735,VDU,Viaduc Sainte-Marie,Viaduc Sainte-Marie,74,45.897096,6.7850134,True
+87581850,BAS,Bassens,Bassens,33,44.9012933,-0.5223144,True
+87194274,LGN,Longuyon,Longuyon,54,49.4442555,5.604482,True
+87212175,WIW,Wilwisheim,Wilwisheim,67,48.745831,7.5077599,True
+87576306,BIG,Bigny,Bigny,18,46.8015763,2.368638,True
+87582775,LGE,Langon,Langon,33,44.555448,-0.25554,True
+87575167,NPY,Nerpuy,Nerpuy,86,46.7834177,0.5256884,True
+87576132,MMH,Marmagne,Marmagne,18,47.1001505,2.2819971,True
+87574491,CQH,Chenonceaux,Chenonceaux,37,47.330554,1.0661,True
+87313296,AVY,Avrechy,Avrechy,60,49.4446439,2.4179608,True
+87575050,SYT,Sainte-Maure - Noyant,Sainte-Maure - Noyant,37,47.1112361,0.5769439,True
+87753426,RAU,Rassuen,Rassuen,13,43.4966716,4.9731266,True
+87543058,ATY,Artenay,Artenay,45,48.0808761,1.8833705,True
+87575183,LTR,La Tricherie,La Tricherie,86,46.7288206,0.4412021,True
+87574236,SVK,Suèvres,Suèvres,41,47.6802248,1.4540981,True
+87641043,LPY,Lapeyrouse,Lapeyrouse,63,46.2267825,2.893393,True
+87574848,CXT,Chissay-en-Touraine,Chissay-en-Touraine,41,47.3349004,1.1333044,True
+87571604,BME,Ballan-Miré,Ballan-Miré,37,47.3369919,0.6188975,True
+87286187,LMA,La Madeleine,La Madeleine,59,50.6608037,3.0725804,True
+87444182,FVL,Frénouville - Cagny,Frénouville - Cagny,14,49.1411192,-0.2603256,True
+87491324,SBZ,Saint-Hilaire - Brizambourg,Saint-Hilaire - Brizambourg,17,45.85007,-0.5347155,True
+87276212,LIA,Liancourt - Rantigny,Liancourt - Rantigny,60,49.32471,2.44532,True
+87487280,CEZ,Cerizay,Cerizay,79,46.8176878,-0.6689931,True
+87684001,MSR,Montargis,Montargis,45,48.006862,2.742783,True
+87545129,GUE,Guillerval,Guillerval,91,48.3744455,2.0598748,True
+87486431,OSM,Olonne-sur-Mer,Olonne-sur-Mer,85,46.5486605,-1.76738,True
+87485359,PIH,Prissé-la-Charrière,Prissé-la-Charrière,79,46.15277,-0.4936249,True
+87611863,VCD,Valence d'Agen,Valence d'Agen,82,44.1117317,0.8915743,True
+87478107,SMP,Saint-Malo,Saint-Malo,35,48.646859,-2.004158,True
+87723734,SAY,Saint-André-de-Corcy,Saint-André-de-Corcy,01,45.925911,4.948846,True
+87545194,BYR,Brétigny-sur-Orge,Brétigny-sur-Orge,91,48.606683,2.302378,True
+87393280,LSI,Les Essarts-le-Roi,Les Essarts-le-Roi,78,48.7217171,1.8904047,True
+87486019,LRY,La Roche-sur-Yon,La Roche-sur-Yon,85,46.67212,-1.435621,True
+87721423,LOZ,Lozanne,Lozanne,69,45.85414,4.681501,True
+87723718,ECH,Les Échets,Les Échets,01,45.8746675,4.9108215,True
+87484329,ZVN,Savennières - Béhuard,Savennières - Béhuard,49,47.3817332,-0.6540004,True
+87476432,KHT,Kerhostin,Kerhostin,56,47.5369524,-3.1363795,True
+87481697,BFP,La Baule Les Pins,La Baule Les Pins,44,47.2835196,-2.3648441,True
+87484048,AME,Angers Maître École,Angers Maître École,49,47.4670899,-0.531894,True
+87713131,MBA,Montbard,Montbard,21,47.618747,4.33616,True
+87212373,RZH,Rountzenheim,Rountzenheim,67,48.820435,8.0119078,True
+87481564,EIF,La Chapelle Centre,La Chapelle Centre,44,47.2972029,-1.548012,True
+87476309,GES,Gestel,Gestel,56,47.8029905,-3.4431341,True
+87476648,YAN,Sainte-Anne,Sainte-Anne,56,47.6785805,-2.96048,True
+87696179,PYL,Pouilly-sur-Loire,Pouilly-sur-Loire,58,47.2821696,2.9660634,True
+87753004,MAS,Miramas,Miramas,13,43.580704,5.000264,True
+87673103,MCX,Morcenx,Morcenx,40,44.033565,-0.90864,True
+87478743,GST,Le Genest-Saint-Isle,Le Genest-Saint-Isle,53,48.0967372,-0.8858084,True
+87545160,LYO,Lardy,Lardy,91,48.520639,2.255739,True
+87474213,KHO,Kerhuon,Kerhuon,29,48.4096627,-4.3882136,True
+87491019,BOR,Bords,Bords,17,45.8944625,-0.7985436,True
+87476424,PTW,Penthièvre,Penthièvre,56,47.5580254,-3.1330754,True
+87471144,LLJ,Laillé,Laillé,35,47.9717527,-1.7495654,True
+87718510,MIJ,Mamirolle,Mamirolle,25,47.1998712,6.1617411,True
+87184267,PZC,Petit-Croix,Petit-Croix,90,47.6101045,6.9947414,True
+87473876,FYD,Frynaudour,Frynaudour,22,48.7275919,-3.1284527,True
+87473082,PLJ,Plénée-Jugon,Plénée-Jugon,22,48.376656,-2.3546108,True
+87474007,BRT,Brest,Brest,29,48.38811,-4.478903,True
+87417501,LCW,Lancey,Lancey,38,45.2344784,5.8809758,True
+87747329,MOA,Moirans,Moirans,38,45.322185,5.581915,True
+87116087,MRT,Mormant,Mormant,77,48.613564,2.88881,True
+87144121,XTY,Xertigny,Xertigny,88,48.0530255,6.3767687,True
+87444190,MTA,Moult - Argences,Moult - Argences,14,49.1111851,-0.1864355,True
+87471540,NOC,Noyal - Acigné,Noyal - Acigné,35,48.1187915,-1.5277646,True
+87446179,TEW,Saint-Cyprien Arènes,Saint-Cyprien Arènes,31,43.593438,1.417986,True
+87401323,MUU,Mouans-Sartoux,Mouans-Sartoux,06,43.620318,6.974114,True
+87471219,BIQ,Beslé,Beslé,44,47.6988788,-1.8706374,True
+87415323,BGT,Bourgtheroulde - Thuit-Hébert,Bourgtheroulde - Thuit-Hébert,27,49.3174381,0.8383198,True
+87713529,NUI,Nuits-Saint-Georges,Nuits-Saint-Georges,21,47.130545,4.956204,True
+87615252,GAI,Gaillac,Gaillac,81,43.905969,1.894855,True
+87394205,AMY,Amilly Ouerray,Amilly Ouerray,28,48.4381825,1.3892882,True
+87485300,NRT,Niort,Niort,79,46.319491,-0.454639,True
+87411462,SKY,Sommery,Sommery,76,49.6297244,1.4353726,True
+87592311,ABZ,Ambazac,Ambazac,87,45.9529056,1.406501,True
+87413328,EAH,Étainhus - Saint-Romain,Étainhus - Saint-Romain,76,49.5612151,0.3310234,True
+87396093,LHU,La Hutte Coulombiers,La Hutte Coulombiers,72,48.303495,0.1056788,True
+87391300,MOE,Morre,Morre,25,47.2259417,6.0673029,True
+87396077,VBT,Vivoin - Beaumont,Vivoin - Beaumont,72,48.2302093,0.1447829,True
+87394429,MBW,Magny - Blandainville,Magny - Blandainville,28,48.3342906,1.2811066,True
+87345306,MYO,Montigny-en-Ostrevent,Montigny-en-Ostrevent,59,50.36151,3.18829,True
+87381731,NZL,Nézel - Aulnay,Nézel - Aulnay,78,48.9387638,1.8405298,True
+87394221,CVB,Courville-sur-Eure,Courville-sur-Eure,28,48.451236,1.234836,True
+87741306,SVB,Saint-Avre - La Chambre,Saint-Avre - La Chambre,73,45.3530978,6.3028277,True
+87645507,NEU,Neussargues,Neussargues,15,45.1253044,2.9791866,True
+87543181,BWR,Boulainvilliers,Boulainvilliers,75,48.85645,2.275149,True
+87411207,OSL,Oissel,Oissel,76,49.34306,1.101799,True
+87345249,OIC,Ostricourt,Ostricourt,59,50.44542,3.03244,True
+87345595,WAM,Wambaix,Wambaix,59,50.1338767,3.3114074,True
+87345215,SLI,Sallaumines,Sallaumines,62,50.4223266,2.8556769,True
+87184507,HCT,Héricourt,Héricourt,70,47.5729701,6.7691977,True
+87345553,BTD,Bertry,Bertry,59,50.0911265,3.4489955,True
+87345496,EDV,Escaudœuvres,Escaudœuvres,59,50.1918249,3.2754949,True
+87586693,AIN,Aiguillon,Aiguillon,47,44.2987224,0.3352388,True
+87342279,BIO,Isbergues,Isbergues,62,50.61399,2.46277,True
+87342535,VML,Vis à Marles,Vis à Marles,62,50.5050115,2.5171137,True
+87116558,NAU,Nanteuil - Saâcy,Nanteuil - Saâcy,77,48.9738082,3.2200172,True
+87581256,PAC,Pauillac,Pauillac,33,45.2038438,-0.7551342,True
+87710731,ECV,École-Valentin,École-Valentin,25,47.2749834,5.9944745,True
+87316406,MTF,Montreuil-sur-Thérain,Montreuil-sur-Thérain,60,49.38152,2.2002529,True
+87334508,PTK,La Poterie,La Poterie,35,48.0923448,-1.6307729,True
+87313338,HGI,Hargicourt - Pierrepont,Hargicourt - Pierrepont,80,49.7138593,2.5317673,True
+87381012,PRR,Péreire - Levallois,Péreire - Levallois,75,48.8853581,2.2979465,True
+87317537,EUW,Eu,Eu,76,50.0541988,1.416837,True
+87343301,WSB,Wallers,Wallers,59,50.384611,3.3937454,True
+87393165,POA,Porchefontaine,Porchefontaine,78,48.7969381,2.1540156,True
+87715003,PTL,Pontarlier,Pontarlier,25,46.900944,6.353524,True
+87317081,DCQ,Dannes - Camiers,Dannes - Camiers,62,50.5759062,1.614825,True
+87175828,PYM,Pagny-sur-Meuse,Pagny-sur-Meuse,55,48.6965426,5.7336468,True
+87297283,VXL,Vauxaillon,Vauxaillon,02,49.4741418,3.4096166,True
+87313288,RLE,Saint-Remy-en-l'Eau,Saint-Remy-en-l'Eau,60,49.4681726,2.4258609,True
+87681338,RIS,Ris-Orangis,Ris-Orangis,91,48.659442,2.41442,True
+87295725,AVS,Avesnelles,Avesnelles,59,50.1185513,3.9485876,True
+87595009,PXR,Périgueux,Périgueux,24,45.187408,0.707879,True
+87296293,FEG,Fresnoy-le-Grand,Fresnoy-le-Grand,02,49.9501964,3.43268,True
+87444349,PVQ,Pont-l'Évêque,Pont-l'Évêque,14,49.2870379,0.1921947,True
+87116160,PRO,Provins,Provins,77,48.55577,3.302822,True
+87296608,VSI,Versigny,Versigny,02,49.6574494,3.4335692,True
+87286161,SWK,Steenwerck,Steenwerck,59,50.713459,2.7855769,True
+87286203,STZ,Strazeele,Strazeele,59,50.713492,2.6312181,True
+87485144,RCT,Rochefort,Rochefort,17,45.947189,-0.963556,True
+87718361,ORA,Orchamps,Orchamps,39,47.1500962,5.659147,True
+87747006,GRE,Grenoble,Grenoble,38,45.191493,5.714584,True
+87313601,RCY,Rochy-Condé,Rochy-Condé,60,49.3986042,2.1727344,True
+87743120,PDA,Pont-d'Ain,Pont-d'Ain,01,46.053961,5.3343285,True
+87286062,HEL,Hellemmes,Hellemmes,59,50.6226402,3.1149328,True
+87276063,CEJ,Cernay (Val-d'Oise),Cernay (Val-d'Oise),95,48.98539,2.2568,True
+87271874,CRU,Crouy,Crouy,02,49.4037093,3.3569138,True
+87272047,COJ,Compans,Compans,77,48.9915767,2.6652718,True
+87784173,RVT,Rivesaltes,Rivesaltes,66,42.7664405,2.86789,True
+87683573,AUX,Auxerre Saint-Gervais,Auxerre Saint-Gervais,89,47.797645,3.58514,True
+87276543,AUW,Auvers-sur-Oise,Auvers-sur-Oise,95,49.07062,2.17526,True
+87721431,LBL,L'Arbresle,L'Arbresle,69,45.833299,4.618319,True
+87276147,EPL,Épluches,Épluches,95,49.0549329,2.1225973,True
+87214593,GEI,Gresswiller,Gresswiller,67,48.53334,7.42468,True
+87272286,CKX,Corcy,Corcy,02,49.2550929,3.2157221,True
+87726307,SCM,Saint-Chamond,Saint-Chamond,42,45.47257,4.51695,True
+87213603,MTK,Marienthal,Marienthal,67,48.781863,7.8231894,True
+87474155,RSP,Rosporden,Rosporden,29,47.960273,-3.832763,True
+87213447,HFN,Hoffen,Hoffen,67,48.9312475,7.933587,True
+87413377,FTA,Foucart - Alvimare,Foucart - Alvimare,76,49.608289,0.5969601,True
+87213686,HOD,Hoerdt,Hoerdt,67,48.7029518,7.7794059,True
+87175000,SDZ,Saint-Dizier,Saint-Dizier,52,48.642404,4.947855,True
+87713677,SEU,Seurre,Seurre,21,46.9964114,5.1513121,True
+87590349,BBR,Babinière,Babinière,44,47.25875274,-1.544928378,True
+87577403,ITL,Iteuil,Iteuil,86,46.4841223,0.3168298,True
+87574681,MON,Monnaie,Monnaie,37,47.4987491,0.7932851,True
+87214544,DTM,Duttlenheim,Duttlenheim,67,48.5453531,7.5661529,True
+87751438,SIE,Simiane-Collongue,Simiane-Collongue,13,43.434747,5.426148,True
+87592709,SJU,Saint-Junien,Saint-Junien,87,45.8813844,0.9004849,True
+87212456,MQW,Mothern,Mothern,67,48.9347327,8.1615803,True
+87313833,FMR,Formerie,Formerie,60,49.6542178,1.7229081,True
+87575134,IGR,Ingrandes sur Vienne,Ingrandes sur Vienne,86,46.8746283,0.5691164,True
+87212225,SNE,Saverne,Saverne,67,48.7444606,7.3620802,True
+87545756,CUN,Châteaudun,Châteaudun,28,48.073463,1.338133,True
+87718213,DBV,Domblans - Voiteur,Domblans - Voiteur,39,46.7627809,5.5977462,True
+87481283,PNC,Pornic,Pornic,44,47.1145616,-2.0975565,True
+87276402,SLT,Saint-Leu-d'Esserent,Saint-Leu-d'Esserent,60,49.2140819,2.4177845,True
+87192658,BTS,Baroncourt,Baroncourt,55,49.2845332,5.6997387,True
+87313080,SRO,Saint-Roch,Saint-Roch,80,49.8933575,2.2837132,True
+87191643,APJ,Apach,Apach,57,49.458836,6.371972,True
+87271817,SOI,Soissons,Soissons,02,49.3691983,3.3381259,True
+87192724,HZE,Hatrize,Hatrize,54,49.1934741,5.9071141,True
+87182642,KRD,Kruth,Kruth,68,47.92396,6.9690938,True
+87394452,BRO,Brou,Brou,28,48.2157588,1.1606705,True
+87182600,XAR,Saint-Amarin,Saint-Amarin,68,47.8728596,7.0287447,True
+87182584,WIL,Willer-sur-Thur,Willer-sur-Thur,68,47.8425494,7.0693196,True
+87185348,CPY,Champagney,Champagney,70,47.7031399,6.7012773,True
+87182543,LFZ,Luttenbach-près-Munster,Luttenbach-près-Munster,68,48.0352559,7.1186307,True
+87296616,CNY,Chauny,Chauny,02,49.61119,3.22354,True
+87611368,SRN,Saverdun,Saverdun,09,43.239357,1.570616,True
+87182089,HAB,Habsheim,Habsheim,68,47.737691,7.417979,True
+87473140,CDN,Châtelaudren - Plouagat,Châtelaudren - Plouagat,22,48.5332189,-2.9746782,True
+87447284,VAS,Valognes,Valognes,50,49.505454,-1.47986,True
+87723700,SYR,Sathonay - Rillieux,Sathonay - Rillieux,69,45.820264,4.875315,True
+87182204,IFH,Illfurth,Illfurth,68,47.6764322,7.2685712,True
+87296871,FAM,Flavy-le-Martel,Flavy-le-Martel,02,49.7187375,3.1905076,True
+87595520,XPH,Saint-Pierre-de-Chignac,Saint-Pierre-de-Chignac,24,45.1234881,0.856103,True
+87171744,AMF,Amifontaine,Amifontaine,02,49.4847322,3.9105811,True
+87594408,TOD,Terrasson-Lavilledieu,Terrasson-Lavilledieu,24,45.1357901,1.3004219,True
+87171314,JYV,Jonchery-sur-Vesle,Jonchery-sur-Vesle,51,49.290057,3.819422,True
+87181065,WHM,Walheim,Walheim,68,47.6416406,7.2633202,True
+87141804,BEE,Belleville,Belleville,54,48.8195721,6.1018641,True
+87722728,BGN,Brignais,Brignais,69,45.6737721,4.7636596,True
+87144436,ELS,Éloyes,Éloyes,88,48.087067,6.6001593,True
+87142232,VNR,Vignory,Vignory,52,48.2701366,5.1241594,True
+87576215,VNY,Valençay,Valençay,36,47.163172,1.5584442,True
+87713198,TNE,Tonnerre,Tonnerre,89,47.85938,3.97355,True
+87747576,VIF,Vif,Vif,38,45.0476532,5.6854542,True
+87448159,VIR,Vire,Vire,14,48.846329,-0.882884,True
+87781062,PLN,Port-la-Nouvelle,Port-la-Nouvelle,11,43.0199342,3.0388188,True
+87131961,BMC,Brion - Montréal-la-Cluse,Brion - Montréal-la-Cluse,01,46.1757013,5.5585203,True
+87694653,GEL,Génelard,Génelard,71,46.5812177,4.2379965,True
+87582684,CDJ,Cadaujac,Cadaujac,33,44.7520628,-0.5376186,True
+87142224,BOG,Bologne,Bologne,52,48.1986877,5.1342228,True
+87141093,LNV,Laneuveville-devant-Nancy,Laneuveville-devant-Nancy,54,48.65564,6.22792,True
+87722025,LPR,Lyon Perrache,Lyon Perrache,69,45.748476,4.825733,True
+87571638,AZR,Azay-le-Rideau,Azay-le-Rideau,37,47.2663383,0.4475388,True
+87682179,WEE,Le Mée-sur-Seine,Le Mée-sur-Seine,77,48.540086,2.624116,True
+87697342,DLC,Dugny - La Courneuve T11,Dugny - La Courneuve T11,93,48.9439,2.4115,True
+87212332,GHM,Gambsheim,Gambsheim,67,48.6948699,7.8791884,True
+87583617,LCO,La Couronne,La Couronne,16,45.604570970062376,0.1011570895580505,True
+87313734,GAR,Grandvilliers,Grandvilliers,60,49.6593779,1.9384836,True
+87582536,YXC,Ychoux,Ychoux,40,44.3292659,-0.9460318,True
+87755355,CFU,Cuers - Pierrefeu,Cuers - Pierrefeu,83,43.2364281,6.0856855,True
+87191742,GDG,Gandrange - Amnéville,Gandrange - Amnéville,57,49.2608222,6.1358897,True
+87594234,AAA,Allassac,Allassac,19,45.2589385,1.4731471,True
+87597724,PCG,Parsac - Gouzon,Parsac - Gouzon,23,46.1986154,2.1744416,True
+87775791,GEC,Générac,Générac,30,43.7324379,4.3434742,True
+87723197,LYD,Lyon Part Dieu,Lyon Part Dieu,69,45.760559,4.859355,True
+87584243,LZE,Lamonzie-Saint-Martin,Lamonzie-Saint-Martin,24,44.8450247,0.3854609,True
+87313742,FBS,Feuquières - Broquiers,Feuquières - Broquiers,60,49.6545751,1.8305169,True
+87276410,PYO,Précy-sur-Oise,Précy-sur-Oise,60,49.2033492,2.3764638,True
+87141150,LNE,Lunéville,Lunéville,54,48.588233,6.49727,True
+87715441,MRZ,Morez,Morez,39,46.5262166,6.023578,True
+87545350,SME,Saint-Martin d'Étampes,Saint-Martin d'Étampes,91,48.42747,2.145401,True
+87718312,DNV,Dannemarie - Velesmes,Dannemarie - Velesmes,25,47.2038599,5.8738348,True
+87684233,DDI,Dordives,Dordives,45,48.1471796,2.7628787,True
+87342121,MJG,Mazingarbe,Mazingarbe,62,50.4608957,2.7005447,True
+87543199,THY,Theillay,Theillay,41,47.3139904,2.0443867,True
+87761759,TLE,Tullins Fures,Tullins Fures,38,45.300996,5.492194,True
+87382366,VDO,Le Val d'Or,Le Val d'Or,92,48.85645,2.21636,True
+87645168,MRS,Maurs,Maurs,15,44.7061543,2.1995656,True
+87271734,VCT,Villers-Cotterêts,Villers-Cotterêts,02,49.25026,3.0937,True
+87193615,SGS,Sarreguemines,Sarreguemines,57,49.1073357,7.0686398,True
+87144154,BUY,Bruyères,Bruyères,88,48.204895,6.7187638,True
+87115873,CPK,Champbenoist - Poigny,Champbenoist - Poigny,77,48.545567,3.287434,True
+87751842,SAH,Sainte-Marthe en Provence,Sainte-Marthe en Provence,13,43.3392414,5.390412,True
+87141820,PAM,Pont-à-Mousson,Pont-à-Mousson,54,48.90058,6.050842,True
+87755264,LSM,La Seyne - Six-Fours,La Seyne - Six-Fours,83,43.116959,5.876966,True
+87784256,COX,Collioure,Collioure,66,42.5269437,3.0782319,True
+87295014,JTJ,Jeumont,Jeumont,59,50.29606,4.08645,True
+87612002,FRV,Labège Innopole,Labège Innopole,31,43.5473613,1.5129784,True
+87781260,VAB,Vias,Vias,34,43.315653,3.4253562,True
+87784751,THG,Thuès Carença,Thuès Carença,66,42.5229486,2.2227279,True
+87342592,BSH,Bailleul-Sir-Berthoult,Bailleul-Sir-Berthoult,62,50.3351257,2.8409809,True
+87146217,XNB,Saint-Nabord,Saint-Nabord,88,48.0461722,6.5818945,True
+87345421,ARX,Arleux,Arleux,59,50.2863204,3.1208073,True
+87611392,VQV,Venerque - Vernet,Venerque - Vernet,31,43.433361,1.426079,True
+87473520,PMZ,Pont-Melvez,Pont-Melvez,22,48.4702228,-3.3114444,True
+87543017,LAB,Les Aubrais,Les Aubrais,45,47.926801,1.906629,True
+87576140,SSD,Selles-Saint-Denis,Selles-Saint-Denis,41,47.3883857,1.9222038,True
+87272195,LPK,Longueil-Annel,Longueil-Annel,60,49.4672441,2.8634086,True
+87386649,VSW,Villennes-sur-Seine,Villennes-sur-Seine,78,48.9394602,1.9993185,True
+87684217,SPP,Souppes - Château-Landon,Souppes - Château-Landon,77,48.181907,2.734971,True
+87682211,FON,Fontainebleau - Avon,Fontainebleau - Avon,77,48.416371,2.72634,True
+87381624,BVA,Bréval,Bréval,78,48.94336,1.54191,True
+87671008,TBS,Tarbes,Tarbes,65,43.239955,0.069415,True
+87381426,XOA,Saint-Ouen-l'Aumône Quartier de l'Église,Saint-Ouen-l'Aumône Quartier de l'Église,95,49.03997,2.10369,True
+87751420,GDN,Gardanne,Gardanne,13,43.455992,5.463332,True
+87592410,NEW,Nieul,Nieul,87,45.9273896,1.1723974,True
+87382259,GMC,Garches - Marnes-la-Coquette,Garches - Marnes-la-Coquette,92,48.83839,2.18692,True
+87313122,LGP,Longpré-les-Corps-Saints,Longpré-les-Corps-Saints,80,50.01128,2.00277,True
+87276741,LTC,Thourotte,Thourotte,60,49.4760722,2.8830021,True
+87765412,MFT,Montfavet,Montfavet,84,43.932635,4.873943,True
+87615195,ALM,Albi Madeleine,Albi Madeleine,81,43.938011,2.1409629,True
+87295568,HAT,Hautmont,Hautmont,59,50.25398,3.91522,True
+87394296,NGR,Nogent-le-Rotrou,Nogent-le-Rotrou,28,48.3255926,0.8103045,True
+87784561,ILL,Ille-sur-Têt,Ille-sur-Têt,66,42.6682396,2.6242863,True
+87144063,VCY,Vincey,Vincey,88,48.3436471,6.3355129,True
+87584201,XAB,Saint-Antoine-de-Breuilh,Saint-Antoine-de-Breuilh,24,44.8466877,0.15196,True
+87116665,MAQ,Mareuil-sur-Ourcq,Mareuil-sur-Ourcq,60,49.1355418,3.075653,True
+87116178,XCS,Sainte-Colombe Septveilles,Sainte-Colombe Septveilles,77,48.52959,3.25602,True
+87381038,AVF,Avenue Foch,Avenue Foch,75,48.870971,2.2756167,True
+87394486,AOU,Arrou,Arrou,28,48.0997945,1.1285567,True
+87474312,STH,Saint-Thégonnec,Saint-Thégonnec,29,48.4942082,-3.9483116,True
+87415877,VDR,Val-de-Reuil,Val-de-Reuil,27,49.275437,1.224147,True
+87471532,SVO,Servon-sur-Vilaine,Servon-sur-Vilaine,35,48.112224,-1.4667757,True
+87757724,GRA,Grasse,Grasse,06,43.653317,6.925524,True
+87615112,LZA,Lézignan-Corbières,Lézignan-Corbières,11,43.1999609,2.7699635,True
+87181016,SLU,Saint-Louis La Chaussée,Saint-Louis La Chaussée,68,47.6094781,7.5312095,True
+87703975,NIM,Nîmes Pont du Gard,Nîmes Pont du Gard,30,43.81681,4.50768,True
+87141200,EIN,Einvaux,Einvaux,54,48.5034859,6.3932959,True
+87174276,VYF,Vitry-le-François,Vitry-le-François,51,48.718142,4.587581,True
+87471045,BTN,Betton,Betton,35,48.1814803,-1.6344745,True
+87214726,RTH,Rothau,Rothau,67,48.4590026,7.2074902,True
+87313593,ULC,Villers-Saint-Sépulcre,Villers-Saint-Sépulcre,60,49.3680779,2.2204386,True
+87381582,LSH,Limay,Limay,78,48.9841,1.74731,True
+87393652,PVY,Petit Vaux,Petit Vaux,91,48.675859,2.3339755,True
+87444208,MEZ,Mézidon-Canon,Mézidon-Canon,14,49.071,-0.07496,True
+87586008,AGN,Agen,Agen,47,44.208311,0.620932,True
+87581389,LVD,Le Verdon-sur-Mer,Le Verdon-sur-Mer,33,45.5492065,-1.0650925,True
+87673285,BMX,Bénesse-Maremne,Bénesse-Maremne,40,43.6277484,-1.3698505,True
+87583674,MMA,Montmoreau,Montmoreau,16,45.3982987,0.1380013,True
+87682104,KRW,Montgeron - Crosne,Montgeron - Crosne,91,48.708094,2.462224,True
+87381079,BCO,Bois-Colombes,Bois-Colombes,92,48.91348,2.27256,True
+87597674,MUF,Montaigut-le-Blanc,Montaigut-le-Blanc,23,46.1367425,1.7339815,True
+87672634,BUZ,Buzy en Béarn,Buzy en Béarn,64,43.1482723,-0.4558864,True
+87485136,SSC,Saint-Laurent-de-la-Prée - Fouras,Saint-Laurent-de-la-Prée - Fouras,17,45.9930002,-1.0274305,True
+87546317,CHQ,Chemin d'Antony,Chemin d'Antony,92,48.748143,2.3126207,True
+87276774,OUA,Ourscamp,Ourscamp,60,49.5341405,2.9540017,True
+87471458,CWH,Chevaigné,Chevaigné,35,48.2089042,-1.6307622,True
+87592725,NNF,Nexon,Nexon,87,45.6915692,1.1784396,True
+87575290,VIV,Vivonne,Vivonne,86,46.4266355,0.2653156,True
+87725457,CPL,Champlan,Champlan,91,48.70804,2.28073,True
+87481754,LBE,La Baule-Escoublac,La Baule-Escoublac,44,47.28869,-2.389102,True
+87718577,GIL,Gilley,Gilley,25,47.0500626,6.4925676,True
+87481424,PLL,Le Pallet,Le Pallet,44,47.143831,-1.346898,True
+87738096,LGM,Le Bouscat - Saint-Germaine,Le Bouscat - Saint-Germaine,33,44.870926495346204,-0.614049444932229,True
+87545210,SXG,Sainte-Geneviève-des-Bois,Sainte-Geneviève-des-Bois,91,48.653245,2.313161,True
+87775247,LLE,La Levade,La Levade,30,44.228602,4.0102736,True
+87192088,WPY,Woippy,Woippy,57,49.1487965,6.155621,True
+87753574,RDS,La Redonne Ensuès,La Redonne Ensuès,13,43.33447,5.1975675,True
+87684407,BWI,Boigneville,Boigneville,91,48.342078,2.3789793,True
+87594556,TUR,Turenne,Turenne,19,45.0379541,1.6007045,True
+87773556,FRN,Frontignan,Frontignan,34,43.444934,3.758689,True
+87213611,BHW,Bischwiller,Bischwiller,67,48.765753,7.8516536,True
+87413310,XLG,Saint-Laurent - Gainneville,Saint-Laurent - Gainneville,76,49.5285649,0.2522963,True
+87575274,LGJ,Ligugé,Ligugé,86,46.5203091,0.3331733,True
+87745679,EVI,Évian-les-Bains,Évian-les-Bains,74,46.397915,6.577457,True
+87476408,BZP,Belz - Ploemel,Belz - Ploemel,56,47.652466,-3.0721919,True
+87748350,TLM,Talence Médoquine,Talence Médoquine,33,44.81649,-0.60062,True
+87192302,BEN,Bénestroff,Bénestroff,57,48.90656,6.75266,True
+87192427,NEN,Novéant-sur-Moselle,Novéant-sur-Moselle,57,49.028635,6.052101,True
+87713321,CLG,Collonges-lès-Premières,Collonges-lès-Premières,21,47.2212533,5.2653478,True
+87696484,DZE,Decize,Decize,58,46.837362,3.467274,True
+87396283,SRL,Saint-Mars-la-Brière,Saint-Mars-la-Brière,72,48.0285239,0.3656778,True
+87713586,FAE,Fontaines - Mercurey,Fontaines - Mercurey,71,46.8512109,4.7750693,True
+87688887,MSF,Montpellier Sud de France,Montpellier Sud de France,34,43.594787,3.924623,True
+87743351,NEX,Nurieux-Volognat,Nurieux-Volognat,01,46.1842195,5.5327486,True
+87471086,MDT,Montauban-de-Bretagne,Montauban-de-Bretagne,35,48.190241,-2.052675,True
+87783365,SVC,Sévérac-d'Aveyron,Sévérac-d'Aveyron,12,44.3246516,3.0569451,True
+87613661,VZI,Viviez - Decazeville,Viviez - Decazeville,12,44.5555678,2.2182582,True
+87393637,CAZ,Chilly-Mazarin,Chilly-Mazarin,91,48.7004413,2.3081837,True
+87574251,WSV,La Chaussée-Saint-Victor,La Chaussée-Saint-Victor,41,47.6127952,1.3537834,True
+87574319,OZA,Onzain - Chaumont-sur-Loire,Onzain - Chaumont-sur-Loire,41,47.492,1.18595,True
+87543116,SCV,Saint-Cyr-en-Val La Source,Saint-Cyr-en-Val La Source,45,47.8192,1.9476045,True
+87718007,BNV,Besançon Viotte,Besançon Viotte,25,47.247019,6.022003,True
+87144055,CHS,Charmes,Charmes,88,48.378483,6.301537,True
+87784660,RAJ,Ria-Sirach,Ria-Sirach,66,42.6034078,2.3907488,True
+87342253,ZYB,Savy-Berlette,Savy-Berlette,62,50.3538756,2.5577316,True
+87386540,MUB,Munster Badischhof,Munster Badischhof,68,48.0390754,7.1528861,True
+87411017,RRD,Rouen Rive Droite,Rouen Rive Droite,76,49.448764,1.094087,True
+87582692,SYS,Saint-Médard-d'Eyrans,Saint-Médard-d'Eyrans,33,44.7168571,-0.5057172,True
+87611822,BXL,Brax - Léguevin,Brax - Léguevin,31,43.614887,1.236922,True
+87141374,SCX,Saint-Clément - Laronxe,Saint-Clément - Laronxe,54,48.5312283,6.6081108,True
+87559070,NVB,Nevers Le Banlay,Nevers Le Banlay,58,47.0068974,3.1636746,True
+87315044,DAO,Daours,Daours,80,49.899267,2.4590533,True
+87582767,PRG,Preignac,Preignac,33,44.5783064,-0.3022296,True
+87317255,ANV,Anvin,Anvin,62,50.446845,2.25494,True
+87175067,NAE,Nançois - Tronville,Nançois - Tronville,55,48.7180423,5.2912016,True
+87613059,GRT,Gramat,Gramat,46,44.7734284,1.7223028,True
+87214254,GWL,Gertwiller,Gertwiller,67,48.4133621,7.4663166,True
+87784207,ELN,Elne,Elne,66,42.5971138,2.9635851,True
+87595876,BES,Belvès,Belvès,24,44.7773978,1.0118831,True
+87615369,MCL,Montastruc-la-Conseillère,Montastruc-la-Conseillère,31,43.715985,1.5979,True
+87296459,APP,Appilly,Appilly,60,49.5808826,3.1221903,True
+87611467,COL,Colomiers,Colomiers,31,43.603734,1.334221,True
+87295790,LLW,Leval,Leval,59,50.1845311,3.8366811,True
+87576009,VER,Vierzon,Vierzon,18,47.226497,2.059822,True
+87141788,PPE,Pompey,Pompey,54,48.77304,6.13061,True
+87635581,LBC,La Barasse,La Barasse,13,43.2858384,5.4845101,True
+87672741,CLE,Lurbe-Saint-Christau,Lurbe-Saint-Christau,64,43.12099,-0.60408,True
+87697359,BOT,Le Bourget T11,Le Bourget T11,93,,,True
+87191601,BHD,Basse-Ham,Basse-Ham,57,49.3805708,6.2348709,True
+87276170,SGT,Saint-Gratien,Saint-Gratien,95,48.96403,2.28531,True
+87574897,SAN,Saint-Aignan - Noyers,Saint-Aignan - Noyers,41,47.2869126,1.3838369,True
+87697300,EPY,Épinay - Villetaneuse T11,Épinay - Villetaneuse T11,93,,,True
+87113514,GNQ,Gagny,Gagny,93,48.883125,2.527106,True
+87584193,SFY,Sainte-Foy-la-Grande,Sainte-Foy-la-Grande,33,44.836886,0.221519,True
+87612028,LEJ,Labège Village,Labège Village,31,43.5305367,1.5329207,True
+87594200,URE,Uzerche,Uzerche,19,45.4407088,1.5702735,True
+87295543,SBS,Sous le Bois,Sous le Bois,59,50.2655833,3.93961,True
+87595322,MPI,Montpon-Ménestérol,Montpon-Ménestérol,24,45.006326,0.159328,True
+87746115,ABN,Albens,Albens,73,45.785946,5.9483418,True
+87182659,BHH,Breitenbach,Breitenbach,68,48.0285326,7.1040522,True
+87722561,CSR,Chasse-sur-Rhône,Chasse-sur-Rhône,38,45.58237,4.794843,True
+87726232,LFI,La Fouillouse,La Fouillouse,42,45.4977675,4.3170839,True
+87113878,AET,Allée de la Tour Rendez-Vous,Allée de la Tour Rendez-Vous,93,48.897109,2.506475,True
+87116731,CYQ,Couilly - Saint-Germain - Quincy,Couilly - Saint-Germain - Quincy,77,48.8830205,2.854057,True
+87282624,LJC,Lyon Jean Macé,Lyon Jean Macé,69,45.74495,4.84139,True
+87382481,SNB,Saint-Nom-la-Bretèche Forêt de Marly,Saint-Nom-la-Bretèche Forêt de Marly,78,48.8677671,2.0509372,True
+87725002,CSS,Chalon-sur-Saône,Chalon-sur-Saône,71,46.781612,4.843454,True
+87681601,ESO,Essonnes Robinson,Essonnes Robinson,91,48.606095,2.463701,True
+87545301,IVN,Ivry-sur-Seine,Ivry-sur-Seine,94,48.814371,2.39099,True
+87393066,JVL,Javel,Javel,75,48.8462046,2.2768401,True
+87756346,SNV,Saint-Laurent-du-Var,Saint-Laurent-du-Var,06,43.662451,7.194413,True
+87726422,SYC,Sury-le-Comtal,Sury-le-Comtal,42,45.5291194,4.1824904,True
+87484337,LPO,La Possonnière,La Possonnière,49,47.3713848,-0.6917009,True
+87597005,CTX,Châteauroux,Châteauroux,36,46.809737,1.699536,True
+87144642,ETL,Étival-Clairefontaine,Étival-Clairefontaine,88,48.3671987,6.8769607,True
+87783282,MVJ,Marvejols,Marvejols,48,44.5446819,3.2810718,True
+87566919,CNJ,Lentilly Charpenay,Lentilly Charpenay,69,45.8165247,4.6824009,True
+87313668,MRU,Méru,Méru,60,49.23233,2.13254,True
+87478560,VOU,Voutré,Voutré,53,48.1340521,-0.2921804,True
+87476440,SQN,Saint-Pierre-Quiberon,Saint-Pierre-Quiberon,56,47.5210574,-3.138905,True
+87784637,PDS,Prades - Molitg-les-Bains,Prades - Molitg-les-Bains,66,42.6170988,2.4294184,True
+87681825,VSB,Villeneuve-Saint-Georges,Villeneuve-Saint-Georges,94,48.730113,2.446011,True
+87726174,SEC,Saint-Étienne Le Clapier,Saint-Étienne Le Clapier,42,45.4371122,4.3782267,True
+87781583,LBD,Le Bousquet-d'Orb,Le Bousquet-d'Orb,34,43.6912097,3.1689379,True
+87575332,ACV,Anché - Voulon,Anché - Voulon,86,46.3496187,0.2503424,True
+87393579,MPU,Massy - Palaiseau,Massy - Palaiseau,91,48.7264211,2.2575281,True
+87473009,SBC,Saint-Brieuc,Saint-Brieuc,22,48.50758,-2.765,True
+87182840,BTZ,Bantzenheim,Bantzenheim,68,47.8109675,7.5038675,True
+87215699,FOX,Tieffenbach - Struth,Tieffenbach - Struth,67,48.9062169,7.25527,True
+87582858,GID,Gironde-sur-Dropt,Gironde-sur-Dropt,33,44.583292,-0.0920127,True
+87574004,BLO,Blois - Chambord,Blois - Chambord,41,47.585445,1.323823,True
+87192666,CJJ,Conflans - Jarny,Conflans - Jarny,54,49.1662895,5.8681853,True
+87141135,BLV,Blainville - Damelevières,Blainville - Damelevières,54,48.564971,6.386953,True
+87471508,VTE,Vitré,Vitré,35,48.122671,-1.211754,True
+87141218,BYN,Bayon,Bayon,54,48.468046,6.322569,True
+87393611,LJU,Longjumeau,Longjumeau,91,48.7020364,2.2943957,True
+87681155,MFA,Maisons-Alfort - Alfortville,Maisons-Alfort - Alfortville,94,48.802071,2.426977,True
+87394247,PNN,Pontgouin,Pontgouin,28,48.477867,1.1414359,True
+87116491,TLP,Trilport,Trilport,77,48.96013551,2.94953688,True
+87608802,CTP,Créteil Pompadour,Créteil Pompadour,94,48.7715403,2.4352763,True
+87411264,BTM,Barentin,Barentin,76,49.549123,0.953517,True
+87597062,ISK,Issoudun,Issoudun,36,46.948763,1.985834,True
+87543207,APK,Avenue du Président Kennedy Maison de Radio France,Avenue du Président Kennedy Maison de Radio France,75,48.853322,2.279969,True
+87223263,LEW,Lille Europe,Lille Europe,59,50.639224,3.075796,True
+87590364,CVM,La Chapelle Aulnay,La Chapelle Aulnay,44,47.30859,-1.5415,True
+87111849,MLV,Marne-la-Vallée Chessy,Marne-la-Vallée Chessy,77,48.869856,2.78272,True
+87783548,BWQ,Le Bruel,Le Bruel,48,44.4813286,3.358325,True
+87545251,ATH,Athis-Mons,Athis-Mons,91,48.712557,2.403749,True
+87545293,VYB,Vitry-sur-Seine,Vitry-sur-Seine,94,48.800768,2.402229,True
+87393348,GZA,Gazeran,Gazeran,78,48.6259183,1.7718857,True
+87686006,PLY,Paris Gare de Lyon,Paris Gare de Lyon,75,48.844888,2.37352,False
+87394015,LCJ,Lucé,Lucé,28,48.4366725,1.4529681,True
+87116772,CLC,Crécy-la-Chapelle,Crécy-la-Chapelle,77,48.859391,2.905748,True
+87118000,TOY,Troyes,Troyes,10,48.296069,4.065281,True
+87171009,RMS,Reims,Reims,51,49.258978,4.024435,True
+87116319,LGY,Lagny - Thorigny,Lagny - Thorigny,77,48.88218325,2.70404228,True
+87116632,LZO,Lizy-sur-Ourcq,Lizy-sur-Ourcq,77,49.021929,3.031718,True
+87113472,RVM,Le Raincy - Villemomble - Montfermeil,Le Raincy - Villemomble - Montfermeil,93,48.889325,2.512062,True
+87381459,CFD,Conflans Fin d'Oise,Conflans Fin d'Oise,78,48.98931,2.07465,True
+87276360,GNX,Groslay,Groslay,95,48.98462,2.35358,True
+87212167,HCH,Hochfelden,Hochfelden,67,48.7554199,7.572355,True
+87144014,STD,Saint-Dié-des-Vosges,Saint-Dié-des-Vosges,88,48.282225,6.948656,True
+87182063,MSE,Mulhouse,Mulhouse,68,47.742224,7.342396,True
+87286419,WAV,Wavrin,Wavrin,59,50.57443,2.93672,True
+87271551,PLB,Le Plessis-Belleville,Le Plessis-Belleville,60,49.0959033,2.7448073,True
+87193003,FOB,Forbach,Forbach,57,49.1892278,6.9013184,True
+87415893,BNR,Bonnières-sur-Seine,Bonnières-sur-Seine,78,49.038788,1.582205,True
+87276386,SLL,Sarcelles - Saint-Brice,Sarcelles - Saint-Brice,95,48.99529,2.36867,True
+87276436,DMO,Domont,Domont,95,49.03268,2.33746,True
+87682153,LIU,Lieusaint - Moissy,Lieusaint - Moissy,77,48.628305,2.568935,True
+87393843,SQY,Saint-Quentin en Yvelines - Montigny-le-Bretonneux,Saint-Quentin en Yvelines - Montigny-le-Bretonneux,78,48.78657,2.04523,True
+87571000,TRS,Tours,Tours,37,47.389781,0.693703,True
+87113779,BXP,Les Boullereaux Champigny,Les Boullereaux Champigny,94,48.824926,2.511884,True
+87396606,CDL,Château-du-Loir,Château-du-Loir,72,47.683392,0.414912,True
+87592493,SBF,Saint-Sébastien,Saint-Sébastien,23,46.3859938,1.5466809,True
+87473108,LAM,Lamballe,Lamballe,22,48.46606,-2.511546,True
+87271510,VII,Villeparisis - Mitry-le-Neuf,Villeparisis - Mitry-le-Neuf,77,48.95325,2.60243,True
+87584615,SUN,Saint-Seurin-sur-l'Isle,Saint-Seurin-sur-l'Isle,33,45.0114075,-0.0026606,True
+87481002,NTS,Nantes,Nantes,44,47.216148,-1.542356,True
+87381798,VDA,Val d'Argenteuil,Val d'Argenteuil,95,48.95042,2.23088,True
+87592717,XDO,Saillat - Chassenon,Saillat - Chassenon,87,45.8696297,0.8117415,True
