@@ -366,8 +366,6 @@ python test_api.py
 
 **T-AIA-911-PAR_14** - Epitech MSc Pro Promo 2026
 
-Co-développé avec **Claude Sonnet 4.5** (Anthropic)
-
 ---
 
 ## 📝 Licence
