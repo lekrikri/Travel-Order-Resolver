@@ -1,376 +1,364 @@
 # T-AIA-911-PAR_14
 
-## 🚂 Résolveur de Commandes de Voyage - Pipeline NLP + Pathfinding
+## 🚂 Travel Order Resolver - NER + Fuzzy Matching + Pathfinding
 
-Ce projet implémente un système complet pour extraire automatiquement les villes de **départ** et d'**arrivée** de phrases françaises de réservation de trains, puis calculer l'**itinéraire ferroviaire optimal** sur le réseau SNCF.
+Système complet d'extraction NER pour générer des itinéraires ferroviaires SNCF à partir de phrases en français naturel.
 
-### 🎯 Résultats Finaux
-
-| Approche | Précision | Routes Correctes | Temps/phrase |
-|----------|-----------|------------------|--------------|
-| **spaCy Baseline** | 32.2% | 322/1,000 | ~0.01s |
-| **Qwen2.5 + RAG + Pathfinder** | **100.00%** ✅ | **8,745/8,745** | ~3.5s |
-
-**Amélioration:** +**67.8 points** de précision grâce à Qwen2.5 + RAG + Corrections
+![Version](https://img.shields.io/badge/version-2.0-blue)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## 🎯 Livrables Disponibles
+## 🎯 Résultats Finaux
 
-### ✅ Datasets Créés
-- **[train_sentences_100.csv](data/annotated/train_sentences_100.csv)** - 100 phrases qualité (Score: 83/100)
-- **[train_sentences_10k.csv](data/annotated/train_sentences_10k.csv)** - 10,000 phrases production (885 KB)
+| Modèle | Précision (F1) | Temps/phrase | Utilisation |
+|--------|----------------|--------------|-------------|
+| spaCy blank | 69.13% | ~0.005s | Baseline |
+| spaCy sm | 75.65% | ~0.01s | Léger |
+| spaCy md | 86.42% | ~0.02s | Moyen |
+| spaCy lg | 81.50% | ~0.03s | Large |
+| **spaCy 10k** | **99.88%** ✅ | ~0.01s | **Production** |
+| CamemBERT | 98.15% | ~0.15s | Transformer |
 
-### ✅ Résultats de Tests
-- **[output_pipeline_10k.txt](results/output_pipeline_10k.txt)** - Résultats finaux (**100% précision**)
-- **[RAPPORT_FINAL.md](RAPPORT_FINAL.md)** - Rapport technique complet (35 pages)
-
-### ✅ Scripts Fonctionnels
-- `complete_pipeline.py` - Pipeline complet NLP + Pathfinder ⭐
-- `test_pipeline_10k.py` - Test sur 10k phrases (100% précision)
-- `phase1_1_warmup_wikiner_fr.py` - Test WikiNER-fr (F1: 20.5%)
-- `phase1_2_training_bottins.py` - Test bottins.csv (F1: 10.8%)
-- `phase1_3_annotation.py` - Génération 100 phrases
-- `generate_dataset_10k.py` - Génération 10k phrases
-- `test_spacy_on_10k.py` - Évaluation spaCy (Accuracy: 32.2%)
+**Approche retenue:** spaCy 10k (99.88% F1) + Fuzzy Matching + Pathfinder A*
 
 ---
 
-## 📋 Objectifs du Projet
-
-- ✅ Extraire **départ** et **arrivée** de phrases en français naturel
-- ✅ Calculer l'**itinéraire ferroviaire** sur données SNCF réelles
-- ✅ Distinguer commandes **valides** vs **invalides**
-- ✅ Gérer les **ambiguïtés** (noms propres = personnes ou villes ?)
-- ✅ Comparer approche **classique NLP** vs **LLM moderne**
-- ✅ Atteindre **100% de précision**
-
-### Exemples de phrases traitées
+## 🏗️ Architecture
 
 ```
-✅ "Comment me rendre à Port Boulet depuis Tours ?"
-   → Départ: Tours, Arrivée: Port Boulet
-   → Route: Tours, Port-Boulet
-
-✅ "Je veux aller de Paris à Lyon"
-   → Départ: Paris, Arrivée: Lyon
-   → Route: Paris Gare de Lyon, Lyon Part-Dieu, Lyon
-
-✅ "Avec mon ami Albert, je veux aller de Paris à Monaco"
-   → Départ: Paris, Arrivée: Monaco (et non "Albert" !)
-   → Route: Paris, Monaco
-
-❌ "Bonjour comment allez-vous ?"
-   → INVALID
-```
-
----
-
-## 🏗️ Architecture du Pipeline Complet
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    PIPELINE COMPLET                         │
-└─────────────────────────────────────────────────────────────┘
-
-INPUT: "Je voudrais aller de Paris à Lyon demain"
-  │
-  ├─► [1] NLP EXTRACTION (Qwen2.5-3B-Instruct)
-  │     │
-  │     ├─► ChromaDB RAG: Récupère 3 exemples similaires
-  │     ├─► Few-shot prompting avec exemples
-  │     ├─► Extraction: "Paris" → "Lyon"
-  │     └─► Confiance: 95%
-  │
-  ├─► [2] VALIDATION & CORRECTION
-  │     │
-  │     ├─► Extraction XML (tags <Dep> et <Arr>)
-  │     ├─► Validation présence dans phrase
-  │     ├─► Détection d'inversion (position dans phrase)
-  │     └─► Correction si nécessaire
-  │
-  └─► [3] PATHFINDING (SNCF Data + NetworkX)
-        │
-        ├─► Normalisation des noms de gares (2,785 stations)
-        ├─► Recherche dans graphe ferroviaire (8,510 connexions)
-        ├─► Calcul itinéraire optimal (Dijkstra)
-        └─► Format sortie: "sentenceID,Paris,Lyon-Part-Dieu,...,Lyon"
-
-OUTPUT: "1,paris,paris gare de lyon,lyon part dieu,lyon"
+┌────────────────────────────────────────────────────────┐
+│                 FRONTEND (React + TypeScript)          │
+│  - Interface utilisateur moderne                       │
+│  - Gestion d'erreurs complète                          │
+│  - Carte interactive (Leaflet)                         │
+│  - Mode recherche texte + vocale (Whisper)            │
+└────────────────────────────────────────────────────────┘
+                           │
+                           ↓ HTTP/WebSocket
+┌────────────────────────────────────────────────────────┐
+│              API REST (FastAPI + Python)               │
+│  - Endpoint /route : pipeline complet                  │
+│  - Endpoint /extract : NER seule                       │
+│  - Endpoint /speech-to-route : transcription audio     │
+│  - Gestion d'erreurs structurée                        │
+└────────────────────────────────────────────────────────┘
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+        ↓                                     ↓
+┌──────────────────┐              ┌──────────────────────┐
+│  spaCy NER 10k   │              │  Fuzzy Matcher SNCF  │
+│  F1: 99.88%      │              │  RapidFuzz           │
+│  Labels:         │              │  2,785 gares         │
+│  - DEPART        │              │  Score: 0-100        │
+│  - ARRIVEE       │              └──────────────────────┘
+└──────────────────┘                         │
+                                             ↓
+                           ┌──────────────────────────────┐
+                           │   Pathfinder (NetworkX)      │
+                           │   - Dijkstra / A*            │
+                           │   - Heuristique Haversine    │
+                           │   - 2,785 gares              │
+                           │   - 50 connexions            │
+                           └──────────────────────────────┘
 ```
 
 ---
 
-## 🏗️ Structure du Projet
+## 📂 Structure du Projet
 
 ```
 T-AIA-911-PAR_14/
+├── frontend/                      # 🎨 Interface React + TypeScript
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── RouteSearch.tsx    # Recherche par texte
+│   │   │   ├── RouteDisplay.tsx   # Affichage itinéraire
+│   │   │   ├── RouteMap.tsx       # Carte Leaflet
+│   │   │   ├── ErrorDisplay.tsx   # Gestion d'erreurs
+│   │   │   └── AudioRecorder.tsx  # Recherche vocale
+│   │   ├── services/api.ts        # Client API
+│   │   ├── types/index.ts         # Types TypeScript
+│   │   └── styles/App.css         # Styles
+│   ├── package.json
+│   └── vite.config.ts
+│
+├── src/                           # 🧠 Pipeline NER + Pathfinding
+│   ├── 3_pathfinder/              # Pathfinding SNCF
+│   │   ├── pathfinder.py          # Classe principale
+│   │   ├── railway_graph.py       # Graphe NetworkX + A*
+│   │   └── sncf_data_loader.py    # Chargement données
+│   │
+│   ├── inference/                 # NER + Fuzzy
+│   │   ├── fuzzy_matcher.py       # RapidFuzz SNCF
+│   │   └── pipeline.py            # Pipeline complet
+│   │
+│   ├── models/                    # Entraînement NER
+│   │   ├── train_all_models.py    # spaCy sm/md/lg/10k
+│   │   └── train_camembert.py     # CamemBERT transformers
+│   │
+│   ├── evaluation/                # Évaluation
+│   │   └── evaluate_all.py        # Comparaison modèles
+│   │
+│   └── dataset/                   # Génération datasets
+│       └── generate_dataset.py    # 10k phrases
+│
 ├── data/
-│   ├── raw/                      # Datasets bruts (ner_dataset.csv, bottins.csv)
-│   ├── annotated/                # Datasets annotés (100 et 10k phrases)
-│   ├── sncf/                     # Données SNCF (2,785 gares, 8,510 connexions)
-│   └── processed/                # Fichiers d'entrée pour tests
-│
-├── src/
-│   ├── 1_spacy_baseline/         # Phase 1: Approche classique
-│   │   └── warmup.py             # Test NER sur ner_dataset.csv
+│   ├── sncf/                      # Données SNCF
+│   │   ├── stations.csv           # 2,785 gares
+│   │   ├── connections.csv        # 50 connexions
+│   │   └── railway_lines.csv      # Lignes ferroviaires
 │   │
-│   ├── 2_qwen_chroma/            # Phase 2: NLP moderne
-│   │   ├── qwen_extractor.py     # Extracteur Qwen2.5
-│   │   └── chroma_rag.py         # ChromaDB RAG
-│   │
-│   └── 3_pathfinder/             # Phase 3: Pathfinding SNCF
-│       ├── pathfinder.py         # Calcul itinéraire
-│       ├── railway_graph.py      # Graphe ferroviaire NetworkX
-│       └── sncf_data_loader.py   # Chargement données SNCF
+│   └── annotated/                 # Datasets NER
+│       └── train_sentences_10k.csv
 │
-├── results/
-│   ├── spacy_10k_results.csv     # Résultats spaCy (32.2%)
-│   └── output_pipeline_10k.txt   # Résultats finaux (100%)
+├── cours/                         # 📚 Documentation pédagogique
+│   ├── ETAPE_0_COMPRENDRE_LE_PROBLEME.md
+│   ├── ETAPE_1_DATASET.md
+│   ├── ETAPE_2_SPACY_BASICS.md
+│   ├── ETAPE_3_ENTRAINEMENT.md
+│   ├── ETAPE_4_COMPARAISON_MODELES.md
+│   ├── ETAPE_5_FUZZY_MATCHING.md
+│   ├── ETAPE_6_CAMEMBERT.md
+│   ├── ETAPE_7_EVALUATION.md
+│   └── ETAPE_8_PATHFINDER.md
 │
-├── chroma_db/                    # Base vectorielle ChromaDB
+├── rapport/
+│   └── RAPPORT_EXPERIMENTATION.md  # Rapport complet
 │
-├── complete_pipeline.py          # ⭐ Pipeline complet NLP + Pathfinder
-├── test_pipeline_10k.py          # Test sur 10k phrases
-├── evaluate_final.py             # Évaluation précision finale
-├── README.md                     # Ce fichier
-└── RAPPORT_FINAL.md              # Rapport technique complet
+├── api_spacy.py                    # 🚀 API FastAPI principale
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
 ## 🚀 Installation
 
-### 1. Cloner le dépôt
+### 1. Backend (API)
 
 ```bash
+# Cloner le dépôt
 git clone https://github.com/EpitechMscProPromo2026/T-AIA-911-PAR_14.git
 cd T-AIA-911-PAR_14
-```
 
-### 2. Créer l'environnement virtuel
+# Créer environnement virtuel
+python3 -m venv venv_gpu
+source venv_gpu/bin/activate
 
-```bash
-python3 -m venv venv
-source venv/bin/activate  # Sur Linux/Mac
-# ou
-venv\Scripts\activate     # Sur Windows
-```
-
-### 3. Installer les dépendances
-
-```bash
+# Installer dépendances
 pip install --upgrade pip
-pip install transformers torch chromadb sentence-transformers
-pip install networkx pandas requests
+pip install fastapi uvicorn spacy pandas networkx rapidfuzz requests
+
+# Charger le modèle spaCy entraîné
+# Le modèle est dans models/ner_10k/model-best/
 ```
 
-Pour la baseline spaCy :
-```bash
-pip install spacy seqeval
-python -m spacy download fr_core_news_md
-```
-
----
-
-## 🚀 Utilisation
-
-### Pipeline Complet (Qwen2.5 + RAG + Pathfinder)
+### 2. Frontend (React)
 
 ```bash
-# Test sur 10k phrases (avec sauvegarde progressive)
-python test_pipeline_10k.py
-
-# Test sur phrases isolées
-python complete_pipeline.py
+cd frontend
+npm install
 ```
 
-**Sortie attendue:**
-```
-[1/10000] ID=1
-   Phrase: Je voudrais aller de Paris à Lyon
-   ✅ NLP: Paris → Lyon
-   ✅ Route: 12 gares, 120 min
-   🛤️  Paris Gare de Lyon → Lyon Part-Dieu → Lyon
+---
 
-📄 FORMAT SORTIE:
-   1,paris,paris gare de lyon,lyon part dieu,lyon
-```
+## 🚀 Démarrage
 
-### Baseline spaCy
+### Terminal 1 - API Backend
 
 ```bash
-# Test spaCy sur 10k phrases
-python test_spacy_on_10k.py
+cd T-AIA-911-PAR_14
+source venv_gpu/bin/activate
+uvicorn api_spacy:app --reload --host 0.0.0.0 --port 8000
 ```
 
----
+✅ API disponible sur : http://localhost:8000
+📖 Documentation : http://localhost:8000/docs
 
-## 📊 Résultats et Comparaison
-
-### Métriques Finales
-
-| Métrique | spaCy Baseline | Qwen2.5 + RAG + Pathfinder |
-|----------|----------------|----------------------------|
-| **Architecture** | Rule-based NER | LLM + RAG + Graph |
-| **Précision NLP** | 32.2% | **100.00%** ✅ |
-| **Calcul Itinéraire** | ❌ Non | ✅ Oui (2,785 gares) |
-| **Temps/phrase** | ~0.01s | ~3.5s |
-| **Hallucinations** | N/A | 0% (validation XML) |
-| **Inversions** | 19% erreurs | 0% (détection position) |
-| **Routes Correctes** | 322/1,000 | **8,745/8,745** |
-
-### Évolution de la Précision
-
-```
-Phase 1 - spaCy:           32.2%
-Phase 2 - Qwen2.5 initial: 99.6% (8,712/8,747)
-Phase 3 - Corrections:    100.0% (8,745/8,745) ✅
-```
-
-### Corrections Apportées
-
-Le projet inclut **4 corrections majeures** qui ont permis d'atteindre 100% :
-
-1. **Détection d'inversions** (7 erreurs corrigées)
-   - Analyse position dans la phrase
-   - Gestion patterns grammaticaux
-
-2. **Anti-hallucination NLP** (23 erreurs corrigées)
-   - Validation via tags XML
-   - Vérification présence dans phrase
-
-3. **Bug XML/Inversion** (1 erreur corrigée)
-   - Flag `used_xml` pour éviter double-inversion
-
-4. **Bug Single-Station** (2 erreurs corrigées)
-   - Gestion cas Levallois-Perret/Clichy
-   - Création route distincte si 1 seule station physique
-
-Voir [RAPPORT_FINAL.md](RAPPORT_FINAL.md) pour détails techniques complets.
-
----
-
-## 🎯 Cas d'Usage Recommandés
-
-### Quand utiliser spaCy ?
-
-- ✅ Production à **grande échelle** (millions de requêtes)
-- ✅ Besoin de **faible latence** (< 100ms)
-- ✅ Environnement avec **peu de RAM** (< 2GB)
-- ✅ Phrases **bien formatées** (pas de fautes)
-- ❌ **MAIS:** 68% d'erreurs, pas de pathfinding
-
-### Quand utiliser Qwen2.5 + RAG + Pathfinder ?
-
-- ✅ Besoin de **qualité maximale** (100% précision)
-- ✅ Calcul d'**itinéraire complet** requis
-- ✅ Phrases **ambiguës** ou **mal formées**
-- ✅ Validation **multi-niveaux** (anti-hallucination)
-- ✅ **Prototype/MVP** rapide (génération dataset auto)
-- ❌ **MAIS:** Plus lent (3.5s), nécessite GPU
-
----
-
-## 🛠️ Commandes Utiles
-
-### Test Rapide
+### Terminal 2 - Frontend React
 
 ```bash
-# Test sur une phrase isolée
-python complete_pipeline.py
+cd frontend
+npm run dev
 ```
 
-### Évaluation
+✅ Interface disponible sur : http://localhost:5173
+
+---
+
+## 📡 API Endpoints
+
+### POST /route
+Pipeline complet : NER + Fuzzy + Pathfinding
+
+**Request:**
+```json
+{
+  "sentence": "Je veux aller de Paris à Lyon",
+  "metric": "time",
+  "algorithm": "astar"
+}
+```
+
+**Response:**
+```json
+{
+  "sentence": "Je veux aller de Paris à Lyon",
+  "departure": "Paris",
+  "arrival": "Lyon",
+  "departure_matched": "Paris Gare de Lyon",
+  "arrival_matched": "Lyon Part-Dieu",
+  "confidence": 0.98,
+  "is_valid": true,
+  "route": ["Paris Gare de Lyon", "Lyon Part-Dieu", "Lyon"],
+  "route_count": 3,
+  "total_distance": 462.5,
+  "total_time": 120.0,
+  "method": "spaCy NER + Fuzzy + ASTAR",
+  "details": [...]
+}
+```
+
+### POST /extract
+Extraction NER seule (sans pathfinding)
+
+### GET /health
+Statut de l'API et modèles chargés
+
+### GET /stats
+Statistiques SNCF (gares, connexions)
+
+---
+
+## 🎯 Exemples de Phrases
+
+```
+✅ "Je veux aller de Paris à Lyon"
+   → Départ: Paris, Arrivée: Lyon
+   → Route: Paris Gare de Lyon → Lyon Part-Dieu → Lyon
+
+✅ "Comment me rendre à Bordeaux depuis Toulouse ?"
+   → Départ: Toulouse, Arrivée: Bordeaux
+   → Route: Toulouse → Bordeaux St-Jean
+
+✅ "Avec mon ami Albert, je veux aller de Nice à Monaco"
+   → Départ: Nice, Arrivée: Monaco (et non "Albert" !)
+   → Route: Nice-Ville → Monaco
+
+❌ "Bonjour comment allez-vous ?"
+   → Warning: Aucune ville de départ ou d'arrivée détectée
+```
+
+---
+
+## 🛠️ Fonctionnalités
+
+### Backend
+- ✅ NER spaCy 10k (F1: 99.88%)
+- ✅ Fuzzy matching RapidFuzz (2,785 gares)
+- ✅ Pathfinding A* avec heuristique Haversine
+- ✅ Validation complète des entrées
+- ✅ Gestion d'erreurs structurée
+- ✅ Documentation API interactive (Swagger)
+- ✅ Transcription audio (Whisper)
+
+### Frontend
+- ✅ Interface moderne React + TypeScript
+- ✅ Recherche texte + vocale
+- ✅ Carte interactive Leaflet
+- ✅ Affichage itinéraire détaillé
+- ✅ Gestion d'erreurs élégante
+- ✅ Mode sombre/clair
+- ✅ Responsive design
+
+---
+
+## 📊 Comparaison des Modèles
+
+### Résultats d'Évaluation (Test Set)
+
+```
+┌─────────────┬───────────┬────────┬────────┬─────────┐
+│   Modèle    │ Précision │ Rappel │   F1   │  Temps  │
+├─────────────┼───────────┼────────┼────────┼─────────┤
+│ spaCy blank │   68.91%  │ 69.35% │ 69.13% │  5ms    │
+│ spaCy sm    │   76.34%  │ 74.97% │ 75.65% │ 10ms    │
+│ spaCy md    │   86.89%  │ 85.96% │ 86.42% │ 20ms    │
+│ spaCy lg    │   82.12%  │ 80.90% │ 81.50% │ 30ms    │
+│ spaCy 10k   │   99.88%  │ 99.88% │ 99.88% │ 10ms ⭐  │
+│ CamemBERT   │   98.24%  │ 98.06% │ 98.15% │ 150ms   │
+└─────────────┴───────────┴────────┴────────┴─────────┘
+```
+
+**Choix final:** spaCy 10k - meilleure précision ET vitesse
+
+---
+
+## 🧪 Tests
 
 ```bash
-# Évaluer la précision finale
-python evaluate_final.py
-```
+# Évaluer tous les modèles
+python src/evaluation/evaluate_all.py
 
-**Sortie:**
-```
-====================================================================================================
-ÉVALUATION FINALE - APRÈS CORRECTIONS
-====================================================================================================
+# Tester le pathfinder
+python test_pathfinder.py
 
-Total de phrases: 10000
-Phrases valides: 8745 (87.45%)
-Phrases invalides: 1255 (12.55%)
-
-Précision départ: 100.00% (8745/8745)
-Précision arrivée: 100.00% (8745/8745)
-Précision complète (départ + arrivée): 100.00% (8745/8745)
-
-Erreurs restantes: 0 (0.00%)
+# Tester l'API
+python test_api.py
 ```
 
 ---
 
-## 📚 Technologies Utilisées
+## 📚 Documentation
 
-### Phase 1 - Baseline
-- **spaCy 3.7+**: NLP classique
-- **fr_core_news_md**: Modèle français pré-entraîné
-- **seqeval**: Métriques NER
-- **pandas**: Traitement de données
-
-### Phase 2 - Pipeline Complet
-- **Qwen2.5-3B-Instruct**: LLM open-source Alibaba (1.7 GB)
-- **transformers 4.57+**: Framework HuggingFace
-- **torch 2.9+**: Deep learning avec CUDA
-- **ChromaDB 0.4.24**: Base vectorielle
-- **sentence-transformers**: Embeddings multilingues
-- **NetworkX 2.8+**: Graphe ferroviaire
-- **pandas**: Traitement données SNCF
-- **requests**: API SNCF Open Data
-
-### Infrastructure
-- **GPU**: NVIDIA CUDA pour inférence Qwen2.5
-- **RAM**: 8+ GB recommandés
-- **Stockage**: 5 GB (modèle + données + cache)
+- **[cours/](cours/)** : Tutoriels pas-à-pas (8 étapes)
+- **[rapport/RAPPORT_EXPERIMENTATION.md](rapport/RAPPORT_EXPERIMENTATION.md)** : Rapport technique complet
+- **[API Docs](http://localhost:8000/docs)** : Documentation interactive Swagger
 
 ---
 
-## 🎓 Livrables du Projet
+## 🎓 Technologies
 
-- ✅ Dataset de 10,000 phrases françaises annotées
-- ✅ Comparaison spaCy vs Qwen2.5 + ChromaDB RAG
-- ✅ Pipeline complet NLP + Pathfinding SNCF
-- ✅ **100% de précision** sur routes valides
-- ✅ Corrections de 4 types de bugs identifiés
-- ✅ Documentation technique complète (35 pages)
-- ✅ Code propre et commenté
-- ✅ Rapport final détaillé
+### Backend
+- **FastAPI** - API REST moderne
+- **spaCy 3.7+** - NER + NLP
+- **RapidFuzz** - Fuzzy string matching
+- **NetworkX** - Graphes + Pathfinding
+- **Uvicorn** - Serveur ASGI
+- **Whisper** - Speech-to-text (optionnel)
+
+### Frontend
+- **React 18** - Framework UI
+- **TypeScript** - Typage statique
+- **Vite** - Build tool
+- **Leaflet** - Cartes interactives
+- **Axios** - Client HTTP
+- **Lucide React** - Icônes
+
+### Data
+- **SNCF Open Data** - 2,785 gares françaises
+- **Dataset NER 10k** - 10,000 phrases annotées
 
 ---
 
-## 🏆 Points Clés du Projet
+## 🏆 Points Clés
 
-### Innovations Techniques
-
-1. **Architecture Multi-Niveaux**
-   - LLM (Qwen2.5) pour compréhension contextuelle
-   - RAG (ChromaDB) pour few-shot learning
-   - Validation XML + Position pour prévenir hallucinations
-
-2. **Pathfinding SNCF**
-   - 2,785 gares françaises
-   - 8,510 connexions ferroviaires
-   - Algorithme Dijkstra optimisé
-   - Normalisation fuzzy matching
-
-3. **Robustesse**
-   - 0% d'hallucinations grâce aux validations
-   - 0% d'inversions grâce à l'analyse positionnelle
-   - 100% de précision sur routes valides
+### Innovations
+1. **Modèle spaCy 10k** entraîné sur mesure (99.88% F1)
+2. **Fuzzy matching** intelligent pour normalisation SNCF
+3. **Pathfinding A*** avec heuristique géographique (Haversine)
+4. **Gestion d'erreurs complète** API + Frontend
+5. **Interface moderne** avec carte interactive
 
 ### Apprentissages
-
-- La **validation est cruciale** pour éviter erreurs LLM (96.6% → 100%)
-- **Debugging systématique** : catégorisation → reproduction → correction → validation
-- **Robustesse vs Performance** : 350x plus lent mais 3.1x plus précis que spaCy
-- **Architecture hybride** recommandée en production (spaCy pré-filtrage + Qwen2.5 précision)
+- **NER custom** : entraînement sur domaine spécifique crucial
+- **Fuzzy matching** : essentiel pour variations de noms de gares
+- **A* vs Dijkstra** : gain de performance avec heuristique GPS
+- **Architecture 3-tiers** : séparation Frontend/API/Data
+- **Gestion erreurs** : validation multi-niveaux pour robustesse
 
 ---
 
@@ -378,16 +366,7 @@ Erreurs restantes: 0 (0.00%)
 
 **T-AIA-911-PAR_14** - Epitech MSc Pro Promo 2026
 
----
-
-## 📖 Références
-
-- [spaCy Documentation](https://spacy.io)
-- [Qwen2.5 Model Card](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
-- [ChromaDB Documentation](https://docs.trychroma.com)
-- [SNCF Open Data](https://www.sncf.com/fr/groupe/open-data)
-- [NetworkX Documentation](https://networkx.org)
-- [Attention is All You Need (Transformers)](https://arxiv.org/abs/1706.03762)
+Co-développé avec **Claude Sonnet 4.5** (Anthropic)
 
 ---
 
@@ -397,4 +376,14 @@ MIT License - Projet académique Epitech
 
 ---
 
-🚂 **100% Precision Achieved - Production Ready!**
+## 🔗 Liens Utiles
+
+- [Dépôt GitHub](https://github.com/EpitechMscProPromo2026/T-AIA-911-PAR_14)
+- [spaCy Documentation](https://spacy.io)
+- [FastAPI Documentation](https://fastapi.tiangolo.com)
+- [SNCF Open Data](https://www.sncf.com/fr/groupe/open-data)
+- [NetworkX Documentation](https://networkx.org)
+
+---
+
+🚂 **99.88% F1-Score - Production Ready!**
