@@ -210,6 +210,44 @@ class RailwayGraph:
         except nx.NetworkXNoPath:
             return None
 
+    def find_path_min_changes(
+        self,
+        from_uic: str,
+        to_uic: str,
+    ) -> Optional[Tuple[List[str], int]]:
+        """
+        Trouve le trajet avec le MINIMUM de correspondances (arrêts intermédiaires).
+
+        Utilise un BFS (breadth-first search) via Dijkstra avec weight=1 sur
+        chaque arête. Le résultat minimise le nombre d'étapes, donc les
+        correspondances, indépendamment du temps ou de la distance.
+
+        Args:
+            from_uic: Code UIC de la gare de départ
+            to_uic: Code UIC de la gare d'arrivée
+
+        Returns:
+            (chemin, nb_changements) ou None si aucun chemin
+        """
+        if from_uic not in self.graph or to_uic not in self.graph:
+            return None
+
+        try:
+            # Dijkstra avec poids=1 sur chaque arête = minimise le nombre d'arêtes
+            # Équivalent à un BFS sur ce graphe
+            path = nx.shortest_path(
+                self.graph,
+                source=from_uic,
+                target=to_uic,
+                weight=None  # None = BFS, minimise le nombre d'arêtes
+            )
+            # Nombre de changements = arrêts intermédiaires (sans départ ni arrivée)
+            nb_changes = max(0, len(path) - 2)
+            return path, nb_changes
+
+        except nx.NetworkXNoPath:
+            return None
+
     def get_station_info(self, code_uic: str) -> Optional[Dict]:
         """Retourne les informations d'une gare"""
         return self.stations.get(code_uic)
