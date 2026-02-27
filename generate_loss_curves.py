@@ -55,7 +55,7 @@ CAMEMBERT_LOG_HISTORY = [
 
 # Métriques finales comparaison modèles (evaluation_results.json)
 MODEL_RESULTS = [
-    {"model": "Baseline\nPrépositions", "f1": 52.3, "precision": 58.1, "recall": 47.4, "color": "#e74c3c"},
+    {"model": "Baseline\nPrépositions", "f1": 41.04, "precision": 56.56, "recall": 32.20, "color": "#e74c3c"},
     {"model": "spaCy\nblank",           "f1": 69.13,"precision": 70.22,"recall": 68.07, "color": "#e67e22"},
     {"model": "spaCy\nfr_core_sm",      "f1": 75.65,"precision": 74.25,"recall": 77.10, "color": "#f39c12"},
     {"model": "spaCy\nfr_core_lg",      "f1": 81.50,"precision": 79.02,"recall": 84.13, "color": "#27ae60"},
