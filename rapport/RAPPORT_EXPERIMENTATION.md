@@ -158,6 +158,14 @@ Le dataset a été généré automatiquement avec des templates variés :
 - **Formulations** : 30+ templates différents
 - **Distribution** : Équilibrée entre les villes
 
+### 4.5 Impact de la Taille du Dataset
+
+![Impact taille dataset sur le F1](../results/plots/dataset_size_impact.png)
+
+La courbe illustre la loi des rendements décroissants : le gain en F1 est le plus fort entre 1k et 5k exemples, puis s'aplatit. À 10k exemples les deux variantes (blank et fr\_core\_news\_sm) atteignent **99.88%**, montrant que la quantité de données a compensé l'avantage initial du modèle pré-entraîné.
+
+![Dynamiques d'entraînement spaCy](../results/plots/spacy_training_dynamics.png)
+
 ---
 
 ## 5. Modèles NER
@@ -205,6 +213,28 @@ LEARNING_RATE = 2e-5
 MAX_LENGTH = 128
 ```
 
+### 5.4 Courbes d'Entraînement CamemBERT
+
+#### Loss Train / Validation
+
+![Courbes de loss CamemBERT](../results/plots/camembert_loss_curve.png)
+
+La loss d'entraînement descend régulièrement de **0.91 → 0.05** sur 2190 steps (5 epochs). La loss de validation converge plus vite et reste inférieure, signe d'un bon fine-tuning sans sur-apprentissage.
+
+#### F1-Score par Epoch
+
+![F1 par epoch CamemBERT](../results/plots/camembert_f1_curve.png)
+
+Le F1 atteint **100%** dès l'epoch 2 sur l'ensemble de validation, confirmant la convergence rapide du modèle sur notre tâche NER.
+
+#### Vérification de Convergence (Loss + Gradient Norm + LR Schedule)
+
+![Convergence CamemBERT](../results/plots/camembert_convergence.png)
+
+- **Loss** : Décroissance monotone train et eval sans divergence
+- **Gradient Norm** : Spike à step 1700 (grad\_norm = 1.89) correspondant à une zone d'ajustement fin du LR scheduler — normal avec warmup linéaire
+- **LR Schedule** : Warmup linéaire sur les 438 premiers steps puis décroissance jusqu'à 0
+
 ---
 
 ## 6. Résultats Quantitatifs
@@ -241,9 +271,9 @@ L'**Exact Match (EM)** est la métrique la plus stricte : une phrase est correct
    - 112 faux positifs vs 3 pour spaCy 10k
    - EM plus faible car chaque FP affecte une phrase entière
 
-3. **Baseline prépositions** (F1 = 52.3%, EM = ~48%)
+3. **Baseline prépositions** (F1 = 41.04%, EM = 29.53%)
    - Référence plancher : pas d'apprentissage, règles pures
-   - Échoue sur ~50% des phrases (formulations sans prépositions claires)
+   - Recall 32.20% : ~68% des phrases sans prépositions explicites (SMS, style télégraphique)
    - Confirme que le NER apprend des patterns non capturables par regex
 
 4. **Modèles pré-entraînés** (sm, md, lg)
@@ -252,17 +282,21 @@ L'**Exact Match (EM)** est la métrique la plus stricte : une phrase est correct
 
 ### 6.3 Graphique Comparatif
 
-```
-F1-Score par modèle :
+![Comparaison F1-Score tous modèles](../results/plots/model_comparison_bar.png)
 
-spaCy 10k     ████████████████████████████████████████████████████ 99.88%
-CamemBERT     ████████████████████████████████████████████████░░░░ 98.15%
-spaCy md      ██████████████████████████████████████░░░░░░░░░░░░░░ 86.42%
-spaCy lg      ████████████████████████████████████░░░░░░░░░░░░░░░░ 81.50%
-spaCy sm      █████████████████████████████████░░░░░░░░░░░░░░░░░░░ 75.65%
-spaCy blank   █████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░ 69.13%
-              0%                        50%                     100%
-```
+Le graphique met en évidence trois niveaux de performance :
+- **Baseline** (règles prépositions) : 41% — plancher de référence
+- **spaCy non fine-tuné** (blank, sm, md, lg) : 69–86% — forte variabilité selon le modèle de base
+- **Modèles fine-tunés** (CamemBERT et spaCy 10k) : 98–99% — classe à part
+
+### 6.4 Matrices de Confusion
+
+![Matrices de confusion](../results/plots/confusion_matrices.png)
+
+Les matrices (normalisées par ligne) comparent Baseline, CamemBERT et spaCy 10k sur le même jeu de test. Les points remarquables :
+- **Baseline** : taux de FN très élevé (67.8%) — confirme que ~68% des phrases n'utilisent pas de prépositions explicites
+- **CamemBERT** : excellent recall (99.97%) mais 3.7% de FP — sur-détection légère
+- **spaCy 10k** : quasi-parfait dans les deux dimensions (0.1% FP, 0.1% FN)
 
 ---
 
@@ -414,7 +448,7 @@ Paris → Lyon (moins de correspondances, BFS)
 ### 9.1 Objectifs Atteints
 
 ✅ Dataset avec split train/val/test (10000 phrases, 26 villes, 30+ templates)
-✅ Baseline prépositions (référence plancher, ~52% F1)
+✅ Baseline prépositions (référence plancher, 41.04% F1)
 ✅ Comparaison de modèles spaCy (blank, sm, md, lg, 10k)
 ✅ Modèle CamemBERT fine-tuné (5 epochs, courbes de loss disponibles)
 ✅ Métriques quantitatives : Precision, Recall, F1, **Exact Match**
@@ -445,10 +479,10 @@ Paris → Lyon (moins de correspondances, BFS)
 
 ### 9.4 Perspectives
 
-- Ajouter A* avec heuristique géographique
-- Intégrer les prix SNCF
-- Étendre à d'autres langues avec mBERT
-- Déployer en production avec monitoring
+- Intégrer les horaires et prix SNCF en temps réel
+- Étendre à d'autres langues avec mBERT (zéro-shot)
+- Ajouter la gestion des dates/horaires dans la phrase (NER multi-entités)
+- Déployer en production avec monitoring et re-entraînement automatique
 
 ---
 
