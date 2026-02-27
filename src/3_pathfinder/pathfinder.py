@@ -208,6 +208,33 @@ class TrainPathfinder:
         print("[OK] PATHFINDER PRET")
         print("="*70)
 
+    def _find_station_with_fallback(self, city: str) -> Tuple[Optional[str], Optional[str]]:
+        """
+        Cherche une gare par nom. Si introuvable, essaie le fuzzy matching.
+
+        Args:
+            city: Nom de la ville ou gare
+
+        Returns:
+            (code_uic, warning_message) — warning est None si trouvé exactement
+        """
+        # Tentative 1 : recherche exacte via alias + contain
+        uic = self.graph.find_station_by_name(city)
+        if uic:
+            return uic, None
+
+        # Tentative 2 : fallback fuzzy matching (gare la plus proche)
+        fallback = self.loader.get_nearest_station_fuzzy(city, threshold=45)
+        if fallback:
+            fallback_name = fallback["nom_gare"]
+            # Récupérer le code UIC de la gare trouvée
+            uic = self.graph.find_station_by_name(fallback_name)
+            if uic:
+                warning = fallback.get("fuzzy_warning", f"Ville '{city}' → gare la plus proche: '{fallback_name}'")
+                return uic, warning
+
+        return None, None
+
     def find_route(
         self,
         from_city: str,
@@ -216,71 +243,98 @@ class TrainPathfinder:
         algorithm: str = "astar"
     ) -> Optional[Dict]:
         """
-        Trouve un itinéraire entre deux villes
+        Trouve un itinéraire entre deux villes.
 
         Args:
             from_city: Ville de départ
             to_city: Ville d'arrivée
-            metric: Métrique à minimiser ("time" ou "distance")
-            algorithm: Algorithme à utiliser ("dijkstra" ou "astar")
+            metric: Métrique à minimiser — "time", "distance" ou "changes"
+            algorithm: Algorithme — "dijkstra" ou "astar" (ignoré si metric="changes")
 
         Returns:
-            Dictionnaire avec l'itinéraire ou None
+            Dictionnaire avec l'itinéraire ou erreur
         """
         if not self.initialized:
             raise RuntimeError("Le pathfinder n'est pas initialisé. Appelez initialize() d'abord.")
 
-        # Trouver les gares correspondantes
-        from_uic = self.graph.find_station_by_name(from_city)
-        to_uic = self.graph.find_station_by_name(to_city)
+        warnings = []
+
+        # Trouver les gares correspondantes (avec fallback fuzzy si nécessaire)
+        from_uic, from_warning = self._find_station_with_fallback(from_city)
+        to_uic, to_warning = self._find_station_with_fallback(to_city)
+
+        if from_warning:
+            warnings.append(from_warning)
+        if to_warning:
+            warnings.append(to_warning)
 
         if not from_uic:
             return {
-                "error": f"Gare de départ non trouvée pour: {from_city}",
+                "error": f"Gare de départ introuvable pour: '{from_city}' (aucune gare similaire dans le réseau SNCF)",
                 "from_city": from_city,
                 "to_city": to_city
             }
 
         if not to_uic:
             return {
-                "error": f"Gare d'arrivée non trouvée pour: {to_city}",
+                "error": f"Gare d'arrivée introuvable pour: '{to_city}' (aucune gare similaire dans le réseau SNCF)",
                 "from_city": from_city,
                 "to_city": to_city
             }
 
-        # Calculer l'itinéraire avec l'algorithme choisi
-        if algorithm == "astar":
+        # Calculer l'itinéraire selon la métrique
+        if metric == "changes":
+            # Stratégie : minimum de correspondances (BFS)
+            result = self.graph.find_path_min_changes(from_uic, to_uic)
+            if result:
+                path_uic, nb_changes = result
+                total_cost = nb_changes
+            else:
+                result = None
+        elif algorithm == "astar":
             result = self.graph.find_shortest_path_astar(from_uic, to_uic, metric=metric)
+            if result:
+                path_uic, total_cost = result
         else:
             result = self.graph.find_shortest_path(from_uic, to_uic, metric=metric)
+            if result:
+                path_uic, total_cost = result
 
         if not result:
             return {
-                "error": "Aucun itinéraire trouvé",
+                "error": "Aucun itinéraire trouvé entre ces deux gares",
                 "from_city": from_city,
                 "to_city": to_city
             }
 
-        path_uic, total_cost = result
-
         # Récupérer les détails de l'itinéraire
         path_details = self.graph.get_path_details(path_uic)
-
-        # Construire le résultat
         stations = [step["nom_gare"] for step in path_details]
 
+        # Calculer les métriques complémentaires
+        total_time = sum(
+            self.graph.graph.get_edge_data(path_uic[i], path_uic[i+1], {}).get("weight", 0)
+            for i in range(len(path_uic) - 1)
+        )
+        total_dist = sum(
+            self.graph.graph.get_edge_data(path_uic[i], path_uic[i+1], {}).get("distance_km", 0)
+            for i in range(len(path_uic) - 1)
+        )
+
         return {
-            "from_city": from_city,  # Nom original demandé par l'utilisateur
-            "to_city": to_city,      # Nom original demandé par l'utilisateur
+            "from_city": from_city,
+            "to_city": to_city,
             "from_station": stations[0],
             "to_station": stations[-1],
             "stations": stations,
             "num_stops": len(stations),
-            "num_changes": len(stations) - 2,  # Nombre de changements (exclure départ et arrivée)
-            "total_time_minutes": total_cost if metric == "time" else None,
-            "total_distance_km": total_cost if metric == "distance" else None,
+            "num_changes": max(0, len(stations) - 2),
+            "total_time_minutes": total_time,
+            "total_distance_km": total_dist,
+            "metric_used": metric,
+            "algorithm_used": "bfs" if metric == "changes" else algorithm,
             "details": path_details,
-            # Garder les noms originaux pour la sortie finale
+            "warnings": warnings if warnings else None,
             "original_from": from_city,
             "original_to": to_city
         }

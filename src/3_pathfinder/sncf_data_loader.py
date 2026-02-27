@@ -320,6 +320,63 @@ class SNCFDataLoader:
         # Retourner la première correspondance
         return matches.iloc[0].to_dict()
 
+    def get_nearest_station_fuzzy(self, name: str, threshold: int = 45) -> Optional[Dict]:
+        """
+        Trouve la gare la plus proche par fuzzy matching (fallback).
+
+        Utilisé quand get_station_by_name() échoue, pour les villes sans gare
+        directe ou avec orthographe très différente. Retourne la gare SNCF
+        dont le nom est le plus similaire, avec le score de confiance.
+
+        Args:
+            name: Nom de la ville ou gare à trouver
+            threshold: Score minimum RapidFuzz (0-100) pour accepter un match
+
+        Returns:
+            Dictionnaire avec infos gare + 'fuzzy_score' et 'fuzzy_warning',
+            ou None si aucun match acceptable
+        """
+        if self.stations_df is None:
+            raise ValueError("Chargez d'abord les gares avec download_stations()")
+
+        try:
+            from rapidfuzz import process, fuzz
+        except ImportError:
+            return None
+
+        name_lower = name.lower().strip()
+        station_names = self.stations_df["nom_gare"].tolist()
+
+        # Fuzzy matching sur tous les noms de gares
+        result = process.extractOne(
+            name_lower,
+            station_names,
+            scorer=fuzz.WRatio,
+            score_cutoff=threshold,
+            processor=lambda x: x.lower()
+        )
+
+        if not result:
+            return None
+
+        best_name, score, _ = result
+
+        # Récupérer les infos de la gare trouvée
+        matches = self.stations_df[
+            self.stations_df["nom_gare"] == best_name
+        ]
+
+        if len(matches) == 0:
+            return None
+
+        station = matches.iloc[0].to_dict()
+        station["fuzzy_score"] = score
+        station["fuzzy_warning"] = (
+            f"Gare '{name}' non trouvée exactement → "
+            f"gare la plus proche: '{best_name}' (similarité: {score:.0f}%)"
+        )
+        return station
+
     def get_all_stations(self) -> pd.DataFrame:
         """Retourne toutes les gares chargées"""
         if self.stations_df is None:
