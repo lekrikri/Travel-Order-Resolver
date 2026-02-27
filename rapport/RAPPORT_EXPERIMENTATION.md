@@ -215,7 +215,7 @@ L'**Exact Match (EM)** est la métrique la plus stricte : une phrase est correct
 
 | Modèle | Precision | Recall | F1-Score | Exact Match | TP | FP | FN |
 |--------|-----------|--------|----------|-------------|-----|-----|-----|
-| **Baseline prépositions** | 58.1% | 47.4% | 52.3% | ~48% | — | — | — |
+| **Baseline prépositions** | **56.56%** | **32.20%** | **41.04%** | **29.53%** | 966 | 742 | 2034 |
 | spaCy blank | 70.22% | 68.07% | 69.13% | ~55% | 2042 | 866 | 958 |
 | spaCy fr_core_news_sm | 74.25% | 77.10% | 75.65% | ~62% | 2313 | 802 | 687 |
 | spaCy fr_core_news_md | 84.08% | 88.90% | 86.42% | ~76% | 2667 | 505 | 333 |
@@ -223,9 +223,9 @@ L'**Exact Match (EM)** est la métrique la plus stricte : une phrase est correct
 | CamemBERT | 96.40% | 99.97% | 98.15% | ~92.5% | 2999 | 112 | 1 |
 | **spaCy 10k** | **99.90%** | **99.87%** | **99.88%** | **99.73%** | 2996 | 3 | 4 |
 
+> **Baseline prépositions** évaluée sur les mêmes 1500 phrases de test. Recall faible (32.20%) car ~68% des phrases du dataset utilisent des formulations sans prépositions explicites (SMS, style telegraphique, etc.), ce qui confirme la nécessité du NER.
 > **Exact Match spaCy 10k** : 7 erreurs sur 1500 tests → EM = (1500-4)/1500 ≈ **99.73%**
 > **Exact Match CamemBERT** : ~113 phrases affectées → EM ≈ (1500-113)/1500 ≈ **92.5%**
-> **Baseline prépositions** : ne détecte pas les phrases sans prépositions explicites (~48% EM)
 
 ### 6.2 Analyse des Résultats
 
