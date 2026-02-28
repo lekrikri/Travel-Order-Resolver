@@ -45,11 +45,14 @@ class RuleBasedEngine(NLPEngine):
 
     # Context scoring: words preceding a city mention that boost/penalize its score
     CITY_BOOST = {"à", "a", "vers", "pour", "de", "depuis"}       # +2.0
-    PERSON_PENALTY = {"avec"}                                       # -3.0
+    PERSON_PENALTY = {
+        "avec", "ami", "amis", "amie", "amies",
+        "copain", "copine", "collegue", "collegues",
+    }                                                                 # -3.0
     ET_PENALTY = -1.5  # "et" between name-like words
 
     # Verbs before "à <city>" that indicate travel role
-    DEPARTURE_VERBS = {"habite", "vis", "réside", "demeure"}       # role=departure
+    DEPARTURE_VERBS = {"habite", "vis", "vit", "réside", "demeure"} # role=departure
     DESTINATION_VERBS = {"pars", "vais", "va", "voyage", "rends"}  # role=destination
 
     FUZZY_CUTOFF = 0.75
@@ -127,6 +130,39 @@ class RuleBasedEngine(NLPEngine):
 
         return None
 
+    def _resolve_greedy(self, raw: str, max_strip: int = 2) -> str | None:
+        """Resolve a greedy regex capture to a city name.
+
+        Tries the full string first, then substrings by stripping words
+        from both ends (e.g. "nantes pour aller" → "nantes", "paris").
+        Prioritizes exact matches over fuzzy to avoid false positives
+        like "aller" → "Wallers".
+        """
+        result = self.resolve_city(raw)
+        if result:
+            return result
+        words = raw.strip().split()
+        limit = min(max_strip + 1, len(words))
+
+        # Build candidate substrings from both directions
+        candidates: list[str] = []
+        for start in range(1, limit):
+            candidates.append(" ".join(words[start:]))
+        for end in range(len(words) - 1, max(len(words) - 1 - max_strip, 0), -1):
+            candidates.append(" ".join(words[:end]))
+
+        # Exact matching first (avoids "aller" → "Wallers" fuzzy traps)
+        for c in candidates:
+            result = self.resolve_city(c, fuzzy=False)
+            if result:
+                return result
+        # Fuzzy fallback
+        for c in candidates:
+            result = self.resolve_city(c)
+            if result:
+                return result
+        return None
+
     def _score_city_mention(self, position: int, words: list[str]) -> tuple[float, str]:
         """Score a city mention by surrounding context.
 
@@ -145,17 +181,35 @@ class RuleBasedEngine(NLPEngine):
             elif prev == "et":
                 score += self.ET_PENALTY
 
+        # Scan up to 3 words back for person-related context
+        # e.g. "avec mon amis Paris" — "avec" is 3 words before "Paris"
+        # Stop at directional prepositions (they mark context boundaries)
+        lookback = min(position, 3)
+        for offset in range(1, lookback + 1):
+            w = words[position - offset]
+            if w in self.CITY_BOOST:
+                break  # directional preposition = context boundary
+            if w in self.PERSON_PENALTY:
+                score -= 3.0
+                break
+
         # Check verb before preposition: "habite à <city>" or "pars à <city>"
+        # Also handles "vit sur <city>"
         if position >= 2:
             prev_prev = words[position - 2]
             prev = words[position - 1]
-            if prev in {"à", "a"}:
+            if prev in {"à", "a", "sur"}:
                 if prev_prev in self.DEPARTURE_VERBS:
                     score += 3.0
                     role = "departure"
                 elif prev_prev in self.DESTINATION_VERBS:
                     score += 2.5
                     role = "destination"
+
+        # "vers/direction/pour <city>" → strong destination signal
+        if position >= 1 and words[position - 1] in {"direction", "vers", "pour"}:
+            score += 2.5
+            role = "destination"
 
         return max(score, 0.0), role
 
@@ -197,8 +251,8 @@ class RuleBasedEngine(NLPEngine):
             if match:
                 raw_dep = match.group("dep")
                 raw_arr = match.group("arr")
-                dep = self.resolve_city(raw_dep)
-                arr = self.resolve_city(raw_arr)
+                dep = self._resolve_greedy(raw_dep)
+                arr = self._resolve_greedy(raw_arr)
                 if dep and arr and dep != arr:
                     return dep, arr, 0.9
 
