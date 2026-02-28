@@ -1,21 +1,50 @@
 import { useState } from 'react';
-import { Search, Zap, Clock } from 'lucide-react';
+import { Search, Cpu, GitFork, Clock, Leaf } from 'lucide-react';
+import type { EngineInfo } from '../types';
 
 interface RouteSearchProps {
-  onSearch: (sentence: string, useRag: boolean, metric: 'time' | 'distance') => void;
+  onSearch: (
+    sentence: string,
+    nlpEngine: string,
+    graphEngine: string,
+    optimization: 'time' | 'pollution',
+    trainTypes?: string[]
+  ) => void;
   loading: boolean;
+  nlpEngines: EngineInfo[];
+  graphEngines: EngineInfo[];
 }
 
-function RouteSearch({ onSearch, loading }: RouteSearchProps) {
+const TRAIN_TYPES = [
+  'TGV INOUI', 'OUIGO', 'TER', 'INTERCITES', 'INTERCITES de nuit',
+  'Lyria', 'ICE', 'TramTrain', 'Car TER', 'Navette',
+];
+
+function RouteSearch({ onSearch, loading, nlpEngines, graphEngines }: RouteSearchProps) {
   const [sentence, setSentence] = useState('');
-  const [useRag, setUseRag] = useState(true);
-  const [metric, setMetric] = useState<'time' | 'distance'>('time');
+  const [nlpEngine, setNlpEngine] = useState('rule-based');
+  const [graphEngine, setGraphEngine] = useState('dijkstra');
+  const [optimization, setOptimization] = useState<'time' | 'pollution'>('time');
+  const [selectedTrainTypes, setSelectedTrainTypes] = useState<string[]>([]);
+  const [showTrainFilter, setShowTrainFilter] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (sentence.trim()) {
-      onSearch(sentence, useRag, metric);
+      onSearch(
+        sentence,
+        nlpEngine,
+        graphEngine,
+        optimization,
+        selectedTrainTypes.length > 0 ? selectedTrainTypes : undefined
+      );
     }
+  };
+
+  const toggleTrainType = (type: string) => {
+    setSelectedTrainTypes(prev =>
+      prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]
+    );
   };
 
   const examples = [
@@ -43,18 +72,36 @@ function RouteSearch({ onSearch, loading }: RouteSearchProps) {
         <div className="options-grid">
           <div className="option-group">
             <label className="option-label">
-              <input
-                type="checkbox"
-                checked={useRag}
-                onChange={(e) => setUseRag(e.target.checked)}
-                disabled={loading}
-              />
-              <Zap size={16} />
-              <span>Utiliser RAG (recommandé)</span>
+              <Cpu size={16} />
+              <span>Moteur NLP</span>
             </label>
-            <p className="option-help">
-              ChromaDB RAG améliore la précision de 75% à 100%
-            </p>
+            <select
+              className="engine-select"
+              value={nlpEngine}
+              onChange={(e) => setNlpEngine(e.target.value)}
+              disabled={loading}
+            >
+              {nlpEngines.map(e => (
+                <option key={e.name} value={e.name}>{e.name} — {e.description}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="option-group">
+            <label className="option-label">
+              <GitFork size={16} />
+              <span>Moteur Graph</span>
+            </label>
+            <select
+              className="engine-select"
+              value={graphEngine}
+              onChange={(e) => setGraphEngine(e.target.value)}
+              disabled={loading}
+            >
+              {graphEngines.map(e => (
+                <option key={e.name} value={e.name}>{e.name} — {e.description}</option>
+              ))}
+            </select>
           </div>
 
           <div className="option-group">
@@ -62,8 +109,8 @@ function RouteSearch({ onSearch, loading }: RouteSearchProps) {
             <div className="metric-buttons">
               <button
                 type="button"
-                className={`metric-btn ${metric === 'time' ? 'active' : ''}`}
-                onClick={() => setMetric('time')}
+                className={`metric-btn ${optimization === 'time' ? 'active' : ''}`}
+                onClick={() => setOptimization('time')}
                 disabled={loading}
               >
                 <Clock size={16} />
@@ -71,13 +118,40 @@ function RouteSearch({ onSearch, loading }: RouteSearchProps) {
               </button>
               <button
                 type="button"
-                className={`metric-btn ${metric === 'distance' ? 'active' : ''}`}
-                onClick={() => setMetric('distance')}
+                className={`metric-btn ${optimization === 'pollution' ? 'active' : ''}`}
+                onClick={() => setOptimization('pollution')}
                 disabled={loading}
               >
-                Distance
+                <Leaf size={16} />
+                CO2
               </button>
             </div>
+          </div>
+
+          <div className="option-group">
+            <button
+              type="button"
+              className="train-filter-toggle"
+              onClick={() => setShowTrainFilter(!showTrainFilter)}
+            >
+              Filtrer par type de train {selectedTrainTypes.length > 0 && `(${selectedTrainTypes.length})`}
+            </button>
+            {showTrainFilter && (
+              <div className="train-type-grid">
+                {TRAIN_TYPES.map(type => (
+                  <label key={type} className="train-type-chip">
+                    <input
+                      type="checkbox"
+                      checked={selectedTrainTypes.includes(type)}
+                      onChange={() => toggleTrainType(type)}
+                    />
+                    <span className={`train-badge train-${type.toLowerCase().replace(/\s+/g, '-')}`}>
+                      {type}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

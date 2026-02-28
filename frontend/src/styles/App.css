@@ -891,6 +891,357 @@ body {
   padding: 1.5rem;
 }
 
+/* Engine Select */
+.engine-select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  background: white;
+  cursor: pointer;
+}
+
+.engine-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Train type filter */
+.train-filter-toggle {
+  background: none;
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.train-filter-toggle:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.train-type-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.train-type-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.train-type-chip input {
+  display: none;
+}
+
+.train-type-chip input:checked + .train-badge {
+  outline: 2px solid #667eea;
+  outline-offset: 1px;
+}
+
+/* Train badges (colored by type) */
+.train-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.train-tgv-inoui { background: #dbeafe; color: #1e40af; }
+.train-ouigo { background: #cffafe; color: #0e7490; }
+.train-ter { background: #d1fae5; color: #065f46; }
+.train-intercites { background: #fef3c7; color: #92400e; }
+.train-intercites-de-nuit { background: #ede9fe; color: #5b21b6; }
+.train-lyria { background: #fce7f3; color: #9d174d; }
+.train-ice { background: #e2e8f0; color: #334155; }
+.train-tramtrain { background: #ccfbf1; color: #134e4a; }
+.train-car-ter { background: #fed7aa; color: #9a3412; }
+.train-navette { background: #e0e7ff; color: #3730a3; }
+.train-train { background: #f1f5f9; color: #475569; }
+
+/* Performance pills */
+.perf-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.perf-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  background: #f1f5f9;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.perf-pill.total {
+  background: #ede9fe;
+  color: #5b21b6;
+  font-weight: 600;
+}
+
+/* Totals bar */
+.totals-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.total-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Billets section */
+.billets-section {
+  margin-bottom: 1.5rem;
+}
+
+.billets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.billet-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #667eea;
+}
+
+.billet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.billet-number {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.billet-route {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.billet-station {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.billet-arrow {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.billet-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.billet-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.billet-stops-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.billet-stops-toggle:hover {
+  text-decoration: underline;
+}
+
+.billet-stops-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.billet-stop {
+  padding: 0.2rem 0.5rem;
+  background: #f1f5f9;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Benchmark Panel */
+.benchmark-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benchmark-section {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.benchmark-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.benchmark-desc {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.benchmark-input-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.benchmark-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.benchmark-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.benchmark-run-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.benchmark-run-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.benchmark-run-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Benchmark table */
+.benchmark-table-wrapper {
+  overflow-x: auto;
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.benchmark-table th {
+  text-align: left;
+  padding: 0.75rem;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.benchmark-table th.num {
+  text-align: right;
+}
+
+.benchmark-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.benchmark-table td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.benchmark-table td.engine-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.benchmark-table td.route-preview {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.benchmark-table tr.row-valid td:first-child {
+  border-left: 3px solid #10b981;
+}
+
+.benchmark-table tr.row-invalid td:first-child {
+  border-left: 3px solid #ef4444;
+}
+
+.benchmark-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .header-content,
@@ -927,5 +1278,22 @@ body {
   .footer-content {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .benchmark-input-row {
+    flex-direction: column;
+  }
+
+  .billets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .totals-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .perf-pills {
+    justify-content: center;
   }
 }

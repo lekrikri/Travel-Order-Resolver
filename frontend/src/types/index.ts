@@ -66,3 +66,73 @@ export interface SpeechToRouteResponse {
   transcribed_text: string;
   route_response: RouteResponse;
 }
+
+// --- Strategy pattern backend types ---
+
+export interface EngineInfo {
+  name: string;
+  description: string;
+  type: 'nlp' | 'graph';
+}
+
+export interface ResolveRequest {
+  text: string;
+  nlp_engine: string;
+  graph_engine: string;
+  train_types?: string[] | null;
+  optimization: 'time' | 'pollution';
+}
+
+export interface SegmentInfo {
+  from_station: string;
+  to_station: string;
+  train_type: string;
+  weight_minutes: number;
+}
+
+export interface BilletInfo {
+  from_station: string;
+  to_station: string;
+  train_type: string;
+  duration_minutes: number;
+  co2_grams: number;
+  price_euros: number;
+  stops: string[];
+}
+
+export interface ResolveResponse {
+  text: string;
+  departure: string | null;
+  destination: string | null;
+  route: string[];
+  segments: SegmentInfo[];
+  billets: BilletInfo[];
+  travel_time_min: number;
+  total_co2_grams: number;
+  total_price_euros: number;
+  is_valid: boolean;
+  nlp_time_ms: number;
+  graph_time_ms: number;
+  total_time_ms: number;
+}
+
+export interface NLPBenchmarkResult {
+  departure: string | null;
+  destination: string | null;
+  confidence: number;
+  is_valid: boolean;
+  time_ms: number;
+  memory_kb: number;
+  engine_name: string;
+}
+
+export interface GraphBenchmarkResult {
+  steps: string[];
+  segments: SegmentInfo[];
+  found: boolean;
+  total_weight: number;
+  nodes_explored: number;
+  time_ms: number;
+  memory_kb: number;
+  engine_name: string;
+}

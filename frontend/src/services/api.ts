@@ -4,7 +4,12 @@ import type {
   RouteResponse,
   HealthResponse,
   StatsResponse,
-  SpeechToRouteResponse
+  SpeechToRouteResponse,
+  EngineInfo,
+  ResolveRequest,
+  ResolveResponse,
+  NLPBenchmarkResult,
+  GraphBenchmarkResult,
 } from '../types';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
@@ -17,31 +22,31 @@ const apiClient = axios.create({
 });
 
 export const travelOrderAPI = {
-  // Health check
+  // Health check (new backend)
   async getHealth(): Promise<HealthResponse> {
-    const response = await apiClient.get<HealthResponse>('/health');
+    const response = await apiClient.get<HealthResponse>('/api/health');
     return response.data;
   },
 
-  // Stats
+  // Stats (new backend)
   async getStats(): Promise<StatsResponse> {
-    const response = await apiClient.get<StatsResponse>('/stats');
+    const response = await apiClient.get<StatsResponse>('/api/stats');
     return response.data;
   },
 
-  // Get route (NLP + Pathfinding)
+  // Legacy: get route (NLP + Pathfinding) — old backend
   async getRoute(request: RouteRequest): Promise<RouteResponse> {
-    const response = await apiClient.post<RouteResponse>('/route', request);
+    const response = await apiClient.post<RouteResponse>('/api/route', request);
     return response.data;
   },
 
-  // Extract cities only (NLP only)
+  // Legacy: extract cities only (NLP only)
   async extractCities(request: RouteRequest): Promise<RouteResponse> {
-    const response = await apiClient.post<RouteResponse>('/extract', request);
+    const response = await apiClient.post<RouteResponse>('/api/extract', request);
     return response.data;
   },
 
-  // Speech to route
+  // Legacy: speech to route
   async speechToRoute(
     audioFile: File,
     metric: 'time' | 'distance' = 'time'
@@ -51,7 +56,7 @@ export const travelOrderAPI = {
     formData.append('metric', metric);
 
     const response = await apiClient.post<SpeechToRouteResponse>(
-      '/speech-to-route',
+      '/api/speech-to-route',
       formData,
       {
         headers: {
@@ -59,6 +64,35 @@ export const travelOrderAPI = {
         },
       }
     );
+    return response.data;
+  },
+
+  // --- Strategy pattern backend ---
+
+  // List all engines
+  async getEngines(): Promise<EngineInfo[]> {
+    const response = await apiClient.get<EngineInfo[]>('/api/engines');
+    return response.data;
+  },
+
+  // Resolve text to route (main endpoint)
+  async resolve(request: ResolveRequest): Promise<ResolveResponse> {
+    const response = await apiClient.post<ResolveResponse>('/api/resolve', request);
+    return response.data;
+  },
+
+  // Benchmark all NLP engines on the same text
+  async benchmarkNLP(text: string): Promise<NLPBenchmarkResult[]> {
+    const response = await apiClient.post<NLPBenchmarkResult[]>('/api/benchmark/nlp', { text });
+    return response.data;
+  },
+
+  // Benchmark all graph engines on the same departure/destination
+  async benchmarkGraph(departure: string, destination: string): Promise<GraphBenchmarkResult[]> {
+    const response = await apiClient.post<GraphBenchmarkResult[]>('/api/benchmark/graph', {
+      departure,
+      destination,
+    });
     return response.data;
   },
 };
