@@ -80,7 +80,7 @@ export interface ResolveRequest {
   nlp_engine: string;
   graph_engine: string;
   train_types?: string[] | null;
-  optimization: 'time' | 'pollution';
+  optimization: 'time' | 'pollution' | 'hops';
 }
 
 export interface SegmentInfo {
@@ -122,8 +122,14 @@ export interface NLPBenchmarkResult {
   confidence: number;
   is_valid: boolean;
   time_ms: number;
+  cpu_time_ms: number;
+  energy_uwh: number;
   memory_kb: number;
   engine_name: string;
+  index: number;
+  total: number;
+  match: 'correct' | 'inverted' | 'wrong' | 'missing';
+  error?: string;
 }
 
 export interface GraphBenchmarkResult {
@@ -133,6 +139,23 @@ export interface GraphBenchmarkResult {
   total_weight: number;
   nodes_explored: number;
   time_ms: number;
+  cpu_time_ms: number;
+  energy_uwh: number;
   memory_kb: number;
   engine_name: string;
+  index: number;
+  total: number;
+  error?: string;
+  warning?: string;
+  optimization?: string;
+}
+
+export type BenchmarkSSEEvent =
+  | { type: 'phase'; phase: 'nlp' | 'graph'; total: number }
+  | ({ type: 'nlp_result' } & NLPBenchmarkResult)
+  | ({ type: 'graph_result' } & GraphBenchmarkResult)
+  | { type: 'done' };
+
+export interface TranscribeResponse {
+  transcribed_text: string;
 }

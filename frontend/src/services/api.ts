@@ -10,6 +10,8 @@ import type {
   ResolveResponse,
   NLPBenchmarkResult,
   GraphBenchmarkResult,
+  BenchmarkSSEEvent,
+  TranscribeResponse,
 } from '../types';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
@@ -93,6 +95,64 @@ export const travelOrderAPI = {
       departure,
       destination,
     });
+    return response.data;
+  },
+
+  // SSE streaming benchmark (NLP + Graph unified pipeline)
+  async *benchmarkStream(
+    text: string,
+    expectedDeparture: string,
+    expectedDestination: string,
+  ): AsyncGenerator<BenchmarkSSEEvent> {
+    const response = await fetch(`${API_BASE_URL}/api/benchmark/stream`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        text,
+        expected_departure: expectedDeparture,
+        expected_destination: expectedDestination,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Benchmark stream failed: ${response.status}`);
+    }
+
+    const reader = response.body!.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop() || '';
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          const jsonStr = line.slice(6);
+          try {
+            yield JSON.parse(jsonStr) as BenchmarkSSEEvent;
+          } catch {
+            // skip malformed SSE lines
+          }
+        }
+      }
+    }
+  },
+
+  // Transcribe audio file to text (speech-to-text only)
+  async transcribe(audioFile: File): Promise<TranscribeResponse> {
+    const formData = new FormData();
+    formData.append('audio_file', audioFile);
+
+    const response = await apiClient.post<TranscribeResponse>(
+      '/api/transcribe',
+      formData,
+      { headers: { 'Content-Type': 'multipart/form-data' } },
+    );
     return response.data;
   },
 };

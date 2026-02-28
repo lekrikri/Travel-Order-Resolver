@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
+import tempfile
 from dataclasses import asdict
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from pydantic import BaseModel
 from pathlib import Path
 
@@ -17,7 +19,7 @@ from src.nlp.rule_based import RuleBasedEngine
 from src.nlp.spacy_ner import SpaCyNEREngine
 from src.nlp.crf_ner import CRFNEREngine
 from src.nlp.transformer_ner import TransformerNEREngine
-from src.graph.base import GraphResult
+from src.graph.base import GraphResult, resolve_station
 from src.graph.dijkstra import DijkstraEngine
 from src.graph.bfs import BFSEngine
 from src.graph.astar import AStarEngine
@@ -74,6 +76,19 @@ def pollution_weight(edge: Edge) -> float:
     co2_per_km = CO2_PER_KM.get(edge.train_type, _DEFAULT_CO2)
     estimated_km = edge.weight_minutes * _AVG_KM_PER_MIN
     return co2_per_km * estimated_km
+
+
+def hops_weight(edge: Edge) -> float:
+    """Weight every edge equally — minimizes number of connections."""
+    return 1.0
+
+
+# Map optimization mode to weight function (None = default edge.weight_minutes)
+_WEIGHT_FNS: dict[str, object] = {
+    "time": None,
+    "pollution": pollution_weight,
+    "hops": hops_weight,
+}
 
 
 # --- Price estimates (EUR per km) by train type ---
@@ -207,6 +222,12 @@ class BenchmarkGraphRequest(BaseModel):
     destination: str
 
 
+class BenchmarkStreamRequest(BaseModel):
+    text: str
+    expected_departure: str
+    expected_destination: str
+
+
 class EngineInfo(BaseModel):
     name: str
     description: str
@@ -232,7 +253,7 @@ def resolve(req: ResolveRequest) -> ResolveResponse:
 
     if nlp_result.is_valid:
         train_filter = set(req.train_types) if req.train_types else None
-        weight_fn = pollution_weight if req.optimization == "pollution" else None
+        weight_fn = _WEIGHT_FNS.get(req.optimization)
         graph_result = graph.run(
             nlp_result.departure, nlp_result.destination,  # type: ignore[arg-type]
             train_type_filter=train_filter,
@@ -345,6 +366,138 @@ def stats():
         "nlp_engines": [e.name for e in registry.list_nlp()],
         "graph_engines": [e.name for e in registry.list_graph()],
     }
+
+
+# --- Energy estimation ---
+# Approximation: 15W TDP for a single CPU core
+_CPU_TDP_W = 15.0
+
+
+def _energy_uwh(cpu_time_ms: float) -> float:
+    """Estimate energy in micro-watt-hours from CPU time."""
+    return (cpu_time_ms / 1000) * _CPU_TDP_W / 3600 * 1e6
+
+
+def _match_nlp(result, expected_dep: str, expected_dest: str) -> str:
+    """Compare NLP result against ground truth.
+
+    Resolves expected values through the gazetteer so that
+    "Albi" matches "Albi Ville" (the canonical station name).
+    """
+    if not result.is_valid:
+        return "missing"
+    dep = (result.departure or "").strip().lower()
+    dest = (result.destination or "").strip().lower()
+    # Resolve expected values through the gazetteer
+    exp_dep = resolve_station(expected_dep).strip().lower()
+    exp_dest = resolve_station(expected_dest).strip().lower()
+    if dep == exp_dep and dest == exp_dest:
+        return "correct"
+    if dep == exp_dest and dest == exp_dep:
+        return "inverted"
+    return "wrong"
+
+
+def _sse_event(data: dict) -> str:
+    """Format a dict as an SSE data line."""
+    return f"data: {json.dumps(data, ensure_ascii=False)}\n\n"
+
+
+@app.post("/api/benchmark/stream")
+async def benchmark_stream(req: BenchmarkStreamRequest):
+    """SSE endpoint: stream NLP then Graph benchmark results one by one."""
+
+    async def generate():
+        nlp_engines = registry.list_nlp()
+        graph_engines = registry.list_graph()
+
+        # Phase 1: NLP
+        yield _sse_event({"type": "phase", "phase": "nlp", "total": len(nlp_engines)})
+
+        for i, engine in enumerate(nlp_engines):
+            try:
+                result = await asyncio.to_thread(engine.run, req.text)
+                d = asdict(result)
+                d["type"] = "nlp_result"
+                d["index"] = i
+                d["total"] = len(nlp_engines)
+                d["energy_uwh"] = round(_energy_uwh(result.cpu_time_ms), 2)
+                d["match"] = _match_nlp(result, req.expected_departure, req.expected_destination)
+            except Exception as exc:
+                d = {
+                    "type": "nlp_result",
+                    "engine_name": engine.name,
+                    "index": i,
+                    "total": len(nlp_engines),
+                    "error": str(exc),
+                    "match": "missing",
+                }
+            yield _sse_event(d)
+
+        # Phase 2: Graph — run all optimization modes × all engines
+        opt_modes = list(_WEIGHT_FNS.keys())  # ["time", "pollution", "hops"]
+        total_graph = len(graph_engines) * len(opt_modes)
+        yield _sse_event({"type": "phase", "phase": "graph", "total": total_graph})
+
+        idx = 0
+        for opt_mode in opt_modes:
+            weight_fn = _WEIGHT_FNS.get(opt_mode)
+            for engine in graph_engines:
+                try:
+                    result = await asyncio.to_thread(
+                        engine.run, req.expected_departure, req.expected_destination,
+                        weight_fn=weight_fn,
+                    )
+                    d = asdict(result)
+                    # Convert RouteSegment dataclasses to plain dicts
+                    d["segments"] = [asdict(s) if hasattr(s, "__dataclass_fields__") else s for s in result.segments]
+                    d["type"] = "graph_result"
+                    d["index"] = idx
+                    d["total"] = total_graph
+                    d["optimization"] = opt_mode
+                    d["energy_uwh"] = round(_energy_uwh(result.cpu_time_ms), 2)
+                    # BFS always minimizes hops regardless of weight_fn
+                    d["warning"] = ""
+                    if engine.name == "bfs" and opt_mode != "hops":
+                        d["warning"] = "BFS always minimizes hops regardless of optimization mode"
+                except Exception as exc:
+                    d = {
+                        "type": "graph_result",
+                        "engine_name": engine.name,
+                        "index": idx,
+                        "total": total_graph,
+                        "error": str(exc),
+                        "optimization": opt_mode,
+                    }
+                yield _sse_event(d)
+                idx += 1
+
+        yield _sse_event({"type": "done"})
+
+    return StreamingResponse(generate(), media_type="text/event-stream")
+
+
+@app.post("/api/transcribe")
+async def transcribe(audio_file: UploadFile = File(...)):
+    """Speech-to-text only (no route resolution)."""
+    try:
+        import whisper
+    except ImportError:
+        from fastapi.responses import JSONResponse
+        return JSONResponse(
+            status_code=501,
+            content={"error": "whisper is not installed on this server"},
+        )
+
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=True) as tmp:
+        content = await audio_file.read()
+        tmp.write(content)
+        tmp.flush()
+
+        model = whisper.load_model("base")
+        result = await asyncio.to_thread(model.transcribe, tmp.name, language="fr")
+
+    return {"transcribed_text": result["text"].strip()}
 
 
 # Serve static frontend files

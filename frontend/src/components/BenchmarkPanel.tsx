@@ -1,177 +1,346 @@
 import { useState } from 'react';
-import { Cpu, GitFork, Play } from 'lucide-react';
+import { Play, Clock, Zap, HardDrive, Type, Mic, AlertTriangle, GitBranch } from 'lucide-react';
 import { travelOrderAPI } from '../services/api';
+import AudioRecorder from './AudioRecorder';
 import type { NLPBenchmarkResult, GraphBenchmarkResult } from '../types';
 
+type Phase = 'idle' | 'nlp' | 'graph' | 'done' | 'error';
+type InputMode = 'text' | 'voice';
+
+const OPT_LABELS: Record<string, string> = {
+  time: 'Temps',
+  pollution: 'Pollution',
+  hops: 'Correspondances',
+};
+
+const EXAMPLES = [
+  { text: 'Je veux aller de Paris a Lyon', dep: 'Paris Gare de Lyon', dest: 'Lyon Part Dieu' },
+  { text: 'Un billet Marseille direction Bordeaux', dep: 'Marseille St Charles', dest: 'Bordeaux St Jean' },
+  { text: 'Emmene moi de Lille a Strasbourg', dep: 'Lille Flandres', dest: 'Strasbourg', },
+  { text: 'Je voudrais partir de Nantes pour aller a Rennes', dep: 'Nantes', dest: 'Rennes' },
+];
+
+function formatEnergy(uwh: number): string {
+  if (uwh < 1000) return `${uwh.toFixed(1)} \u00b5Wh`;
+  return `${(uwh / 1000).toFixed(2)} mWh`;
+}
+
+function MatchBadge({ match }: { match: NLPBenchmarkResult['match'] }) {
+  const config = {
+    correct: { label: 'correct', cls: 'match-correct' },
+    inverted: { label: 'inverse', cls: 'match-inverted' },
+    wrong: { label: 'faux', cls: 'match-wrong' },
+    missing: { label: 'manquant', cls: 'match-missing' },
+  };
+  const { label, cls } = config[match] || config.missing;
+  return <span className={`match-badge ${cls}`}>{match === 'correct' ? '\u2713' : '\u2717'} {label}</span>;
+}
+
 function BenchmarkPanel() {
-  // NLP benchmark state
-  const [nlpText, setNlpText] = useState('Je veux aller de Paris à Lyon');
+  const [inputMode, setInputMode] = useState<InputMode>('text');
+  const [text, setText] = useState('');
+  const [expectedDep, setExpectedDep] = useState('');
+  const [expectedDest, setExpectedDest] = useState('');
+  const [phase, setPhase] = useState<Phase>('idle');
   const [nlpResults, setNlpResults] = useState<NLPBenchmarkResult[]>([]);
-  const [nlpLoading, setNlpLoading] = useState(false);
-
-  // Graph benchmark state
-  const [graphDep, setGraphDep] = useState('Paris Gare de Lyon');
-  const [graphDest, setGraphDest] = useState('Lyon Part Dieu');
   const [graphResults, setGraphResults] = useState<GraphBenchmarkResult[]>([]);
-  const [graphLoading, setGraphLoading] = useState(false);
+  const [nlpTotal, setNlpTotal] = useState(0);
+  const [graphTotal, setGraphTotal] = useState(0);
+  const [errorMsg, setErrorMsg] = useState('');
+  const [transcribing, setTranscribing] = useState(false);
 
-  const runNLPBenchmark = async () => {
-    if (!nlpText.trim()) return;
-    setNlpLoading(true);
+  const canRun = text.trim() && expectedDep.trim() && expectedDest.trim() && phase === 'idle';
+
+  const runBenchmark = async (inputText: string, dep: string, dest: string) => {
+    setNlpResults([]);
+    setGraphResults([]);
+    setNlpTotal(0);
+    setGraphTotal(0);
+    setErrorMsg('');
+    setPhase('nlp');
+
     try {
-      const results = await travelOrderAPI.benchmarkNLP(nlpText);
-      setNlpResults(results);
+      for await (const event of travelOrderAPI.benchmarkStream(inputText, dep, dest)) {
+        switch (event.type) {
+          case 'phase':
+            setPhase(event.phase);
+            if (event.phase === 'nlp') setNlpTotal(event.total);
+            if (event.phase === 'graph') setGraphTotal(event.total);
+            break;
+          case 'nlp_result':
+            setNlpResults(prev => [...prev, event as unknown as NLPBenchmarkResult]);
+            break;
+          case 'graph_result':
+            setGraphResults(prev => [...prev, event as unknown as GraphBenchmarkResult]);
+            break;
+          case 'done':
+            setPhase('done');
+            break;
+        }
+      }
     } catch (err) {
-      console.error('NLP benchmark error:', err);
-    } finally {
-      setNlpLoading(false);
+      setErrorMsg(err instanceof Error ? err.message : 'Unknown error');
+      setPhase('error');
     }
   };
 
-  const runGraphBenchmark = async () => {
-    if (!graphDep.trim() || !graphDest.trim()) return;
-    setGraphLoading(true);
+  const handleRun = () => {
+    if (!canRun) return;
+    runBenchmark(text, expectedDep, expectedDest);
+  };
+
+  const handleExample = (ex: typeof EXAMPLES[0]) => {
+    setText(ex.text);
+    setExpectedDep(ex.dep);
+    setExpectedDest(ex.dest);
+  };
+
+  const handleAudioUpload = async (file: File) => {
+    setTranscribing(true);
     try {
-      const results = await travelOrderAPI.benchmarkGraph(graphDep, graphDest);
-      setGraphResults(results);
+      const result = await travelOrderAPI.transcribe(file);
+      setText(result.transcribed_text);
     } catch (err) {
-      console.error('Graph benchmark error:', err);
+      setErrorMsg('Transcription failed: ' + (err instanceof Error ? err.message : 'unknown error'));
     } finally {
-      setGraphLoading(false);
+      setTranscribing(false);
     }
   };
+
+  const isRunning = phase === 'nlp' || phase === 'graph';
 
   return (
     <div className="benchmark-panel">
-      {/* NLP Benchmark */}
-      <section className="benchmark-section">
-        <h3 className="benchmark-title">
-          <Cpu size={20} />
-          Benchmark NLP
-        </h3>
-        <p className="benchmark-desc">
-          Compare les 4 moteurs NLP sur le meme texte (extraction de depart/destination).
-        </p>
-        <div className="benchmark-input-row">
+      {/* Input mode toggle */}
+      <div className="benchmark-mode-toggle">
+        <button
+          className={`mode-btn ${inputMode === 'text' ? 'active' : ''}`}
+          onClick={() => setInputMode('text')}
+          disabled={isRunning}
+        >
+          <Type size={16} /> Texte
+        </button>
+        <button
+          className={`mode-btn ${inputMode === 'voice' ? 'active' : ''}`}
+          onClick={() => setInputMode('voice')}
+          disabled={isRunning}
+        >
+          <Mic size={16} /> Voix
+        </button>
+      </div>
+
+      {/* Text input or audio recorder */}
+      {inputMode === 'text' ? (
+        <div className="benchmark-text-input">
           <input
             type="text"
             className="benchmark-input"
-            value={nlpText}
-            onChange={(e) => setNlpText(e.target.value)}
-            placeholder="Texte en francais..."
-            disabled={nlpLoading}
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Ex: Je veux aller de Paris a Lyon..."
+            disabled={isRunning}
           />
-          <button
-            className="benchmark-run-btn"
-            onClick={runNLPBenchmark}
-            disabled={nlpLoading || !nlpText.trim()}
-          >
-            <Play size={16} />
-            {nlpLoading ? 'En cours...' : 'Lancer'}
-          </button>
-        </div>
-
-        {nlpResults.length > 0 && (
-          <div className="benchmark-table-wrapper">
-            <table className="benchmark-table">
-              <thead>
-                <tr>
-                  <th>Engine</th>
-                  <th>Valide</th>
-                  <th>Depart</th>
-                  <th>Destination</th>
-                  <th className="num">Confiance</th>
-                  <th className="num">Temps (ms)</th>
-                  <th className="num">Memoire (KB)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {nlpResults.map((r, i) => (
-                  <tr key={i} className={r.is_valid ? 'row-valid' : 'row-invalid'}>
-                    <td className="engine-name">{r.engine_name}</td>
-                    <td>{r.is_valid ? '✓' : '✗'}</td>
-                    <td>{r.departure || '—'}</td>
-                    <td>{r.destination || '—'}</td>
-                    <td className="num">{(r.confidence * 100).toFixed(0)}%</td>
-                    <td className="num">{r.time_ms.toFixed(1)}</td>
-                    <td className="num">{r.memory_kb.toFixed(0)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="examples">
+            <p className="examples-title">Exemples rapides :</p>
+            <div className="examples-grid">
+              {EXAMPLES.map((ex, i) => (
+                <button
+                  key={i}
+                  className="example-chip"
+                  onClick={() => handleExample(ex)}
+                  disabled={isRunning}
+                >
+                  {ex.text}
+                </button>
+              ))}
+            </div>
           </div>
-        )}
-      </section>
-
-      {/* Graph Benchmark */}
-      <section className="benchmark-section">
-        <h3 className="benchmark-title">
-          <GitFork size={20} />
-          Benchmark Graph
-        </h3>
-        <p className="benchmark-desc">
-          Compare les 3 moteurs graph sur le meme trajet (Dijkstra, A*, BFS).
-        </p>
-        <div className="benchmark-input-row">
-          <input
-            type="text"
-            className="benchmark-input"
-            value={graphDep}
-            onChange={(e) => setGraphDep(e.target.value)}
-            placeholder="Gare de depart..."
-            disabled={graphLoading}
-          />
-          <input
-            type="text"
-            className="benchmark-input"
-            value={graphDest}
-            onChange={(e) => setGraphDest(e.target.value)}
-            placeholder="Gare d'arrivee..."
-            disabled={graphLoading}
-          />
-          <button
-            className="benchmark-run-btn"
-            onClick={runGraphBenchmark}
-            disabled={graphLoading || !graphDep.trim() || !graphDest.trim()}
-          >
-            <Play size={16} />
-            {graphLoading ? 'En cours...' : 'Lancer'}
-          </button>
         </div>
+      ) : (
+        <div className="benchmark-voice-input">
+          <AudioRecorder
+            onAudioUpload={handleAudioUpload}
+            loading={transcribing || isRunning}
+            showMetric={false}
+          />
+          {text && (
+            <div className="benchmark-transcription">
+              Texte transcrit : <strong>{text}</strong>
+            </div>
+          )}
+        </div>
+      )}
 
-        {graphResults.length > 0 && (
-          <div className="benchmark-table-wrapper">
-            <table className="benchmark-table">
-              <thead>
-                <tr>
-                  <th>Engine</th>
-                  <th>Trouve</th>
-                  <th className="num">Poids total</th>
-                  <th className="num">Noeuds explores</th>
-                  <th className="num">Temps (ms)</th>
-                  <th className="num">Memoire (KB)</th>
-                  <th>Route</th>
-                </tr>
-              </thead>
-              <tbody>
-                {graphResults.map((r, i) => (
-                  <tr key={i} className={r.found ? 'row-valid' : 'row-invalid'}>
-                    <td className="engine-name">{r.engine_name}</td>
-                    <td>{r.found ? '✓' : '✗'}</td>
-                    <td className="num">{r.total_weight.toFixed(1)}</td>
-                    <td className="num">{r.nodes_explored}</td>
-                    <td className="num">{r.time_ms.toFixed(1)}</td>
-                    <td className="num">{r.memory_kb.toFixed(0)}</td>
-                    <td className="route-preview">
-                      {r.found ? `${r.steps.length} gares` : '—'}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      {/* Ground truth inputs */}
+      <div className="benchmark-ground-truth">
+        <div className="ground-truth-field">
+          <label>Depart attendu</label>
+          <input
+            type="text"
+            className="benchmark-input"
+            value={expectedDep}
+            onChange={(e) => setExpectedDep(e.target.value)}
+            placeholder="Ex: Paris Gare de Lyon"
+            disabled={isRunning}
+          />
+        </div>
+        <div className="ground-truth-field">
+          <label>Destination attendue</label>
+          <input
+            type="text"
+            className="benchmark-input"
+            value={expectedDest}
+            onChange={(e) => setExpectedDest(e.target.value)}
+            placeholder="Ex: Lyon Part Dieu"
+            disabled={isRunning}
+          />
+        </div>
+      </div>
+
+      {/* Run button */}
+      <button
+        className="benchmark-run-btn benchmark-run-main"
+        onClick={handleRun}
+        disabled={!canRun || isRunning}
+      >
+        <Play size={18} />
+        {isRunning ? 'Benchmark en cours...' : 'Lancer le benchmark'}
+      </button>
+
+      {/* Error */}
+      {errorMsg && (
+        <div className="benchmark-error">
+          {errorMsg}
+        </div>
+      )}
+
+      {/* Phase 1: NLP results */}
+      {(phase !== 'idle' || nlpResults.length > 0) && (
+        <div className="benchmark-phase">
+          <div className="phase-header">
+            <h3>Phase 1 : Analyse NLP</h3>
+            <span className="phase-counter">{nlpResults.length}/{nlpTotal || '?'}</span>
           </div>
-        )}
-      </section>
+          {nlpTotal > 0 && (
+            <div className="phase-progress">
+              <div
+                className="progress-bar"
+                style={{ width: `${(nlpResults.length / nlpTotal) * 100}%` }}
+              />
+            </div>
+          )}
+          <div className="phase-ground-truth">
+            Verite terrain : {expectedDep} → {expectedDest}
+          </div>
+          <div className="engine-cards">
+            {nlpResults.map((r, i) => (
+              <div
+                key={i}
+                className={`engine-card ${r.error ? 'error' : r.is_valid ? 'valid' : 'invalid'} fade-in-up`}
+              >
+                <div className="engine-card-header">
+                  <span className="engine-card-name">{r.engine_name}</span>
+                  <MatchBadge match={r.match} />
+                </div>
+                {r.error ? (
+                  <div className="engine-card-error">{r.error}</div>
+                ) : (
+                  <>
+                    <div className="engine-card-extract">
+                      {r.departure || '(vide)'} → {r.destination || '(vide)'}
+                    </div>
+                    <div className="engine-card-metrics">
+                      <span className="metric"><Clock size={14} /> {r.time_ms.toFixed(1)}ms</span>
+                      <span className="metric"><Zap size={14} /> {formatEnergy(r.energy_uwh)}</span>
+                      <span className="metric"><HardDrive size={14} /> {r.memory_kb.toFixed(0)}KB</span>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
+            {phase === 'nlp' && nlpResults.length < nlpTotal && (
+              <div className="engine-card pending">
+                <div className="engine-card-header">
+                  <span className="engine-card-name">...</span>
+                  <span className="mini-spinner" />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Phase 2: Graph results grouped by optimization mode */}
+      {(phase === 'graph' || phase === 'done' || graphResults.length > 0) && (
+        <div className="benchmark-phase">
+          <div className="phase-header">
+            <h3>Phase 2 : Pathfinding</h3>
+            <span className="phase-counter">{graphResults.length}/{graphTotal || '?'}</span>
+          </div>
+          {graphTotal > 0 && (
+            <div className="phase-progress">
+              <div
+                className="progress-bar"
+                style={{ width: `${(graphResults.length / graphTotal) * 100}%` }}
+              />
+            </div>
+          )}
+          <div className="phase-ground-truth">
+            Route : {expectedDep} → {expectedDest} (verite terrain)
+          </div>
+          {['time', 'pollution', 'hops'].map((optMode) => {
+            const modeResults = graphResults.filter((r) => r.optimization === optMode);
+            if (modeResults.length === 0 && phase !== 'graph') return null;
+            return (
+              <div key={optMode} className="optimization-group">
+                <div className="optimization-group-header">
+                  <GitBranch size={14} />
+                  <span>{OPT_LABELS[optMode] || optMode}</span>
+                </div>
+                <div className="engine-cards">
+                  {modeResults.map((r, i) => (
+                    <div
+                      key={i}
+                      className={`engine-card ${r.error ? 'error' : r.found ? 'valid' : 'invalid'} fade-in-up`}
+                    >
+                      <div className="engine-card-header">
+                        <span className="engine-card-name">{r.engine_name}</span>
+                        <span className={`validity-badge ${r.found ? 'valid' : 'invalid'}`}>
+                          {r.found ? `\u2713 ${r.steps?.length || 0} gares` : '\u2717 pas de route'}
+                        </span>
+                      </div>
+                      {r.error ? (
+                        <div className="engine-card-error">{r.error}</div>
+                      ) : (
+                        <>
+                          {r.warning && (
+                            <div className="engine-card-warning">
+                              <AlertTriangle size={14} /> {r.warning}
+                            </div>
+                          )}
+                          <div className="engine-card-metrics">
+                            <span className="metric"><Clock size={14} /> {r.time_ms.toFixed(1)}ms</span>
+                            <span className="metric"><Zap size={14} /> {formatEnergy(r.energy_uwh)}</span>
+                            <span className="metric"><HardDrive size={14} /> {r.memory_kb.toFixed(0)}KB</span>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+          {phase === 'graph' && graphResults.length < graphTotal && (
+            <div className="engine-card pending">
+              <div className="engine-card-header">
+                <span className="engine-card-name">...</span>
+                <span className="mini-spinner" />
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
