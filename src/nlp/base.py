@@ -18,6 +18,7 @@ class NLPResult:
     is_valid: bool = False
     # Metrics (filled automatically by NLPEngine.run)
     time_ms: float = 0.0
+    cpu_time_ms: float = 0.0
     memory_kb: float = 0.0
     engine_name: str = ""
 
@@ -51,11 +52,13 @@ class NLPEngine(ABC):
     def run(self, text: str) -> NLPResult:
         """Run extraction with automatic timing and memory measurement."""
         tracemalloc.start()
-        start = time.perf_counter()
+        cpu_start = time.process_time()
+        wall_start = time.perf_counter()
 
         dep, dest, conf = self.extract(text)
 
-        elapsed_ms = (time.perf_counter() - start) * 1000
+        elapsed_ms = (time.perf_counter() - wall_start) * 1000
+        cpu_elapsed_ms = (time.process_time() - cpu_start) * 1000
         _, peak_kb = tracemalloc.get_traced_memory()
         tracemalloc.stop()
 
@@ -65,6 +68,7 @@ class NLPEngine(ABC):
             confidence=conf,
             is_valid=dep is not None and dest is not None,
             time_ms=round(elapsed_ms, 3),
+            cpu_time_ms=round(cpu_elapsed_ms, 3),
             memory_kb=round(peak_kb / 1024, 2),
             engine_name=self.name,
         )

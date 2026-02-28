@@ -108,14 +108,14 @@ function App() {
     }
   }, []);
 
-  const handleAudioSearch = useCallback(async (audioFile: File, metric: 'time' | 'distance') => {
+  const handleAudioSearch = useCallback(async (audioFile: File, metric?: 'time' | 'distance') => {
     setLoading(true);
     setRouteResult(null);
     setResolveResult(null);
     setError(null);
 
     try {
-      const result = await travelOrderAPI.speechToRoute(audioFile, metric);
+      const result = await travelOrderAPI.speechToRoute(audioFile, metric || 'time');
       if (result.route_response?.error) {
         setError(result.route_response as unknown as ApiError);
         return;

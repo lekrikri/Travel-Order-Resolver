@@ -2,11 +2,15 @@
 
 from __future__ import annotations
 
+import json
 import time
 import tracemalloc
 from abc import ABC, abstractmethod
 from collections.abc import Callable
 from dataclasses import dataclass, field
+from pathlib import Path
+
+from unidecode import unidecode
 
 
 @dataclass(frozen=True)
@@ -40,8 +44,38 @@ class GraphResult:
     nodes_explored: int = 0
     # Metrics (filled automatically by GraphEngine.run)
     time_ms: float = 0.0
+    cpu_time_ms: float = 0.0
     memory_kb: float = 0.0
     engine_name: str = ""
+    # Station resolution info (original → resolved via gazetteer)
+    resolved_departure: str = ""
+    resolved_destination: str = ""
+
+
+# Lazy-loaded shared gazetteer for station name resolution
+_STATION_GAZETTEER: dict[str, str] | None = None
+
+
+def _load_gazetteer() -> dict[str, str]:
+    global _STATION_GAZETTEER
+    if _STATION_GAZETTEER is None:
+        path = Path(__file__).resolve().parent.parent.parent / "data" / "processed" / "gazetteer.json"
+        with open(path, encoding="utf-8") as f:
+            _STATION_GAZETTEER = json.load(f)
+    return _STATION_GAZETTEER
+
+
+def resolve_station(name: str) -> str:
+    """Resolve a city/station name to its canonical station name via gazetteer."""
+    gaz = _load_gazetteer()
+    key = name.strip().lower()
+    if key in gaz:
+        return gaz[key]
+    # Try without accents
+    key_ascii = unidecode(key)
+    if key_ascii in gaz:
+        return gaz[key_ascii]
+    return name  # return as-is if not found
 
 
 class GraphEngine(ABC):
@@ -90,14 +124,20 @@ class GraphEngine(ABC):
         weight_fn: Callable[[Edge], float] | None = None,
     ) -> GraphResult:
         """Run pathfinding with automatic timing and memory measurement."""
+        # Resolve city names to canonical station names via gazetteer
+        resolved_dep = resolve_station(departure)
+        resolved_dest = resolve_station(destination)
+
         tracemalloc.start()
-        start = time.perf_counter()
+        cpu_start = time.process_time()
+        wall_start = time.perf_counter()
 
         steps, segments, weight, explored = self.find_route(
-            departure, destination, train_type_filter, weight_fn
+            resolved_dep, resolved_dest, train_type_filter, weight_fn
         )
 
-        elapsed_ms = (time.perf_counter() - start) * 1000
+        elapsed_ms = (time.perf_counter() - wall_start) * 1000
+        cpu_elapsed_ms = (time.process_time() - cpu_start) * 1000
         _, peak_kb = tracemalloc.get_traced_memory()
         tracemalloc.stop()
 
@@ -108,6 +148,9 @@ class GraphEngine(ABC):
             total_weight=round(weight, 2),
             nodes_explored=explored,
             time_ms=round(elapsed_ms, 3),
+            cpu_time_ms=round(cpu_elapsed_ms, 3),
             memory_kb=round(peak_kb / 1024, 2),
             engine_name=self.name,
+            resolved_departure=resolved_dep,
+            resolved_destination=resolved_dest,
         )

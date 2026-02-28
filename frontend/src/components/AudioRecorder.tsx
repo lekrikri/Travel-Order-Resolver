@@ -2,11 +2,12 @@ import { useState, useRef } from 'react';
 import { Mic, Upload, Clock } from 'lucide-react';
 
 interface AudioRecorderProps {
-  onAudioUpload: (file: File, metric: 'time' | 'distance') => void;
+  onAudioUpload: (file: File, metric?: 'time' | 'distance') => void;
   loading: boolean;
+  showMetric?: boolean;
 }
 
-function AudioRecorder({ onAudioUpload, loading }: AudioRecorderProps) {
+function AudioRecorder({ onAudioUpload, loading, showMetric = true }: AudioRecorderProps) {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [metric, setMetric] = useState<'time' | 'distance'>('time');
   const [recording, setRecording] = useState(false);
@@ -18,6 +19,9 @@ function AudioRecorder({ onAudioUpload, loading }: AudioRecorderProps) {
     const file = e.target.files?.[0];
     if (file) {
       setSelectedFile(file);
+      if (!showMetric) {
+        onAudioUpload(file);
+      }
     }
   };
 
@@ -43,6 +47,9 @@ function AudioRecorder({ onAudioUpload, loading }: AudioRecorderProps) {
         const file = new File([audioBlob], 'recording.wav', { type: 'audio/wav' });
         setSelectedFile(file);
         stream.getTracks().forEach((track) => track.stop());
+        if (!showMetric) {
+          onAudioUpload(file);
+        }
       };
 
       mediaRecorder.start();
@@ -127,7 +134,7 @@ function AudioRecorder({ onAudioUpload, loading }: AudioRecorderProps) {
         </div>
       </div>
 
-      {selectedFile && (
+      {selectedFile && showMetric && (
         <div className="submit-section">
           <div className="metric-select">
             <label className="metric-label">Optimisation :</label>
