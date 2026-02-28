@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Order Resolver</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+
+    .header { background: #1e293b; padding: 1rem 2rem; border-bottom: 1px solid #334155; display: flex; align-items: center; gap: 1rem; }
+    .header h1 { font-size: 1.25rem; font-weight: 600; }
+    .header .subtitle { color: #94a3b8; font-size: 0.875rem; }
+
+    .tabs { display: flex; gap: 0; background: #1e293b; padding: 0 2rem; border-bottom: 1px solid #334155; }
+    .tab { padding: 0.75rem 1.5rem; cursor: pointer; border-bottom: 2px solid transparent; color: #94a3b8; transition: all 0.2s; }
+    .tab:hover { color: #e2e8f0; }
+    .tab.active { color: #60a5fa; border-bottom-color: #60a5fa; }
+
+    .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+
+    .card { background: #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #334155; }
+
+    .input-group { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .input-group input, .input-group select { padding: 0.75rem 1rem; background: #0f172a; border: 1px solid #334155; border-radius: 0.5rem; color: #e2e8f0; font-size: 1rem; outline: none; }
+    .input-group input { flex: 1; }
+    .input-group input:focus, .input-group select:focus { border-color: #60a5fa; }
+    .input-group button { padding: 0.75rem 1.5rem; background: #2563eb; color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-weight: 600; }
+    .input-group button:hover { background: #1d4ed8; }
+    .input-group button:disabled { opacity: 0.5; cursor: wait; }
+
+    .filters { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; align-items: center; }
+    .filters label { color: #94a3b8; font-size: 0.8rem; }
+    .filters select { padding: 0.4rem 0.6rem; background: #0f172a; border: 1px solid #334155; border-radius: 0.375rem; color: #e2e8f0; font-size: 0.85rem; }
+
+    .result { padding: 1rem; background: #0f172a; border-radius: 0.5rem; }
+    .result.valid { border-left: 3px solid #22c55e; }
+    .result.invalid { border-left: 3px solid #ef4444; }
+    .result .label { color: #94a3b8; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .result .value { font-size: 1.1rem; font-weight: 500; }
+
+    .segments { margin-top: 0.75rem; }
+    .segment { display: flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0; font-size: 0.875rem; }
+    .segment .station { color: #e2e8f0; }
+    .segment .arrow { color: #60a5fa; }
+    .segment .seg-time { color: #94a3b8; font-size: 0.75rem; }
+
+    .billets { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.75rem; }
+    .billet { background: #1e293b; border: 1px solid #334155; border-radius: 0.5rem; overflow: hidden; }
+    .billet-main { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; flex-wrap: wrap; }
+    .billet-route { display: flex; align-items: center; gap: 0.5rem; flex: 1; min-width: 200px; }
+    .billet-route .station { font-weight: 600; font-size: 0.9rem; }
+    .billet-route .arrow { color: #60a5fa; font-size: 1.1rem; }
+    .billet-stats { display: flex; gap: 0.75rem; align-items: center; font-size: 0.8rem; color: #94a3b8; }
+    .billet-stats .stat { display: flex; align-items: center; gap: 0.25rem; }
+    .billet-stats .stat-value { color: #e2e8f0; font-weight: 600; }
+    .billet-toggle { background: none; border: 1px solid #475569; border-radius: 0.25rem; color: #94a3b8; padding: 0.2rem 0.5rem; font-size: 0.7rem; cursor: pointer; white-space: nowrap; }
+    .billet-toggle:hover { color: #e2e8f0; border-color: #60a5fa; }
+    .billet-stops { padding: 0 1rem 0.75rem; display: none; }
+    .billet-stops.open { display: block; }
+    .billet-stops .stop-list { display: flex; flex-direction: column; gap: 0.125rem; padding-left: 1rem; border-left: 2px solid #334155; }
+    .billet-stops .stop { font-size: 0.8rem; color: #94a3b8; padding: 0.125rem 0; }
+    .billet-stops .stop.endpoint { color: #e2e8f0; font-weight: 500; }
+
+    .totals { display: flex; gap: 1rem; margin-top: 0.5rem; padding: 0.75rem; background: #334155; border-radius: 0.375rem; flex-wrap: wrap; }
+    .totals .total-item { font-size: 0.85rem; }
+    .totals .total-label { color: #94a3b8; }
+    .totals .total-value { font-weight: 700; color: #60a5fa; }
+
+    .train-badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.03em; }
+    .badge-tgv { background: #1d4ed8; color: #dbeafe; }
+    .badge-ouigo { background: #0891b2; color: #cffafe; }
+    .badge-ter { background: #15803d; color: #dcfce7; }
+    .badge-intercites { background: #7c3aed; color: #ede9fe; }
+    .badge-lyria { background: #b91c1c; color: #fee2e2; }
+    .badge-ice { background: #dc2626; color: #fef2f2; }
+    .badge-navette { background: #a16207; color: #fef9c3; }
+    .badge-car { background: #ea580c; color: #fff7ed; }
+    .badge-tram { background: #0d9488; color: #ccfbf1; }
+    .badge-train { background: #475569; color: #e2e8f0; }
+    .badge-unknown { background: #334155; color: #94a3b8; }
+
+    .metrics { display: flex; gap: 1rem; margin-top: 0.75rem; flex-wrap: wrap; }
+    .metric { padding: 0.5rem 0.75rem; background: #334155; border-radius: 0.375rem; font-size: 0.8rem; }
+    .metric .metric-label { color: #94a3b8; }
+    .metric .metric-value { font-weight: 600; color: #60a5fa; }
+
+    .hidden { display: none; }
+
+    .bench-table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; }
+    .bench-table th, .bench-table td { padding: 0.5rem 0.75rem; text-align: left; border-bottom: 1px solid #334155; }
+    .bench-table th { color: #94a3b8; font-size: 0.75rem; text-transform: uppercase; }
+    .bench-table td { font-size: 0.875rem; }
+    .bench-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Travel Order Resolver</h1>
+  <span class="subtitle">NLP + Pathfinding</span>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="resolve">Resolve</div>
+  <div class="tab" data-tab="benchmark">Benchmark</div>
+</div>
+
+<!-- RESOLVE TAB -->
+<div id="resolve" class="container tab-content">
+  <div class="card">
+    <div class="input-group">
+      <input type="text" id="resolve-input" placeholder="Ex: Je voudrais aller de Toulouse a Paris" autofocus>
+      <button id="resolve-btn" onclick="doResolve()">Resolve</button>
+    </div>
+    <div class="filters">
+      <label>NLP:</label>
+      <select id="filter-nlp"></select>
+      <label>Graph:</label>
+      <select id="filter-graph"></select>
+      <label>Train types:</label>
+      <select id="filter-train">
+        <option value="">All</option>
+        <option value="TGV INOUI">TGV INOUI</option>
+        <option value="OUIGO">OUIGO</option>
+        <option value="TER">TER</option>
+        <option value="INTERCITES">INTERCITES</option>
+        <option value="INTERCITES de nuit">INTERCITES de nuit</option>
+        <option value="Lyria">Lyria</option>
+        <option value="ICE">ICE</option>
+        <option value="Navette">Navette</option>
+        <option value="TramTrain">TramTrain</option>
+        <option value="Car TER">Car TER</option>
+        <option value="Train">Train</option>
+      </select>
+      <label>Optimization:</label>
+      <select id="filter-optim">
+        <option value="time">Fastest</option>
+        <option value="pollution">Lowest CO2</option>
+      </select>
+    </div>
+    <div id="resolve-result"></div>
+  </div>
+</div>
+
+<!-- BENCHMARK TAB -->
+<div id="benchmark" class="container tab-content hidden">
+  <div class="card">
+    <h3 style="margin-bottom:0.75rem">NLP Engine Comparison</h3>
+    <div class="input-group">
+      <input type="text" id="bench-nlp-input" placeholder="Enter a travel order sentence...">
+      <button id="bench-nlp-btn" onclick="doBenchNLP()">Compare</button>
+    </div>
+    <div id="bench-nlp-result"></div>
+  </div>
+  <div class="card">
+    <h3 style="margin-bottom:0.75rem">Graph Engine Comparison</h3>
+    <div class="input-group" style="flex-wrap:wrap">
+      <input type="text" id="bench-graph-dep" placeholder="Departure station" style="flex:1;min-width:200px">
+      <input type="text" id="bench-graph-dest" placeholder="Destination station" style="flex:1;min-width:200px">
+      <button id="bench-graph-btn" onclick="doBenchGraph()">Compare</button>
+    </div>
+    <div id="bench-graph-result"></div>
+  </div>
+</div>
+
+<script>
+// Tab switching
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.remove('hidden');
+  });
+});
+
+// Enter key handling
+document.getElementById('resolve-input').addEventListener('keydown', e => { if (e.key === 'Enter') doResolve(); });
+document.getElementById('bench-nlp-input').addEventListener('keydown', e => { if (e.key === 'Enter') doBenchNLP(); });
+
+// Load available engines into selectors
+async function loadEngines() {
+  try {
+    const res = await fetch('/api/engines');
+    const engines = await res.json();
+    const nlpSelect = document.getElementById('filter-nlp');
+    const graphSelect = document.getElementById('filter-graph');
+    engines.forEach(e => {
+      const opt = document.createElement('option');
+      opt.value = e.name;
+      opt.textContent = e.name;
+      opt.title = e.description;
+      if (e.type === 'nlp') nlpSelect.appendChild(opt);
+      else if (e.type === 'graph') graphSelect.appendChild(opt);
+    });
+  } catch (err) {
+    console.error('Failed to load engines:', err);
+  }
+}
+loadEngines();
+
+function getBadgeClass(trainType) {
+  const t = trainType.toLowerCase();
+  if (t.includes('tgv')) return 'badge-tgv';
+  if (t === 'ouigo') return 'badge-ouigo';
+  if (t === 'ter') return 'badge-ter';
+  if (t.includes('intercites')) return 'badge-intercites';
+  if (t === 'lyria') return 'badge-lyria';
+  if (t === 'ice') return 'badge-ice';
+  if (t === 'navette') return 'badge-navette';
+  if (t.includes('car')) return 'badge-car';
+  if (t.includes('tram')) return 'badge-tram';
+  if (t === 'train') return 'badge-train';
+  return 'badge-unknown';
+}
+
+async function doResolve() {
+  const input = document.getElementById('resolve-input');
+  const btn = document.getElementById('resolve-btn');
+  const text = input.value.trim();
+  if (!text) return;
+
+  const selectedType = document.getElementById('filter-train').value;
+  const optimization = document.getElementById('filter-optim').value;
+
+  const nlpEngine = document.getElementById('filter-nlp').value;
+  const graphEngine = document.getElementById('filter-graph').value;
+
+  const body = { text, nlp_engine: nlpEngine, graph_engine: graphEngine };
+  if (selectedType) body.train_types = [selectedType];
+  if (optimization !== 'time') body.optimization = optimization;
+
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/resolve', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+    const data = await res.json();
+    renderResolveResult(data);
+  } catch (err) {
+    document.getElementById('resolve-result').innerHTML = `<div class="result invalid"><div class="value">Error: ${err.message}</div></div>`;
+  }
+  btn.disabled = false;
+}
+
+function formatCO2(grams) {
+  if (grams >= 1000) return (grams / 1000).toFixed(1) + ' kg';
+  return Math.round(grams) + ' g';
+}
+
+function renderResolveResult(data) {
+  const el = document.getElementById('resolve-result');
+  if (!data.is_valid) {
+    el.innerHTML = `
+      <div class="result invalid">
+        <div class="label">Status</div>
+        <div class="value">INVALID -- No valid travel order detected</div>
+        <div class="metrics">
+          <div class="metric"><span class="metric-label">NLP </span><span class="metric-value">${data.nlp_time_ms.toFixed(1)}ms</span></div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  const billetsHTML = data.billets.map((b, idx) => {
+    const allStops = [b.from_station, ...b.stops, b.to_station];
+    const stopsHTML = allStops.map((s, i) => {
+      const cls = (i === 0 || i === allStops.length - 1) ? 'stop endpoint' : 'stop';
+      return `<div class="${cls}">${s}</div>`;
+    }).join('');
+    const toggleId = `billet-stops-${idx}`;
+
+    return `
+      <div class="billet">
+        <div class="billet-main">
+          <div class="billet-route">
+            <span class="station">${b.from_station}</span>
+            <span class="arrow">&rarr;</span>
+            <span class="station">${b.to_station}</span>
+            <span class="train-badge ${getBadgeClass(b.train_type)}">${b.train_type}</span>
+          </div>
+          <div class="billet-stats">
+            <div class="stat"><span class="stat-value">${Math.round(b.duration_minutes)} min</span></div>
+            <div class="stat"><span class="stat-value">${b.price_euros.toFixed(2)} &euro;</span></div>
+            <div class="stat"><span class="stat-value">${formatCO2(b.co2_grams)}</span> CO2</div>
+          </div>
+          ${b.stops.length > 0 ? `<button class="billet-toggle" onclick="document.getElementById('${toggleId}').classList.toggle('open'); this.textContent = this.textContent === 'Stops' ? 'Hide' : 'Stops';">Stops</button>` : ''}
+        </div>
+        ${b.stops.length > 0 ? `<div id="${toggleId}" class="billet-stops"><div class="stop-list">${stopsHTML}</div></div>` : ''}
+      </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <div class="result valid">
+      <div class="label">Departure</div>
+      <div class="value">${data.departure}</div>
+      <div class="label" style="margin-top:0.5rem">Destination</div>
+      <div class="value">${data.destination}</div>
+      <div class="billets">${billetsHTML}</div>
+      <div class="totals">
+        <div class="total-item"><span class="total-label">Total </span><span class="total-value">${Math.round(data.travel_time_min)} min</span></div>
+        <div class="total-item"><span class="total-label">Price </span><span class="total-value">${data.total_price_euros.toFixed(2)} &euro;</span></div>
+        <div class="total-item"><span class="total-label">CO2 </span><span class="total-value">${formatCO2(data.total_co2_grams)}</span></div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><span class="metric-label">NLP </span><span class="metric-value">${data.nlp_time_ms.toFixed(1)}ms</span></div>
+        <div class="metric"><span class="metric-label">Graph </span><span class="metric-value">${data.graph_time_ms.toFixed(1)}ms</span></div>
+        <div class="metric"><span class="metric-label">Total </span><span class="metric-value">${data.total_time_ms.toFixed(1)}ms</span></div>
+      </div>
+    </div>`;
+}
+
+async function doBenchNLP() {
+  const input = document.getElementById('bench-nlp-input');
+  const btn = document.getElementById('bench-nlp-btn');
+  const text = input.value.trim();
+  if (!text) return;
+
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/benchmark/nlp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text })
+    });
+    const data = await res.json();
+    renderBenchNLP(data);
+  } catch (err) {
+    document.getElementById('bench-nlp-result').textContent = `Error: ${err.message}`;
+  }
+  btn.disabled = false;
+}
+
+function renderBenchNLP(results) {
+  const el = document.getElementById('bench-nlp-result');
+  const rows = results.map(r => `
+    <tr>
+      <td>${r.engine_name}</td>
+      <td>${r.is_valid ? '✓' : '✗'}</td>
+      <td>${r.departure || '-'}</td>
+      <td>${r.destination || '-'}</td>
+      <td class="num">${r.confidence.toFixed(2)}</td>
+      <td class="num">${r.time_ms.toFixed(1)}ms</td>
+      <td class="num">${r.memory_kb.toFixed(1)}KB</td>
+    </tr>`).join('');
+
+  el.innerHTML = `
+    <table class="bench-table">
+      <thead><tr><th>Engine</th><th>Valid</th><th>Departure</th><th>Destination</th><th class="num">Conf</th><th class="num">Time</th><th class="num">Memory</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+async function doBenchGraph() {
+  const dep = document.getElementById('bench-graph-dep').value.trim();
+  const dest = document.getElementById('bench-graph-dest').value.trim();
+  const btn = document.getElementById('bench-graph-btn');
+  if (!dep || !dest) return;
+
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/benchmark/graph', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ departure: dep, destination: dest })
+    });
+    const data = await res.json();
+    renderBenchGraph(data);
+  } catch (err) {
+    document.getElementById('bench-graph-result').textContent = `Error: ${err.message}`;
+  }
+  btn.disabled = false;
+}
+
+function renderBenchGraph(results) {
+  const el = document.getElementById('bench-graph-result');
+  const rows = results.map(r => {
+    const route = r.found ? r.steps.join(' → ') : 'No route';
+    return `
+    <tr>
+      <td>${r.engine_name}</td>
+      <td>${r.found ? '✓' : '✗'}</td>
+      <td>${r.found ? Math.round(r.total_weight) + (r.engine_name === 'bfs' ? ' stops' : ' min') : '-'}</td>
+      <td class="num">${r.nodes_explored}</td>
+      <td class="num">${r.time_ms.toFixed(1)}ms</td>
+      <td style="font-size:0.75rem">${route}</td>
+    </tr>`;
+  }).join('');
+
+  el.innerHTML = `
+    <table class="bench-table">
+      <thead><tr><th>Engine</th><th>Found</th><th>Weight</th><th class="num">Explored</th><th class="num">Time</th><th>Route</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+</script>
+</body>
+</html>
