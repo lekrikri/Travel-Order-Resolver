@@ -1,0 +1,26 @@
+[project]
+name = "travel-order-resolver"
+version = "0.1.0"
+description = "NLP-powered French train itinerary resolver"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pandas",
+    "networkx",
+    "unidecode",
+    "spacy",
+    "sklearn-crfsuite",
+    "transformers",
+    "torch",
+    "tiktoken",
+    "sentencepiece",
+    "protobuf",
+    "fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.8.0/fr_core_news_md-3.8.0-py3-none-any.whl",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]

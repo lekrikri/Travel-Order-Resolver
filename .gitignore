@@ -50,6 +50,8 @@ models/**/pytorch_model.bin
 models/**/model.safetensors
 data/raw/*.csv
 data/raw/*.zip
+data/raw/sncf-gtfs/
+data/raw/sncf-gtfs.zip
 data/generated/*.json
 !data/raw/.gitkeep
 !data/generated/.gitkeep
