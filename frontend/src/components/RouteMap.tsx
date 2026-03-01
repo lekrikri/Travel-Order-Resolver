@@ -42,9 +42,9 @@ const endIcon = new L.Icon({
 
 interface StationDetail {
   step_number: number;
-  code_uic: string;
+  code_uic?: string;
   nom_gare: string;
-  commune: string | null;
+  commune?: string | null;
   latitude: number | null;
   longitude: number | null;
   next_time_minutes?: number;

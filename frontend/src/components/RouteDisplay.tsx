@@ -147,6 +147,18 @@ function RouteDisplay({ result, resolveResult }: RouteDisplayProps) {
               </div>
             )}
 
+            {/* Map */}
+            {resolveResult.details && resolveResult.details.length > 0 &&
+             resolveResult.details.some(d => d.latitude && d.longitude) && (
+              <div className="route-map-section">
+                <h3 className="route-title">
+                  <Map size={20} style={{ marginRight: '8px', verticalAlign: 'middle' }} />
+                  Carte interactive
+                </h3>
+                <RouteMap stations={resolveResult.details} />
+              </div>
+            )}
+
             {/* Route details */}
             {resolveResult.route.length > 0 && (
               <div className="route-details">
