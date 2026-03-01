@@ -6,7 +6,7 @@ interface HealthStatusProps {
   stats: StatsResponse | null;
 }
 
-function HealthStatus({ health, stats }: HealthStatusProps) {
+function HealthStatus({ health }: HealthStatusProps) {
   if (!health) {
     return (
       <div className="health-status loading">
@@ -16,7 +16,7 @@ function HealthStatus({ health, stats }: HealthStatusProps) {
     );
   }
 
-  const isHealthy = health.status === 'healthy' && health.model_loaded;
+  const isHealthy = health.status === 'ok' && health.nlp_engines > 0;
 
   return (
     <div className={`health-status ${isHealthy ? 'healthy' : 'unhealthy'}`}>
@@ -44,20 +44,18 @@ function HealthStatus({ health, stats }: HealthStatusProps) {
         </span>
       </div>
 
-      {stats && (
-        <div className="health-item">
-          <Database size={16} />
-          <span>
-            SNCF : <strong>{stats.total_stations}</strong> gares,{' '}
-            <strong>{stats.total_connections}</strong> connexions
-          </span>
-        </div>
-      )}
+      <div className="health-item">
+        <Database size={16} />
+        <span>
+          SNCF : <strong>{health.stations}</strong> gares,{' '}
+          <strong>{health.connections}</strong> connexions
+        </span>
+      </div>
 
       <div className="health-item">
         <Activity size={16} />
         <span>
-          Modèle : <strong>{health.model_loaded ? 'Chargé' : 'Non chargé'}</strong>
+          Engines : <strong>{health.nlp_engines} NLP</strong> + <strong>{health.graph_engines} Graph</strong>
         </span>
       </div>
     </div>

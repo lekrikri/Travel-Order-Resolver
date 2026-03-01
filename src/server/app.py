@@ -40,6 +40,13 @@ app.add_middleware(
 
 DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed"
 
+# Preload station coordinates for map display
+_STATION_COORDS: dict[str, dict[str, float]] = {}
+_stations_path = DATA_DIR / "stations.json"
+if _stations_path.exists():
+    with open(_stations_path, encoding="utf-8") as _f:
+        _STATION_COORDS = json.load(_f)
+
 # Register available engines at startup
 registry.register_nlp(RuleBasedEngine())
 registry.register_nlp(SpaCyNEREngine())
@@ -197,6 +204,13 @@ class BilletInfo(BaseModel):
     stops: list[str]  # intermediate stations (excluding from/to)
 
 
+class StationDetail(BaseModel):
+    step_number: int
+    nom_gare: str
+    latitude: float | None = None
+    longitude: float | None = None
+
+
 class ResolveResponse(BaseModel):
     text: str
     departure: str | None
@@ -204,6 +218,7 @@ class ResolveResponse(BaseModel):
     route: list[str]
     segments: list[SegmentInfo]
     billets: list[BilletInfo]
+    details: list[StationDetail]
     travel_time_min: float
     total_co2_grams: float
     total_price_euros: float
@@ -276,6 +291,17 @@ def resolve(req: ResolveRequest) -> ResolveResponse:
     total_co2 = sum(b.co2_grams for b in billets)
     total_price = sum(b.price_euros for b in billets)
 
+    # Build station details with GPS coordinates for map display
+    details: list[StationDetail] = []
+    for i, station_name in enumerate(route):
+        coords = _STATION_COORDS.get(station_name, {})
+        details.append(StationDetail(
+            step_number=i + 1,
+            nom_gare=station_name,
+            latitude=coords.get("lat"),
+            longitude=coords.get("lon"),
+        ))
+
     return ResolveResponse(
         text=req.text,
         departure=nlp_result.departure,
@@ -283,6 +309,7 @@ def resolve(req: ResolveRequest) -> ResolveResponse:
         route=route,
         segments=segments,
         billets=billets,
+        details=details,
         travel_time_min=travel_time,
         total_co2_grams=round(total_co2, 1),
         total_price_euros=round(total_price, 2),
@@ -338,12 +365,25 @@ def health_check():
     if connections_path.exists():
         with open(connections_path) as f:
             n_connections = len(json.load(f))
+    # GPU detection (PyTorch / CUDA)
+    gpu_available = False
+    gpu_name = None
+    try:
+        import torch
+        gpu_available = torch.cuda.is_available()
+        if gpu_available:
+            gpu_name = torch.cuda.get_device_name(0)
+    except ImportError:
+        pass
+
     return {
         "status": "ok",
         "nlp_engines": len(registry.list_nlp()),
         "graph_engines": len(registry.list_graph()),
         "stations": n_stations,
         "connections": n_connections,
+        "gpu_available": gpu_available,
+        "gpu_name": gpu_name,
     }
 
 

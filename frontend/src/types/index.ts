@@ -47,19 +47,19 @@ export interface ApiError {
 
 export interface HealthResponse {
   status: string;
+  nlp_engines: number;
+  graph_engines: number;
+  stations: number;
+  connections: number;
   gpu_available: boolean;
   gpu_name: string | null;
-  model_loaded: boolean;
-  sncf_stations: number | null;
-  sncf_connections: number | null;
 }
 
 export interface StatsResponse {
   total_stations: number;
   total_connections: number;
-  gpu_available: boolean;
-  gpu_name: string | null;
-  chromadb_examples: number;
+  nlp_engines: string[];
+  graph_engines: string[];
 }
 
 export interface SpeechToRouteResponse {
@@ -100,6 +100,13 @@ export interface BilletInfo {
   stops: string[];
 }
 
+export interface ResolveStationDetail {
+  step_number: number;
+  nom_gare: string;
+  latitude: number | null;
+  longitude: number | null;
+}
+
 export interface ResolveResponse {
   text: string;
   departure: string | null;
@@ -107,6 +114,7 @@ export interface ResolveResponse {
   route: string[];
   segments: SegmentInfo[];
   billets: BilletInfo[];
+  details: ResolveStationDetail[];
   travel_time_min: number;
   total_co2_grams: number;
   total_price_euros: number;
