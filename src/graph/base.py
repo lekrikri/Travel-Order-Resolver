@@ -132,14 +132,15 @@ class GraphEngine(ABC):
         cpu_start = time.process_time()
         wall_start = time.perf_counter()
 
-        steps, segments, weight, explored = self.find_route(
-            resolved_dep, resolved_dest, train_type_filter, weight_fn
-        )
-
-        elapsed_ms = (time.perf_counter() - wall_start) * 1000
-        cpu_elapsed_ms = (time.process_time() - cpu_start) * 1000
-        _, peak_kb = tracemalloc.get_traced_memory()
-        tracemalloc.stop()
+        try:
+            steps, segments, weight, explored = self.find_route(
+                resolved_dep, resolved_dest, train_type_filter, weight_fn
+            )
+        finally:
+            elapsed_ms = (time.perf_counter() - wall_start) * 1000
+            cpu_elapsed_ms = (time.process_time() - cpu_start) * 1000
+            _, peak_kb = tracemalloc.get_traced_memory()
+            tracemalloc.stop()
 
         return GraphResult(
             steps=steps,
