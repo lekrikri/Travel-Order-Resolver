@@ -2,21 +2,14 @@
 
 from __future__ import annotations
 
-import json
-from collections import defaultdict, deque
+from collections import deque
 from collections.abc import Callable
-from pathlib import Path
 
-from src.graph.base import Edge, GraphEngine, RouteSegment
-
-PROCESSED_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed"
+from src.graph.base import Edge, GraphEngine, RouteSegment, load_adjacency
 
 
 class BFSEngine(GraphEngine):
     """Shortest path by number of stops (ignores travel time)."""
-
-    def __init__(self) -> None:
-        self._adjacency: dict[str, list[Edge]] | None = None
 
     @property
     def name(self) -> str:
@@ -28,16 +21,7 @@ class BFSEngine(GraphEngine):
 
     @property
     def adjacency(self) -> dict[str, list[Edge]]:
-        if self._adjacency is None:
-            self._adjacency = defaultdict(list)
-            with open(PROCESSED_DIR / "connections.json", encoding="utf-8") as f:
-                edges = json.load(f)
-            for e in edges:
-                edge = Edge(e["from"], e["to"], e["train_type"], e["weight_minutes"])
-                self._adjacency[edge.from_station].append(edge)
-                rev = Edge(e["to"], e["from"], e["train_type"], e["weight_minutes"])
-                self._adjacency[rev.from_station].append(rev)
-        return self._adjacency
+        return load_adjacency()
 
     def find_route(
         self,

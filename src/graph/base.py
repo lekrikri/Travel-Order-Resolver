@@ -6,11 +6,14 @@ import json
 import time
 import tracemalloc
 from abc import ABC, abstractmethod
+from collections import defaultdict
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from unidecode import unidecode
+
+PROCESSED_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed"
 
 
 @dataclass(frozen=True)
@@ -66,16 +69,63 @@ def _load_gazetteer() -> dict[str, str]:
 
 
 def resolve_station(name: str) -> str:
-    """Resolve a city/station name to its canonical station name via gazetteer."""
+    """Resolve a city/station name to its canonical station name via gazetteer.
+
+    If the resolved name is not a node in the graph, falls back to the
+    geographically nearest station (using GPS coordinates).
+    """
     gaz = _load_gazetteer()
     key = name.strip().lower()
+    resolved = None
     if key in gaz:
-        return gaz[key]
-    # Try without accents
-    key_ascii = unidecode(key)
-    if key_ascii in gaz:
-        return gaz[key_ascii]
-    return name  # return as-is if not found
+        resolved = gaz[key]
+    else:
+        key_ascii = unidecode(key)
+        if key_ascii in gaz:
+            resolved = gaz[key_ascii]
+
+    if resolved is None:
+        return name
+
+    # Check if resolved station exists in the graph; if not, find nearest
+    adj = load_adjacency()
+    if resolved in adj:
+        return resolved
+
+    from src.graph.hub import find_nearest_station
+    nearest = find_nearest_station(resolved, set(adj.keys()))
+    return nearest if nearest else resolved
+
+
+_ADJACENCY_CACHE: dict[str, list[Edge]] | None = None
+
+
+def load_adjacency() -> dict[str, list[Edge]]:
+    """Load the shared adjacency list (connections + intra-city hub transfers).
+
+    Cached after first call so all engines share the same graph data.
+    """
+    global _ADJACENCY_CACHE
+    if _ADJACENCY_CACHE is not None:
+        return _ADJACENCY_CACHE
+
+    from src.graph.hub import get_hub_edges
+
+    adj: dict[str, list[Edge]] = defaultdict(list)
+    with open(PROCESSED_DIR / "connections.json", encoding="utf-8") as f:
+        edges = json.load(f)
+    for e in edges:
+        edge = Edge(e["from"], e["to"], e["train_type"], e["weight_minutes"])
+        adj[edge.from_station].append(edge)
+        rev = Edge(e["to"], e["from"], e["train_type"], e["weight_minutes"])
+        adj[rev.from_station].append(rev)
+
+    # Add intra-city hub transfer edges
+    for edge in get_hub_edges():
+        adj[edge.from_station].append(edge)
+
+    _ADJACENCY_CACHE = dict(adj)
+    return _ADJACENCY_CACHE
 
 
 class GraphEngine(ABC):
@@ -123,19 +173,47 @@ class GraphEngine(ABC):
         train_type_filter: set[str] | None = None,
         weight_fn: Callable[[Edge], float] | None = None,
     ) -> GraphResult:
-        """Run pathfinding with automatic timing and memory measurement."""
-        # Resolve city names to canonical station names via gazetteer
+        """Run pathfinding with automatic timing and memory measurement.
+
+        When departure or destination resolves to a station that is part of
+        a city hub (e.g. Paris), tries all hub stations and returns the best
+        route (avoids unnecessary intra-city transfers).
+        """
+        from src.graph.hub import get_hub_siblings
+
         resolved_dep = resolve_station(departure)
         resolved_dest = resolve_station(destination)
+
+        # Expand hub stations: try all siblings to find the best route
+        dep_candidates = get_hub_siblings(resolved_dep)
+        dest_candidates = get_hub_siblings(resolved_dest)
 
         tracemalloc.start()
         cpu_start = time.process_time()
         wall_start = time.perf_counter()
 
         try:
-            steps, segments, weight, explored = self.find_route(
-                resolved_dep, resolved_dest, train_type_filter, weight_fn
-            )
+            best = ([], [], float("inf"), 0)
+            best_dep = resolved_dep
+            best_dest = resolved_dest
+            total_explored = 0
+
+            for dep_c in dep_candidates:
+                for dest_c in dest_candidates:
+                    if dep_c == dest_c:
+                        continue
+                    steps, segments, weight, explored = self.find_route(
+                        dep_c, dest_c, train_type_filter, weight_fn
+                    )
+                    total_explored += explored
+                    if steps and weight < best[2]:
+                        best = (steps, segments, weight, total_explored)
+                        best_dep = dep_c
+                        best_dest = dest_c
+
+            steps, segments, weight, _ = best
+            if weight == float("inf"):
+                weight = 0.0
         finally:
             elapsed_ms = (time.perf_counter() - wall_start) * 1000
             cpu_elapsed_ms = (time.process_time() - cpu_start) * 1000
@@ -147,11 +225,11 @@ class GraphEngine(ABC):
             segments=segments,
             found=len(steps) >= 2,
             total_weight=round(weight, 2),
-            nodes_explored=explored,
+            nodes_explored=total_explored,
             time_ms=round(elapsed_ms, 3),
             cpu_time_ms=round(cpu_elapsed_ms, 3),
             memory_kb=round(peak_kb / 1024, 2),
             engine_name=self.name,
-            resolved_departure=resolved_dep,
-            resolved_destination=resolved_dest,
+            resolved_departure=best_dep,
+            resolved_destination=best_dest,
         )

@@ -5,13 +5,10 @@ from __future__ import annotations
 import heapq
 import json
 import math
-from collections import defaultdict
 from collections.abc import Callable
 from pathlib import Path
 
-from src.graph.base import Edge, GraphEngine, RouteSegment
-
-PROCESSED_DIR = Path(__file__).resolve().parent.parent.parent / "data" / "processed"
+from src.graph.base import PROCESSED_DIR, Edge, GraphEngine, RouteSegment, load_adjacency
 
 # Average train speed (km/h) used to convert distance heuristic to time estimate.
 # Slightly overestimates speed so the heuristic stays admissible (never overestimates cost).
@@ -36,7 +33,6 @@ class AStarEngine(GraphEngine):
     """A* algorithm with haversine distance heuristic (travel time in minutes)."""
 
     def __init__(self) -> None:
-        self._adjacency: dict[str, list[Edge]] | None = None
         self._coords: dict[str, tuple[float, float]] | None = None
 
     @property
@@ -49,16 +45,7 @@ class AStarEngine(GraphEngine):
 
     @property
     def adjacency(self) -> dict[str, list[Edge]]:
-        if self._adjacency is None:
-            self._adjacency = defaultdict(list)
-            with open(PROCESSED_DIR / "connections.json", encoding="utf-8") as f:
-                edges = json.load(f)
-            for e in edges:
-                edge = Edge(e["from"], e["to"], e["train_type"], e["weight_minutes"])
-                self._adjacency[edge.from_station].append(edge)
-                rev = Edge(e["to"], e["from"], e["train_type"], e["weight_minutes"])
-                self._adjacency[rev.from_station].append(rev)
-        return self._adjacency
+        return load_adjacency()
 
     @property
     def coords(self) -> dict[str, tuple[float, float]]:
