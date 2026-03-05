@@ -1,0 +1,202 @@
+sentence,departure,arrival
+Je veux aller de <Dep>Nantes</Dep> a <Arr>Bordeaux</Arr>,Nantes,Bordeaux
+Un billet de <Dep>Lille</Dep> vers <Arr>Marseille</Arr>,Lille,Marseille
+Je pars de <Dep>Lyon</Dep> pour <Arr>Toulouse</Arr>,Lyon,Toulouse
+Train <Dep>Strasbourg</Dep> <Arr>Montpellier</Arr>,Strasbourg,Montpellier
+<Dep>Rennes</Dep> - <Arr>Dijon</Arr> s'il vous plait,Rennes,Dijon
+Aller simple de <Dep>Metz</Dep> a <Arr>Grenoble</Arr>,Metz,Grenoble
+Un aller-retour <Dep>Caen</Dep> <Arr>Angers</Arr>,Caen,Angers
+Je voudrais un billet de <Dep>Pau</Dep> a <Arr>Tours</Arr>,Pau,Tours
+Reservation de <Dep>Reims</Dep> a <Arr>Perpignan</Arr>,Reims,Perpignan
+Depuis <Dep>Avignon</Dep> jusqu'a <Arr>Rouen</Arr>,Avignon,Rouen
+De <Dep>Poitiers</Dep> a <Arr>Chambery</Arr>,Poitiers,Chambery
+Besoin d'un train au depart de <Dep>Limoges</Dep> vers <Arr>Calais</Arr>,Limoges,Calais
+<Dep>Brest</Dep> -> <Arr>Annecy</Arr>,Brest,Annecy
+Depart <Dep>Blois</Dep> arrivee <Arr>Bourges</Arr>,Blois,Bourges
+Je cherche un train de <Dep>La Rochelle</Dep> a <Arr>Colmar</Arr>,La Rochelle,Colmar
+Aller de <Dep>Niort</Dep> a <Arr>Bayonne</Arr>,Niort,Bayonne
+Voyage de <Dep>Dunkerque</Dep> a <Arr>Rodez</Arr>,Dunkerque,Rodez
+Trajet <Dep>Vannes</Dep> vers <Arr>Cahors</Arr> en TGV,Vannes,Cahors
+Je dois me rendre a <Arr>Gap</Arr> depuis <Dep>Lorient</Dep>,Lorient,Gap
+Prendre le train de <Dep>Troyes</Dep> a <Arr>Dax</Arr>,Troyes,Dax
+Un billet pour <Arr>Epinal</Arr> depuis <Dep>Angouleme</Dep> svp,Angouleme,Epinal
+<Dep>Tarbes</Dep> a <Arr>Sete</Arr> par le TER,Tarbes,Sete
+Direction <Arr>Toulouse</Arr> depuis <Dep>Nantes</Dep>,Nantes,Toulouse
+Vers <Arr>Lyon</Arr> en partant de <Dep>Bordeaux</Dep>,Bordeaux,Lyon
+Pour aller a <Arr>Marseille</Arr> je pars de <Dep>Rennes</Dep>,Rennes,Marseille
+A destination de <Arr>Nice</Arr> depuis <Dep>Dijon</Dep>,Dijon,Nice
+<Arr>Grenoble</Arr> au depart de <Dep>Strasbourg</Dep>,Strasbourg,Grenoble
+Je rentre a <Arr>Lille</Arr> depuis <Dep>Tours</Dep>,Tours,Lille
+Je vais a <Arr>Montpellier</Arr> en partant de <Dep>Reims</Dep>,Reims,Montpellier
+Un billet pour <Arr>Perpignan</Arr> je pars de <Dep>Metz</Dep>,Metz,Perpignan
+Direction <Arr>Annecy</Arr> au depart de <Dep>Caen</Dep>,Caen,Annecy
+Vers <Arr>Brest</Arr> depuis <Dep>Le Havre</Dep>,Le Havre,Brest
+Destination <Arr>Avignon</Arr> au depart de <Dep>Clermont-Ferrand</Dep>,Clermont-Ferrand,Avignon
+A <Arr>Chambery</Arr> en venant de <Dep>Pau</Dep>,Pau,Chambery
+J'habite a <Dep>Lyon</Dep> et je veux aller a <Arr>Nice</Arr>,Lyon,Nice
+On habite a <Dep>Bordeaux</Dep> et on va a <Arr>Strasbourg</Arr>,Bordeaux,Strasbourg
+Je vis a <Dep>Toulouse</Dep> je dois aller a <Arr>Nantes</Arr>,Toulouse,Nantes
+On habite sur <Dep>Albi</Dep> on part a <Arr>Tours</Arr>,Albi,Tours
+On vit a <Dep>Rennes</Dep> et on veut rejoindre <Arr>Marseille</Arr>,Rennes,Marseille
+Je reside a <Dep>Dijon</Dep> et je dois me rendre a <Arr>Montpellier</Arr>,Dijon,Montpellier
+On habite a <Dep>Metz</Dep> mais on bosse a <Arr>Strasbourg</Arr>,Metz,Strasbourg
+J'habite <Dep>Clermont-Ferrand</Dep> et je vais a <Arr>Paris</Arr>,Clermont-Ferrand,Paris
+On va a <Arr>Angers</Arr> on habite a <Dep>Grenoble</Dep>,Grenoble,Angers
+Je pars a <Arr>Lille</Arr> j'habite a <Dep>Perpignan</Dep>,Perpignan,Lille
+On part en vacances a <Arr>Biarritz</Arr> on habite a <Dep>Rouen</Dep>,Rouen,Biarritz
+Je vais a <Arr>Cannes</Arr> je vis a <Dep>Amiens</Dep>,Amiens,Cannes
+Je pars en vacances a <Arr>Marseille</Arr>. On habite a <Dep>Albi</Dep>.,Albi,Marseille
+On va a <Arr>Lyon</Arr>. On habite a <Dep>Nantes</Dep>.,Nantes,Lyon
+Je vais a <Arr>Bordeaux</Arr> demain. Je suis a <Dep>Lille</Dep>.,Lille,Bordeaux
+On part a <Arr>Toulouse</Arr> ce weekend. On vit a <Dep>Reims</Dep>.,Reims,Toulouse
+Destination <Arr>Grenoble</Arr>. Depart depuis <Dep>Poitiers</Dep>.,Poitiers,Grenoble
+On habite a <Dep>Caen</Dep>. On part a <Arr>Nice</Arr> demain matin.,Caen,Nice
+Je vis a <Dep>Rennes</Dep>. Je veux aller a <Arr>Montpellier</Arr>.,Rennes,Montpellier
+Je suis a <Dep>Dijon</Dep> actuellement. Je dois rejoindre <Arr>Pau</Arr>.,Dijon,Pau
+Mon train part de <Dep>Avignon</Dep>. J'arrive a <Arr>Annecy</Arr> ce soir.,Avignon,Annecy
+Je suis bloque a <Dep>Metz</Dep>. Il faut que j'aille a <Arr>Tours</Arr>.,Metz,Tours
+Bonjour. Je cherche un train depuis <Dep>Rouen</Dep> vers <Arr>Bayonne</Arr>. Merci.,Rouen,Bayonne
+Salut. On est a <Dep>Strasbourg</Dep> et on va a <Arr>Perpignan</Arr>. C'est pour 4 personnes.,Strasbourg,Perpignan
+Marie et moi on va de <Dep>Lyon</Dep> a <Arr>Nice</Arr>,Lyon,Nice
+Avec Jean on part de <Dep>Bordeaux</Dep> pour <Arr>Toulouse</Arr>,Bordeaux,Toulouse
+Sophie m'attend a <Arr>Marseille</Arr> je suis a <Dep>Rennes</Dep>,Rennes,Marseille
+Je rejoins Lucas a <Arr>Nantes</Arr> depuis <Dep>Lille</Dep>,Lille,Nantes
+Pierre veut qu'on parte de <Dep>Dijon</Dep> pour aller a <Arr>Strasbourg</Arr>,Dijon,Strasbourg
+Avec mon ami Thomas on va de <Dep>Grenoble</Dep> a <Arr>Metz</Arr>,Grenoble,Metz
+Emma et moi on prend le train de <Dep>Caen</Dep> a <Arr>Tours</Arr>,Caen,Tours
+On part avec Camille et Hugo de <Dep>Reims</Dep> a <Arr>Pau</Arr>,Reims,Pau
+Je voyage avec Antoine de <Dep>Blois</Dep> a <Arr>Colmar</Arr>,Blois,Colmar
+Clara m'a dit de venir a <Arr>Annecy</Arr> depuis <Dep>Rouen</Dep>,Rouen,Annecy
+Mon amie Paris et moi on va de <Dep>Albi</Dep> a <Arr>Tours</Arr>,Albi,Tours
+Avec Nancy on part de <Dep>Lyon</Dep> vers <Arr>Marseille</Arr>,Lyon,Marseille
+Mon pote Nice m'attend je pars de <Dep>Bordeaux</Dep> a <Arr>Toulouse</Arr>,Bordeaux,Toulouse
+Valence et moi on veut aller de <Dep>Rennes</Dep> a <Arr>Nantes</Arr>,Rennes,Nantes
+Je pars en vacances avec mon amie Paris de <Dep>Dijon</Dep> vers <Arr>Grenoble</Arr>,Dijon,Grenoble
+Mon amie Paris et moi on va a <Arr>Angers</Arr>. On habite sur <Dep>Albi</Dep> a 1h de Toulouse.,Albi,Angers
+Mon amie Paris et moi voulons aller en vacances a <Arr>Tours</Arr>. On habite a <Dep>Albi</Dep>.,Albi,Tours
+Avec Nancy on cherche un train de <Dep>Strasbourg</Dep> a <Arr>Montpellier</Arr>,Strasbourg,Montpellier
+Nice le chien et moi on part de <Dep>Caen</Dep> vers <Arr>Reims</Arr>,Caen,Reims
+Ma cousine Valence et moi on va de <Dep>Metz</Dep> a <Arr>Perpignan</Arr>,Metz,Perpignan
+Mon copain Paris m'accompagne de <Dep>Poitiers</Dep> a <Arr>Rouen</Arr>,Poitiers,Rouen
+Nancy ma soeur vient me chercher a <Arr>Pau</Arr> je suis a <Dep>Limoges</Dep>,Limoges,Pau
+Je veux aller de <Dep>Bordeau</Dep> a <Arr>Marseil</Arr>,Bordeaux,Marseille
+Un billet <Dep>Toulous</Dep> <Arr>Strasbour</Arr> svp,Toulouse,Strasbourg
+De <Dep>Monpellier</Dep> a <Arr>Grenobe</Arr>,Montpellier,Grenoble
+Train <Dep>Perpinian</Dep> <Arr>Clermon-Ferrand</Arr>,Perpignan,Clermont-Ferrand
+Billet <Dep>Angoulem</Dep> <Arr>Carcasson</Arr>,Angouleme,Carcassonne
+<Dep>Chamberi</Dep> a <Arr>Dunkerke</Arr>,Chambery,Dunkerque
+De <Dep>Lile</Dep> a <Arr>Nante</Arr>,Lille,Nantes
+Billet <Dep>Lio</Dep> <Arr>Marsseille</Arr>,Lyon,Marseille
+Je par de <Dep>Ren</Dep> vers <Arr>Toulon</Arr>,Rennes,Toulon
+De <Dep>Nansi</Dep> a <Arr>Mettz</Arr>,Nancy,Metz
+Depart <Dep>Roueen</Dep> arrivee <Arr>Caenn</Arr>,Rouen,Caen
+<Dep>Orleans</Dep> a <Arr>Chartre</Arr>,Orleans,Chartres
+De <Dep>Mulhous</Dep> a <Arr>Bezancon</Arr>,Mulhouse,Besancon
+Billet <Dep>Bayone</Dep> <Arr>Tarbbes</Arr>,Bayonne,Tarbes
+Je vais a <Arr>Avinion</Arr> depuis <Dep>Nimmes</Dep>,Nimes,Avignon
+Trin <Dep>Brset</Dep> <Arr>Loriant</Arr>,Brest,Lorient
+trin <Dep>Lyon</Dep> <Arr>Marseille</Arr> dem1,Lyon,Marseille
+billet <Dep>Nantes</Dep> <Arr>Bordeaux</Arr> stp,Nantes,Bordeaux
+<Dep>Paris</Dep> <Arr>Lille</Arr> vite,Paris,Lille
+jsuis a <Dep>Rennes</Dep> jvais a <Arr>Nice</Arr>,Rennes,Nice
+chui a <Dep>Toulouse</Dep> faut que jaille a <Arr>Grenoble</Arr>,Toulouse,Grenoble
+train <Dep>Dijon</Dep> <Arr>Strasbourg</Arr> asap,Dijon,Strasbourg
+<Dep>Metz</Dep> a <Arr>Reims</Arr> svp,Metz,Reims
+go <Dep>Rouen</Dep> <Arr>Caen</Arr>,Rouen,Caen
+billet <Dep>Tours</Dep> <Arr>Angers</Arr> urgent,Tours,Angers
+de <Dep>Lyon</Dep> a <Arr>Montpellier</Arr> le + vite possible,Lyon,Montpellier
+<Dep>Perpignan</Dep> <Arr>Pau</Arr> pk,Perpignan,Pau
+lol jsuis a <Dep>Blois</Dep> et jdois aller a <Arr>Bourges</Arr>,Blois,Bourges
+train <Dep>bordx</Dep> <Arr>toulouse</Arr>,Bordeaux,Toulouse
+besoin billet <Dep>marseil</Dep> <Arr>nice</Arr> rapidos,Marseille,Nice
+Est-ce qu'il y a des trains de <Dep>Nantes</Dep> a <Arr>Bordeaux</Arr> ?,Nantes,Bordeaux
+Quelle heure le prochain train <Dep>Lyon</Dep> <Arr>Marseille</Arr> ?,Lyon,Marseille
+C'est combien un billet <Dep>Toulouse</Dep> <Arr>Strasbourg</Arr> ?,Toulouse,Strasbourg
+Il reste des places sur le <Dep>Rennes</Dep> <Arr>Nice</Arr> ?,Rennes,Nice
+Combien de temps pour aller de <Dep>Dijon</Dep> a <Arr>Grenoble</Arr> ?,Dijon,Grenoble
+A quelle heure part le train de <Dep>Lille</Dep> a <Arr>Montpellier</Arr> ?,Lille,Montpellier
+Quel est le prix d'un <Dep>Metz</Dep> <Arr>Reims</Arr> ?,Metz,Reims
+Y a un train direct <Dep>Pau</Dep> <Arr>Perpignan</Arr> ?,Pau,Perpignan
+On peut aller de <Dep>Rouen</Dep> a <Arr>Annecy</Arr> sans correspondance ?,Rouen,Annecy
+Ca existe un train de nuit <Dep>Bordeaux</Dep> <Arr>Nice</Arr> ?,Bordeaux,Nice
+Pour le travail je dois aller de <Dep>Lyon</Dep> a <Arr>Paris</Arr> lundi,Lyon,Paris
+Pour mes vacances un billet <Dep>Nantes</Dep> <Arr>Marseille</Arr> en aout,Nantes,Marseille
+Pour un weekend un train de <Dep>Bordeaux</Dep> a <Arr>Nice</Arr> vendredi soir,Bordeaux,Nice
+Pour une reunion je pars de <Dep>Toulouse</Dep> a <Arr>Strasbourg</Arr> mardi matin,Toulouse,Strasbourg
+Avec mes enfants on va de <Dep>Rennes</Dep> a <Arr>Montpellier</Arr> pendant les vacances,Rennes,Montpellier
+Billet <Dep>Dijon</Dep> <Arr>Grenoble</Arr> pour demain 8h,Dijon,Grenoble
+Reservation <Dep>Lille</Dep> <Arr>Reims</Arr> pour le 15 mars,Lille,Reims
+Premier train du matin <Dep>Metz</Dep> <Arr>Tours</Arr>,Metz,Tours
+Dernier train <Dep>Caen</Dep> <Arr>Angers</Arr> ce soir,Caen,Angers
+Train de nuit <Dep>Rouen</Dep> <Arr>Perpignan</Arr> samedi,Rouen,Perpignan
+Pour un mariage a <Arr>Pau</Arr> je pars de <Dep>Limoges</Dep> vendredi,Limoges,Pau
+Billet 1ere classe <Dep>Lyon</Dep> <Arr>Nice</Arr> pour 2 personnes,Lyon,Nice
+Bonjour je voudrais savoir s'il y a un train direct de <Dep>Nantes</Dep> a <Arr>Bordeaux</Arr> s'il vous plait merci,Nantes,Bordeaux
+Je souhaiterais reserver un billet de train au depart de <Dep>Lille</Dep> avec une arrivee a <Arr>Toulouse</Arr>,Lille,Toulouse
+Pouvez-vous me trouver un train qui part de <Dep>Lyon</Dep> et qui arrive a <Arr>Marseille</Arr> avant midi ?,Lyon,Marseille
+J'ai besoin d'un billet pour voyager de <Dep>Strasbourg</Dep> jusqu'a <Arr>Montpellier</Arr> si possible en TGV,Strasbourg,Montpellier
+Bonjour madame je cherche a reserver une place dans un train allant de <Dep>Rennes</Dep> vers <Arr>Dijon</Arr> pour moi et ma femme,Rennes,Dijon
+Excusez-moi est-ce que je peux avoir un billet de <Dep>Grenoble</Dep> pour aller a <Arr>Annecy</Arr> c'est pour mon fils qui est etudiant,Grenoble,Annecy
+En fait je suis a <Dep>Rouen</Dep> la et je dois absolument aller a <Arr>Bordeaux</Arr> avant demain soir c'est possible ?,Rouen,Bordeaux
+Alors voila ma situation j'habite a <Dep>Clermont-Ferrand</Dep> et je dois aller a <Arr>Paris</Arr> pour un entretien mardi,Clermont-Ferrand,Paris
+Je veux aller de <Dep>Bruxelles</Dep> a <Arr>Lyon</Arr>,Bruxelles,Lyon
+Un billet de <Dep>Geneve</Dep> a <Arr>Paris</Arr>,Geneve,Paris
+Train de <Dep>Londres</Dep> a <Arr>Lille</Arr>,Londres,Lille
+Billet <Dep>Amsterdam</Dep> <Arr>Strasbourg</Arr>,Amsterdam,Strasbourg
+<Dep>Zurich</Dep> a <Arr>Mulhouse</Arr>,Zurich,Mulhouse
+De <Dep>Barcelona</Dep> a <Arr>Perpignan</Arr>,Barcelona,Perpignan
+<Dep>Luxembourg</Dep> a <Arr>Metz</Arr>,Luxembourg,Metz
+Je pars de <Dep>Turin</Dep> pour aller a <Arr>Nice</Arr>,Turin,Nice
+Billet <Dep>Francfort</Dep> <Arr>Strasbourg</Arr> en ICE,Francfort,Strasbourg
+De <Dep>Monaco</Dep> a <Arr>Marseille</Arr>,Monaco,Marseille
+Un train de <Dep>Villemont</Dep> a <Arr>Bordeaux</Arr>,Villemont,Bordeaux
+De <Dep>Beaurivage</Dep> a <Arr>Toulouse</Arr>,Beaurivage,Toulouse
+Billet <Dep>Saint-Clairin</Dep> <Arr>Lyon</Arr>,Saint-Clairin,Lyon
+Depart <Dep>Montfleury</Dep> arrivee <Arr>Nantes</Arr>,Montfleury,Nantes
+De <Dep>Trifouillis-les-Oies</Dep> a <Arr>Paris</Arr>,Trifouillis-les-Oies,Paris
+Je pars de <Dep>Rennes</Dep> pour <Arr>Plougastel-du-Nord</Arr>,Rennes,Plougastel-du-Nord
+Train <Dep>Tataouine</Dep> <Arr>Lyon</Arr>,Tataouine,Lyon
+De <Dep>Poudlard</Dep> a <Arr>Marseille</Arr> svp,Poudlard,Marseille
+Je suis a <Dep>Paris</Dep> mais je dois aller a <Arr>Lyon</Arr> en passant par Dijon,Paris,Lyon
+On vient de <Dep>Marseille</Dep> et on va a <Arr>Bordeaux</Arr> via Toulouse,Marseille,Bordeaux
+Mon amie de <Dep>Nantes</Dep> m'attend a <Arr>Rennes</Arr>,Nantes,Rennes
+Je travaille a Lyon mais j'habite a <Dep>Grenoble</Dep> et je dois aller a <Arr>Paris</Arr>,Grenoble,Paris
+On est parti de Nice ce matin on est a <Dep>Marseille</Dep> la et on va a <Arr>Toulouse</Arr>,Marseille,Toulouse
+Le train de Bordeaux arrive a <Dep>Toulouse</Dep> a 14h moi je veux Toulouse <Arr>Montpellier</Arr>,Toulouse,Montpellier
+J'ai rate mon train a <Dep>Lyon</Dep> il me faut un Lyon <Arr>Lille</Arr> rapide,Lyon,Lille
+Je pars en vacances avec mon amie Paris vers <Arr>Angers</Arr>. On habite sur <Dep>Albi</Dep> a 1h de Toulouse.,Albi,Angers
+De <Dep>Tours</Dep> a Blois c'est court mais de Tours a <Arr>Lyon</Arr> c'est ce que je veux,Tours,Lyon
+Mon pere habite a Nantes ma mere a Rennes moi je vais de <Dep>Lyon</Dep> a <Arr>Marseille</Arr>,Lyon,Marseille
+jsuis a <Dep>Toulous</Dep> faut que jaille a <Arr>Bordeau</Arr>,Toulouse,Bordeaux
+billet <Dep>Marseil</Dep> <Arr>Monpellier</Arr> stp,Marseille,Montpellier
+On habite a <Dep>Grenobe</Dep>. On va a <Arr>Angoulem</Arr>.,Grenoble,Angouleme
+Je vis a <Dep>Chamberry</Dep> et je vais a <Arr>Anneci</Arr>,Chambery,Annecy
+<Dep>Lile</Dep> <Arr>Ren</Arr> vite stp,Lille,Rennes
+Mon amie Paris et moi on va de <Dep>Bordeau</Dep> a <Arr>Marseil</Arr>,Bordeaux,Marseille
+On habite a <Dep>Toulous</Dep>. On part a <Arr>Strasbour</Arr> demain.,Toulouse,Strasbourg
+Avec Nancy on part de <Dep>Grenobe</Dep> a <Arr>Monpellier</Arr>,Grenoble,Montpellier
+Bonjour comment allez-vous,INVALID,INVALID
+Quel temps fait-il aujourd'hui,INVALID,INVALID
+Je cherche un hotel pas cher,INVALID,INVALID
+Ou sont les toilettes,INVALID,INVALID
+Merci beaucoup au revoir,INVALID,INVALID
+Un cafe s'il vous plait,INVALID,INVALID
+Quelle heure est-il,INVALID,INVALID
+Je voudrais un sandwich,INVALID,INVALID
+Combien ca coute,INVALID,INVALID
+Au revoir et bonne journee,INVALID,INVALID
+J'ai perdu mon billet de train,INVALID,INVALID
+Le train est en retard de 30 minutes,INVALID,INVALID
+Ou est le quai numero 3,INVALID,INVALID
+Je veux annuler ma reservation,INVALID,INVALID
+Comment fonctionne l'appli SNCF,INVALID,INVALID
+Mon train a ete supprime,INVALID,INVALID
+Je cherche un taxi,INVALID,INVALID
+Ou puis-je manger dans la gare,INVALID,INVALID
+Y a du wifi dans le TGV,INVALID,INVALID
+Comment joindre le service client SNCF,INVALID,INVALID
+Je suis en retard,INVALID,INVALID
+Mon bagage est perdu,INVALID,INVALID
+C'est quoi le numero de mon train,INVALID,INVALID
+La gare est fermee,INVALID,INVALID
+J'ai oublie mon telephone dans le train,INVALID,INVALID

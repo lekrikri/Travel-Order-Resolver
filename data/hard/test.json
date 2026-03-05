@@ -1,0 +1,569 @@
+[
+  {
+    "text": "train Dijon Strasbourg asap",
+    "entities": [
+      [
+        6,
+        11,
+        "DEPART"
+      ],
+      [
+        12,
+        22,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Strasbourg",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Je suis a Dijon actuellement. Je dois rejoindre Pau.",
+    "entities": [
+      [
+        10,
+        15,
+        "DEPART"
+      ],
+      [
+        48,
+        51,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Pau",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Je veux aller de Bordeau a Marseil",
+    "entities": [
+      [
+        17,
+        24,
+        "DEPART"
+      ],
+      [
+        27,
+        34,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Marseille",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Mon amie Paris et moi on va de Bordeau a Marseil",
+    "entities": [
+      [
+        31,
+        38,
+        "DEPART"
+      ],
+      [
+        41,
+        48,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Marseille",
+    "pattern_type": "typo_person_city",
+    "valid": true
+  },
+  {
+    "text": "J'ai perdu mon billet de train",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je pars de Lyon pour Toulouse",
+    "entities": [
+      [
+        11,
+        15,
+        "DEPART"
+      ],
+      [
+        21,
+        29,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Toulouse",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "A quelle heure part le train de Lille a Montpellier ?",
+    "entities": [
+      [
+        32,
+        37,
+        "DEPART"
+      ],
+      [
+        40,
+        51,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Montpellier",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "A destination de Nice depuis Dijon",
+    "entities": [
+      [
+        17,
+        21,
+        "ARRIVEE"
+      ],
+      [
+        29,
+        34,
+        "DEPART"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Nice",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Mon amie Paris et moi on va a Angers. On habite sur Albi a 1h de Toulouse.",
+    "entities": [
+      [
+        30,
+        36,
+        "ARRIVEE"
+      ],
+      [
+        52,
+        56,
+        "DEPART"
+      ]
+    ],
+    "depart": "Albi",
+    "arrivee": "Angers",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Je vais a Montpellier en partant de Reims",
+    "entities": [
+      [
+        10,
+        21,
+        "ARRIVEE"
+      ],
+      [
+        36,
+        41,
+        "DEPART"
+      ]
+    ],
+    "depart": "Reims",
+    "arrivee": "Montpellier",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Un billet pour Epinal depuis Angouleme svp",
+    "entities": [
+      [
+        15,
+        21,
+        "ARRIVEE"
+      ],
+      [
+        29,
+        38,
+        "DEPART"
+      ]
+    ],
+    "depart": "Angouleme",
+    "arrivee": "Epinal",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "De Poudlard a Marseille svp",
+    "entities": [
+      [
+        3,
+        11,
+        "DEPART"
+      ],
+      [
+        14,
+        23,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Poudlard",
+    "arrivee": "Marseille",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "Je veux aller de Nantes a Bordeaux",
+    "entities": [
+      [
+        17,
+        23,
+        "DEPART"
+      ],
+      [
+        26,
+        34,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Bordeaux",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Je rejoins Lucas a Nantes depuis Lille",
+    "entities": [
+      [
+        19,
+        25,
+        "ARRIVEE"
+      ],
+      [
+        33,
+        38,
+        "DEPART"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Nantes",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "C'est combien un billet Toulouse Strasbourg ?",
+    "entities": [
+      [
+        24,
+        32,
+        "DEPART"
+      ],
+      [
+        33,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Toulouse",
+    "arrivee": "Strasbourg",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "Un train de Villemont a Bordeaux",
+    "entities": [
+      [
+        12,
+        21,
+        "DEPART"
+      ],
+      [
+        24,
+        32,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Villemont",
+    "arrivee": "Bordeaux",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "Billet Dijon Grenoble pour demain 8h",
+    "entities": [
+      [
+        7,
+        12,
+        "DEPART"
+      ],
+      [
+        13,
+        21,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Grenoble",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Le train est en retard de 30 minutes",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je veux aller de Bruxelles a Lyon",
+    "entities": [
+      [
+        17,
+        26,
+        "DEPART"
+      ],
+      [
+        29,
+        33,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bruxelles",
+    "arrivee": "Lyon",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "Luxembourg a Metz",
+    "entities": [
+      [
+        0,
+        10,
+        "DEPART"
+      ],
+      [
+        13,
+        17,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Luxembourg",
+    "arrivee": "Metz",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "lol jsuis a Blois et jdois aller a Bourges",
+    "entities": [
+      [
+        12,
+        17,
+        "DEPART"
+      ],
+      [
+        35,
+        42,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Blois",
+    "arrivee": "Bourges",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Train de Londres a Lille",
+    "entities": [
+      [
+        9,
+        16,
+        "DEPART"
+      ],
+      [
+        19,
+        24,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Londres",
+    "arrivee": "Lille",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "On vient de Marseille et on va a Bordeaux via Toulouse",
+    "entities": [
+      [
+        12,
+        21,
+        "DEPART"
+      ],
+      [
+        33,
+        41,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Marseille",
+    "arrivee": "Bordeaux",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Depart Montfleury arrivee Nantes",
+    "entities": [
+      [
+        7,
+        17,
+        "DEPART"
+      ],
+      [
+        26,
+        32,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Montfleury",
+    "arrivee": "Nantes",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "Salut. On est a Strasbourg et on va a Perpignan. C'est pour 4 personnes.",
+    "entities": [
+      [
+        16,
+        26,
+        "DEPART"
+      ],
+      [
+        38,
+        47,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Strasbourg",
+    "arrivee": "Perpignan",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Grenoble au depart de Strasbourg",
+    "entities": [
+      [
+        0,
+        8,
+        "ARRIVEE"
+      ],
+      [
+        22,
+        32,
+        "DEPART"
+      ]
+    ],
+    "depart": "Strasbourg",
+    "arrivee": "Grenoble",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Je pars en vacances avec mon amie Paris vers Angers. On habite sur Albi a 1h de Toulouse.",
+    "entities": [
+      [
+        45,
+        51,
+        "ARRIVEE"
+      ],
+      [
+        67,
+        71,
+        "DEPART"
+      ]
+    ],
+    "depart": "Albi",
+    "arrivee": "Angers",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Billet 1ere classe Lyon Nice pour 2 personnes",
+    "entities": [
+      [
+        19,
+        23,
+        "DEPART"
+      ],
+      [
+        24,
+        28,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Nice",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Dernier train Caen Angers ce soir",
+    "entities": [
+      [
+        14,
+        18,
+        "DEPART"
+      ],
+      [
+        19,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Caen",
+    "arrivee": "Angers",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Un billet Toulous Strasbour svp",
+    "entities": [
+      [
+        10,
+        17,
+        "DEPART"
+      ],
+      [
+        18,
+        27,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Toulouse",
+    "arrivee": "Strasbourg",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Direction Annecy au depart de Caen",
+    "entities": [
+      [
+        10,
+        16,
+        "ARRIVEE"
+      ],
+      [
+        30,
+        34,
+        "DEPART"
+      ]
+    ],
+    "depart": "Caen",
+    "arrivee": "Annecy",
+    "pattern_type": "inverse",
+    "valid": true
+  }
+]

@@ -1,0 +1,2442 @@
+[
+  {
+    "text": "Ou puis-je manger dans la gare",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Besoin d'un train au depart de Limoges vers Calais",
+    "entities": [
+      [
+        31,
+        38,
+        "DEPART"
+      ],
+      [
+        44,
+        50,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Limoges",
+    "arrivee": "Calais",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Je rentre a Lille depuis Tours",
+    "entities": [
+      [
+        12,
+        17,
+        "ARRIVEE"
+      ],
+      [
+        25,
+        30,
+        "DEPART"
+      ]
+    ],
+    "depart": "Tours",
+    "arrivee": "Lille",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Je pars de Rennes pour Plougastel-du-Nord",
+    "entities": [
+      [
+        11,
+        17,
+        "DEPART"
+      ],
+      [
+        23,
+        41,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Plougastel-du-Nord",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "J'habite Clermont-Ferrand et je vais a Paris",
+    "entities": [
+      [
+        9,
+        25,
+        "DEPART"
+      ],
+      [
+        39,
+        44,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Clermont-Ferrand",
+    "arrivee": "Paris",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Je vais a Cannes je vis a Amiens",
+    "entities": [
+      [
+        10,
+        16,
+        "ARRIVEE"
+      ],
+      [
+        26,
+        32,
+        "DEPART"
+      ]
+    ],
+    "depart": "Amiens",
+    "arrivee": "Cannes",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "J'ai besoin d'un billet pour voyager de Strasbourg jusqu'a Montpellier si possible en TGV",
+    "entities": [
+      [
+        40,
+        50,
+        "DEPART"
+      ],
+      [
+        59,
+        70,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Strasbourg",
+    "arrivee": "Montpellier",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "De Poitiers a Chambery",
+    "entities": [
+      [
+        3,
+        11,
+        "DEPART"
+      ],
+      [
+        14,
+        22,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Poitiers",
+    "arrivee": "Chambery",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Trin Brset Loriant",
+    "entities": [
+      [
+        5,
+        10,
+        "DEPART"
+      ],
+      [
+        11,
+        18,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Brest",
+    "arrivee": "Lorient",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "chui a Toulouse faut que jaille a Grenoble",
+    "entities": [
+      [
+        7,
+        15,
+        "DEPART"
+      ],
+      [
+        34,
+        42,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Toulouse",
+    "arrivee": "Grenoble",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Billet Angoulem Carcasson",
+    "entities": [
+      [
+        7,
+        15,
+        "DEPART"
+      ],
+      [
+        16,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Angouleme",
+    "arrivee": "Carcassonne",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Train Strasbourg Montpellier",
+    "entities": [
+      [
+        6,
+        16,
+        "DEPART"
+      ],
+      [
+        17,
+        28,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Strasbourg",
+    "arrivee": "Montpellier",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "On habite a Bordeaux et on va a Strasbourg",
+    "entities": [
+      [
+        12,
+        20,
+        "DEPART"
+      ],
+      [
+        32,
+        42,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Strasbourg",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Pour aller a Marseille je pars de Rennes",
+    "entities": [
+      [
+        13,
+        22,
+        "ARRIVEE"
+      ],
+      [
+        34,
+        40,
+        "DEPART"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Marseille",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "On est parti de Nice ce matin on est a Marseille la et on va a Toulouse",
+    "entities": [
+      [
+        39,
+        48,
+        "DEPART"
+      ],
+      [
+        63,
+        71,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Marseille",
+    "arrivee": "Toulouse",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Combien de temps pour aller de Dijon a Grenoble ?",
+    "entities": [
+      [
+        31,
+        36,
+        "DEPART"
+      ],
+      [
+        39,
+        47,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Grenoble",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "Combien ca coute",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Avec Nancy on cherche un train de Strasbourg a Montpellier",
+    "entities": [
+      [
+        34,
+        44,
+        "DEPART"
+      ],
+      [
+        47,
+        58,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Strasbourg",
+    "arrivee": "Montpellier",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Bonjour comment allez-vous",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Ou est le quai numero 3",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Mon copain Paris m'accompagne de Poitiers a Rouen",
+    "entities": [
+      [
+        33,
+        41,
+        "DEPART"
+      ],
+      [
+        44,
+        49,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Poitiers",
+    "arrivee": "Rouen",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "On part a Toulouse ce weekend. On vit a Reims.",
+    "entities": [
+      [
+        10,
+        18,
+        "ARRIVEE"
+      ],
+      [
+        40,
+        45,
+        "DEPART"
+      ]
+    ],
+    "depart": "Reims",
+    "arrivee": "Toulouse",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Tarbes a Sete par le TER",
+    "entities": [
+      [
+        0,
+        6,
+        "DEPART"
+      ],
+      [
+        9,
+        13,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Tarbes",
+    "arrivee": "Sete",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Depart Blois arrivee Bourges",
+    "entities": [
+      [
+        7,
+        12,
+        "DEPART"
+      ],
+      [
+        21,
+        28,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Blois",
+    "arrivee": "Bourges",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Je pars a Lille j'habite a Perpignan",
+    "entities": [
+      [
+        10,
+        15,
+        "ARRIVEE"
+      ],
+      [
+        27,
+        36,
+        "DEPART"
+      ]
+    ],
+    "depart": "Perpignan",
+    "arrivee": "Lille",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "On vit a Rennes et on veut rejoindre Marseille",
+    "entities": [
+      [
+        9,
+        15,
+        "DEPART"
+      ],
+      [
+        37,
+        46,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Marseille",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Voyage de Dunkerque a Rodez",
+    "entities": [
+      [
+        10,
+        19,
+        "DEPART"
+      ],
+      [
+        22,
+        27,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dunkerque",
+    "arrivee": "Rodez",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "On part en vacances a Biarritz on habite a Rouen",
+    "entities": [
+      [
+        22,
+        30,
+        "ARRIVEE"
+      ],
+      [
+        43,
+        48,
+        "DEPART"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Biarritz",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Je vis a Rennes. Je veux aller a Montpellier.",
+    "entities": [
+      [
+        9,
+        15,
+        "DEPART"
+      ],
+      [
+        33,
+        44,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Montpellier",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Au revoir et bonne journee",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Quelle heure le prochain train Lyon Marseille ?",
+    "entities": [
+      [
+        31,
+        35,
+        "DEPART"
+      ],
+      [
+        36,
+        45,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Marseille",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "On va a Angers on habite a Grenoble",
+    "entities": [
+      [
+        8,
+        14,
+        "ARRIVEE"
+      ],
+      [
+        27,
+        35,
+        "DEPART"
+      ]
+    ],
+    "depart": "Grenoble",
+    "arrivee": "Angers",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "J'ai oublie mon telephone dans le train",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je cherche un train de La Rochelle a Colmar",
+    "entities": [
+      [
+        23,
+        34,
+        "DEPART"
+      ],
+      [
+        37,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "La Rochelle",
+    "arrivee": "Colmar",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "de Lyon a Montpellier le + vite possible",
+    "entities": [
+      [
+        3,
+        7,
+        "DEPART"
+      ],
+      [
+        10,
+        21,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Montpellier",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Vers Brest depuis Le Havre",
+    "entities": [
+      [
+        5,
+        10,
+        "ARRIVEE"
+      ],
+      [
+        18,
+        26,
+        "DEPART"
+      ]
+    ],
+    "depart": "Le Havre",
+    "arrivee": "Brest",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Merci beaucoup au revoir",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je vis a Chamberry et je vais a Anneci",
+    "entities": [
+      [
+        9,
+        18,
+        "DEPART"
+      ],
+      [
+        32,
+        38,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Chambery",
+    "arrivee": "Annecy",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Perpignan Pau pk",
+    "entities": [
+      [
+        0,
+        9,
+        "DEPART"
+      ],
+      [
+        10,
+        13,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Perpignan",
+    "arrivee": "Pau",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Je travaille a Lyon mais j'habite a Grenoble et je dois aller a Paris",
+    "entities": [
+      [
+        36,
+        44,
+        "DEPART"
+      ],
+      [
+        64,
+        69,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Grenoble",
+    "arrivee": "Paris",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Pour le travail je dois aller de Lyon a Paris lundi",
+    "entities": [
+      [
+        33,
+        37,
+        "DEPART"
+      ],
+      [
+        40,
+        45,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Paris",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Trajet Vannes vers Cahors en TGV",
+    "entities": [
+      [
+        7,
+        13,
+        "DEPART"
+      ],
+      [
+        19,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Vannes",
+    "arrivee": "Cahors",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Destination Grenoble. Depart depuis Poitiers.",
+    "entities": [
+      [
+        12,
+        20,
+        "ARRIVEE"
+      ],
+      [
+        36,
+        44,
+        "DEPART"
+      ]
+    ],
+    "depart": "Poitiers",
+    "arrivee": "Grenoble",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Avec Nancy on part de Grenobe a Monpellier",
+    "entities": [
+      [
+        22,
+        29,
+        "DEPART"
+      ],
+      [
+        32,
+        42,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Grenoble",
+    "arrivee": "Montpellier",
+    "pattern_type": "typo_person_city",
+    "valid": true
+  },
+  {
+    "text": "Je vais a Bordeaux demain. Je suis a Lille.",
+    "entities": [
+      [
+        10,
+        18,
+        "ARRIVEE"
+      ],
+      [
+        37,
+        42,
+        "DEPART"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Bordeaux",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Je voudrais un billet de Pau a Tours",
+    "entities": [
+      [
+        25,
+        28,
+        "DEPART"
+      ],
+      [
+        31,
+        36,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Pau",
+    "arrivee": "Tours",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Ca existe un train de nuit Bordeaux Nice ?",
+    "entities": [
+      [
+        27,
+        35,
+        "DEPART"
+      ],
+      [
+        36,
+        40,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Nice",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "Clara m'a dit de venir a Annecy depuis Rouen",
+    "entities": [
+      [
+        25,
+        31,
+        "ARRIVEE"
+      ],
+      [
+        39,
+        44,
+        "DEPART"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Annecy",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "Bonjour madame je cherche a reserver une place dans un train allant de Rennes vers Dijon pour moi et ma femme",
+    "entities": [
+      [
+        71,
+        77,
+        "DEPART"
+      ],
+      [
+        83,
+        88,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Dijon",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "De Mulhous a Bezancon",
+    "entities": [
+      [
+        3,
+        10,
+        "DEPART"
+      ],
+      [
+        13,
+        21,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Mulhouse",
+    "arrivee": "Besancon",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Je pars en vacances avec mon amie Paris de Dijon vers Grenoble",
+    "entities": [
+      [
+        43,
+        48,
+        "DEPART"
+      ],
+      [
+        54,
+        62,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Grenoble",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Ma cousine Valence et moi on va de Metz a Perpignan",
+    "entities": [
+      [
+        35,
+        39,
+        "DEPART"
+      ],
+      [
+        42,
+        51,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Metz",
+    "arrivee": "Perpignan",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Un cafe s'il vous plait",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "De Monaco a Marseille",
+    "entities": [
+      [
+        3,
+        9,
+        "DEPART"
+      ],
+      [
+        12,
+        21,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Monaco",
+    "arrivee": "Marseille",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "Aller simple de Metz a Grenoble",
+    "entities": [
+      [
+        16,
+        20,
+        "DEPART"
+      ],
+      [
+        23,
+        31,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Metz",
+    "arrivee": "Grenoble",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Quelle heure est-il",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Ou sont les toilettes",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Depuis Avignon jusqu'a Rouen",
+    "entities": [
+      [
+        7,
+        14,
+        "DEPART"
+      ],
+      [
+        23,
+        28,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Avignon",
+    "arrivee": "Rouen",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "C'est quoi le numero de mon train",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Mon amie Paris et moi on va de Albi a Tours",
+    "entities": [
+      [
+        31,
+        35,
+        "DEPART"
+      ],
+      [
+        38,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Albi",
+    "arrivee": "Tours",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "go Rouen Caen",
+    "entities": [
+      [
+        3,
+        8,
+        "DEPART"
+      ],
+      [
+        9,
+        13,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Caen",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Je suis a Paris mais je dois aller a Lyon en passant par Dijon",
+    "entities": [
+      [
+        10,
+        15,
+        "DEPART"
+      ],
+      [
+        37,
+        41,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Paris",
+    "arrivee": "Lyon",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Je souhaiterais reserver un billet de train au depart de Lille avec une arrivee a Toulouse",
+    "entities": [
+      [
+        57,
+        62,
+        "DEPART"
+      ],
+      [
+        82,
+        90,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Toulouse",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "On va a Lyon. On habite a Nantes.",
+    "entities": [
+      [
+        8,
+        12,
+        "ARRIVEE"
+      ],
+      [
+        26,
+        32,
+        "DEPART"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Lyon",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "La gare est fermee",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "De Tours a Blois c'est court mais de Tours a Lyon c'est ce que je veux",
+    "entities": [
+      [
+        3,
+        8,
+        "DEPART"
+      ],
+      [
+        45,
+        49,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Tours",
+    "arrivee": "Lyon",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Reservation de Reims a Perpignan",
+    "entities": [
+      [
+        15,
+        20,
+        "DEPART"
+      ],
+      [
+        23,
+        32,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Reims",
+    "arrivee": "Perpignan",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Alors voila ma situation j'habite a Clermont-Ferrand et je dois aller a Paris pour un entretien mardi",
+    "entities": [
+      [
+        36,
+        52,
+        "DEPART"
+      ],
+      [
+        72,
+        77,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Clermont-Ferrand",
+    "arrivee": "Paris",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "Mon train part de Avignon. J'arrive a Annecy ce soir.",
+    "entities": [
+      [
+        18,
+        25,
+        "DEPART"
+      ],
+      [
+        38,
+        44,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Avignon",
+    "arrivee": "Annecy",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "De Trifouillis-les-Oies a Paris",
+    "entities": [
+      [
+        3,
+        23,
+        "DEPART"
+      ],
+      [
+        26,
+        31,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Trifouillis-les-Oies",
+    "arrivee": "Paris",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "En fait je suis a Rouen la et je dois absolument aller a Bordeaux avant demain soir c'est possible ?",
+    "entities": [
+      [
+        18,
+        23,
+        "DEPART"
+      ],
+      [
+        57,
+        65,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Bordeaux",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "Pour mes vacances un billet Nantes Marseille en aout",
+    "entities": [
+      [
+        28,
+        34,
+        "DEPART"
+      ],
+      [
+        35,
+        44,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Marseille",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "billet Tours Angers urgent",
+    "entities": [
+      [
+        7,
+        12,
+        "DEPART"
+      ],
+      [
+        13,
+        19,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Tours",
+    "arrivee": "Angers",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Bonjour. Je cherche un train depuis Rouen vers Bayonne. Merci.",
+    "entities": [
+      [
+        36,
+        41,
+        "DEPART"
+      ],
+      [
+        47,
+        54,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Bayonne",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "De Barcelona a Perpignan",
+    "entities": [
+      [
+        3,
+        12,
+        "DEPART"
+      ],
+      [
+        15,
+        24,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Barcelona",
+    "arrivee": "Perpignan",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "Depart Roueen arrivee Caenn",
+    "entities": [
+      [
+        7,
+        13,
+        "DEPART"
+      ],
+      [
+        22,
+        27,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rouen",
+    "arrivee": "Caen",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "On habite a Metz mais on bosse a Strasbourg",
+    "entities": [
+      [
+        12,
+        16,
+        "DEPART"
+      ],
+      [
+        33,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Metz",
+    "arrivee": "Strasbourg",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "billet Nantes Bordeaux stp",
+    "entities": [
+      [
+        7,
+        13,
+        "DEPART"
+      ],
+      [
+        14,
+        22,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Bordeaux",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "De Beaurivage a Toulouse",
+    "entities": [
+      [
+        3,
+        13,
+        "DEPART"
+      ],
+      [
+        16,
+        24,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Beaurivage",
+    "arrivee": "Toulouse",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "Est-ce qu'il y a des trains de Nantes a Bordeaux ?",
+    "entities": [
+      [
+        31,
+        37,
+        "DEPART"
+      ],
+      [
+        40,
+        48,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Bordeaux",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "jsuis a Rennes jvais a Nice",
+    "entities": [
+      [
+        8,
+        14,
+        "DEPART"
+      ],
+      [
+        23,
+        27,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Nice",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Avec mon ami Thomas on va de Grenoble a Metz",
+    "entities": [
+      [
+        29,
+        37,
+        "DEPART"
+      ],
+      [
+        40,
+        44,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Grenoble",
+    "arrivee": "Metz",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "On part avec Camille et Hugo de Reims a Pau",
+    "entities": [
+      [
+        32,
+        37,
+        "DEPART"
+      ],
+      [
+        40,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Reims",
+    "arrivee": "Pau",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "Avec Jean on part de Bordeaux pour Toulouse",
+    "entities": [
+      [
+        21,
+        29,
+        "DEPART"
+      ],
+      [
+        35,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Toulouse",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "Je par de Ren vers Toulon",
+    "entities": [
+      [
+        10,
+        13,
+        "DEPART"
+      ],
+      [
+        19,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Toulon",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Pour un mariage a Pau je pars de Limoges vendredi",
+    "entities": [
+      [
+        18,
+        21,
+        "ARRIVEE"
+      ],
+      [
+        33,
+        40,
+        "DEPART"
+      ]
+    ],
+    "depart": "Limoges",
+    "arrivee": "Pau",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Paris Lille vite",
+    "entities": [
+      [
+        0,
+        5,
+        "DEPART"
+      ],
+      [
+        6,
+        11,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Paris",
+    "arrivee": "Lille",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Je pars en vacances a Marseille. On habite a Albi.",
+    "entities": [
+      [
+        22,
+        31,
+        "ARRIVEE"
+      ],
+      [
+        45,
+        49,
+        "DEPART"
+      ]
+    ],
+    "depart": "Albi",
+    "arrivee": "Marseille",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Pierre veut qu'on parte de Dijon pour aller a Strasbourg",
+    "entities": [
+      [
+        27,
+        32,
+        "DEPART"
+      ],
+      [
+        46,
+        56,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Strasbourg",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "Je cherche un taxi",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Quel est le prix d'un Metz Reims ?",
+    "entities": [
+      [
+        22,
+        26,
+        "DEPART"
+      ],
+      [
+        27,
+        32,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Metz",
+    "arrivee": "Reims",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "Nice le chien et moi on part de Caen vers Reims",
+    "entities": [
+      [
+        32,
+        36,
+        "DEPART"
+      ],
+      [
+        42,
+        47,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Caen",
+    "arrivee": "Reims",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Train Perpinian Clermon-Ferrand",
+    "entities": [
+      [
+        6,
+        15,
+        "DEPART"
+      ],
+      [
+        16,
+        31,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Perpignan",
+    "arrivee": "Clermont-Ferrand",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "J'ai rate mon train a Lyon il me faut un Lyon Lille rapide",
+    "entities": [
+      [
+        22,
+        26,
+        "DEPART"
+      ],
+      [
+        46,
+        51,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Lille",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Rennes - Dijon s'il vous plait",
+    "entities": [
+      [
+        0,
+        6,
+        "DEPART"
+      ],
+      [
+        9,
+        14,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Dijon",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Un billet de Lille vers Marseille",
+    "entities": [
+      [
+        13,
+        18,
+        "DEPART"
+      ],
+      [
+        24,
+        33,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Marseille",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "J'habite a Lyon et je veux aller a Nice",
+    "entities": [
+      [
+        11,
+        15,
+        "DEPART"
+      ],
+      [
+        35,
+        39,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Nice",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "On habite sur Albi on part a Tours",
+    "entities": [
+      [
+        14,
+        18,
+        "DEPART"
+      ],
+      [
+        29,
+        34,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Albi",
+    "arrivee": "Tours",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Quel temps fait-il aujourd'hui",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je suis bloque a Metz. Il faut que j'aille a Tours.",
+    "entities": [
+      [
+        17,
+        21,
+        "DEPART"
+      ],
+      [
+        45,
+        50,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Metz",
+    "arrivee": "Tours",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Zurich a Mulhouse",
+    "entities": [
+      [
+        0,
+        6,
+        "DEPART"
+      ],
+      [
+        9,
+        17,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Zurich",
+    "arrivee": "Mulhouse",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "Avec mes enfants on va de Rennes a Montpellier pendant les vacances",
+    "entities": [
+      [
+        26,
+        32,
+        "DEPART"
+      ],
+      [
+        35,
+        46,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Montpellier",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Train Tataouine Lyon",
+    "entities": [
+      [
+        6,
+        15,
+        "DEPART"
+      ],
+      [
+        16,
+        20,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Tataouine",
+    "arrivee": "Lyon",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "billet Marseil Monpellier stp",
+    "entities": [
+      [
+        7,
+        14,
+        "DEPART"
+      ],
+      [
+        15,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Marseille",
+    "arrivee": "Montpellier",
+    "pattern_type": "typo_sms",
+    "valid": true
+  },
+  {
+    "text": "De Monpellier a Grenobe",
+    "entities": [
+      [
+        3,
+        13,
+        "DEPART"
+      ],
+      [
+        16,
+        23,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Montpellier",
+    "arrivee": "Grenoble",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Je veux annuler ma reservation",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Mon pote Nice m'attend je pars de Bordeaux a Toulouse",
+    "entities": [
+      [
+        34,
+        42,
+        "DEPART"
+      ],
+      [
+        45,
+        53,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Toulouse",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Je reside a Dijon et je dois me rendre a Montpellier",
+    "entities": [
+      [
+        12,
+        17,
+        "DEPART"
+      ],
+      [
+        41,
+        52,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Dijon",
+    "arrivee": "Montpellier",
+    "pattern_type": "habite",
+    "valid": true
+  },
+  {
+    "text": "Chamberi a Dunkerke",
+    "entities": [
+      [
+        0,
+        8,
+        "DEPART"
+      ],
+      [
+        11,
+        19,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Chambery",
+    "arrivee": "Dunkerque",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "On habite a Caen. On part a Nice demain matin.",
+    "entities": [
+      [
+        12,
+        16,
+        "DEPART"
+      ],
+      [
+        28,
+        32,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Caen",
+    "arrivee": "Nice",
+    "pattern_type": "multi",
+    "valid": true
+  },
+  {
+    "text": "Valence et moi on veut aller de Rennes a Nantes",
+    "entities": [
+      [
+        32,
+        38,
+        "DEPART"
+      ],
+      [
+        41,
+        47,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Nantes",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Destination Avignon au depart de Clermont-Ferrand",
+    "entities": [
+      [
+        12,
+        19,
+        "ARRIVEE"
+      ],
+      [
+        33,
+        49,
+        "DEPART"
+      ]
+    ],
+    "depart": "Clermont-Ferrand",
+    "arrivee": "Avignon",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Avec Nancy on part de Lyon vers Marseille",
+    "entities": [
+      [
+        22,
+        26,
+        "DEPART"
+      ],
+      [
+        32,
+        41,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Marseille",
+    "pattern_type": "person_city",
+    "valid": true
+  },
+  {
+    "text": "Mon pere habite a Nantes ma mere a Rennes moi je vais de Lyon a Marseille",
+    "entities": [
+      [
+        57,
+        61,
+        "DEPART"
+      ],
+      [
+        64,
+        73,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Marseille",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Reservation Lille Reims pour le 15 mars",
+    "entities": [
+      [
+        12,
+        17,
+        "DEPART"
+      ],
+      [
+        18,
+        23,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Reims",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "De Lile a Nante",
+    "entities": [
+      [
+        3,
+        7,
+        "DEPART"
+      ],
+      [
+        10,
+        15,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Nantes",
+    "pattern_type": "typo",
+    "valid": true
+  },
+  {
+    "text": "Marie et moi on va de Lyon a Nice",
+    "entities": [
+      [
+        22,
+        26,
+        "DEPART"
+      ],
+      [
+        29,
+        33,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Nice",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "jsuis a Toulous faut que jaille a Bordeau",
+    "entities": [
+      [
+        8,
+        15,
+        "DEPART"
+      ],
+      [
+        34,
+        41,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Toulouse",
+    "arrivee": "Bordeaux",
+    "pattern_type": "typo_sms",
+    "valid": true
+  },
+  {
+    "text": "Lile Ren vite stp",
+    "entities": [
+      [
+        0,
+        4,
+        "DEPART"
+      ],
+      [
+        5,
+        8,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lille",
+    "arrivee": "Rennes",
+    "pattern_type": "typo_sms",
+    "valid": true
+  },
+  {
+    "text": "Aller de Niort a Bayonne",
+    "entities": [
+      [
+        9,
+        14,
+        "DEPART"
+      ],
+      [
+        17,
+        24,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Niort",
+    "arrivee": "Bayonne",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Pour une reunion je pars de Toulouse a Strasbourg mardi matin",
+    "entities": [
+      [
+        28,
+        36,
+        "DEPART"
+      ],
+      [
+        39,
+        49,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Toulouse",
+    "arrivee": "Strasbourg",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Mon amie de Nantes m'attend a Rennes",
+    "entities": [
+      [
+        12,
+        18,
+        "DEPART"
+      ],
+      [
+        30,
+        36,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Rennes",
+    "pattern_type": "tricky",
+    "valid": true
+  },
+  {
+    "text": "Billet Amsterdam Strasbourg",
+    "entities": [
+      [
+        7,
+        16,
+        "DEPART"
+      ],
+      [
+        17,
+        27,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Amsterdam",
+    "arrivee": "Strasbourg",
+    "pattern_type": "foreign",
+    "valid": true
+  },
+  {
+    "text": "Il reste des places sur le Rennes Nice ?",
+    "entities": [
+      [
+        27,
+        33,
+        "DEPART"
+      ],
+      [
+        34,
+        38,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Nice",
+    "pattern_type": "question",
+    "valid": true
+  },
+  {
+    "text": "Je voudrais un sandwich",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je dois me rendre a Gap depuis Lorient",
+    "entities": [
+      [
+        20,
+        23,
+        "ARRIVEE"
+      ],
+      [
+        31,
+        38,
+        "DEPART"
+      ]
+    ],
+    "depart": "Lorient",
+    "arrivee": "Gap",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "Sophie m'attend a Marseille je suis a Rennes",
+    "entities": [
+      [
+        18,
+        27,
+        "ARRIVEE"
+      ],
+      [
+        38,
+        44,
+        "DEPART"
+      ]
+    ],
+    "depart": "Rennes",
+    "arrivee": "Marseille",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "besoin billet marseil nice rapidos",
+    "entities": [
+      [
+        14,
+        21,
+        "DEPART"
+      ],
+      [
+        22,
+        26,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Marseille",
+    "arrivee": "Nice",
+    "pattern_type": "sms",
+    "valid": true
+  },
+  {
+    "text": "Comment joindre le service client SNCF",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Brest -> Annecy",
+    "entities": [
+      [
+        0,
+        5,
+        "DEPART"
+      ],
+      [
+        9,
+        15,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Brest",
+    "arrivee": "Annecy",
+    "pattern_type": "standard",
+    "valid": true
+  },
+  {
+    "text": "A Chambery en venant de Pau",
+    "entities": [
+      [
+        2,
+        10,
+        "ARRIVEE"
+      ],
+      [
+        24,
+        27,
+        "DEPART"
+      ]
+    ],
+    "depart": "Pau",
+    "arrivee": "Chambery",
+    "pattern_type": "inverse",
+    "valid": true
+  },
+  {
+    "text": "Y a du wifi dans le TGV",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Billet Saint-Clairin Lyon",
+    "entities": [
+      [
+        7,
+        20,
+        "DEPART"
+      ],
+      [
+        21,
+        25,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Saint-Clairin",
+    "arrivee": "Lyon",
+    "pattern_type": "unknown",
+    "valid": true
+  },
+  {
+    "text": "Bonjour je voudrais savoir s'il y a un train direct de Nantes a Bordeaux s'il vous plait merci",
+    "entities": [
+      [
+        55,
+        61,
+        "DEPART"
+      ],
+      [
+        64,
+        72,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Nantes",
+    "arrivee": "Bordeaux",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "Je suis en retard",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Pour un weekend un train de Bordeaux a Nice vendredi soir",
+    "entities": [
+      [
+        28,
+        36,
+        "DEPART"
+      ],
+      [
+        39,
+        43,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Bordeaux",
+    "arrivee": "Nice",
+    "pattern_type": "context",
+    "valid": true
+  },
+  {
+    "text": "Comment fonctionne l'appli SNCF",
+    "entities": [],
+    "depart": "INVALID",
+    "arrivee": "INVALID",
+    "pattern_type": "invalid",
+    "valid": false
+  },
+  {
+    "text": "Je voyage avec Antoine de Blois a Colmar",
+    "entities": [
+      [
+        26,
+        31,
+        "DEPART"
+      ],
+      [
+        34,
+        40,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Blois",
+    "arrivee": "Colmar",
+    "pattern_type": "person",
+    "valid": true
+  },
+  {
+    "text": "Pouvez-vous me trouver un train qui part de Lyon et qui arrive a Marseille avant midi ?",
+    "entities": [
+      [
+        44,
+        48,
+        "DEPART"
+      ],
+      [
+        65,
+        74,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Lyon",
+    "arrivee": "Marseille",
+    "pattern_type": "long",
+    "valid": true
+  },
+  {
+    "text": "On habite a Grenobe. On va a Angoulem.",
+    "entities": [
+      [
+        12,
+        19,
+        "DEPART"
+      ],
+      [
+        29,
+        37,
+        "ARRIVEE"
+      ]
+    ],
+    "depart": "Grenoble",
+    "arrivee": "Angouleme",
+    "pattern_type": "typo_multi",
+    "valid": true
+  }
+]
