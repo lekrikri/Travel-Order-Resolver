@@ -1121,6 +1121,13 @@ body {
   gap: 2rem;
 }
 
+.benchmark-description {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
 .benchmark-section {
   background: #f8fafc;
   border-radius: 12px;

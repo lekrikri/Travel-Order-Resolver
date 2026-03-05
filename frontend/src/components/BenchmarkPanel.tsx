@@ -14,9 +14,9 @@ const OPT_LABELS: Record<string, string> = {
 };
 
 const EXAMPLES = [
-  { text: 'Je veux aller de Paris a Lyon', dep: 'Paris Gare de Lyon', dest: 'Lyon Part Dieu' },
-  { text: 'Un billet Marseille direction Bordeaux', dep: 'Marseille St Charles', dest: 'Bordeaux St Jean' },
-  { text: 'Emmene moi de Lille a Strasbourg', dep: 'Lille Flandres', dest: 'Strasbourg', },
+  { text: 'Je veux aller de Paris a Lyon', dep: 'Paris Montparnasse Hall 1 - 2', dest: 'Lyon Part Dieu' },
+  { text: 'Un billet Marseille direction Bordeaux', dep: 'Marseille Saint-Charles', dest: 'Bordeaux Saint-Jean' },
+  { text: 'Emmene moi de Lille a Strasbourg', dep: 'Lille Flandres', dest: 'Strasbourg' },
   { text: 'Je voudrais partir de Nantes pour aller a Rennes', dep: 'Nantes', dest: 'Rennes' },
 ];
 
@@ -49,7 +49,8 @@ function BenchmarkPanel() {
   const [errorMsg, setErrorMsg] = useState('');
   const [transcribing, setTranscribing] = useState(false);
 
-  const canRun = text.trim() && expectedDep.trim() && expectedDest.trim() && phase === 'idle';
+  const isRunning = phase === 'nlp' || phase === 'graph';
+  const canRun = text.trim() && expectedDep.trim() && expectedDest.trim() && !isRunning;
 
   const runBenchmark = async (inputText: string, dep: string, dest: string) => {
     setNlpResults([]);
@@ -107,10 +108,12 @@ function BenchmarkPanel() {
     }
   };
 
-  const isRunning = phase === 'nlp' || phase === 'graph';
-
   return (
     <div className="benchmark-panel">
+      <p className="benchmark-description">
+        Compare all NLP and pathfinding engines side by side on the same input.
+        Measures extraction accuracy, response time, energy consumption and memory usage for each strategy.
+      </p>
       {/* Input mode toggle */}
       <div className="benchmark-mode-toggle">
         <button
