@@ -16,6 +16,7 @@ from src.nlp.gazetteer import get_city_set, get_gazetteer, resolve_city
 # French sentence templates for synthetic data generation.
 # {dep} and {dest} are replaced by city names.
 _TEMPLATES = [
+    # === Standard patterns ===
     "je veux aller de {dep} a {dest}",
     "je voudrais aller de {dep} a {dest}",
     "un billet de {dep} a {dest}",
@@ -44,7 +45,7 @@ _TEMPLATES = [
     "pour aller de {dep} a {dest}",
     "prendre le train de {dep} a {dest}",
     "reservation de {dep} a {dest}",
-    # Multi-sentence and "habite" patterns
+    # === Multi-sentence and "habite" patterns ===
     "on habite a {dep} et on va a {dest}",
     "j'habite a {dep} et je pars a {dest}",
     "je vis a {dep} et je veux aller a {dest}",
@@ -53,15 +54,125 @@ _TEMPLATES = [
     "on part en vacances a {dest} on habite a {dep}",
     "vacances a {dest} on habite sur {dep}",
     "on habite sur {dep} on part a {dest}",
-    # Destination-first patterns
+    # === Destination-first patterns ===
     "je vais a {dest} depuis {dep}",
     "direction {dest} au depart de {dep}",
     "destination {dest} depart {dep}",
-    # Distractor-resilient patterns (person names as noise)
+    # === Distractor-resilient patterns (person names as noise) ===
     "avec mon ami on va de {dep} a {dest}",
     "moi et mon amie on part de {dep} pour {dest}",
     "avec des amis on va de {dep} a {dest}",
     "on veut aller a {dest} on est a {dep}",
+    # === SMS / informal / abbreviations ===
+    "jveux aller de {dep} a {dest}",
+    "jsui a {dep} jvais a {dest}",
+    "chui a {dep} et jveux aller a {dest}",
+    "jpart de {dep} pour {dest}",
+    "jme casse de {dep} a {dest}",
+    "jprend le train de {dep} a {dest}",
+    "on va de {dep} a {dest} la",
+    "jvais a {dest} depuis {dep}",
+    "sah on part de {dep} pour {dest}",
+    "tkt on va de {dep} a {dest}",
+    "bg on part de {dep} a {dest}",
+    "yo de {dep} a {dest}",
+    "oklm {dep} {dest}",
+    "mdr on galere pour aller de {dep} a {dest}",
+    "ptdr on prend le train {dep} {dest}",
+    # === Youth slang / argot ===
+    "wsh on va de {dep} a {dest} frr",
+    "frr jvais de {dep} a {dest}",
+    "on se tire de {dep} pour {dest}",
+    "on bouge de {dep} a {dest}",
+    "on se barre de {dep} direction {dest}",
+    "allez on decolle de {dep} vers {dest}",
+    # === Common typos ===
+    "je veu aller de {dep} a {dest}",
+    "je veus aller de {dep} a {dest}",
+    "je veut aller de {dep} a {dest}",
+    "je part de {dep} pour {dest}",
+    "un billets de {dep} a {dest}",
+    "un trajets de {dep} a {dest}",
+    "aller a {dest} depui {dep}",
+    "depart de {dep} arivee a {dest}",
+    "je vais a {dest} en partant de {dep}",
+    # === Questions ===
+    "c'est quoi le prochain train de {dep} a {dest}",
+    "il y a un train de {dep} a {dest}",
+    "quand est le prochain {dep} {dest}",
+    "combien coute un billet {dep} {dest}",
+    "le train de {dep} a {dest} il met combien de temps",
+    "est-ce qu'il y a un direct {dep} {dest}",
+    "comment aller de {dep} a {dest}",
+    "on peut aller de {dep} a {dest} en train",
+    "c'est possible {dep} {dest} en train",
+    # === Train types (TGV, TER, Ouigo, Intercites) ===
+    "le tgv de {dep} a {dest}",
+    "un ter {dep} {dest}",
+    "ouigo {dep} {dest}",
+    "intercites de {dep} a {dest}",
+    "tgv inoui {dep} {dest}",
+    "le ter de {dep} a {dest} du matin",
+    "un ouigo de {dep} a {dest} pas cher",
+    "le tgv {dep} {dest} de 8h",
+    # === Dash / arrow / slash notation ===
+    "{dep} {dest}",
+    "train {dep} {dest}",
+    "billet {dep} {dest} pas cher",
+    "horaires {dep} {dest}",
+    "direct {dep} {dest}",
+    # === Formal register ===
+    "je souhaiterais effectuer un trajet de {dep} a {dest}",
+    "pourriez-vous me trouver un billet de {dep} a {dest}",
+    "je desire me rendre a {dest} au depart de {dep}",
+    "serait-il possible d'obtenir un billet de {dep} a {dest}",
+    "je souhaiterais reserver un aller de {dep} vers {dest}",
+    "veuillez m'indiquer les horaires de {dep} a {dest}",
+    # === Correction / clarification ===
+    "en fait c'est de {dep} a {dest}",
+    "pardon je voulais dire de {dep} a {dest}",
+    "non c'est de {dep} a {dest}",
+    "rectification de {dep} a {dest}",
+    "je me suis trompe c'est {dep} vers {dest}",
+    # === Time context ===
+    "demain matin de {dep} a {dest}",
+    "ce soir de {dep} a {dest}",
+    "lundi prochain de {dep} a {dest}",
+    "le weekend de {dep} a {dest}",
+    "dans 2h de {dep} a {dest}",
+    "le 15 de {dep} a {dest}",
+    # === Group / family travel ===
+    "on est 4 et on va de {dep} a {dest}",
+    "avec les enfants de {dep} a {dest}",
+    "voyage en famille de {dep} a {dest}",
+    "avec ma femme on part de {dep} pour {dest}",
+    "avec mes potes de {dep} a {dest}",
+    # === Emotional / urgency ===
+    "j'ai trop hate d'aller de {dep} a {dest}",
+    "faut que j'aille de {dep} a {dest} vite",
+    "urgent de {dep} a {dest}",
+    "j'ai absolument besoin d'un train de {dep} a {dest}",
+    "vite un billet de {dep} a {dest}",
+    # === Aller-retour ===
+    "aller retour {dep} {dest}",
+    "un aller retour de {dep} a {dest}",
+    "aller simple de {dep} a {dest}",
+    # === Voice assistant style ===
+    "emmene moi de {dep} a {dest}",
+    "trouve moi un train de {dep} a {dest}",
+    "reserve moi un billet {dep} {dest}",
+    "cherche un trajet de {dep} a {dest}",
+    "dis moi comment aller de {dep} a {dest}",
+    # === Professional / business ===
+    "deplacement professionnel de {dep} a {dest}",
+    "reunion a {dest} je pars de {dep}",
+    "mission a {dest} depart {dep}",
+    "rdv a {dest} depuis {dep}",
+    # === Daily commuter ===
+    "tous les jours de {dep} a {dest}",
+    "mon trajet quotidien {dep} {dest}",
+    "abonnement {dep} {dest}",
+    "navette {dep} {dest}",
 ]
 
 
