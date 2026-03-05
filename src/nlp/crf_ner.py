@@ -44,6 +44,24 @@ _TEMPLATES = [
     "pour aller de {dep} a {dest}",
     "prendre le train de {dep} a {dest}",
     "reservation de {dep} a {dest}",
+    # Multi-sentence and "habite" patterns
+    "on habite a {dep} et on va a {dest}",
+    "j'habite a {dep} et je pars a {dest}",
+    "je vis a {dep} et je veux aller a {dest}",
+    "on va a {dest} et on habite a {dep}",
+    "je vais a {dest} on habite a {dep}",
+    "on part en vacances a {dest} on habite a {dep}",
+    "vacances a {dest} on habite sur {dep}",
+    "on habite sur {dep} on part a {dest}",
+    # Destination-first patterns
+    "je vais a {dest} depuis {dep}",
+    "direction {dest} au depart de {dep}",
+    "destination {dest} depart {dep}",
+    # Distractor-resilient patterns (person names as noise)
+    "avec mon ami on va de {dep} a {dest}",
+    "moi et mon amie on part de {dep} pour {dest}",
+    "avec des amis on va de {dep} a {dest}",
+    "on veut aller a {dest} on est a {dep}",
 ]
 
 
@@ -120,7 +138,7 @@ class CRFNEREngine(NLPEngine):
 
         # Sample city pairs
         rng = random.Random(42)  # deterministic
-        n_pairs = min(200, len(canonical) * (len(canonical) - 1))
+        n_pairs = min(800, len(canonical) * (len(canonical) - 1))
         pairs: list[tuple[str, str]] = []
         attempts = 0
         while len(pairs) < n_pairs and attempts < n_pairs * 5:
@@ -179,13 +197,30 @@ class CRFNEREngine(NLPEngine):
         travel_verbs = {"aller", "partir", "voyager", "prendre", "cherche", "veux", "voudrais", "souhaite", "rends", "vais", "pars"}
         features["word.is_travel_verb"] = word_lower in travel_verbs
 
+        # Person-context words (signal that a following city name is a person)
+        person_ctx = {"ami", "amie", "amis", "amies", "copain", "copine", "collegue", "collegues", "avec"}
+        features["word.is_person_ctx"] = word_lower in person_ctx
+
+        # Habitation verbs (signal departure)
+        habite_verbs = {"habite", "vis", "vit", "reside", "demeure"}
+        features["word.is_habite_verb"] = word_lower in habite_verbs
+
         # Previous word context
         if idx >= 1:
             prev = tokens[idx - 1].lower()
             features["prev.lower"] = prev
-            features["prev.is_prep"] = prev in {"de", "depuis", "a", "vers", "pour", "direction", "destination"}
+            features["prev.is_prep"] = prev in {"de", "depuis", "a", "vers", "pour", "direction", "destination", "sur"}
+            features["prev.is_person_ctx"] = prev in person_ctx
+            features["prev.is_habite_verb"] = prev in habite_verbs
         else:
             features["BOS"] = True
+
+        # 2-word lookback for "habite a <city>" or "amie <city>"
+        if idx >= 2:
+            prev2 = tokens[idx - 2].lower()
+            features["prev2.lower"] = prev2
+            features["prev2.is_habite_verb"] = prev2 in habite_verbs
+            features["prev2.is_person_ctx"] = prev2 in person_ctx
 
         # Next word context
         if idx < len(tokens) - 1:
