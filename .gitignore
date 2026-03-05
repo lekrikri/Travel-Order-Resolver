@@ -39,22 +39,22 @@ venv_gpu/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Models & Data (exclure gros fichiers)
-models/**/*.bin
-models/**/*.pt
-models/**/*.h5
-models/**/*.gguf
-models/**/*.safetensors
-models/**/*.onnx
-models/**/pytorch_model.bin
-models/**/model.safetensors
-data/raw/*.csv
-data/raw/*.zip
-data/raw/sncf-gtfs/
-data/raw/sncf-gtfs.zip
-data/generated/*.json
-!data/raw/.gitkeep
-!data/generated/.gitkeep
+# Models — exclure tous les binaires entraînés (à réentraîner localement)
+models/
+!models/.gitkeep
+
+# Data raw & generated
+data/raw/
+data/generated/
+data/sncf.7z
+data/sncf.tar
+data/sncf.zip
+"data/sncf (2).zip"
+
+# Archives
+*.7z
+*.tar
+*.tar.gz
 
 # ChromaDB
 chroma_db/
