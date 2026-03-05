@@ -65,3 +65,7 @@ RhoneAlpes,Grenoble,Valence,93,75,TER,TER_GRE_VAL
 Transversale,Bordeaux,Marseille,636,480,IC,IC_BX_MAR
 Transversale,Lille,Strasbourg,535,360,IC,IC_LILLE_STR
 Transversale,Nantes,Lyon,617,390,IC,IC_NAN_LY
+# Transversales manquantes Sud-Ouest <-> Sud-Est (sans passer par Paris)
+Transversale,Bordeaux,Lyon,523,260,TGV,TGV_BX_LY
+Transversale,Lyon,Nice,473,250,TGV,TGV_LY_NICE
+Transversale,Bordeaux,Toulouse,245,140,IC,IC_BX_TLS2

@@ -105,3 +105,9 @@ from_uic,from_name,to_uic,to_name,distance_km,time_minutes,line_type,line_code
 87212191,Strasbourg Roethig,87286005,Lille Flandres,535,360,IC,IC_LILLE_STR
 87481002,Nantes,87723197,Lyon Part Dieu,617,390,IC,IC_NAN_LY
 87723197,Lyon Part Dieu,87481002,Nantes,617,390,IC,IC_NAN_LY
+87581009,Bordeaux Saint-Jean,87723197,Lyon Part Dieu,523,260,TGV,TGV_BX_LY
+87723197,Lyon Part Dieu,87581009,Bordeaux Saint-Jean,523,260,TGV,TGV_BX_LY
+87723197,Lyon Part Dieu,87756254,Nice Saint-Augustin,473,250,TGV,TGV_LY_NICE
+87756254,Nice Saint-Augustin,87723197,Lyon Part Dieu,473,250,TGV,TGV_LY_NICE
+87581009,Bordeaux Saint-Jean,87611004,Toulouse Matabiau,245,140,IC,IC_BX_TLS2
+87611004,Toulouse Matabiau,87581009,Bordeaux Saint-Jean,245,140,IC,IC_BX_TLS2

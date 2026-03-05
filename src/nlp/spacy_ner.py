@@ -1,55 +1,64 @@
-"""SpaCy NER engine using the fr_core_news_md French model."""
+"""SpaCy NER engines using our custom-trained models (DEPART/ARRIVEE)."""
 
 from __future__ import annotations
 
+import time
+from pathlib import Path
+
 from src.nlp.base import NLPEngine
-from src.nlp.gazetteer import assign_roles, resolve_city
+
+MODELS_DIR = Path(__file__).resolve().parent.parent.parent / "models"
 
 
 class SpaCyNEREngine(NLPEngine):
-    """Extract departure and destination using spaCy's named-entity recognition.
+    """Generic spaCy NER engine loading any of our custom-trained models."""
 
-    Pipeline: spaCy NER -> filter LOC entities -> resolve via gazetteer -> assign_roles()
-
-    The French model (fr_core_news_md, ~50 MB) is lazy-loaded on first call
-    so the server starts instantly.
-    """
-
-    def __init__(self) -> None:
+    def __init__(self, model_dir: str, display_name: str, desc: str) -> None:
+        self._model_path = MODELS_DIR / model_dir
+        self._display_name = display_name
+        self._desc = desc
         self._nlp = None
+        self.loaded = False
+        self.load_time_ms = 0.0
 
     @property
     def name(self) -> str:
-        return "spacy-ner"
+        return self._display_name
 
     @property
     def description(self) -> str:
-        return "spaCy fr_core_news_md NER pipeline. Detects LOC entities, resolves via gazetteer."
+        return self._desc
 
     def _load_model(self):
-        """Lazy-load the spaCy French model."""
         if self._nlp is None:
             import spacy
-            self._nlp = spacy.load("fr_core_news_md")
+            t0 = time.perf_counter()
+            self._nlp = spacy.load(str(self._model_path))
+            self.load_time_ms = round((time.perf_counter() - t0) * 1000, 1)
+            self.loaded = True
         return self._nlp
 
     def extract(self, text: str) -> tuple[str | None, str | None, float]:
         nlp = self._load_model()
         doc = nlp(text)
 
-        # Collect LOC entities and resolve them to station names
-        resolved: list[str] = []
+        dep, dest = None, None
+        extra_departs: list[str] = []
         for ent in doc.ents:
-            if ent.label_ == "LOC":
-                station = resolve_city(ent.text)
-                if station and station not in resolved:
-                    resolved.append(station)
+            if ent.label_ == "DEPART":
+                if dep is None:
+                    dep = ent.text
+                else:
+                    extra_departs.append(ent.text)
+            elif ent.label_ == "ARRIVEE" and dest is None:
+                dest = ent.text
 
-        if len(resolved) < 2:
-            return None, None, 0.0
+        # Fallback: if model tagged two DEPART and zero ARRIVEE,
+        # treat the second one as ARRIVEE (order of appearance)
+        if dep and dest is None and extra_departs:
+            dest = extra_departs[0]
 
-        dep, dest = assign_roles(text, resolved)
-        if dep and dest and dep != dest:
-            return dep, dest, 0.7
+        if dep and dest:
+            return dep, dest, 0.999
 
         return None, None, 0.0

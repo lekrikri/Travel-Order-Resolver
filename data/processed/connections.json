@@ -84610,5 +84610,233 @@
     "to": "Rouen Rive Droite",
     "train_type": "TGV INOUI",
     "weight_minutes": 76
+  },
+  {
+    "from": "Paris Est",
+    "to": "Paris Gare du Nord",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare du Nord",
+    "to": "Paris Est",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Est",
+    "to": "Paris Saint-Lazare",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Saint-Lazare",
+    "to": "Paris Est",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Est",
+    "to": "Paris Montparnasse Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Montparnasse Hall 1 - 2",
+    "to": "Paris Est",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Est",
+    "to": "Paris Austerlitz",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Austerlitz",
+    "to": "Paris Est",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Est",
+    "to": "Paris Gare de Lyon Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare de Lyon Hall 1 - 2",
+    "to": "Paris Est",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare du Nord",
+    "to": "Paris Saint-Lazare",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Saint-Lazare",
+    "to": "Paris Gare du Nord",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare du Nord",
+    "to": "Paris Montparnasse Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Montparnasse Hall 1 - 2",
+    "to": "Paris Gare du Nord",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare du Nord",
+    "to": "Paris Austerlitz",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Austerlitz",
+    "to": "Paris Gare du Nord",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare du Nord",
+    "to": "Paris Gare de Lyon Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare de Lyon Hall 1 - 2",
+    "to": "Paris Gare du Nord",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Saint-Lazare",
+    "to": "Paris Montparnasse Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Montparnasse Hall 1 - 2",
+    "to": "Paris Saint-Lazare",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Saint-Lazare",
+    "to": "Paris Austerlitz",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Austerlitz",
+    "to": "Paris Saint-Lazare",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Saint-Lazare",
+    "to": "Paris Gare de Lyon Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare de Lyon Hall 1 - 2",
+    "to": "Paris Saint-Lazare",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Montparnasse Hall 1 - 2",
+    "to": "Paris Austerlitz",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Austerlitz",
+    "to": "Paris Montparnasse Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Montparnasse Hall 1 - 2",
+    "to": "Paris Gare de Lyon Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare de Lyon Hall 1 - 2",
+    "to": "Paris Montparnasse Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Austerlitz",
+    "to": "Paris Gare de Lyon Hall 1 - 2",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Paris Gare de Lyon Hall 1 - 2",
+    "to": "Paris Austerlitz",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lyon Part Dieu",
+    "to": "Lyon Saint-Exupéry TGV",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lyon Saint-Exupéry TGV",
+    "to": "Lyon Part Dieu",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lyon Perrache",
+    "to": "Lyon Saint-Exupéry TGV",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lyon Saint-Exupéry TGV",
+    "to": "Lyon Perrache",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lille Flandres",
+    "to": "Lille Europe",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Lille Europe",
+    "to": "Lille Flandres",
+    "train_type": "TRANSFER",
+    "weight_minutes": 30
+  },
+  {
+    "from": "Bordeaux Saint-Jean",
+    "to": "Lyon Part Dieu",
+    "train_type": "TGV INOUI",
+    "weight_minutes": 210
+  },
+  {
+    "from": "Lyon Part Dieu",
+    "to": "Bordeaux Saint-Jean",
+    "train_type": "TGV INOUI",
+    "weight_minutes": 210
   }
 ]

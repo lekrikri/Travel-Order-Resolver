@@ -29,7 +29,7 @@ app = FastAPI(title="Travel Order Resolver", version="0.1.0")
 # CORS for React frontend on :3000
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5174", "http://127.0.0.1:5174"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -46,7 +46,11 @@ if _stations_path.exists():
 
 # Register available engines at startup
 registry.register_nlp(RuleBasedEngine())
-registry.register_nlp(SpaCyNEREngine())
+registry.register_nlp(SpaCyNEREngine("ner_sm",          "spacy-sm",    "spaCy fr_core_news_sm fine-tuné — F1: 75.65%"))
+registry.register_nlp(SpaCyNEREngine("ner_md",          "spacy-md",    "spaCy fr_core_news_md fine-tuné — F1: 86.42%"))
+registry.register_nlp(SpaCyNEREngine("ner_lg",          "spacy-lg",    "spaCy fr_core_news_lg fine-tuné — F1: 81.50%"))
+registry.register_nlp(SpaCyNEREngine("ner_blank/model-best", "spacy-blank", "spaCy blank entraîné from scratch — F1: 69.13%"))
+registry.register_nlp(SpaCyNEREngine("ner_10k/model-best",  "spacy-ner",   "spaCy 10k — meilleur modèle (F1: 99.88%)"))
 registry.register_nlp(CRFNEREngine())
 registry.register_nlp(TransformerNEREngine())
 registry.register_graph(DijkstraEngine())
@@ -244,6 +248,8 @@ class EngineInfo(BaseModel):
     name: str
     description: str
     type: str
+    loaded: bool = False
+    load_time_ms: float = 0.0
 
 
 # --- Endpoints ---
@@ -340,12 +346,14 @@ def benchmark_graph(req: BenchmarkGraphRequest) -> list[dict]:
 
 @app.get("/api/engines")
 def list_engines() -> list[EngineInfo]:
-    """List all available engines."""
+    """List all available engines with their loading status."""
     engines = []
     for e in registry.list_nlp():
-        engines.append(EngineInfo(name=e.name, description=e.description, type="nlp"))
+        loaded = getattr(e, "loaded", False)
+        load_time_ms = getattr(e, "load_time_ms", 0.0)
+        engines.append(EngineInfo(name=e.name, description=e.description, type="nlp", loaded=loaded, load_time_ms=load_time_ms))
     for e in registry.list_graph():
-        engines.append(EngineInfo(name=e.name, description=e.description, type="graph"))
+        engines.append(EngineInfo(name=e.name, description=e.description, type="graph", loaded=True, load_time_ms=0.0))
     return engines
 
 
@@ -415,22 +423,40 @@ def _energy_uwh(cpu_time_ms: float) -> float:
     return (cpu_time_ms / 1000) * _CPU_TDP_W / 3600 * 1e6
 
 
+def _city_of(station: str) -> str:
+    """Return the leading city word from a station name (e.g. 'Paris Gare de Lyon Hall 1 - 2' → 'paris')."""
+    parts = station.strip().lower().split()
+    return parts[0] if parts else ""
+
+
+def _station_match(a: str, b: str) -> bool:
+    """Match two station names:
+    - Exact / substring: 'Lille' matches 'Lille Flandres'
+    - Same-city:  'Paris Montparnasse Hall 1-2' matches 'Paris Gare de Lyon Hall 1-2'
+      (first word identical, at least 4 chars → avoids 'Le' matching 'Le Havre' vs 'Le Mans')
+    """
+    a_l, b_l = a.strip().lower(), b.strip().lower()
+    if a_l == b_l or a_l in b_l or b_l in a_l:
+        return True
+    city_a, city_b = _city_of(a), _city_of(b)
+    return len(city_a) >= 4 and city_a == city_b
+
+
 def _match_nlp(result, expected_dep: str, expected_dest: str) -> str:
     """Compare NLP result against ground truth.
 
-    Resolves expected values through the gazetteer so that
-    "Albi" matches "Albi Ville" (the canonical station name).
+    Uses partial matching so "Lille" matches "Lille Flandres",
+    "Paris" matches "Paris Montparnasse Hall 1 - 2", etc.
     """
     if not result.is_valid:
         return "missing"
-    dep = (result.departure or "").strip().lower()
-    dest = (result.destination or "").strip().lower()
-    # Resolve expected values through the gazetteer
-    exp_dep = resolve_station(expected_dep).strip().lower()
-    exp_dest = resolve_station(expected_dest).strip().lower()
-    if dep == exp_dep and dest == exp_dest:
+    dep = (result.departure or "").strip()
+    dest = (result.destination or "").strip()
+    exp_dep = resolve_station(expected_dep).strip()
+    exp_dest = resolve_station(expected_dest).strip()
+    if _station_match(dep, exp_dep) and _station_match(dest, exp_dest):
         return "correct"
-    if dep == exp_dest and dest == exp_dep:
+    if _station_match(dep, exp_dest) and _station_match(dest, exp_dep):
         return "inverted"
     return "wrong"
 
@@ -514,24 +540,62 @@ async def benchmark_stream(req: BenchmarkStreamRequest):
     return StreamingResponse(generate(), media_type="text/event-stream")
 
 
+# Whisper model loaded once at first use and cached
+_whisper_model = None
+_whisper_lock = asyncio.Lock()
+
+_TRAIN_PROMPT = (
+    "Commande de billet de train SNCF. Villes françaises : Paris, Lyon, Marseille, "
+    "Bordeaux, Toulouse, Nantes, Strasbourg, Lille, Nice, Rennes, Montpellier, "
+    "Grenoble, Dijon, Clermont-Ferrand, Tours, Rouen, Brest, Perpignan, Caen, "
+    "Limoges, Metz, Nancy, Amiens, Le Mans, Orléans, Reims, Saint-Étienne, "
+    "Toulon, Angers, Mulhouse. "
+    "Exemple : Je veux aller de Paris à Lyon. Un billet de Bordeaux à Strasbourg."
+)
+
+
+async def _get_whisper_model():
+    global _whisper_model
+    async with _whisper_lock:
+        if _whisper_model is None:
+            try:
+                import whisper as _whisper
+                _whisper_model = await asyncio.to_thread(_whisper.load_model, "small")
+            except ImportError:
+                return None
+    return _whisper_model
+
+
 @app.post("/api/transcribe")
 async def transcribe(audio_file: UploadFile = File(...)):
     """Speech-to-text only (no route resolution)."""
-    try:
-        import whisper
-    except ImportError:
+    model = await _get_whisper_model()
+    if model is None:
         from fastapi.responses import JSONResponse
         return JSONResponse(
             status_code=501,
             content={"error": "whisper is not installed on this server"},
         )
 
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=True) as tmp:
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
         content = await audio_file.read()
         tmp.write(content)
         tmp.flush()
+        tmp_path = tmp.name
 
-        model = whisper.load_model("base")
-        result = await asyncio.to_thread(model.transcribe, tmp.name, language="fr")
+    import os
+    try:
+        result = await asyncio.to_thread(
+            model.transcribe,
+            tmp_path,
+            language="fr",
+            initial_prompt=_TRAIN_PROMPT,
+            temperature=0,
+            condition_on_previous_text=False,
+            no_speech_threshold=0.6,
+            compression_ratio_threshold=2.0,
+        )
+    finally:
+        os.unlink(tmp_path)
 
     return {"transcribed_text": result["text"].strip()}
