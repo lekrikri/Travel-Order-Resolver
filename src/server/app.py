@@ -8,8 +8,7 @@ import tempfile
 from dataclasses import asdict
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from pathlib import Path
 
@@ -24,8 +23,6 @@ from src.graph.dijkstra import DijkstraEngine
 from src.graph.bfs import BFSEngine
 from src.graph.astar import AStarEngine
 from src import registry
-
-STATIC_DIR = Path(__file__).resolve().parent.parent.parent / "static"
 
 app = FastAPI(title="Travel Order Resolver", version="0.1.0")
 
@@ -538,8 +535,3 @@ async def transcribe(audio_file: UploadFile = File(...)):
         result = await asyncio.to_thread(model.transcribe, tmp.name, language="fr")
 
     return {"transcribed_text": result["text"].strip()}
-
-
-# Serve static frontend files
-if STATIC_DIR.exists():
-    app.mount("/", StaticFiles(directory=str(STATIC_DIR), html=True), name="static")
