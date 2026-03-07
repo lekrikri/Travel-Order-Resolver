@@ -14,6 +14,8 @@ RUN python -m spacy download fr_core_news_sm
 
 COPY . .
 
+ENV PYTHONPATH=/app
+
 EXPOSE 7860
 
 CMD ["uvicorn", "src.server.app:app", "--host", "0.0.0.0", "--port", "7860"]
