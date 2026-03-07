@@ -115,12 +115,14 @@ function App() {
     setError(null);
 
     try {
-      const result = await travelOrderAPI.speechToRoute(audioFile, metric || 'time');
-      if (result.route_response?.error) {
-        setError(result.route_response as unknown as ApiError);
-        return;
-      }
-      setRouteResult(result.route_response);
+      const { transcribed_text } = await travelOrderAPI.transcribe(audioFile);
+      const result = await travelOrderAPI.resolve({
+        text: transcribed_text,
+        nlp_engine: 'rule-based',
+        graph_engine: 'dijkstra',
+        optimization: metric === 'distance' ? 'hops' : 'time',
+      });
+      setResolveResult(result);
     } catch (err: any) {
       console.error('Transcription error:', err);
       if (err.code === 'ERR_NETWORK') {
