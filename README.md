@@ -1,3 +1,12 @@
+---
+title: Travel Order Resolver API
+emoji: 🚄
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # Travel Order Resolver
 
 Extraction d'entités NER (départ/arrivée) depuis des phrases en français naturel, puis calcul d'itinéraire ferroviaire optimal sur le réseau SNCF réel.
