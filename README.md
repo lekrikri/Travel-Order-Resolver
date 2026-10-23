@@ -47,6 +47,28 @@ Extraction d'entités NER (départ/arrivée) depuis des phrases en français nat
 | CamemBERT | 97.05% | 88.93% | 92.82% | 87.79% |
 | **CRF-NER** | **99.79%** | **88.62%** | **93.87%** | **89.20%** |
 
+> Mesures de mars 2026. La réévaluation suivie dans MLflow (ci-dessous) retrouve les scores des modèles spaCy, mais pas encore ceux de CRF-NER et de CamemBERT : leur résolution des villes passe par le gazetteer des gares, qui renvoie des noms de gares (« Avignon TGV ») ou rien pour certaines communes. Correction en cours.
+
+### Suivi des expériences avec MLflow
+
+Chaque moteur est évalué dans un run MLflow : paramètres, métriques, empreinte SHA-256 du jeu de test et commit Git. Le modèle spaCy 10k est publié dans le Model Registry (`tor-ner-spacy-10k`, alias `candidate`).
+
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000   # terminal 1
+python -m src.evaluation.mlflow_eval                            # terminal 2
+```
+
+Résultats du 23/10/2026 (2602 phrases, jeu `hard_v2`) :
+
+| Modèle | Precision | Recall | F1 | Exact Match |
+|---|---|---|---|---|
+| rule-based | 46.15% | 35.38% | 40.05% | 25.90% |
+| spaCy blank | 74.78% | 63.22% | 68.51% | 47.19% |
+| spaCy sm | 80.89% | 73.20% | 76.85% | 62.84% |
+| spaCy lg | 83.59% | 77.78% | 80.58% | 70.37% |
+| spaCy md | 85.46% | 82.14% | 83.77% | 74.14% |
+| **spaCy 10k** | **90.80%** | **89.41%** | **90.10%** | **83.78%** |
+
 ---
 
 ## Prérequis

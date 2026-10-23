@@ -82,3 +82,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# MLflow 
+.venv
+data/processed/test.json
+mlflow.db
+mlruns/
+mlartifacts/
